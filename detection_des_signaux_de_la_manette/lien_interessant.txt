@@ -2,3 +2,4 @@ http://robowarner.com/portfolio/radio-homing-robot-diy/							-How to Make a Sim
 http://wiki.spench.net/wiki/SDRDF												-Calcul de la différence de phase d'un signal
 http://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=2742&context=etd		-Radio Determination on Mini-UAV Platforms:Tracking and Locating Radio Transmitters
 resources.rohde-schwarz-usa.com/c/protecting-the-sky?x=uBi513&utm_source=website&utm_medium=lookbook&utm_campaign=ardronis
+https://wireless.vt.edu/symposiumarchives/2015_slides/document.pdf				-Introduction à la détection de la direction d'un signal 
