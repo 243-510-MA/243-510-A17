@@ -5,7 +5,7 @@ Groupe 1 - Détection de signaux de la manette\n\r
 -Alec (PrimeGod)
 -Olivier (OliJD)
 -Mayorathan
--VanCat
+-VanCat (cat)
 -Mathieu(Spongytombs)
 -Alexis
 
