@@ -1,2 +1,3 @@
-http://robowarner.com/portfolio/radio-homing-robot-diy/			-How to Make a Simple Autonomous Homing Robot
-http://wiki.spench.net/wiki/SDRDF								-Calcul de la différence de phase d'un signal
+http://robowarner.com/portfolio/radio-homing-robot-diy/							-How to Make a Simple Autonomous Homing Robot
+http://wiki.spench.net/wiki/SDRDF												-Calcul de la différence de phase d'un signal
+http://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=2742&context=etd		-Radio Determination on Mini-UAV Platforms:Tracking and Locating Radio Transmitters
