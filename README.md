@@ -10,7 +10,7 @@ Groupe 1 - Détection de signaux de la manette\n\r
 -Alexis
 
 ----------------------------------------------------------------------------------
-Groupe 2 - Hijacking de drone (vous choisirez votre nom)
+Groupe 2 - salut-jack de drone
 -Philip	(Phil9347)
 -Gab	(gabdespres18)
 -Charles (PariahWW)
