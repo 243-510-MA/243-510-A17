@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------------
 Groupe 1 - Détection de signaux de la manette\n\r
 -Francis (kijihouti-the-first)
--Philippe (PrimeGod)
+-Alec (PrimeGod)
 -Olivier (OliJD)
 -Mayorathan
 -VanCat
