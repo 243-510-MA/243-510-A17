@@ -1,1 +1,0 @@
-http://wiki.spench.net/wiki/SDRDF
