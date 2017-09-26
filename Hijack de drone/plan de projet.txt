@@ -1,0 +1,13 @@
+Plan de projet 
+
+étape 1:
+    - trouver la chip (fait): nRF24L01
+    - trouver, analyser et comprendre le protocole de communication (fait): SPI
+    - trouver un micro controlleur qui convient (fait): PIC18F25K80
+    - trouver des programmes deja fait, ou faire le notre (à faire):
+    - faire un circuit de test (à faire)
+    
+étape 2: 
+    - faire communiquer deux chip ensemble, fair eun circuit prototype pour 
+    tester si prendre le controle d'un drone est faisable.
+    
