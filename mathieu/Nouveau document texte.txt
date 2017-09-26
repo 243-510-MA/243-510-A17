@@ -1,0 +1,11 @@
+il y a 2 transmetteurs dans un drone :
+1) un qui transmet le signal du pilote au drône
+2) l'autre transmet le signal vidéo au pilote
+
+2.4 GHz and 5.8 GHz sont les deux fréquences les plus utilisé pour contrôler le drône ? 
+http://www.rfwireless-world.com/Tutorials/rf-measurements-tutorial.html
+
+protocole de transmission sans-fil : FHSS et DSSS
+http://resources.rohde-schwarz-usa.com/c/protecting-the-sky?x=uBi513&utm_source=website&utm_medium=lookbook&utm_campaign=ardronis
+
+Direction finding and locating of radio controlled drone 
