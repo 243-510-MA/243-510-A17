@@ -9,3 +9,6 @@ protocole de transmission sans-fil : FHSS et DSSS
 http://resources.rohde-schwarz-usa.com/c/protecting-the-sky?x=uBi513&utm_source=website&utm_medium=lookbook&utm_campaign=ardronis
 
 Direction finding and locating of radio controlled drone 
+
+Modulation Type FSK2, MSK, PSK, Analog
+Burst Length 0.5ms-5ms --> c'est la vitesse à laquelle le signal de contrôle du drone change de canneaux. Pour cette raison, le signal est plus difficile à trouver.

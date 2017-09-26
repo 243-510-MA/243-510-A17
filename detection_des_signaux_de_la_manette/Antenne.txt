@@ -7,3 +7,8 @@ Types d'antenne disponible chez Agathe
     VERT400
     VERT900
     VERT2450
+	
+
+correspond à la fiche technique de l'antenne WA5VJB de type LP0965 :
+http://www.w1ghz.org/antbook/conf/WA5VJB_LPA_feed.pdf
+le radiation pattern correspond le plus à ce que l'on cherche.
