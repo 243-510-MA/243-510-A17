@@ -10,4 +10,9 @@ Plan de projet
 étape 2: 
     - faire communiquer deux chip ensemble, fair eun circuit prototype pour 
     tester si prendre le controle d'un drone est faisable.
+    Répartition des roles:
+    - Philippe: Reception
+    - Gab: Transmission
+    - Laurent: Sniffer
+    - Ivan + Charles: Hacker
     
