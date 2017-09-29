@@ -1,0 +1,6 @@
+Fait:
+1. Collecte de librairies
+2. Répartition des taches
+3. Analyse de la trame Enhanced Shockburst		- Laurent
+4. Analyse de la trame SPI
+5. creation repertoire mbed pour travailler ensemble	- Phil
