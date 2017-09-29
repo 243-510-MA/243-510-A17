@@ -1,0 +1,1 @@
+https://www.ettus.com/content/files/kb/mimo_and_sync_with_usrp.pdf
