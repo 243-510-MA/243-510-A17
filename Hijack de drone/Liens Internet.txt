@@ -1,0 +1,5 @@
+https://github.com/nRF24/RF24
+https://sigrok.org/wiki/Protocol_decoder:Nrf24l01
+https://github.com/chopengauer/nrf_analyze
+http://www.mousejack.com/
+https://github.com/travisgoodspeed/goodfet
