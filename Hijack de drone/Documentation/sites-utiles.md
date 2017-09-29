@@ -10,3 +10,5 @@ Dossier pour documentation pour la prise de contrôle du drone
 - http://blog.ptsecurity.com/2016/06/phd-vi-how-they-stole-our-drone.html -- site utile
 
 https://os.mbed.com/cookbook/nRF24L01-wireless-transceiver  -- mbed nrf
+
+- https://os.mbed.com/forum/mbed/topic/3540/ 				-- mbed nrf
