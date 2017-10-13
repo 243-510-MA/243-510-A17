@@ -3,6 +3,9 @@ Informations sur gr-nordic
 GNU Radio module and Wireshark dissector (code source originale)
 https://github.com/BastilleResearch/gr-nordic
 --  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
+Nordic Sniffer Scanner (bloc python)
+https://github.com/BastilleResearch/gr-nordic/blob/master/examples/nordic_sniffer_scanner.py
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
 Sniffing and Dissecting with GNU Radio (video 21:30)
 https://youtu.be/WhsE6cwguRs
 --  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
