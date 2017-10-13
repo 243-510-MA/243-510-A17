@@ -1,15 +1,15 @@
 Informations sur gr-nordic
---  --  --  --  --  --  --  --  --  --  --  --  --
-GNU Radio module and Wireshark dissector.
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
+GNU Radio module and Wireshark dissector (code source originale)
 https://github.com/BastilleResearch/gr-nordic
---  --  --  --  --  --  --  --  --  --  --  --  --
-Sniffing and Dissecting with GNU Radio.
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
+Sniffing and Dissecting with GNU Radio (video 21:30)
 https://youtu.be/WhsE6cwguRs
---  --  --  --  --  --  --  --  --  --  --  --  --
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
 Enhanced Shockburst protocol (ESB)
 https://devzone.nordicsemi.com/documentation/nrf51/4.3.0/html/group__esb__users__guide.html
---  --  --  --  --  --  --  --  --  --  --  --  --
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
 Gaussian Minimum Shift Keying (GMSK)
 https://www.researchgate.net/publication/2575678_GMSK_in_a_nutshell
 http://signals.radioscanner.ru/info/item68/
---  --  --  --  --  --  --  --  --  --  --  --  --
+--  --  --  --  --  --  --  --  --  --  --  --  ----  --  --  --  --  --  --  --  --  --  --  --  --
