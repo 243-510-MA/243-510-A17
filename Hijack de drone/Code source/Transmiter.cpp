@@ -1,28 +1,29 @@
 #include "mbed.h"
 #include "nRF24L01P.h"
 
-
 #define TxAddress       0x1                                     //Addresse du nRF
 #define TxWidth         0x3                                     //Nombre de byte maximum de l'addresse
 
-SPI spi(p5, p6, p7);    // mosi, miso, sck
-DigitalOut myled(LED1);
 Serial pc(USBTX, USBRX); // tx, rx
 
 nRF24L01P my_nrf24l01p(p5, p6, p7, p8, p9, p10);    // mosi, miso, sck, csn, ce, irq
 
-int freq, vitesse, i,data0,data1,data2,data3;
-int RxDataCnt=0;
-char RxData[4];
+AnalogIn vitIn(p16);           //potentiometre vitesse
 
-#define TRANSFER_SIZE   4
-
-int main() 
+int main()
 {
+
+    pc.baud(9600);
+    pc.format();
+
+    float vitesse;
+    int vit;
+    char txData[DEFAULT_NRF24L01P_TRANSFER_SIZE];
+
     // Initialisation
     my_nrf24l01p.powerUp();                                          // Power Up le nRF24L01P
     my_nrf24l01p.disableAutoAcknowledge();                           // Disable les "Auto Acknowledge", selon la datasheet
-    my_nrf24l01p.setReceiveMode();                                   // Met le nRF24L01P en mode "Receive" pour my_nrf24l01p les trames
+    my_nrf24l01p.setTransmitMode();                                   // Met le nRF24L01P en mode "Receive" pour my_nrf24l01p les trames
     my_nrf24l01p.setAirDataRate(250);                                // Set le data rate du Enhanced Shockburst à 250Kb/s     
     my_nrf24l01p.setRfFrequency(2400);                               // Set la Fréquence du NRF à 2,4Ghz au départ
     my_nrf24l01p.setRfOutputPower(0);                                // Set la puissance de sortie à 0dB
@@ -31,26 +32,28 @@ int main()
     my_nrf24l01p.setTransferSize(DEFAULT_NRF24L01P_TRANSFER_SIZE, NRF24L01P_PIPE_P0);
     my_nrf24l01p.enable();                                           // Permet au nRF de recevoir
     
-    while(1) 
+    pc.printf( "nRF24L01+ Frequency    : %d MHz\r\n",  my_nrf24l01p.getRfFrequency() );
+    pc.printf( "nRF24L01+ Output power : %d dBm\r\n",  my_nrf24l01p.getRfOutputPower() );
+    pc.printf( "nRF24L01+ Data Rate    : %d kbps\r\n", my_nrf24l01p.getAirDataRate() );
+    pc.printf( "nRF24L01+ TX Address   : 0x%010llX\r\n", my_nrf24l01p.getTxAddress() );
+    pc.printf( "nRF24L01+ RX Address   : 0x%010llX\r\n", my_nrf24l01p.getRxAddress() );
+
+    while (1) 
     {
-        freq = my_nrf24l01p.getRfFrequency();
-        RxDataCnt = my_nrf24l01p.read(NRF24L01P_PIPE_P0, RxData, TRANSFER_SIZE);
+		/*
+        vitesse = vitIn.read();
+        vitesse = vitesse * 100;
+        vitesse = vitesse / 65536;
+        vit = vitesse;
+        */
+		
+        txData[0] = 0xAA;
+        txData[1] = 0x11;
+        txData[2] = 0x22;
+        txData[3] = 0xBB;
         
-        data0 = RxData[0];
-        data1 = RxData[1];
-        data2 = RxData[2];
-        data3 = RxData[3];
-        //vitesse = RxData[4];
-        
-        pc.printf("Start Receive");
-        pc.printf("data0: %d\n\r",data0);
-        pc.printf("data1: %d\n\r",data1);
-        pc.printf("data2: %d\n\r",data2);
-        pc.printf("data3: %d\n\r",data3);
-       // pc.printf("Vitesse: %d\n\r", vitesse);
-        pc.printf("Frequence: %d\n\r",freq);
-        pc.printf("Stop Receive");
+        my_nrf24l01p.write( NRF24L01P_PIPE_P0, txData, txDataCnt );
+       
         wait(1);
     }
 }
-
