@@ -31,7 +31,10 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
 
     def work(self, input_items, output_items):
         """example: multiply with constant"""
-
-		output_items=np.unwrap(input_items)
-		#output_item[0][:]=input_items[0]
-        return len(output_items[0])
+		phase = np.linspace(0, np.pi, num=2)
+		#phase[1]=input_items[0]
+		phase = np.unwrap(phase)
+		#output_items=np.unwrap(input_items)
+		#output_items[0][:]=input_items[0]
+		output_items[0][:]=phase[0]#<- cette ligne pose probleme
+        return (output_items[0])
