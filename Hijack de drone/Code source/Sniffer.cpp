@@ -30,7 +30,7 @@ int main()
     sniffer.setReceiveMode();                                   // Met le nRF24L01P en mode "Receive" pour sniffer les trames
     sniffer.setAirDataRate(250);                                // Set le data rate du Enhanced Shockburst à 250Kb/s     
     sniffer.setRfFrequency(Freq);                               // Set la Fréquence du NRF à 2,4Ghz au départ
-    sniffer.serRFOutputPower(0);                                // Set la puissance de sortie à 0dB
+    sniffer.setRfOutputPower(0);                                // Set la puissance de sortie à 0dB
     sniffer.setRxAddress(RxAddress,RxWidth,NRF24L01P_PIPE_P0);  // Set l'addresse du nRF en Rx
     sniffer.setCrcWidth(DEFAULT_NRF24L01P_CRC);                 // Set la longueur du CRC
     sniffer.setTransferSize(DEFAULT_NRF24L01P_TRANSFER_SIZE, NRF24L01P_PIPE_P0);
