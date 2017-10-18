@@ -14,8 +14,6 @@ int RxDataCnt=0;
 char RxData[4];
 int RxDataStorage[4];
 
-#define TRANSFER_SIZE   4
-
 int main() 
 {
     // Initialisation
