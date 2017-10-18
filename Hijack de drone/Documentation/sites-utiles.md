@@ -31,4 +31,7 @@ http://blog.ptsecurity.com/2016/06/phd-vi-how-they-stole-our-drone.html         
 https://os.mbed.com/cookbook/nRF24L01-wireless-transceiver                               #API pour utiliser le nRF24L01 en C++
 https://os.mbed.com/users/Owen/code/nRF24L01P/docs/tip/classnRF24L01P.html               #Description de la Class pour le nRF24L01 en C++
 https://os.mbed.com/forum/mbed/topic/3540/ 				                                 #Utilisation du nRF24L01 avec Arduino
->>>>>>> d69540f854093b7a1653a36a8e764dbc3281d9da
+>>>>>>> d69540f854093b7a1653a36a8e764dbc3281d9da<
+
+
+https://github.com/snow4life/nRF24L01P-PIC18F -- NRF LIB POUR PIC 18F
