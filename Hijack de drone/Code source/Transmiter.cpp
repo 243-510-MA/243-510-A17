@@ -19,7 +19,6 @@ char RxData[4];
 
 int main() 
 {
-    
     // Initialisation
     my_nrf24l01p.powerUp();                                          // Power Up le nRF24L01P
     my_nrf24l01p.disableAutoAcknowledge();                           // Disable les "Auto Acknowledge", selon la datasheet
@@ -48,7 +47,7 @@ int main()
         pc.printf("data1: %d\n\r",data1);
         pc.printf("data2: %d\n\r",data2);
         pc.printf("data3: %d\n\r",data3);
-        pc.printf("Vitesse: %d\n\r", vitesse);
+       // pc.printf("Vitesse: %d\n\r", vitesse);
         pc.printf("Frequence: %d\n\r",freq);
         pc.printf("Stop Receive");
         wait(1);

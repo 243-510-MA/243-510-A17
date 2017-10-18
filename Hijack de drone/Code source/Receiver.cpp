@@ -10,8 +10,6 @@ nRF24L01P my_nrf24l01p(p5, p6, p7, p8, p9, p10);    // mosi, miso, sck, csn, ce,
 
 AnalogIn vitIn(p16);           //potentiometre vitesse
 
-#define TRANSFER_SIZE   5
-
 int main()
 {
 
@@ -20,9 +18,7 @@ int main()
 
     float vitesse;
     int vit;
-    char txData[TRANSFER_SIZE];
-    int txDataCnt = 5;
-    //int txVitesse = 1;
+    char txData[DEFAULT_NRF24L01P_TRANSFER_SIZE];
 
     // Initialisation
     my_nrf24l01p.powerUp();                                          // Power Up le nRF24L01P
@@ -35,8 +31,6 @@ int main()
     my_nrf24l01p.setCrcWidth(DEFAULT_NRF24L01P_CRC);                 // Set la longueur du CRC
     my_nrf24l01p.setTransferSize(DEFAULT_NRF24L01P_TRANSFER_SIZE, NRF24L01P_PIPE_P0);
     my_nrf24l01p.enable();                                           // Permet au nRF de recevoir
-
-
     
     pc.printf( "nRF24L01+ Frequency    : %d MHz\r\n",  my_nrf24l01p.getRfFrequency() );
     pc.printf( "nRF24L01+ Output power : %d dBm\r\n",  my_nrf24l01p.getRfOutputPower() );
@@ -44,34 +38,22 @@ int main()
     pc.printf( "nRF24L01+ TX Address   : 0x%010llX\r\n", my_nrf24l01p.getTxAddress() );
     pc.printf( "nRF24L01+ RX Address   : 0x%010llX\r\n", my_nrf24l01p.getRxAddress() );
 
-    pc.printf( "Type keys to test transfers:\r\n  (transfers are grouped into %d characters)\r\n", TRANSFER_SIZE );
-
-    my_nrf24l01p.setTransferSize( TRANSFER_SIZE );
-
-    my_nrf24l01p.enable();
-
     while (1) 
     {
+		/*
         vitesse = vitIn.read();
         vitesse = vitesse * 100;
         vitesse = vitesse / 65536;
         vit = vitesse;
-        
-        txData[0] = 's';
-        txData[1] = 't';
-        txData[2] = 'a';
-        txData[3] = '\0';
-        txData[4] = vit;
+        */
+		
+        txData[0] = 0xAA;
+        txData[1] = 0x11;
+        txData[2] = 0x22;
+        txData[3] = 0xBB;
         
         my_nrf24l01p.write( NRF24L01P_PIPE_P0, txData, txDataCnt );
-        
-        //my_nrf24l01p.write( NRF24L01P_PIPE_P0, vit, txVitesse );
-        
-        pc.printf("txData: %s \n\r", txData);
-        pc.printf("Vitesse: %d \n\r", vit);
-        
-        
-
+       
         wait(1);
     }
 }
