@@ -30,8 +30,7 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
 
     def work(self, input_items, output_items):
         """example: multiply with constant"""
-		phase =np.linspace(0,0,num=1)
-		phase[0]=input_items[0]
-		np.unwrap(phase)
-		output_item[0][:]=phase[0]
+
+		np.unwrap(input_items)
+		output_item[0][:]=input_items[0]
         return len(output_items[0])
