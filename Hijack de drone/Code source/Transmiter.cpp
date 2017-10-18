@@ -27,7 +27,7 @@ int main()
     my_nrf24l01p.setAirDataRate(250);                                // Set le data rate du Enhanced Shockburst à 250Kb/s     
     my_nrf24l01p.setRfFrequency(2400);                               // Set la Fréquence du NRF à 2,4Ghz au départ
     my_nrf24l01p.setRfOutputPower(0);                                // Set la puissance de sortie à 0dB
-    my_nrf24l01p.setTxAddress(TxAddress,TxWidth,NRF24L01P_PIPE_P0);  // Set l'addresse du nRF en Rx
+    my_nrf24l01p.setTxAddress(TxAddress,TxWidth);  // Set l'addresse du nRF en Rx
     my_nrf24l01p.setCrcWidth(DEFAULT_NRF24L01P_CRC);                 // Set la longueur du CRC
     my_nrf24l01p.setTransferSize(DEFAULT_NRF24L01P_TRANSFER_SIZE, NRF24L01P_PIPE_P0);
     my_nrf24l01p.enable();                                           // Permet au nRF de recevoir
@@ -36,7 +36,7 @@ int main()
     pc.printf( "nRF24L01+ Output power : %d dBm\r\n",  my_nrf24l01p.getRfOutputPower() );
     pc.printf( "nRF24L01+ Data Rate    : %d kbps\r\n", my_nrf24l01p.getAirDataRate() );
     pc.printf( "nRF24L01+ TX Address   : 0x%010llX\r\n", my_nrf24l01p.getTxAddress() );
-    pc.printf( "nRF24L01+ RX Address   : 0x%010llX\r\n", my_nrf24l01p.getRxAddress() );
+    pc.printf( "nRF24L01+ RX Address   : 00x%010llX\r\n", my_nrf24l01p.getRxAddress() );
 
     while (1) 
     {
