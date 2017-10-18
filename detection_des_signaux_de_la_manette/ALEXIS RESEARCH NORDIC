@@ -1,0 +1,24 @@
+
+-------------------------------------------------AVANCEMENT---------------------------------------------------------------------
+on a reussit a ouvrir wireshark ( module dissector?) a l'aide des lignes de commande fournit par notre ami cn0xroot de git-hub (site web https://cn0xroot.com/)
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------BUGG----------------------------------------------------------------------------
+lorsqu'on demande d'excuter la reception du signal on avait comme erreur qu'il nous manquait le fichier "osmosdr". il suffirait de l'installer pour completer l'installation.
+
+si l'installation refuse quand meme, excutere la commande "~/gr-osmosdr/build# cmake .." et regarder la raison pour laquelle il refuse de faire l'installation
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+-- Pour avancer,il faudra aussi penser a recuperer le signal????????????????????
+
+
+----------------------------------------------REFERENCE--------------------------------------------------------------------------
+
+-- "https://www.youtube.com/watch?v=EsZNfhmIu64" -- la video permettant de demarrer et initier le traitement des données avec wireshark
+
+
+-- " https://github.com/cn0xroot/cn0xroot.github.io/tree/master/SDR" continuer dans cette ligne si jamais tu bloques.
+
+------------------------------------------------------------------------------------------------------------------------------------
