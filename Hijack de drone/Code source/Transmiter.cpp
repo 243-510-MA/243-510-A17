@@ -2,8 +2,8 @@
 #include "nRF24L01P.h"
 
 
-#define RxAddress       0x1                                     //Addresse du nRF
-#define RxWidth         0x3                                     //Nombre de byte maximum de l'addresse
+#define TxAddress       0x1                                     //Addresse du nRF
+#define TxWidth         0x3                                     //Nombre de byte maximum de l'addresse
 
 SPI spi(p5, p6, p7);    // mosi, miso, sck
 DigitalOut myled(LED1);
@@ -27,7 +27,7 @@ int main()
     my_nrf24l01p.setAirDataRate(250);                                // Set le data rate du Enhanced Shockburst à 250Kb/s     
     my_nrf24l01p.setRfFrequency(2400);                               // Set la Fréquence du NRF à 2,4Ghz au départ
     my_nrf24l01p.setRfOutputPower(0);                                // Set la puissance de sortie à 0dB
-    my_nrf24l01p.setRxAddress(RxAddress,RxWidth,NRF24L01P_PIPE_P0);  // Set l'addresse du nRF en Rx
+    my_nrf24l01p.setTxAddress(TxAddress,TxWidth,NRF24L01P_PIPE_P0);  // Set l'addresse du nRF en Rx
     my_nrf24l01p.setCrcWidth(DEFAULT_NRF24L01P_CRC);                 // Set la longueur du CRC
     my_nrf24l01p.setTransferSize(DEFAULT_NRF24L01P_TRANSFER_SIZE, NRF24L01P_PIPE_P0);
     my_nrf24l01p.enable();                                           // Permet au nRF de recevoir
