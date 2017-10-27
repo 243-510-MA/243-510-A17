@@ -22,3 +22,10 @@ si l'installation refuse quand meme, excutere la commande "~/gr-osmosdr/build# c
 -- " https://github.com/cn0xroot/cn0xroot.github.io/tree/master/SDR" continuer dans cette ligne si jamais tu bloques.
 
 ------------------------------------------------------------------------------------------------------------------------------------
+ nouvelle facon de faire beaucoup plus facile ... mais impossible a faire focntioner
+ il est impossbile de faire fonctionner!!!!
+ 
+ -- Reanalyser le fonctionnement des modules pour comprendre et voir ce qu'il manque 
+ -- modele de ursp utiliser "11" garder le meme 
+ 
+https://github.com/chopengauer/nrf_analyze
