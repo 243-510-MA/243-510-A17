@@ -29,3 +29,11 @@ si l'installation refuse quand meme, excutere la commande "~/gr-osmosdr/build# c
  -- modele de ursp utiliser "11" garder le meme 
  
 https://github.com/chopengauer/nrf_analyze
+-- regarde dans les commentaire du gars,il ya un lien une personne qui a reussit a faire le hy jack~~~~`
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+31 octobre 2017 18h jours 49 du projet
+
+nous avons reussit a donner tout autorisation decriture et de lecture sur le fichier fifo, regarder dnas le codage de la persoone il se peut
+que ses modification empeche leprogramme de demarrer normalement !!!!
