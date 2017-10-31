@@ -37,3 +37,15 @@ https://github.com/chopengauer/nrf_analyze
 
 nous avons reussit a donner tout autorisation decriture et de lecture sur le fichier fifo, regarder dnas le codage de la persoone il se peut
 que ses modification empeche leprogramme de demarrer normalement !!!!
+
+s'assurerer de bien remarquer que on recoit quelque chose!!!!
+
+et verifier dnas le code toute reception!! correctement programmer!!
+
+plus tard--------
+
+regarder sa savoir opour mieux comprendre la partie de la transformationdu signal
+----
+
+
+
