@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------------
 Groupe 1 - Détection de signaux de la manette\n\r
 -Francis (kijihouti-the-first)
--Alec (PrimeGod)
+-Philippe (PrimeGod)
 -Olivier (OliJD)
 -Mayorathan
 -VanCat (cat)
@@ -11,7 +11,6 @@ Groupe 1 - Détection de signaux de la manette\n\r
 
 ----------------------------------------------------------------------------------
 Groupe 2 - salut-jack de drone
--Philip	(Phil9347)
 -Gab	(gabdespres18)
 -Charles (PariahWW)
 -Laurent (lolo2438)

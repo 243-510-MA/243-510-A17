@@ -1,0 +1,51 @@
+
+-------------------------------------------------AVANCEMENT---------------------------------------------------------------------
+on a reussit a ouvrir wireshark ( module dissector?) a l'aide des lignes de commande fournit par notre ami cn0xroot de git-hub (site web https://cn0xroot.com/)
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------BUGG----------------------------------------------------------------------------
+lorsqu'on demande d'excuter la reception du signal on avait comme erreur qu'il nous manquait le fichier "osmosdr". il suffirait de l'installer pour completer l'installation.
+
+si l'installation refuse quand meme, excutere la commande "~/gr-osmosdr/build# cmake .." et regarder la raison pour laquelle il refuse de faire l'installation
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+-- 
+
+
+----------------------------------------------REFERENCE--------------------------------------------------------------------------
+
+-- "https://www.youtube.com/watch?v=EsZNfhmIu64" -- la video permettant de demarrer et initier le traitement des données avec wireshark
+
+
+-- " https://github.com/cn0xroot/cn0xroot.github.io/tree/master/SDR" continuer dans cette ligne si jamais tu bloques.
+
+------------------------------------------------------------------------------------------------------------------------------------
+ nouvelle facon de faire beaucoup plus facile ... mais impossible a faire focntioner
+ il est impossbile de faire fonctionner!!!!
+ 
+ -- Reanalyser le fonctionnement des modules pour comprendre et voir ce qu'il manque 
+ -- modele de ursp utiliser "11" garder le meme 
+ 
+https://github.com/chopengauer/nrf_analyze
+-- regarde dans les commentaire du gars,il ya un lien une personne qui a reussit a faire le hy jack~~~~`
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+31 octobre 2017 18h jours 49 du projet
+
+nous avons reussit a donner tout autorisation decriture et de lecture sur le fichier fifo, regarder dnas le codage de la persoone il se peut
+que ses modification empeche leprogramme de demarrer normalement !!!!
+
+s'assurerer de bien remarquer que on recoit quelque chose!!!!
+
+et verifier dnas le code toute reception!! correctement programmer!!
+
+plus tard--------
+
+regarder sa savoir opour mieux comprendre la partie de la transformationdu signal
+----
+
+
+
