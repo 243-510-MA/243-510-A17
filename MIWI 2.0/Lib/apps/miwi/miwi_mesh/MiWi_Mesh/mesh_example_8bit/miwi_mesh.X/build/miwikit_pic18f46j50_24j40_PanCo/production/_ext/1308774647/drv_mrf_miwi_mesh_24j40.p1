@@ -1,7 +1,173 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"43 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18.h
-[v ___nop `(v ~T0 @X0 0 ef ]
-[p i ___nop ]
+"162 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[s S779 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S779 . RepeaterMode CCAEnable NetworkFreezer PAddrLength ]
+"159
+[u S778 `uc 1 `S779 1 ]
+[n S778 . Val bits ]
+"157
+[s S777 `S778 1 `*uc 1 ]
+[n S777 . actionFlags PAddress ]
+"27 ../src\NetworkManager.h
+[s S785 `uc -> 8 `i ]
+[n S785 addr_t_def bytes ]
+"116 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c
+[s S793 `uc 1 `uc + + + + + -> 90 `i -> 0 `i -> 8 `i -> 8 `i -> 4 `i -> 17 `i ]
+[n S793 . PayloadLen Payload ]
+"350 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh_24j40.h
+[s S783 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S783 . TX_BUSY TX_PENDING_ACK TX_FAIL RX_SECURITY RX_IGNORE_SECURITY RX_BUFFERED ]
+"347
+[u S782 `uc 1 `S783 1 ]
+[n S782 . Val bits ]
+"16012 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[s S743 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S743 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
+"16022
+[s S744 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S744 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
+"16032
+[s S745 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S745 . . GIEL GIEH ]
+"16011
+[u S742 `S743 1 `S744 1 `S745 1 ]
+[n S742 . . . . ]
+"16038
+[v _INTCONbits `VS742 ~T0 @X0 0 e@4082 ]
+"7131
+[s S314 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S314 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
+"7141
+[s S315 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S315 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
+"7130
+[u S313 `S314 1 `S315 1 ]
+[n S313 . . . ]
+"7152
+[v _LATAbits `VS313 ~T0 @X0 0 e@3977 ]
+"11 ../src/system_config/miwikit_pic18f46j50_24j40\spi.h
+[v _SPIPut `(v ~T0 @X0 0 ef1`uc ]
+"12
+[v _SPIGet `(uc ~T0 @X0 0 ef ]
+"7447 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[s S323 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S323 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"7457
+[s S324 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S324 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
+"7446
+[u S322 `S323 1 `S324 1 ]
+[n S322 . . . ]
+"7468
+[v _LATDbits `VS322 ~T0 @X0 0 e@3980 ]
+"216 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[v _MiMAC_SetChannel `(uc ~T0 @X0 0 ef2`uc`uc ]
+"6052 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[s S275 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S275 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"6062
+[s S276 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S276 . AN12 AN10 AN8 AN9 PMA1 PMA0 KBI2 KBI3 ]
+"6072
+[s S277 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S277 . INT0 PMPBE CTEDG1 CTEDG2 KBI0 KBI1 PGC PGD ]
+"6082
+[s S278 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S278 . RP3 RTCC PMA3 PMA2 SCK1 SDI1 RP9 RP10 ]
+"6092
+[s S279 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S279 . . RP4 VMO VPO SCL1 SDA1 ]
+"6100
+[s S280 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S280 . . REFO RP6 RP7 RP8 ]
+"6107
+[s S281 :2 `uc 1 :1 `uc 1 ]
+[n S281 . . RP5 ]
+"6111
+[s S282 :3 `uc 1 :1 `uc 1 ]
+[n S282 . . CCP2_PA2 ]
+"6051
+[u S274 `S275 1 `S276 1 `S277 1 `S278 1 `S279 1 `S280 1 `S281 1 `S282 1 ]
+[n S274 . . . . . . . . . ]
+"6116
+[v _PORTBbits `VS274 ~T0 @X0 0 e@3969 ]
+"124 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[s S776 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S776 . packetType broadcast secEn repeat ackReq destPrsnt sourcePrsnt ]
+"121
+[u S775 `uc 1 `S776 1 ]
+[n S775 . Val bits ]
+"119
+[s S774 `S775 1 `*uc 1 `*uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `ui 1 `ui 1 ]
+[n S774 . flags SourceAddress Payload PayloadLen RSSIValue LQIValue altSourceAddress SourcePANID DestPANID ]
+"174
+[v _MACRxPacket `S774 ~T0 @X0 0 e ]
+"14 C:\Program Files (x86)\Microchip\xc8\v1.44\include\string.h
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"395 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[v _MiMAC_DiscardPacket `(v ~T0 @X0 0 ef ]
+"88
+[s S773 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S773 . packetType broadcast secEn repeat ackReq destPrsnt sourcePrsnt ]
+"85
+[u S772 `uc 1 `S773 1 ]
+[n S772 . Val bits ]
+"25 ../src/system_config/miwikit_pic18f46j50_24j40\gtypedefs.h
+[s S768 `uc 1 `uc 1 ]
+[n S768 . LB HB ]
+"30
+[s S769 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S769 . b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 b11 b12 b13 b14 b15 ]
+"21
+[u S767 `ui 1 `uc -> 2 `i `S768 1 `S769 1 ]
+[n S767 . Val v uint8_t bits ]
+"83 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[s S771 `S772 1 `*uc 1 `uc 1 `uc 1 `S767 1 ]
+[n S771 . flags DestAddress altDestAddr altSrcAddr DestPANID ]
+"69 ../src/system_config/miwikit_pic18f46j50_24j40\symbol.h
+[u S784 `ul 1 ]
+[n S784 MIWI_TICK_t Val ]
+"78
+[v _MiWi_TickGetMs `(S784 ~T0 @X0 0 ef ]
+"290 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh.h
+[v _MiMAC_SetAltAddress `(uc ~T0 @X0 0 ef2`*uc`*uc ]
+"14385 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[v _TMR1 `Vus ~T0 @X0 0 e@4046 ]
+"5 ../src/system_config/miwikit_pic18f46j50_24j40\delay.h
+[v _DelayMs `(v ~T0 @X0 0 ef1`ul ]
+"64 ../src/system_config/miwikit_pic18f46j50_24j40\gtypedefs.h
+[v _krndInit `(v ~T0 @X0 0 ef1`ui ]
+"63
+[v _krnd `(ul ~T0 @X0 0 ef ]
+"337 ../../../../../../framework\driver/mrf_miwi/drv_mrf_miwi_mesh_24j40.h
+[s S781 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S781 . RF_TXIF . RF_RXIF SECIF . ]
+"334
+[u S780 `uc 1 `S781 1 ]
+[n S780 . Val bits ]
+"69 ../../../../../../framework\miwi/miwi_mesh_api.h
+[s S787 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S787 _CONNECTION_STAUTS_bits RXOnWhenIdle directConnection longAddressValid shortAddressValid FinishJoin isFamily filler isValid ]
+"66
+[u S786 `uc 1 `S787 1 ]
+[n S786 __CONNECTION_STATUS Val bits ]
+"93
+[s S788 `ul 1 `S767 1 `S767 1 `S785 1 `S786 1 ]
+[n S788 __CONNECTION_ENTRY IncomingFrameCounter PANID AltAddress Address status ]
+"110
+[v _ConnectionTable `S788 ~T0 @X0 -> 0 `x e ]
+"50 ../src\NetworkManager.h
+[v _isSameAddress `(uc ~T0 @X0 0 ef2`S785`S785 ]
+"15254 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[v _TMR0 `Vus ~T0 @X0 0 e@4054 ]
+"76 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c
+[v _t1extension `ul ~T0 @X0 0 e ]
+"15261 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f46j50.h
+[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
+"15281
+[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
+"77 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c
+[v _t1fired `Vuc ~T0 @X0 0 e ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -6547,6 +6713,34 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;__size_t.h: 4: typedef unsigned size_t;
+[; ;stddef.h: 6: typedef int ptrdiff_t;
+[; ;string.h: 14: extern void * memcpy(void *, const void *, size_t);
+[; ;string.h: 15: extern void * memmove(void *, const void *, size_t);
+[; ;string.h: 16: extern void * memset(void *, int, size_t);
+[; ;string.h: 36: extern char * strcat(char *, const char *);
+[; ;string.h: 37: extern char * strcpy(char *, const char *);
+[; ;string.h: 38: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 39: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 40: extern char * strdup(const char *);
+[; ;string.h: 41: extern char * strtok(char *, const char *);
+[; ;string.h: 44: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 45: extern int strcmp(const char *, const char *);
+[; ;string.h: 46: extern int stricmp(const char *, const char *);
+[; ;string.h: 47: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 48: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 49: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 50: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 51: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 52: extern size_t strspn(const char *, const char *);
+[; ;string.h: 53: extern char * strstr(const char *, const char *);
+[; ;string.h: 54: extern char * stristr(const char *, const char *);
+[; ;string.h: 55: extern char * strerror(int);
+[; ;string.h: 56: extern size_t strlen(const char *);
+[; ;string.h: 57: extern char * strchr(const char *, int);
+[; ;string.h: 58: extern char * strichr(const char *, int);
+[; ;string.h: 59: extern char * strrchr(const char *, int);
+[; ;string.h: 60: extern char * strrichr(const char *, int);
 [; ;miwikit_pic18f46j50_24j40\gtypedefs.h: 20: typedef union
 [; ;miwikit_pic18f46j50_24j40\gtypedefs.h: 21: {
 [; ;miwikit_pic18f46j50_24j40\gtypedefs.h: 22: uint16_t Val;
@@ -6680,81 +6874,3229 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;drv_mrf_miwi_mesh_24j40.h: 356: uint8_t RX_BUFFERED : 1;
 [; ;drv_mrf_miwi_mesh_24j40.h: 357: } bits;
 [; ;drv_mrf_miwi_mesh_24j40.h: 358: } MRF24J40_STATUS;
-[; ;system.h: 231: typedef enum LED_t_def
-[; ;system.h: 232: {
-[; ;system.h: 233: LEDGreen,
-[; ;system.h: 234: LEDYellow,
-[; ;system.h: 235: LEDRed,
-[; ;system.h: 236: LEDCount,
-[; ;system.h: 237: }LED_t;
-[; ;system.h: 239: typedef enum LEDCmd_t_def
-[; ;system.h: 240: {
-[; ;system.h: 241: lCMD_None,
-[; ;system.h: 242: lCMD_Off,
-[; ;system.h: 243: lCMD_On,
-[; ;system.h: 244: lCMD_Blink,
-[; ;system.h: 245: lCMD_Toggle,
-[; ;system.h: 246: }LEDCmd_t;
-[; ;system.h: 249: void HardwareInit(void);
-[; ;system.h: 250: bool isButtonPressed(uint8_t index);
-[; ;system.h: 251: void ButtonTask(void);
-[; ;system.h: 252: void LEDCommand(LED_t led, LEDCmd_t cmd);
-[; ;system.h: 253: void LEDManagerTask(void);
-"6 ../src/system_config/miwikit_pic18f46j50_24j40/delay.c
-[v _DelayUS `(v ~T0 @X0 1 ef1`ul ]
-"7
+[; ;miwikit_pic18f46j50_24j40\system.h: 231: typedef enum LED_t_def
+[; ;miwikit_pic18f46j50_24j40\system.h: 232: {
+[; ;miwikit_pic18f46j50_24j40\system.h: 233: LEDGreen,
+[; ;miwikit_pic18f46j50_24j40\system.h: 234: LEDYellow,
+[; ;miwikit_pic18f46j50_24j40\system.h: 235: LEDRed,
+[; ;miwikit_pic18f46j50_24j40\system.h: 236: LEDCount,
+[; ;miwikit_pic18f46j50_24j40\system.h: 237: }LED_t;
+[; ;miwikit_pic18f46j50_24j40\system.h: 239: typedef enum LEDCmd_t_def
+[; ;miwikit_pic18f46j50_24j40\system.h: 240: {
+[; ;miwikit_pic18f46j50_24j40\system.h: 241: lCMD_None,
+[; ;miwikit_pic18f46j50_24j40\system.h: 242: lCMD_Off,
+[; ;miwikit_pic18f46j50_24j40\system.h: 243: lCMD_On,
+[; ;miwikit_pic18f46j50_24j40\system.h: 244: lCMD_Blink,
+[; ;miwikit_pic18f46j50_24j40\system.h: 245: lCMD_Toggle,
+[; ;miwikit_pic18f46j50_24j40\system.h: 246: }LEDCmd_t;
+[; ;miwikit_pic18f46j50_24j40\system.h: 249: void HardwareInit(void);
+[; ;miwikit_pic18f46j50_24j40\system.h: 250: bool isButtonPressed(uint8_t index);
+[; ;miwikit_pic18f46j50_24j40\system.h: 251: void ButtonTask(void);
+[; ;miwikit_pic18f46j50_24j40\system.h: 252: void LEDCommand(LED_t led, LEDCmd_t cmd);
+[; ;miwikit_pic18f46j50_24j40\system.h: 253: void LEDManagerTask(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 69: typedef union MIWI_TICK_t
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 70: {
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 71: uint32_t Val;
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 72: }MIWI_TICK;
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 77: void InitSymbolTimer(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 78: MIWI_TICK MiWi_TickGetMs(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 79: uint32_t MiWi_TickGet(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 80: uint32_t safeMiWi_TickGetMs(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 86: void TimerDisable(void);
+[; ;miwikit_pic18f46j50_24j40\symbol.h: 87: void TimerEnable(void);
+[; ;src\NetworkManager.h: 19: typedef enum DeviceType_t_def
+[; ;src\NetworkManager.h: 20: {
+[; ;src\NetworkManager.h: 21: DeviceCoordinator,
+[; ;src\NetworkManager.h: 22: DeviceRFD,
+[; ;src\NetworkManager.h: 23: DeviceSleepingRFD,
+[; ;src\NetworkManager.h: 24: DeviceUnknown=0x07,
+[; ;src\NetworkManager.h: 25: }DeviceType_t;
+[; ;src\NetworkManager.h: 27: typedef struct addr_t_def
+[; ;src\NetworkManager.h: 28: {
+[; ;src\NetworkManager.h: 29: uint8_t bytes[8];
+[; ;src\NetworkManager.h: 30: }addr_t;
+[; ;src\NetworkManager.h: 33: void NetworkAddressSizeSet(uint8_t value);
+[; ;src\NetworkManager.h: 34: uint8_t NetworkAddressSizeGet(void);
+[; ;src\NetworkManager.h: 37: DeviceType_t NetworkGetDeviceType(void);
+[; ;src\NetworkManager.h: 40: void NetworkInit(addr_t address, uint16_t PANID, DeviceType_t dev);
+[; ;src\NetworkManager.h: 42: void NetworkSetAddressPAN(addr_t address, uint16_t PANID);
+[; ;src\NetworkManager.h: 44: void NetworkSetDeviceType(DeviceType_t dev);
+[; ;src\NetworkManager.h: 47: void NetworkManagerTask(void);
+[; ;src\NetworkManager.h: 50: bool isSameAddress(addr_t a1, addr_t a2);
+[; ;src\NetworkManager.h: 53: addr_t NetworkGetParentAddress(void);
+[; ;src\NetworkManager.h: 56: bool NetworkHasRoute(void);
+[; ;src\NetworkManager.h: 59: void NetworkSendDiscoverResponse(void);
+[; ;miwi_mesh_api.h: 66: typedef union __CONNECTION_STATUS
+[; ;miwi_mesh_api.h: 67: {
+[; ;miwi_mesh_api.h: 68: uint8_t Val;
+[; ;miwi_mesh_api.h: 69: struct _CONNECTION_STAUTS_bits
+[; ;miwi_mesh_api.h: 70: {
+[; ;miwi_mesh_api.h: 71: uint8_t RXOnWhenIdle :1;
+[; ;miwi_mesh_api.h: 72: uint8_t directConnection :1;
+[; ;miwi_mesh_api.h: 73: uint8_t longAddressValid :1;
+[; ;miwi_mesh_api.h: 74: uint8_t shortAddressValid :1;
+[; ;miwi_mesh_api.h: 75: uint8_t FinishJoin :1;
+[; ;miwi_mesh_api.h: 76: uint8_t isFamily :1;
+[; ;miwi_mesh_api.h: 77: uint8_t filler :1;
+[; ;miwi_mesh_api.h: 78: uint8_t isValid :1;
+[; ;miwi_mesh_api.h: 79: } bits;
+[; ;miwi_mesh_api.h: 80: } CONNECTION_STATUS;
+[; ;miwi_mesh_api.h: 93: typedef struct __CONNECTION_ENTRY
+[; ;miwi_mesh_api.h: 94: {
+[; ;miwi_mesh_api.h: 96: uint32_t IncomingFrameCounter;
+[; ;miwi_mesh_api.h: 99: _uint16_VAL PANID;
+[; ;miwi_mesh_api.h: 100: _uint16_VAL AltAddress;
+[; ;miwi_mesh_api.h: 102: addr_t Address;
+[; ;miwi_mesh_api.h: 104: CONNECTION_STATUS status;
+[; ;miwi_mesh_api.h: 108: } CONNECTION_ENTRY;
+[; ;miwi_mesh_api.h: 110: extern CONNECTION_ENTRY ConnectionTable[5];
+[; ;miwi_mesh_api.h: 112: extern uint8_t currentChannel;
+[; ;miwi_mesh_api.h: 153: bool MiApp_ProtocolInit(bool bNetworkFreezer);
+[; ;miwi_mesh_api.h: 195: bool MiApp_SetChannel(uint8_t Channel);
+[; ;miwi_mesh_api.h: 253: bool MiApp_StartConnection( uint8_t Mode, uint8_t ScanDuration, uint32_t ChannelMap);
+[; ;miwi_mesh_api.h: 263: typedef struct
+[; ;miwi_mesh_api.h: 264: {
+[; ;miwi_mesh_api.h: 265: uint8_t Channel;
+[; ;miwi_mesh_api.h: 266: _uint16_VAL PANID;
+[; ;miwi_mesh_api.h: 267: uint8_t RSSIValue;
+[; ;miwi_mesh_api.h: 268: uint8_t Flags;
+[; ;miwi_mesh_api.h: 269: } ACTIVE_SCAN_RESULT;
+[; ;miwi_mesh_api.h: 272: extern ACTIVE_SCAN_RESULT ActiveScanResults[5];
+[; ;miwi_mesh_api.h: 319: uint8_t MiApp_SearchConnection(uint8_t ScanDuration, uint32_t ChannelMap);
+[; ;miwi_mesh_api.h: 375: uint8_t MiApp_EstablishConnection(uint8_t ActiveScanIndex, uint8_t Mode);
+[; ;miwi_mesh_api.h: 412: void MiApp_RemoveConnection(uint8_t ConnectionIndex);
+[; ;miwi_mesh_api.h: 458: void MiApp_ConnectionMode(uint8_t Mode);
+[; ;miwi_mesh_api.h: 553: bool MiApp_BroadcastPacket(bool SecEn );
+[; ;miwi_mesh_api.h: 592: bool MiApp_UnicastConnection(uint8_t ConnectionIndex, bool SecEn);
+[; ;miwi_mesh_api.h: 631: bool MiApp_UnicastAddress(uint8_t *DestinationAddress, uint8_t* Origin, bool SecEn);
+[; ;miwi_mesh_api.h: 642: typedef struct
+[; ;miwi_mesh_api.h: 643: {
+[; ;miwi_mesh_api.h: 644: union
+[; ;miwi_mesh_api.h: 645: {
+[; ;miwi_mesh_api.h: 646: uint8_t Val;
+[; ;miwi_mesh_api.h: 647: struct
+[; ;miwi_mesh_api.h: 648: {
+[; ;miwi_mesh_api.h: 649: uint8_t broadcast: 2;
+[; ;miwi_mesh_api.h: 650: uint8_t ackReq: 1;
+[; ;miwi_mesh_api.h: 651: uint8_t secEn: 1;
+[; ;miwi_mesh_api.h: 652: uint8_t repeat: 1;
+[; ;miwi_mesh_api.h: 653: uint8_t command: 1;
+[; ;miwi_mesh_api.h: 654: uint8_t srcPrsnt: 1;
+[; ;miwi_mesh_api.h: 655: uint8_t altSrcAddr: 1;
+[; ;miwi_mesh_api.h: 656: } bits;
+[; ;miwi_mesh_api.h: 657: } flags;
+[; ;miwi_mesh_api.h: 659: _uint16_VAL SourcePANID;
+[; ;miwi_mesh_api.h: 660: uint8_t *SourceAddress;
+[; ;miwi_mesh_api.h: 661: uint8_t *Payload;
+[; ;miwi_mesh_api.h: 662: uint8_t PayloadSize;
+[; ;miwi_mesh_api.h: 663: uint8_t PacketRSSI;
+[; ;miwi_mesh_api.h: 664: uint8_t PacketLQI;
+[; ;miwi_mesh_api.h: 665: } RECEIVED_MESSAGE;
+[; ;miwi_mesh_api.h: 708: bool MiApp_MessageAvailable(void);
+[; ;miwi_mesh_api.h: 750: void MiApp_DiscardMessage(void);
+[; ;miwi_mesh_api.h: 798: uint8_t MiApp_NoiseDetection(uint32_t ChannelMap, uint8_t ScanDuration, uint8_t DetectionMode,  uint8_t *NoiseLevel);
+[; ;miwi_mesh_api.h: 856: uint8_t MiApp_TransceiverPowerState(uint8_t Mode);
+[; ;miwi_mesh_api.h: 897: bool MiApp_InitChannelHopping( uint32_t ChannelMap);
+[; ;miwi_mesh_api.h: 939: bool MiApp_ResyncConnection(uint8_t ConnectionIndex, uint32_t ChannelMap);
+[; ;miwi_mesh_api.h: 942: void MiApp_SetAddressPan(uint8_t *address, uint16_t panid);
+[; ;miwi_mesh_api.h: 944: bool MiApp_IsMemberOfNetwork(void);
+[; ;miwi_mesh_api.h: 946: addr_t MiApp_GetParentAddress(void);
+[; ;miwi_mesh_api.h: 948: void MiApp_RequestData(void);
+[; ;miwi_mesh_api.h: 951: bool MiApp_SendDataRequest(void);
+[; ;miwi_mesh_api.h: 958: uint16_t MiApp_InitSleepRFDBuffers(uint8_t *buffer, uint16_t bufferSize, uint16_t rfdMaxDataSize);
+[; ;miwi_mesh_api.h: 971: void MiApp_SetNetworkSecure(bool isSecure);
+[; ;miwi_mesh_api.h: 974: extern RECEIVED_MESSAGE rxMessage;
+[; ;miwi_mesh_api.h: 975: extern uint8_t TxData;
+[; ;miwi_mesh_api.h: 976: extern uint8_t TxBuffer[];
+[; ;miwi_mesh_api.h: 978: typedef enum MessageType_t_def
+[; ;miwi_mesh_api.h: 979: {
+[; ;miwi_mesh_api.h: 980: mReserved0,
+[; ;miwi_mesh_api.h: 981: mReserved1,
+[; ;miwi_mesh_api.h: 982: mReserved2,
+[; ;miwi_mesh_api.h: 983: mWBootloader,
+[; ;miwi_mesh_api.h: 984: mReserved4,
+[; ;miwi_mesh_api.h: 985: mReserved5,
+[; ;miwi_mesh_api.h: 986: mReserved6,
+[; ;miwi_mesh_api.h: 987: mReserved7,
+[; ;miwi_mesh_api.h: 988: mReserved8,
+[; ;miwi_mesh_api.h: 989: mReserved9,
+[; ;miwi_mesh_api.h: 990: mUserDataType,
+[; ;miwi_mesh_api.h: 992: }MessageType_t;
+[; ;miwikit_pic18f46j50_24j40\spi.h: 11: void SPIPut(uint8_t v);
+[; ;miwikit_pic18f46j50_24j40\spi.h: 12: uint8_t SPIGet(void);
+[; ;miwikit_pic18f46j50_24j40\spi.h: 13: void SPIPut2(uint8_t v);
+[; ;miwikit_pic18f46j50_24j40\spi.h: 14: uint8_t SPIGet2(void);
+[; ;miwikit_pic18f46j50_24j40\delay.h: 5: void DelayMs(uint32_t ms);
+[; ;miwikit_pic18f46j50_24j40\delay.h: 6: void DelayUS(uint32_t delay);
+[; ;drv_mrf_miwi_mesh_24j40.c: 74: extern uint32_t krnd(void);
+[; ;drv_mrf_miwi_mesh_24j40.c: 75: extern void krndInit(uint16_t seed);
+[; ;drv_mrf_miwi_mesh_24j40.c: 76: extern uint32_t t1extension;
+[; ;drv_mrf_miwi_mesh_24j40.c: 77: extern volatile bool t1fired;
+"81 ../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c
+[v _MACInitParams `S777 ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 81: MACINIT_PARAM MACInitParams;
+"90
+[v _mySecurityKey `Cuc ~T0 @X0 -> 16 `i e ]
+[i _mySecurityKey
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+"91
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+"92
+-> -> 12 `i `uc
+-> -> 13 `i `uc
+-> -> 14 `i `uc
+-> -> 15 `i `uc
+..
+]
+[; ;drv_mrf_miwi_mesh_24j40.c: 90: const uint8_t mySecurityKey[16] = {0x00, 0x01, 0x02, 0x03, 0x04,
+[; ;drv_mrf_miwi_mesh_24j40.c: 91: 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b,
+[; ;drv_mrf_miwi_mesh_24j40.c: 92: 0x0c, 0x0d, 0x0e, 0x0f};
+"97
+[v _mySecurityLevel `Cuc ~T0 @X0 1 e ]
+[i _mySecurityLevel
+-> -> 4 `i `uc
+]
+[; ;drv_mrf_miwi_mesh_24j40.c: 97: const uint8_t mySecurityLevel = 4;
+"100
+[v _myKeySequenceNumber `Cuc ~T0 @X0 1 e ]
+[i _myKeySequenceNumber
+-> -> 0 `i `uc
+]
+[; ;drv_mrf_miwi_mesh_24j40.c: 100: const uint8_t myKeySequenceNumber = 0x00;
+"103
+[v _OutgoingFrameCounter `ul ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 103: uint32_t OutgoingFrameCounter;
+"105
+[v _tmpSourceLongAddress `S785 ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 105: addr_t tmpSourceLongAddress;
+"106
+[v _tmpFrameCounter `ul ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 106: uint32_t tmpFrameCounter;
+"119
+[v _RxBuffer `S793 ~T0 @X0 -> 2 `i e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 115: struct
+[; ;drv_mrf_miwi_mesh_24j40.c: 116: {
+[; ;drv_mrf_miwi_mesh_24j40.c: 117: uint8_t PayloadLen;
+[; ;drv_mrf_miwi_mesh_24j40.c: 118: uint8_t Payload[(90+0+8+8+4+17)];
+[; ;drv_mrf_miwi_mesh_24j40.c: 119: } RxBuffer[2];
+"123
+[v _BankIndex `uc ~T0 @X0 1 e ]
+[i _BankIndex
+-> -> 255 `i `uc
+]
+[; ;drv_mrf_miwi_mesh_24j40.c: 123: uint8_t BankIndex = 0xFF;
+"125
+[v _IEEESeqNum `uc ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 125: uint8_t IEEESeqNum;
+"126
+[v _failureCounter `Vui ~T0 @X0 1 e ]
+[i _failureCounter
+-> -> 0 `i `ui
+]
+[; ;drv_mrf_miwi_mesh_24j40.c: 126: volatile uint16_t failureCounter = 0;
+"127
+[v _MACCurrentChannel `uc ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 127: uint8_t MACCurrentChannel;
+"129
+[v _MAC_PANID `ui ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 129: uint16_t MAC_PANID;
+"130
+[v _myNetworkAddress `ui ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 130: uint16_t myNetworkAddress;
+"132
+[v _MRF24J40Status `VS782 ~T0 @X0 1 e ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 132: volatile MRF24J40_STATUS MRF24J40Status;
+[; ;drv_mrf_miwi_mesh_24j40.c: 134: void SPIPut(uint8_t v);
+[; ;drv_mrf_miwi_mesh_24j40.c: 135: uint8_t SPIGet(void);
+"156
+[v _PHYSetLongRAMAddr `(v ~T0 @X0 1 ef2`ui`uc ]
+"157
 {
-[; ;delay.c: 6: void DelayUS(uint32_t delay)
-[; ;delay.c: 7: {
-[e :U _DelayUS ]
-"6
-[v _delay `ul ~T0 @X0 1 r1 ]
-"7
+[; ;drv_mrf_miwi_mesh_24j40.c: 156: void PHYSetLongRAMAddr( uint16_t address,  uint8_t value)
+[; ;drv_mrf_miwi_mesh_24j40.c: 157: {
+[e :U _PHYSetLongRAMAddr ]
+"156
+[v _address `ui ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+"157
 [f ]
-"25
-[v _i `ul ~T0 @X0 1 a ]
-[; ;delay.c: 25: uint32_t i;
-[; ;delay.c: 27: for(i=0;i<delay;i++)
-"27
-{
-[e = _i -> -> -> 0 `i `l `ul ]
-[e $U 788  ]
-"28
-[e :U 785 ]
-[; ;delay.c: 28: {
-{
-[; ;delay.c: 29: __nop();
-"29
-[e ( ___nop ..  ]
-"30
+"158
+[v _tmpRFIE `Vuc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 158: volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+[e = _tmpRFIE . . _INTCONbits 0 4 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 160: INTCONbits.INT0IE = 0;
+"160
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 161: LATAbits.LATA5 = 0;
+"161
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 162: SPIPut((((uint8_t)(address>>3))&0x7F)|0x80);
+"162
+[e ( _SPIPut (1 -> | & -> -> >> _address -> 3 `i `uc `i -> 127 `i -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 163: SPIPut((((uint8_t)(address<<5))&0xE0)|0x10);
+"163
+[e ( _SPIPut (1 -> | & -> -> << _address -> 5 `i `uc `i -> 224 `i -> 16 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 164: SPIPut(value);
+"164
+[e ( _SPIPut (1 _value ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 165: LATAbits.LATA5 = 1;
+"165
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 166: INTCONbits.INT0IE = tmpRFIE;
+"166
+[e = . . _INTCONbits 0 4 _tmpRFIE ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 167: }
+"167
+[e :UE 794 ]
 }
-"27
-[e ++ _i -> -> -> 1 `i `l `ul ]
-[e :U 788 ]
-[e $ < _i _delay 785  ]
-[e :U 786 ]
-"30
-}
-[; ;delay.c: 30: }
-[; ;delay.c: 32: }
-"32
-[e :UE 784 ]
-}
-"34
-[v _DelayMs `(v ~T0 @X0 1 ef1`ul ]
-"35
+"190
+[v _PHYSetShortRAMAddr `(v ~T0 @X0 1 ef2`uc`uc ]
+"191
 {
-[; ;delay.c: 34: void DelayMs(uint32_t ms)
-[; ;delay.c: 35: {
-[e :U _DelayMs ]
-"34
-[v _ms `ul ~T0 @X0 1 r1 ]
-"35
+[; ;drv_mrf_miwi_mesh_24j40.c: 190: void PHYSetShortRAMAddr( uint8_t address,  uint8_t value)
+[; ;drv_mrf_miwi_mesh_24j40.c: 191: {
+[e :U _PHYSetShortRAMAddr ]
+"190
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _value `uc ~T0 @X0 1 r2 ]
+"191
 [f ]
-[; ;delay.c: 36: DelayUS(ms*1000);
-"36
-[e ( _DelayUS (1 * _ms -> -> -> 1000 `i `l `ul ]
-[; ;delay.c: 37: }
-"37
-[e :UE 789 ]
+"192
+[v _tmpRFIE `Vuc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 192: volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+[e = _tmpRFIE . . _INTCONbits 0 4 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 194: INTCONbits.INT0IE = 0;
+"194
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 195: LATAbits.LATA5 = 0;
+"195
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 196: SPIPut(address);
+"196
+[e ( _SPIPut (1 _address ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 197: SPIPut(value);
+"197
+[e ( _SPIPut (1 _value ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 198: LATAbits.LATA5 = 1;
+"198
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 199: INTCONbits.INT0IE = tmpRFIE;
+"199
+[e = . . _INTCONbits 0 4 _tmpRFIE ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 200: }
+"200
+[e :UE 795 ]
+}
+"220
+[v _PHYGetShortRAMAddr `(uc ~T0 @X0 1 ef1`uc ]
+"221
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 220: uint8_t PHYGetShortRAMAddr( uint8_t address)
+[; ;drv_mrf_miwi_mesh_24j40.c: 221: {
+[e :U _PHYGetShortRAMAddr ]
+"220
+[v _address `uc ~T0 @X0 1 r1 ]
+"221
+[f ]
+"222
+[v _toReturn `uc ~T0 @X0 1 a ]
+"223
+[v _tmpRFIE `Vuc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 222: uint8_t toReturn;
+[; ;drv_mrf_miwi_mesh_24j40.c: 223: volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+[e = _tmpRFIE . . _INTCONbits 0 4 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 225: INTCONbits.INT0IE = 0;
+"225
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 226: LATAbits.LATA5 = 0;
+"226
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 227: SPIPut(address);
+"227
+[e ( _SPIPut (1 _address ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 228: toReturn = SPIGet();
+"228
+[e = _toReturn ( _SPIGet ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 229: LATAbits.LATA5 = 1;
+"229
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 230: INTCONbits.INT0IE = tmpRFIE;
+"230
+[e = . . _INTCONbits 0 4 _tmpRFIE ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 232: return toReturn;
+"232
+[e ) _toReturn ]
+[e $UE 796  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 233: }
+"233
+[e :UE 796 ]
+}
+"251
+[v _PHYGetLongRAMAddr `(uc ~T0 @X0 1 ef1`ui ]
+"252
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 251: uint8_t PHYGetLongRAMAddr( uint16_t address)
+[; ;drv_mrf_miwi_mesh_24j40.c: 252: {
+[e :U _PHYGetLongRAMAddr ]
+"251
+[v _address `ui ~T0 @X0 1 r1 ]
+"252
+[f ]
+"253
+[v _toReturn `uc ~T0 @X0 1 a ]
+"254
+[v _tmpRFIE `Vuc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 253: uint8_t toReturn;
+[; ;drv_mrf_miwi_mesh_24j40.c: 254: volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+[e = _tmpRFIE . . _INTCONbits 0 4 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 256: INTCONbits.INT0IE = 0;
+"256
+[e = . . _INTCONbits 0 4 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 257: LATAbits.LATA5 = 0;
+"257
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 258: SPIPut(((address>>3)&0x7F)|0x80);
+"258
+[e ( _SPIPut (1 -> | & >> _address -> 3 `i -> -> 127 `i `ui -> -> 128 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 259: SPIPut(((address<<5)&0xE0));
+"259
+[e ( _SPIPut (1 -> & << _address -> 5 `i -> -> 224 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 260: toReturn = SPIGet();
+"260
+[e = _toReturn ( _SPIGet ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 261: LATAbits.LATA5 = 1;
+"261
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 262: INTCONbits.INT0IE = tmpRFIE;
+"262
+[e = . . _INTCONbits 0 4 _tmpRFIE ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 264: return toReturn;
+"264
+[e ) _toReturn ]
+[e $UE 797  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 265: }
+"265
+[e :UE 797 ]
+}
+"267
+[v _InitMRF24J40 `(v ~T0 @X0 1 ef ]
+"268
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 267: void InitMRF24J40(void)
+[; ;drv_mrf_miwi_mesh_24j40.c: 268: {
+[e :U _InitMRF24J40 ]
+[f ]
+"269
+[v _i `uc ~T0 @X0 1 a ]
+"270
+[v _j `ui ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 269: uint8_t i;
+[; ;drv_mrf_miwi_mesh_24j40.c: 270: uint16_t j;
+[; ;drv_mrf_miwi_mesh_24j40.c: 273: LATDbits.LATD0 = 0;
+"273
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 274: for(j=0;j<(uint16_t)300;j++){}
+"274
+{
+[e = _j -> -> 0 `i `ui ]
+[e $ < _j -> -> 300 `i `ui 799  ]
+[e $U 800  ]
+[e :U 799 ]
+{
+}
+[e ++ _j -> -> 1 `i `ui ]
+[e $ < _j -> -> 300 `i `ui 799  ]
+[e :U 800 ]
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 276: LATDbits.LATD0 = 1;
+"276
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 277: for(j=0;j<(uint16_t)300;j++){}
+"277
+{
+[e = _j -> -> 0 `i `ui ]
+[e $ < _j -> -> 300 `i `ui 802  ]
+[e $U 803  ]
+[e :U 802 ]
+{
+}
+[e ++ _j -> -> 1 `i `ui ]
+[e $ < _j -> -> 300 `i `ui 802  ]
+[e :U 803 ]
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 280: PHYSetShortRAMAddr((0x55),0x07);
+"280
+[e ( _PHYSetShortRAMAddr (2 , -> -> 85 `i `uc -> -> 7 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 281: do
+"281
+[e :U 807 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 282: {
+"282
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 283: i = PHYGetShortRAMAddr((0x54));
+"283
+[e = _i ( _PHYGetShortRAMAddr (1 -> -> 84 `i `uc ]
+"284
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 284: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 285: while((i&0x07) != (uint8_t)0x00);
+"285
+[e $ != & -> _i `i -> 7 `i -> -> -> 0 `i `uc `i 807  ]
+[e :U 806 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 287: for(j=0;j<(uint16_t)1000;j++){}
+"287
+{
+[e = _j -> -> 0 `i `ui ]
+[e $ < _j -> -> 1000 `i `ui 808  ]
+[e $U 809  ]
+[e :U 808 ]
+{
+}
+[e ++ _j -> -> 1 `i `ui ]
+[e $ < _j -> -> 1000 `i `ui 808  ]
+[e :U 809 ]
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 290: PHYSetShortRAMAddr((0x1B),0x01);
+"290
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 293: PHYSetShortRAMAddr((0x07),0xFF);
+"293
+[e ( _PHYSetShortRAMAddr (2 , -> -> 7 `i `uc -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 294: PHYSetShortRAMAddr((0x09),0xFF);
+"294
+[e ( _PHYSetShortRAMAddr (2 , -> -> 9 `i `uc -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 295: PHYSetShortRAMAddr((0x03),0xFF);
+"295
+[e ( _PHYSetShortRAMAddr (2 , -> -> 3 `i `uc -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 296: PHYSetShortRAMAddr((0x05),0xFF);
+"296
+[e ( _PHYSetShortRAMAddr (2 , -> -> 5 `i `uc -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 299: for(i=0;i<(uint8_t)8;i++)
+"299
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> -> -> 8 `i `uc `i 811  ]
+[e $U 812  ]
+"300
+[e :U 811 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 300: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 301: PHYSetShortRAMAddr((0x0B)+i*2,MACInitParams.PAddress[i]);
+"301
+[e ( _PHYSetShortRAMAddr (2 , -> + -> 11 `i * -> _i `i -> 2 `i `uc *U + . _MACInitParams 1 * -> _i `ux -> -> # *U . _MACInitParams 1 `ui `ux ]
+"302
+}
+"299
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> -> -> 8 `i `uc `i 811  ]
+[e :U 812 ]
+"302
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 302: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 305: PHYSetLongRAMAddr((0x202),0x80);
+"305
+[e ( _PHYSetLongRAMAddr (2 , -> -> 514 `i `ui -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 328: PHYSetLongRAMAddr((0x203),0x00);
+"328
+[e ( _PHYSetLongRAMAddr (2 , -> -> 515 `i `ui -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 332: PHYSetLongRAMAddr((0x206),0x90);
+"332
+[e ( _PHYSetLongRAMAddr (2 , -> -> 518 `i `ui -> -> 144 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 334: PHYSetLongRAMAddr((0x207),0x80);
+"334
+[e ( _PHYSetLongRAMAddr (2 , -> -> 519 `i `ui -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 336: PHYSetLongRAMAddr((0x208),0x10);
+"336
+[e ( _PHYSetLongRAMAddr (2 , -> -> 520 `i `ui -> -> 16 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 338: PHYSetLongRAMAddr((0x220), 0x21);
+"338
+[e ( _PHYSetLongRAMAddr (2 , -> -> 544 `i `ui -> -> 33 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 341: PHYSetShortRAMAddr((0x75),0x80);
+"341
+[e ( _PHYSetShortRAMAddr (2 , -> -> 117 `i `uc -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 343: PHYSetShortRAMAddr((0x7D),0x40);
+"343
+[e ( _PHYSetShortRAMAddr (2 , -> -> 125 `i `uc -> -> 64 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 345: PHYSetShortRAMAddr((0x7F),0x60);
+"345
+[e ( _PHYSetShortRAMAddr (2 , -> -> 127 `i `uc -> -> 96 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 357: PHYSetShortRAMAddr((0x31), 0x98);
+"357
+[e ( _PHYSetShortRAMAddr (2 , -> -> 49 `i `uc -> -> 152 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 358: PHYSetShortRAMAddr((0x5D), 0x95);
+"358
+[e ( _PHYSetShortRAMAddr (2 , -> -> 93 `i `uc -> -> 149 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 361: do
+"361
+[e :U 816 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 362: {
+"362
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 363: i = PHYGetLongRAMAddr((0x20f));
+"363
+[e = _i ( _PHYGetLongRAMAddr (1 -> -> 527 `i `ui ]
+"364
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 364: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 365: while((i&0xA0) != 0xA0);
+"365
+[e $ != & -> _i `i -> 160 `i -> 160 `i 816  ]
+[e :U 815 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 367: PHYSetShortRAMAddr((0x65),0xE6);
+"367
+[e ( _PHYSetShortRAMAddr (2 , -> -> 101 `i `uc -> -> 230 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 374: PHYSetLongRAMAddr((0x200), 0x03);
+"374
+[e ( _PHYSetLongRAMAddr (2 , -> -> 512 `i `ui -> -> 3 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 375: PHYSetLongRAMAddr((0x201), 0x02);
+"375
+[e ( _PHYSetLongRAMAddr (2 , -> -> 513 `i `ui -> -> 2 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 377: MiMAC_SetChannel(MACCurrentChannel, 0);
+"377
+[e ( _MiMAC_SetChannel (2 , _MACCurrentChannel -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 393: }
+"393
+[e :UE 798 ]
+}
+"433
+[v _MiMAC_ReceivedPacket `(uc ~T0 @X0 1 ef ]
+"434
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 433: bool MiMAC_ReceivedPacket(void)
+[; ;drv_mrf_miwi_mesh_24j40.c: 434: {
+[e :U _MiMAC_ReceivedPacket ]
+[f ]
+"435
+[v _i `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 435: uint8_t i;
+[; ;drv_mrf_miwi_mesh_24j40.c: 438: if(PORTBbits.RB0 == 0)
+"438
+[e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 818  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 439: {
+"439
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 440: INTCONbits.INT0IF = 1;
+"440
+[e = . . _INTCONbits 0 1 -> -> 1 `i `uc ]
+"441
+}
+[e :U 818 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 441: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 446: if(MRF24J40Status.bits.TX_BUSY)
+"446
+[e $ ! != -> . . _MRF24J40Status 1 0 `i -> -> -> 0 `i `Vuc `i 819  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 447: {
+"447
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 448: if(failureCounter >= ((uint16_t)0x20 * 4))
+"448
+[e $ ! >= _failureCounter * -> -> 32 `i `ui -> -> 4 `i `ui 820  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 449: {
+"449
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 450: failureCounter = 0;
+"450
+[e = _failureCounter -> -> 0 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 451: MRF24J40Status.bits.TX_BUSY = 0;
+"451
+[e = . . _MRF24J40Status 1 0 -> -> 0 `i `uc ]
+"452
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 452: }
+[e $U 821  ]
+"453
+[e :U 820 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 453: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 454: {
+"454
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 455: failureCounter++;
+"455
+[e ++ _failureCounter -> -> 1 `i `ui ]
+"456
+}
+[e :U 821 ]
+"457
+}
+[e :U 819 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 456: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 457: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 459: BankIndex = 0xFF;
+"459
+[e = _BankIndex -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 460: for(i = 0; i < 2; i++)
+"460
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 822  ]
+[e $U 823  ]
+"461
+[e :U 822 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 461: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 462: if( RxBuffer[i].PayloadLen > 0 )
+"462
+[e $ ! > -> . *U + &U _RxBuffer * -> _i `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 0 `i 825  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 463: {
+"463
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 464: BankIndex = i;
+"464
+[e = _BankIndex _i ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 465: break;
+"465
+[e $U 823  ]
+"466
+}
+[e :U 825 ]
+"467
+}
+"460
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 822  ]
+[e :U 823 ]
+"467
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 466: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 467: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 470: if( BankIndex < 2 )
+"470
+[e $ ! < -> _BankIndex `i -> 2 `i 826  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 471: {
+"471
+{
+"472
+[v _addrMode `uc ~T0 @X0 1 a ]
+"474
+[v _bIntraPAN `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 472: uint8_t addrMode;
+[; ;drv_mrf_miwi_mesh_24j40.c: 474: bool bIntraPAN = 1;
+[e = _bIntraPAN -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 476: if( (RxBuffer[BankIndex].Payload[0] & 0x40) == 0 )
+"476
+[e $ ! == & -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 64 `i -> 0 `i 827  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 477: {
+"477
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 478: bIntraPAN = 0;
+"478
+[e = _bIntraPAN -> -> 0 `i `uc ]
+"479
+}
+[e :U 827 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 479: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 481: MACRxPacket.flags.Val = 0;
+"481
+[e = . . _MACRxPacket 0 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 482: MACRxPacket.altSourceAddress = 0;
+"482
+[e = . _MACRxPacket 6 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 485: addrMode = RxBuffer[BankIndex].Payload[1] & 0xCC;
+"485
+[e = _addrMode -> & -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 204 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 486: switch(addrMode)
+"486
+[e $U 829  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 487: {
+"487
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 488: case 0xC8:
+"488
+[e :U 830 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 490: if( RxBuffer[BankIndex].Payload[5] == 0xFF && RxBuffer[BankIndex].Payload[6] == 0xFF )
+"490
+[e $ ! && == -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 255 `i == -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 255 `i 831  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 491: {
+"491
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 492: MACRxPacket.flags.bits.broadcast = 1;
+"492
+[e = . . . _MACRxPacket 0 1 1 -> -> 1 `i `uc ]
+"493
+}
+[e :U 831 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 493: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 494: MACRxPacket.flags.bits.sourcePrsnt = 1;
+"494
+[e = . . . _MACRxPacket 0 1 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 497: if( bIntraPAN )
+"497
+[e $ ! != -> _bIntraPAN `i -> -> -> 0 `i `uc `i 832  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 499: {
+"499
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 501: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+"501
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 504: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[7]);
+"504
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 506: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 19;
+"506
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 19 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 507: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[15]);
+"507
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 15 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"508
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 508: }
+[e $U 833  ]
+"510
+[e :U 832 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 510: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 511: {
+"511
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 512: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[7],2);
+"512
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 515: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[9]);
+"515
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 9 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 516: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 21;
+"516
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 21 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 517: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[17]);
+"517
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 17 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"518
+}
+[e :U 833 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 518: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 521: break;
+"521
+[e $U 828  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 523: case 0xCC:
+"523
+[e :U 834 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 524: MACRxPacket.flags.bits.sourcePrsnt = 1;
+"524
+[e = . . . _MACRxPacket 0 1 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 526: if( bIntraPAN )
+"526
+[e $ ! != -> _bIntraPAN `i -> -> -> 0 `i `uc `i 835  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 528: {
+"528
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 531: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+"531
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 535: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[13]);
+"535
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 13 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 536: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 25;
+"536
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 25 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 537: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[21]);
+"537
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 21 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"538
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 538: }
+[e $U 836  ]
+"540
+[e :U 835 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 540: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 541: {
+"541
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 542: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[13],2);
+"542
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 13 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 546: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[15]);
+"546
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 15 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 547: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 27;
+"547
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 27 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 548: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[23]);
+"548
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 23 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"549
+}
+[e :U 836 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 549: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 551: break;
+"551
+[e $U 828  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 553: case 0x80:
+"553
+[e :U 837 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 554: {
+"554
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 555: MACRxPacket.flags.bits.broadcast = 1;
+"555
+[e = . . . _MACRxPacket 0 1 1 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 556: MACRxPacket.flags.bits.sourcePrsnt = 1;
+"556
+[e = . . . _MACRxPacket 0 1 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 557: MACRxPacket.altSourceAddress = 1;
+"557
+[e = . _MACRxPacket 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 558: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+"558
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 562: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[5]);
+"562
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 563: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 11;
+"563
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 11 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 564: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[7]);
+"564
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"565
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 565: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 566: break;
+"566
+[e $U 828  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 568: case 0x88:
+"568
+[e :U 838 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 569: {
+"569
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 570: if( RxBuffer[BankIndex].Payload[5] == 0xFF && RxBuffer[BankIndex].Payload[6] == 0xFF )
+"570
+[e $ ! && == -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 255 `i == -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 255 `i 839  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 571: {
+"571
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 572: MACRxPacket.flags.bits.broadcast = 1;
+"572
+[e = . . . _MACRxPacket 0 1 1 -> -> 1 `i `uc ]
+"573
+}
+[e :U 839 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 573: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 574: MACRxPacket.flags.bits.sourcePrsnt = 1;
+"574
+[e = . . . _MACRxPacket 0 1 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 575: MACRxPacket.altSourceAddress = 1;
+"575
+[e = . _MACRxPacket 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 577: if( bIntraPAN == 0 )
+"577
+[e $ ! == -> _bIntraPAN `i -> 0 `i 840  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 578: {
+"578
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 579: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[7],2);
+"579
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 583: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[9]);
+"583
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 9 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 584: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 15;
+"584
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 15 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 585: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[11]);
+"585
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 11 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"586
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 586: }
+[e $U 841  ]
+"587
+[e :U 840 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 587: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 589: {
+"589
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 590: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+"590
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 594: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[7]);
+"594
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 595: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 13;
+"595
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 13 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 596: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[9]);
+"596
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 9 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"597
+}
+[e :U 841 ]
+"598
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 597: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 598: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 599: break;
+"599
+[e $U 828  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 601: case 0x8C:
+"601
+[e :U 842 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 602: {
+"602
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 603: MACRxPacket.flags.bits.sourcePrsnt = 1;
+"603
+[e = . . . _MACRxPacket 0 1 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 604: MACRxPacket.altSourceAddress = 1;
+"604
+[e = . _MACRxPacket 6 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 606: if( bIntraPAN )
+"606
+[e $ ! != -> _bIntraPAN `i -> -> -> 0 `i `uc `i 843  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 608: {
+"608
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 610: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+"610
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 614: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[12]);
+"614
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 12 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 616: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 19;
+"616
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 19 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 617: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[15]);
+"617
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 15 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"618
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 618: }
+[e $U 844  ]
+"620
+[e :U 843 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 620: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 621: {
+"621
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 622: memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[12],2);
+"622
+[e ( _memcpy (3 , , -> &U . _MACRxPacket 7 `*v -> &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 12 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 626: MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[14]);
+"626
+[e = . _MACRxPacket 1 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 14 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 627: MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 21;
+"627
+[e = . _MACRxPacket 3 -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 21 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 628: MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[17]);
+"628
+[e = . _MACRxPacket 2 &U *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 17 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+"629
+}
+[e :U 844 ]
+"631
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 629: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 631: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 632: break;
+"632
+[e $U 828  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 635: case 0x08:
+"635
+[e :U 845 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 637: default:
+"637
+[e :U 846 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 639: MiMAC_DiscardPacket();
+"639
+[e ( _MiMAC_DiscardPacket ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 640: return 0;
+"640
+[e ) -> -> 0 `i `uc ]
+[e $UE 817  ]
+"641
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 641: }
+[e $U 828  ]
+"486
+[e :U 829 ]
+[e [\ _addrMode , $ -> -> 200 `i `uc 830
+ , $ -> -> 204 `i `uc 834
+ , $ -> -> 128 `i `uc 837
+ , $ -> -> 136 `i `uc 838
+ , $ -> -> 140 `i `uc 842
+ , $ -> -> 8 `i `uc 845
+ 846 ]
+"641
+[e :U 828 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 644: if( RxBuffer[BankIndex].Payload[0] & 0x08 )
+"644
+[e $ ! != & -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 8 `i -> 0 `i 847  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 645: {
+"645
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 648: switch(mySecurityLevel)
+"648
+[e $U 849  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 649: {
+"649
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 650: case 0x02:
+"650
+[e :U 850 ]
+"651
+[e :U 851 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 651: case 0x05:
+[; ;drv_mrf_miwi_mesh_24j40.c: 652: MACRxPacket.PayloadLen -= 21;
+"652
+[e =- . _MACRxPacket 3 -> -> 21 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 653: break;
+"653
+[e $U 848  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 654: case 0x03:
+"654
+[e :U 852 ]
+"655
+[e :U 853 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 655: case 0x06:
+[; ;drv_mrf_miwi_mesh_24j40.c: 656: MACRxPacket.PayloadLen -= 13;
+"656
+[e =- . _MACRxPacket 3 -> -> 13 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 657: break;
+"657
+[e $U 848  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 658: case 0x04:
+"658
+[e :U 854 ]
+"659
+[e :U 855 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 659: case 0x07:
+[; ;drv_mrf_miwi_mesh_24j40.c: 660: MACRxPacket.PayloadLen -= 9;
+"660
+[e =- . _MACRxPacket 3 -> -> 9 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 661: break;
+"661
+[e $U 848  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 662: case 0x01:
+"662
+[e :U 856 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 663: MACRxPacket.PayloadLen -= 5;
+"663
+[e =- . _MACRxPacket 3 -> -> 5 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 664: break;
+"664
+[e $U 848  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 665: default:
+"665
+[e :U 857 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 666: break;
+"666
+[e $U 848  ]
+"667
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 667: }
+[e $U 848  ]
+"648
+[e :U 849 ]
+[e [\ _mySecurityLevel , $ -> -> 2 `i `uc 850
+ , $ -> -> 5 `i `uc 851
+ , $ -> -> 3 `i `uc 852
+ , $ -> -> 6 `i `uc 853
+ , $ -> -> 4 `i `uc 854
+ , $ -> -> 7 `i `uc 855
+ , $ -> -> 1 `i `uc 856
+ 857 ]
+"667
+[e :U 848 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 669: MACRxPacket.Payload = &(MACRxPacket.Payload[5]);
+"669
+[e = . _MACRxPacket 2 &U *U + . _MACRxPacket 2 * -> -> 5 `i `x -> -> # *U . _MACRxPacket 2 `i `x ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 670: MACRxPacket.flags.bits.secEn = 1;
+"670
+[e = . . . _MACRxPacket 0 1 2 -> -> 1 `i `uc ]
+"671
+}
+[e :U 847 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 671: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 683: switch( RxBuffer[BankIndex].Payload[0] & 0x07 )
+"683
+[e $U 859  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 684: {
+"684
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 685: case 0x01:
+"685
+[e :U 860 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 686: MACRxPacket.flags.bits.packetType = 0x00;
+"686
+[e = . . . _MACRxPacket 0 1 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 687: break;
+"687
+[e $U 858  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 688: case 0x03:
+"688
+[e :U 861 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 689: MACRxPacket.flags.bits.packetType = 0x01;
+"689
+[e = . . . _MACRxPacket 0 1 0 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 690: break;
+"690
+[e $U 858  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 691: case 0x00:
+"691
+[e :U 862 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 693: MACRxPacket.flags.bits.packetType = 0x03;
+"693
+[e = . . . _MACRxPacket 0 1 0 -> -> 3 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 694: break;
+"694
+[e $U 858  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 695: default:
+"695
+[e :U 863 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 696: MiMAC_DiscardPacket();
+"696
+[e ( _MiMAC_DiscardPacket ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 697: return 0;
+"697
+[e ) -> -> 0 `i `uc ]
+[e $UE 817  ]
+"698
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 698: }
+[e $U 858  ]
+"683
+[e :U 859 ]
+[e [\ & -> *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux `i -> 7 `i , $ -> 1 `i 860
+ , $ -> 3 `i 861
+ , $ -> 0 `i 862
+ 863 ]
+"698
+[e :U 858 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 700: MACRxPacket.LQIValue = RxBuffer[BankIndex].Payload[RxBuffer[BankIndex].PayloadLen-2];
+"700
+[e = . _MACRxPacket 5 *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 2 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 701: MACRxPacket.RSSIValue = RxBuffer[BankIndex].Payload[RxBuffer[BankIndex].PayloadLen-1];
+"701
+[e = . _MACRxPacket 4 *U + &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> - -> . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 1 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 704: return 1;
+"704
+[e ) -> -> 1 `i `uc ]
+[e $UE 817  ]
+"705
+}
+[e :U 826 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 705: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 706: return 0;
+"706
+[e ) -> -> 0 `i `uc ]
+[e $UE 817  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 707: }
+"707
+[e :UE 817 ]
+}
+"745
+[v _MiMAC_DiscardPacket `(v ~T0 @X0 1 ef ]
+"746
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 745: void MiMAC_DiscardPacket(void)
+[; ;drv_mrf_miwi_mesh_24j40.c: 746: {
+[e :U _MiMAC_DiscardPacket ]
+[f ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 749: if( BankIndex < 2 )
+"749
+[e $ ! < -> _BankIndex `i -> 2 `i 865  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 750: {
+"750
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 751: RxBuffer[BankIndex].PayloadLen = 0;
+"751
+[e = . *U + &U _RxBuffer * -> _BankIndex `ux -> -> # *U &U _RxBuffer `ui `ux 0 -> -> 0 `i `uc ]
+"752
+}
+[e :U 865 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 752: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 753: }
+"753
+[e :UE 864 ]
+}
+"789
+[v _MiMAC_SendPacket `(uc ~T0 @X0 1 ef3`S771`*uc`uc ]
+"792
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 789: bool MiMAC_SendPacket(  MAC_TRANS_PARAM transParam,
+[; ;drv_mrf_miwi_mesh_24j40.c: 790: uint8_t *MACPayload,
+[; ;drv_mrf_miwi_mesh_24j40.c: 791: uint8_t MACPayloadLen)
+[; ;drv_mrf_miwi_mesh_24j40.c: 792: {
+[e :U _MiMAC_SendPacket ]
+"789
+[v _transParam `S771 ~T0 @X0 1 r1 ]
+"790
+[v _MACPayload `*uc ~T0 @X0 1 r2 ]
+"791
+[v _MACPayloadLen `uc ~T0 @X0 1 r3 ]
+"792
+[f ]
+"793
+[v _headerLength `uc ~T0 @X0 1 a ]
+"794
+[v _loc `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 793: uint8_t headerLength;
+[; ;drv_mrf_miwi_mesh_24j40.c: 794: uint8_t loc = 0;
+[e = _loc -> -> 0 `i `uc ]
+"795
+[v _i `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 795: uint8_t i = 0;
+[e = _i -> -> 0 `i `uc ]
+"797
+[v _IntraPAN `uc ~T0 @X0 1 a ]
+"799
+[v _t1 `S784 ~T0 @X0 1 a ]
+[v _t2 `S784 ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 797: bool IntraPAN;
+[; ;drv_mrf_miwi_mesh_24j40.c: 799: MIWI_TICK t1, t2;
+[; ;drv_mrf_miwi_mesh_24j40.c: 802: if( transParam.flags.bits.broadcast )
+"802
+[e $ ! != -> . . . _transParam 0 1 1 `i -> -> -> 0 `i `uc `i 867  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 803: {
+"803
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 804: transParam.altDestAddr = 1;
+"804
+[e = . _transParam 2 -> -> 1 `i `uc ]
+"805
+}
+[e :U 867 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 805: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 807: if( transParam.flags.bits.secEn )
+"807
+[e $ ! != -> . . . _transParam 0 1 2 `i -> -> -> 0 `i `uc `i 868  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 808: {
+"808
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 809: transParam.altSrcAddr = 0;
+"809
+[e = . _transParam 3 -> -> 0 `i `uc ]
+"810
+}
+[e :U 868 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 810: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 836: if( transParam.flags.bits.packetType == 0x01 )
+"836
+[e $ ! == -> . . . _transParam 0 1 0 `i -> 1 `i 869  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 837: {
+"837
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 838: i = 0x03;
+"838
+[e = _i -> -> 3 `i `uc ]
+"839
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 839: }
+[e $U 870  ]
+"840
+[e :U 869 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 840: else if( transParam.flags.bits.packetType == 0x00)
+[e $ ! == -> . . . _transParam 0 1 0 `i -> 0 `i 871  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 841: {
+"841
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 842: i = 0x01;
+"842
+[e = _i -> -> 1 `i `uc ]
+"843
+}
+[e :U 871 ]
+"848
+[e :U 870 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 843: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 848: if( (transParam.DestPANID.Val == MAC_PANID) && (MAC_PANID != 0xFFFF) )
+[e $ ! && == . . _transParam 4 0 _MAC_PANID != _MAC_PANID -> 65535 `ui 872  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 850: {
+"850
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 851: headerLength = 5;
+"851
+[e = _headerLength -> -> 5 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 852: i |= 0x40;
+"852
+[e =| _i -> -> 64 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 854: IntraPAN = 1;
+"854
+[e = _IntraPAN -> -> 1 `i `uc ]
+"856
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 856: }
+[e $U 873  ]
+"859
+[e :U 872 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 859: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 860: {
+"860
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 861: headerLength = 7;
+"861
+[e = _headerLength -> -> 7 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 862: IntraPAN = 0;
+"862
+[e = _IntraPAN -> -> 0 `i `uc ]
+"863
+}
+[e :U 873 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 863: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 866: if( transParam.altDestAddr )
+"866
+[e $ ! != -> . _transParam 2 `i -> -> -> 0 `i `uc `i 874  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 867: {
+"867
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 868: headerLength += 2;
+"868
+[e =+ _headerLength -> -> 2 `i `uc ]
+"869
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 869: }
+[e $U 875  ]
+"870
+[e :U 874 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 870: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 871: {
+"871
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 872: headerLength += 8;
+"872
+[e =+ _headerLength -> -> 8 `i `uc ]
+"873
+}
+[e :U 875 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 873: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 875: if( transParam.altSrcAddr )
+"875
+[e $ ! != -> . _transParam 3 `i -> -> -> 0 `i `uc `i 876  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 876: {
+"876
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 877: headerLength += 2;
+"877
+[e =+ _headerLength -> -> 2 `i `uc ]
+"878
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 878: }
+[e $U 877  ]
+"879
+[e :U 876 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 879: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 880: {
+"880
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 881: headerLength += 8;
+"881
+[e =+ _headerLength -> -> 8 `i `uc ]
+"882
+}
+[e :U 877 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 882: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 885: if( transParam.flags.bits.secEn )
+"885
+[e $ ! != -> . . . _transParam 0 1 2 `i -> -> -> 0 `i `uc `i 878  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 886: {
+"886
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 887: i |= 0x08;
+"887
+[e =| _i -> -> 8 `i `uc ]
+"888
+}
+[e :U 878 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 888: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 891: if( transParam.flags.bits.ackReq && transParam.flags.bits.broadcast == 0 )
+"891
+[e $ ! && != -> . . . _transParam 0 1 4 `i -> -> -> 0 `i `uc `i == -> . . . _transParam 0 1 1 `i -> 0 `i 879  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 892: {
+"892
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 893: i |= 0x20;
+"893
+[e =| _i -> -> 32 `i `uc ]
+"894
+}
+[e :U 879 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 894: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 897: if( transParam.flags.bits.packetType == 0x03)
+"897
+[e $ ! == -> . . . _transParam 0 1 0 `i -> 3 `i 880  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 898: {
+"898
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 899: i = 0x00;
+"899
+[e = _i -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 900: headerLength = 7;
+"900
+[e = _headerLength -> -> 7 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 902: IntraPAN = 0;
+"902
+[e = _IntraPAN -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 904: transParam.altSrcAddr = 1;
+"904
+[e = . _transParam 3 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 905: transParam.flags.bits.ackReq = 0;
+"905
+[e = . . . _transParam 0 1 4 -> -> 0 `i `uc ]
+"906
+}
+[e :U 880 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 906: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 909: PHYSetLongRAMAddr(loc++, headerLength);
+"909
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui _headerLength ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 912: if( transParam.flags.bits.secEn )
+"912
+[e $ ! != -> . . . _transParam 0 1 2 `i -> -> -> 0 `i `uc `i 881  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 913: {
+"913
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 914: PHYSetLongRAMAddr(loc++, headerLength + MACPayloadLen + 5);
+"914
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> + + -> _headerLength `i -> _MACPayloadLen `i -> 5 `i `uc ]
+"915
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 915: }
+[e $U 882  ]
+"916
+[e :U 881 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 916: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 918: {
+"918
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 919: PHYSetLongRAMAddr(loc++, headerLength + MACPayloadLen);
+"919
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> + -> _headerLength `i -> _MACPayloadLen `i `uc ]
+"920
+}
+[e :U 882 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 920: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 923: PHYSetLongRAMAddr(loc++, i);
+"923
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui _i ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 926: if( transParam.flags.bits.packetType == 0x03 )
+"926
+[e $ ! == -> . . . _transParam 0 1 0 `i -> 3 `i 883  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 927: {
+"927
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 928: PHYSetLongRAMAddr(loc++, 0x80);
+"928
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 930: PHYSetLongRAMAddr(loc++, IEEESeqNum++);
+"930
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui ++ _IEEESeqNum -> -> 1 `i `uc ]
+"931
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 931: }
+[e $U 884  ]
+"932
+[e :U 883 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 932: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 933: {
+"933
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 934: if( transParam.altDestAddr && transParam.altSrcAddr )
+"934
+[e $ ! && != -> . _transParam 2 `i -> -> -> 0 `i `uc `i != -> . _transParam 3 `i -> -> -> 0 `i `uc `i 885  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 935: {
+"935
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 936: PHYSetLongRAMAddr(loc++, 0x88);
+"936
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 136 `i `uc ]
+"937
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 937: }
+[e $U 886  ]
+"938
+[e :U 885 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 938: else if( transParam.altDestAddr && transParam.altSrcAddr == 0 )
+[e $ ! && != -> . _transParam 2 `i -> -> -> 0 `i `uc `i == -> . _transParam 3 `i -> 0 `i 887  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 939: {
+"939
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 940: PHYSetLongRAMAddr(loc++, 0xC8);
+"940
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 200 `i `uc ]
+"941
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 941: }
+[e $U 888  ]
+"942
+[e :U 887 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 942: else if( transParam.altDestAddr == 0 && transParam.altSrcAddr == 1 )
+[e $ ! && == -> . _transParam 2 `i -> 0 `i == -> . _transParam 3 `i -> 1 `i 889  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 943: {
+"943
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 944: PHYSetLongRAMAddr(loc++, 0x8C);
+"944
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 140 `i `uc ]
+"945
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 945: }
+[e $U 890  ]
+"946
+[e :U 889 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 946: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 947: {
+"947
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 948: PHYSetLongRAMAddr(loc++, 0xCC);
+"948
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 204 `i `uc ]
+"949
+}
+[e :U 890 ]
+[e :U 888 ]
+[e :U 886 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 949: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 952: PHYSetLongRAMAddr(loc++, IEEESeqNum++);
+"952
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui ++ _IEEESeqNum -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 955: PHYSetLongRAMAddr(loc++, transParam.DestPANID.v[0]);
+"955
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + &U . . _transParam 4 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . . _transParam 4 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 956: PHYSetLongRAMAddr(loc++, transParam.DestPANID.v[1]);
+"956
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + &U . . _transParam 4 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . . _transParam 4 1 `ui `ux ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 959: if( transParam.flags.bits.broadcast )
+"959
+[e $ ! != -> . . . _transParam 0 1 1 `i -> -> -> 0 `i `uc `i 891  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 960: {
+"960
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 961: PHYSetLongRAMAddr(loc++, 0xFF);
+"961
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 962: PHYSetLongRAMAddr(loc++, 0xFF);
+"962
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> -> 255 `i `uc ]
+"963
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 963: }
+[e $U 892  ]
+"964
+[e :U 891 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 964: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 965: {
+"965
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 966: if( transParam.altDestAddr )
+"966
+[e $ ! != -> . _transParam 2 `i -> -> -> 0 `i `uc `i 893  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 967: {
+"967
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 968: PHYSetLongRAMAddr(loc++, transParam.DestAddress[0]);
+"968
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + . _transParam 1 * -> -> 0 `i `x -> -> # *U . _transParam 1 `i `x ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 969: PHYSetLongRAMAddr(loc++, transParam.DestAddress[1]);
+"969
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + . _transParam 1 * -> -> 1 `i `x -> -> # *U . _transParam 1 `i `x ]
+"970
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 970: }
+[e $U 894  ]
+"971
+[e :U 893 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 971: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 972: {
+"972
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 973: for(i = 0; i < 8; i++)
+"973
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 895  ]
+[e $U 896  ]
+"974
+[e :U 895 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 974: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 975: PHYSetLongRAMAddr(loc++, transParam.DestAddress[i]);
+"975
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + . _transParam 1 * -> _i `ux -> -> # *U . _transParam 1 `ui `ux ]
+"976
+}
+"973
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 895  ]
+[e :U 896 ]
+"976
+}
+"977
+}
+[e :U 894 ]
+"978
+}
+[e :U 892 ]
+"979
+}
+[e :U 884 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 976: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 977: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 978: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 979: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 983: if( IntraPAN == 0 )
+"983
+[e $ ! == -> _IntraPAN `i -> 0 `i 898  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 984: {
+"984
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 985: PHYSetLongRAMAddr(loc++, ((MAC_PANID>>0)&0xff));
+"985
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> & >> _MAC_PANID -> 0 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 986: PHYSetLongRAMAddr(loc++, ((MAC_PANID>>8)&0xff));
+"986
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> & >> _MAC_PANID -> 8 `i -> -> 255 `i `ui `uc ]
+"987
+}
+[e :U 898 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 987: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 991: if( transParam.altSrcAddr )
+"991
+[e $ ! != -> . _transParam 3 `i -> -> -> 0 `i `uc `i 899  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 992: {
+"992
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 993: PHYSetLongRAMAddr(loc++, ((myNetworkAddress>>0)&0xff));
+"993
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> & >> _myNetworkAddress -> 0 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 994: PHYSetLongRAMAddr(loc++, ((myNetworkAddress>>8)&0xff));
+"994
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> & >> _myNetworkAddress -> 8 `i -> -> 255 `i `ui `uc ]
+"995
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 995: }
+[e $U 900  ]
+"996
+[e :U 899 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 996: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 997: {
+"997
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 998: for(i = 0; i < 8; i++)
+"998
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 901  ]
+[e $U 902  ]
+"999
+[e :U 901 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 999: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1000: PHYSetLongRAMAddr(loc++, MACInitParams.PAddress[i]);
+"1000
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + . _MACInitParams 1 * -> _i `ux -> -> # *U . _MACInitParams 1 `ui `ux ]
+"1001
+}
+"998
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 901  ]
+[e :U 902 ]
+"1001
+}
+"1002
+}
+[e :U 900 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1001: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1002: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1005: if( transParam.flags.bits.secEn )
+"1005
+[e $ ! != -> . . . _transParam 0 1 2 `i -> -> -> 0 `i `uc `i 904  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1006: {
+"1006
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1008: for(i = 0; i < 4; i++)
+"1008
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 905  ]
+[e $U 906  ]
+"1009
+[e :U 905 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1009: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1010: PHYSetLongRAMAddr(loc++, ((OutgoingFrameCounter>>(i<<3))&0xff) );
+"1010
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui -> & >> _OutgoingFrameCounter << -> _i `i -> 3 `i -> -> -> 255 `i `l `ul `uc ]
+"1011
+}
+"1008
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 905  ]
+[e :U 906 ]
+"1011
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1011: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1012: OutgoingFrameCounter++;
+"1012
+[e ++ _OutgoingFrameCounter -> -> -> 1 `i `l `ul ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1020: PHYSetLongRAMAddr(loc++, myKeySequenceNumber);
+"1020
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui _myKeySequenceNumber ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1023: for(i = 0; i < 16; i++)
+"1023
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 908  ]
+[e $U 909  ]
+"1024
+[e :U 908 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1024: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1025: PHYSetLongRAMAddr(0x280 + i, mySecurityKey[i]);
+"1025
+[e ( _PHYSetLongRAMAddr (2 , -> + -> 640 `i -> _i `i `ui *U + &U _mySecurityKey * -> _i `ux -> -> # *U &U _mySecurityKey `ui `ux ]
+"1026
+}
+"1023
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 908  ]
+[e :U 909 ]
+"1026
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1026: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1029: PHYSetShortRAMAddr((0x59), mySecurityLevel);
+"1029
+[e ( _PHYSetShortRAMAddr (2 , -> -> 89 `i `uc _mySecurityLevel ]
+"1030
+}
+[e :U 904 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1030: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1035: for(i = 0; i < MACPayloadLen; i++)
+"1035
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 914  ]
+"1036
+[e :U 911 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1036: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1037: PHYSetLongRAMAddr(loc++, MACPayload[i]);
+"1037
+[e ( _PHYSetLongRAMAddr (2 , -> ++ _loc -> -> 1 `i `uc `ui *U + _MACPayload * -> _i `ux -> -> # *U _MACPayload `ui `ux ]
+"1038
+}
+"1035
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 914 ]
+[e $ < -> _i `i -> _MACPayloadLen `i 911  ]
+[e :U 912 ]
+"1038
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1038: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1040: MRF24J40Status.bits.TX_BUSY = 1;
+"1040
+[e = . . _MRF24J40Status 1 0 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1043: if( transParam.flags.bits.ackReq && transParam.flags.bits.broadcast == 0 )
+"1043
+[e $ ! && != -> . . . _transParam 0 1 4 `i -> -> -> 0 `i `uc `i == -> . . . _transParam 0 1 1 `i -> 0 `i 915  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1044: {
+"1044
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1045: i = 0x05;
+"1045
+[e = _i -> -> 5 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1047: MRF24J40Status.bits.TX_PENDING_ACK = 1;
+"1047
+[e = . . _MRF24J40Status 1 1 -> -> 1 `i `uc ]
+"1049
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1049: }
+[e $U 916  ]
+"1050
+[e :U 915 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1050: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1051: {
+"1051
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1052: i = 0x01;
+"1052
+[e = _i -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1054: MRF24J40Status.bits.TX_PENDING_ACK = 0;
+"1054
+[e = . . _MRF24J40Status 1 1 -> -> 0 `i `uc ]
+"1056
+}
+[e :U 916 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1056: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1058: if( transParam.flags.bits.secEn )
+"1058
+[e $ ! != -> . . . _transParam 0 1 2 `i -> -> -> 0 `i `uc `i 917  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1059: {
+"1059
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1060: i |= 0x02;
+"1060
+[e =| _i -> -> 2 `i `uc ]
+"1061
+}
+[e :U 917 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1061: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1065: PHYSetShortRAMAddr((0x37), i);
+"1065
+[e ( _PHYSetShortRAMAddr (2 , -> -> 55 `i `uc _i ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1068: t1 = MiWi_TickGetMs();
+"1068
+[e = _t1 ( _MiWi_TickGetMs ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1069: while(1)
+"1069
+[e :U 919 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1070: {
+"1070
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1071: if( PORTBbits.RB0 == 0 )
+"1071
+[e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 921  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1072: {
+"1072
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1073: INTCONbits.INT0IF = 1;
+"1073
+[e = . . _INTCONbits 0 1 -> -> 1 `i `uc ]
+"1074
+}
+[e :U 921 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1074: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1075: if( MRF24J40Status.bits.TX_BUSY == 0 )
+"1075
+[e $ ! == -> . . _MRF24J40Status 1 0 `i -> 0 `i 922  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1076: {
+"1076
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1077: if( MRF24J40Status.bits.TX_FAIL )
+"1077
+[e $ ! != -> . . _MRF24J40Status 1 2 `i -> -> -> 0 `i `Vuc `i 923  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1078: {
+"1078
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1079: MRF24J40Status.bits.TX_FAIL = 0;
+"1079
+[e = . . _MRF24J40Status 1 2 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1080: return 0;
+"1080
+[e ) -> -> 0 `i `uc ]
+[e $UE 866  ]
+"1081
+}
+[e :U 923 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1081: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1082: break;
+"1082
+[e $U 920  ]
+"1083
+}
+[e :U 922 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1083: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1084: t2 = MiWi_TickGetMs();
+"1084
+[e = _t2 ( _MiWi_TickGetMs ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1085: if( (t2.Val - t1.Val) > 40 )
+"1085
+[e $ ! > - . _t2 0 . _t1 0 -> -> -> 40 `i `l `ul 924  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1086: {
+"1086
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1087: InitMRF24J40();
+"1087
+[e ( _InitMRF24J40 ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1088: MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+"1088
+[e ( _MiMAC_SetAltAddress (2 , -> &U _myNetworkAddress `*uc -> &U _MAC_PANID `*uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1089: MRF24J40Status.bits.TX_BUSY = 0;
+"1089
+[e = . . _MRF24J40Status 1 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1090: return 0;
+"1090
+[e ) -> -> 0 `i `uc ]
+[e $UE 866  ]
+"1091
+}
+[e :U 924 ]
+"1092
+}
+[e :U 918 ]
+"1069
+[e $U 919  ]
+[e :U 920 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1091: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1092: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1095: return 1;
+"1095
+[e ) -> -> 1 `i `uc ]
+[e $UE 866  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1097: }
+"1097
+[e :UE 866 ]
+}
+"1134
+[v _MiMAC_ChannelAssessment `(uc ~T0 @X0 1 ef1`uc ]
+"1135
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1134: uint8_t MiMAC_ChannelAssessment( uint8_t AssessmentMode)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1135: {
+[e :U _MiMAC_ChannelAssessment ]
+"1134
+[v _AssessmentMode `uc ~T0 @X0 1 r1 ]
+"1135
+[f ]
+"1136
+[v _RSSIcheck `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1136: uint8_t RSSIcheck;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1150: PHYSetShortRAMAddr((0x7D), 0x80);
+"1150
+[e ( _PHYSetShortRAMAddr (2 , -> -> 125 `i `uc -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1153: RSSIcheck = PHYGetShortRAMAddr ((0x7C));
+"1153
+[e = _RSSIcheck ( _PHYGetShortRAMAddr (1 -> -> 124 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1154: while ((RSSIcheck & 0x01) != 0x01)
+"1154
+[e $U 926  ]
+[e :U 927 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1155: {
+"1155
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1156: RSSIcheck = PHYGetShortRAMAddr ((0x7C));
+"1156
+[e = _RSSIcheck ( _PHYGetShortRAMAddr (1 -> -> 124 `i `uc ]
+"1157
+}
+[e :U 926 ]
+"1154
+[e $ != & -> _RSSIcheck `i -> 1 `i -> 1 `i 927  ]
+[e :U 928 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1157: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1160: RSSIcheck = PHYGetLongRAMAddr(0x210);
+"1160
+[e = _RSSIcheck ( _PHYGetLongRAMAddr (1 -> -> 528 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1164: PHYSetShortRAMAddr((0x7D), 0x40);
+"1164
+[e ( _PHYSetShortRAMAddr (2 , -> -> 125 `i `uc -> -> 64 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1177: return RSSIcheck;
+"1177
+[e ) _RSSIcheck ]
+[e $UE 925  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1178: }
+"1178
+[e :UE 925 ]
+}
+"1224
+[v _MiMAC_PowerState `(uc ~T0 @X0 1 ef1`uc ]
+"1225
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1224: bool MiMAC_PowerState( uint8_t PowerState)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1225: {
+[e :U _MiMAC_PowerState ]
+"1224
+[v _PowerState `uc ~T0 @X0 1 r1 ]
+"1225
+[f ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1226: switch(PowerState)
+"1226
+[e $U 931  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1227: {
+"1227
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1228: case 0x00:
+"1228
+[e :U 932 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1229: {
+"1229
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1231: LATDbits.LATD1 = 0;
+"1231
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1240: PHYSetShortRAMAddr((0x55), 0x04);
+"1240
+[e ( _PHYSetShortRAMAddr (2 , -> -> 85 `i `uc -> -> 4 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1243: PHYSetShortRAMAddr((0x45),0x80);
+"1243
+[e ( _PHYSetShortRAMAddr (2 , -> -> 69 `i `uc -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1244: PHYSetShortRAMAddr((0x1B),0x60);
+"1244
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 96 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1245: PHYSetShortRAMAddr((0x6B),0x80);
+"1245
+[e ( _PHYSetShortRAMAddr (2 , -> -> 107 `i `uc -> -> 128 `i `uc ]
+"1246
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1246: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1247: break;
+"1247
+[e $U 930  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1249: case 0xFF:
+"1249
+[e :U 933 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1250: {
+"1250
+{
+"1255
+[v _results `uc ~T0 @X0 1 a ]
+"1256
+[v _t1 `S784 ~T0 @X0 1 a ]
+[v _t2 `S784 ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1255: uint8_t results;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1256: MIWI_TICK t1, t2;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1259: LATDbits.LATD1 = 1;
+"1259
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1261: t1 = MiWi_TickGetMs();
+"1261
+[e = _t1 ( _MiWi_TickGetMs ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1263: while(1)
+"1263
+[e :U 935 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1264: {
+"1264
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1265: t2 = MiWi_TickGetMs();
+"1265
+[e = _t2 ( _MiWi_TickGetMs ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1266: t2.Val = (t2.Val - t1.Val);
+"1266
+[e = . _t2 0 - . _t2 0 . _t1 0 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1269: if( t2.Val > 100)
+"1269
+[e $ ! > . _t2 0 -> -> -> 100 `i `l `ul 937  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1270: {
+"1270
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1271: InitMRF24J40();
+"1271
+[e ( _InitMRF24J40 ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1273: MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+"1273
+[e ( _MiMAC_SetAltAddress (2 , -> &U _myNetworkAddress `*uc -> &U _MAC_PANID `*uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1274: break;
+"1274
+[e $U 936  ]
+"1275
+}
+[e :U 937 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1275: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1277: results = PHYGetShortRAMAddr((0x62));
+"1277
+[e = _results ( _PHYGetShortRAMAddr (1 -> -> 98 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1278: if((results & 0x40) != 0x00)
+"1278
+[e $ ! != & -> _results `i -> 64 `i -> 0 `i 938  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1279: {
+"1279
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1280: break;
+"1280
+[e $U 936  ]
+"1281
+}
+[e :U 938 ]
+"1282
+}
+[e :U 934 ]
+"1263
+[e $U 935  ]
+[e :U 936 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1281: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1282: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1284: while(1)
+"1284
+[e :U 940 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1285: {
+"1285
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1286: t2 = MiWi_TickGetMs();
+"1286
+[e = _t2 ( _MiWi_TickGetMs ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1287: t2.Val = (t2.Val - t1.Val);
+"1287
+[e = . _t2 0 - . _t2 0 . _t1 0 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1290: if( t2.Val > 100 )
+"1290
+[e $ ! > . _t2 0 -> -> -> 100 `i `l `ul 942  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1291: {
+"1291
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1292: InitMRF24J40();
+"1292
+[e ( _InitMRF24J40 ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1294: MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+"1294
+[e ( _MiMAC_SetAltAddress (2 , -> &U _myNetworkAddress `*uc -> &U _MAC_PANID `*uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1295: break;
+"1295
+[e $U 941  ]
+"1296
+}
+[e :U 942 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1296: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1298: results = PHYGetLongRAMAddr((0x20f));
+"1298
+[e = _results ( _PHYGetLongRAMAddr (1 -> -> 527 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1299: if( (results & 0xE0) == 0xA0 )
+"1299
+[e $ ! == & -> _results `i -> 224 `i -> 160 `i 943  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1300: {
+"1300
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1301: break;
+"1301
+[e $U 941  ]
+"1302
+}
+[e :U 943 ]
+"1304
+}
+[e :U 939 ]
+"1284
+[e $U 940  ]
+[e :U 941 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1302: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1304: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1306: PHYSetShortRAMAddr((0x6D), 0x04);
+"1306
+[e ( _PHYSetShortRAMAddr (2 , -> -> 109 `i `uc -> -> 4 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1307: PHYSetShortRAMAddr((0x6D), 0x00);
+"1307
+[e ( _PHYSetShortRAMAddr (2 , -> -> 109 `i `uc -> -> 0 `i `uc ]
+"1328
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1328: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1329: break;
+"1329
+[e $U 930  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1331: default:
+"1331
+[e :U 944 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1332: return 0;
+"1332
+[e ) -> -> 0 `i `uc ]
+[e $UE 929  ]
+"1333
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1333: }
+[e $U 930  ]
+"1226
+[e :U 931 ]
+[e [\ _PowerState , $ -> -> 0 `i `uc 932
+ , $ -> -> 255 `i `uc 933
+ 944 ]
+"1333
+[e :U 930 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1334: return 1;
+"1334
+[e ) -> -> 1 `i `uc ]
+[e $UE 929  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1335: }
+"1335
+[e :UE 929 ]
+}
+"1378
+[v _MiMAC_SetChannel `(uc ~T0 @X0 1 ef2`uc`uc ]
+"1379
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1378: bool MiMAC_SetChannel( uint8_t channel,  uint8_t offsetFreq)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1379: {
+[e :U _MiMAC_SetChannel ]
+"1378
+[v _channel `uc ~T0 @X0 1 r1 ]
+[v _offsetFreq `uc ~T0 @X0 1 r2 ]
+"1379
+[f ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1380: if( channel < 11 || channel > 26)
+"1380
+[e $ ! || < -> _channel `i -> 11 `i > -> _channel `i -> 26 `i 946  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1381: {
+"1381
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1382: return 0;
+"1382
+[e ) -> -> 0 `i `uc ]
+[e $UE 945  ]
+"1383
+}
+[e :U 946 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1383: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1392: MACCurrentChannel = channel;
+"1392
+[e = _MACCurrentChannel _channel ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1393: PHYSetLongRAMAddr((0x200),((channel-11)<<4)|0x03);
+"1393
+[e ( _PHYSetLongRAMAddr (2 , -> -> 512 `i `ui -> | << - -> _channel `i -> 11 `i -> 4 `i -> 3 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1394: PHYSetShortRAMAddr((0x6D),0x04);
+"1394
+[e ( _PHYSetShortRAMAddr (2 , -> -> 109 `i `uc -> -> 4 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1395: PHYSetShortRAMAddr((0x6D),0x00);
+"1395
+[e ( _PHYSetShortRAMAddr (2 , -> -> 109 `i `uc -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1396: return 1;
+"1396
+[e ) -> -> 1 `i `uc ]
+[e $UE 945  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1397: }
+"1397
+[e :UE 945 ]
+}
+"1432
+[v _MiMAC_SetPower `(uc ~T0 @X0 1 ef1`uc ]
+"1433
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1432: bool MiMAC_SetPower( uint8_t outputPower)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1433: {
+[e :U _MiMAC_SetPower ]
+"1432
+[v _outputPower `uc ~T0 @X0 1 r1 ]
+"1433
+[f ]
+"1434
+[v _reg `uc ~T0 @X0 1 a ]
+"1435
+[v _tmp `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1434: uint8_t reg;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1435: uint8_t tmp = outputPower % 10;
+[e = _tmp -> % -> _outputPower `i -> 10 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1437: reg = (outputPower / 10) << 6;
+"1437
+[e = _reg -> << / -> _outputPower `i -> 10 `i -> 6 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1438: if( tmp > 5 )
+"1438
+[e $ ! > -> _tmp `i -> 5 `i 948  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1439: {
+"1439
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1440: reg += 0x38;
+"1440
+[e =+ _reg -> -> 56 `i `uc ]
+"1441
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1441: }
+[e $U 949  ]
+"1442
+[e :U 948 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1442: else if( tmp > 4 )
+[e $ ! > -> _tmp `i -> 4 `i 950  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1443: {
+"1443
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1444: reg += 0x30;
+"1444
+[e =+ _reg -> -> 48 `i `uc ]
+"1445
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1445: }
+[e $U 951  ]
+"1446
+[e :U 950 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1446: else if( tmp > 3 )
+[e $ ! > -> _tmp `i -> 3 `i 952  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1447: {
+"1447
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1448: reg += 0x28;
+"1448
+[e =+ _reg -> -> 40 `i `uc ]
+"1449
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1449: }
+[e $U 953  ]
+"1450
+[e :U 952 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1450: else if( tmp > 2 )
+[e $ ! > -> _tmp `i -> 2 `i 954  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1451: {
+"1451
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1452: reg += 0x20;
+"1452
+[e =+ _reg -> -> 32 `i `uc ]
+"1453
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1453: }
+[e $U 955  ]
+"1454
+[e :U 954 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1454: else if( tmp > 1 )
+[e $ ! > -> _tmp `i -> 1 `i 956  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1455: {
+"1455
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1456: reg += 0x18;
+"1456
+[e =+ _reg -> -> 24 `i `uc ]
+"1457
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1457: }
+[e $U 957  ]
+"1458
+[e :U 956 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1458: else if( tmp > 0 )
+[e $ ! > -> _tmp `i -> 0 `i 958  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1459: {
+"1459
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1460: reg += 0x10;
+"1460
+[e =+ _reg -> -> 16 `i `uc ]
+"1461
+}
+[e :U 958 ]
+"1463
+[e :U 957 ]
+[e :U 955 ]
+[e :U 953 ]
+[e :U 951 ]
+[e :U 949 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1461: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1463: PHYSetLongRAMAddr((0x203),reg);
+[e ( _PHYSetLongRAMAddr (2 , -> -> 515 `i `ui _reg ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1464: return 1;
+"1464
+[e ) -> -> 1 `i `uc ]
+[e $UE 947  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1465: }
+"1465
+[e :UE 947 ]
+}
+"1504
+[v _MiMAC_SetAltAddress `(uc ~T0 @X0 1 ef2`*uc`*uc ]
+"1505
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1504: bool MiMAC_SetAltAddress( uint8_t *Address,  uint8_t *PANID)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1505: {
+[e :U _MiMAC_SetAltAddress ]
+"1504
+[v _Address `*uc ~T0 @X0 1 r1 ]
+[v _PANID `*uc ~T0 @X0 1 r2 ]
+"1505
+[f ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1506: memcpy(&myNetworkAddress,Address,2);
+"1506
+[e ( _memcpy (3 , , -> &U _myNetworkAddress `*v -> _Address `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1507: memcpy(&MAC_PANID,PANID,2);
+"1507
+[e ( _memcpy (3 , , -> &U _MAC_PANID `*v -> _PANID `*Cv -> -> 2 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1509: PHYSetShortRAMAddr((0x07),((myNetworkAddress>>0)&0xff));
+"1509
+[e ( _PHYSetShortRAMAddr (2 , -> -> 7 `i `uc -> & >> _myNetworkAddress -> 0 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1510: PHYSetShortRAMAddr((0x09),((myNetworkAddress>>8)&0xff));
+"1510
+[e ( _PHYSetShortRAMAddr (2 , -> -> 9 `i `uc -> & >> _myNetworkAddress -> 8 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1511: PHYSetShortRAMAddr((0x03),((MAC_PANID>>0)&0xff));
+"1511
+[e ( _PHYSetShortRAMAddr (2 , -> -> 3 `i `uc -> & >> _MAC_PANID -> 0 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1512: PHYSetShortRAMAddr((0x05),((MAC_PANID>>8)&0xff));
+"1512
+[e ( _PHYSetShortRAMAddr (2 , -> -> 5 `i `uc -> & >> _MAC_PANID -> 8 `i -> -> 255 `i `ui `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1513: return 1;
+"1513
+[e ) -> -> 1 `i `uc ]
+[e $UE 959  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1514: }
+"1514
+[e :UE 959 ]
+}
+"1547
+[v _MiMAC_Init `(uc ~T0 @X0 1 ef1`S777 ]
+"1548
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1547: bool MiMAC_Init( MACINIT_PARAM initValue)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1548: {
+[e :U _MiMAC_Init ]
+"1547
+[v _initValue `S777 ~T0 @X0 1 r1 ]
+"1548
+[f ]
+"1549
+[v _i `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1549: uint8_t i;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1551: MACInitParams = initValue;
+"1551
+[e = _MACInitParams _initValue ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1553: IEEESeqNum = TMR1;
+"1553
+[e = _IEEESeqNum -> _TMR1 `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1555: MACCurrentChannel = 11;
+"1555
+[e = _MACCurrentChannel -> -> 11 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1557: InitMRF24J40();
+"1557
+[e ( _InitMRF24J40 ..  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1559: MRF24J40Status.Val = 0;
+"1559
+[e = . _MRF24J40Status 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1561: for(i = 0; i < 2; i++)
+"1561
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 961  ]
+[e $U 962  ]
+"1562
+[e :U 961 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1562: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1563: RxBuffer[i].PayloadLen = 0;
+"1563
+[e = . *U + &U _RxBuffer * -> _i `ux -> -> # *U &U _RxBuffer `ui `ux 0 -> -> 0 `i `uc ]
+"1564
+}
+"1561
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 961  ]
+[e :U 962 ]
+"1564
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1564: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1580: OutgoingFrameCounter = 1;
+"1580
+[e = _OutgoingFrameCounter -> -> -> 1 `i `l `ul ]
+"1584
+[v _seed `ui ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1584: uint16_t seed=0;
+[e = _seed -> -> 0 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1585: for(i=0;i<16;i++)
+"1585
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 964  ]
+[e $U 965  ]
+"1586
+[e :U 964 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1586: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1587: seed<<=1;
+"1587
+[e =<< _seed -> 1 `i ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1588: seed|=((MiMAC_ChannelAssessment(0x00)) & 0x01);
+"1588
+[e =| _seed -> & -> ( _MiMAC_ChannelAssessment (1 -> -> 0 `i `uc `i -> 1 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1590: DelayMs(10);
+"1590
+[e ( _DelayMs (1 -> -> -> 10 `i `l `ul ]
+"1591
+}
+"1585
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 964  ]
+[e :U 965 ]
+"1591
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1591: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1593: krndInit(seed);
+"1593
+[e ( _krndInit (1 _seed ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1594: IEEESeqNum = krnd();
+"1594
+[e = _IEEESeqNum -> ( _krnd ..  `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1596: return 1;
+"1596
+[e ) -> -> 1 `i `uc ]
+[e $UE 960  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1597: }
+"1597
+[e :UE 960 ]
+}
+[v $root$_HighISR `(v ~T0 @X0 0 e ]
+[v F7564 `(v ~T0 @X0 1 tf ]
+"1615
+[v _HighISR `IF7564 ~T0 @X0 1 e ]
+"1623
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1615: void interrupt HighISR(void)
+[; ;drv_mrf_miwi_mesh_24j40.c: 1623: {
+[e :U _HighISR ]
+[f ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1624: if(INTCONbits.INT0IE && INTCONbits.INT0IF)
+"1624
+[e $ ! && != -> . . _INTCONbits 0 4 `i -> -> -> 0 `i `Vuc `i != -> . . _INTCONbits 0 1 `i -> -> -> 0 `i `Vuc `i 968  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1625: {
+"1625
+{
+"1626
+[v _i `uc ~T0 @X0 1 a ]
+"1627
+[v _j `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1626: uint8_t i;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1627: uint8_t j;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1631: INTCONbits.INT0IF = 0;
+"1631
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1635: {
+"1635
+{
+"1636
+[v _flags `S780 ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1636: MRF24J40_IFREG flags;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1639: flags.Val=PHYGetShortRAMAddr((0x62));
+"1639
+[e = . _flags 0 ( _PHYGetShortRAMAddr (1 -> -> 98 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1641: if(flags.bits.RF_TXIF)
+"1641
+[e $ ! != -> . . _flags 1 0 `i -> -> -> 0 `i `uc `i 969  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1642: {
+"1642
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1645: MRF24J40Status.bits.TX_BUSY = 0;
+"1645
+[e = . . _MRF24J40Status 1 0 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1647: failureCounter = 0;
+"1647
+[e = _failureCounter -> -> 0 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1651: if(MRF24J40Status.bits.TX_PENDING_ACK)
+"1651
+[e $ ! != -> . . _MRF24J40Status 1 1 `i -> -> -> 0 `i `Vuc `i 970  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1652: {
+"1652
+{
+"1653
+[v _results `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1653: uint8_t results;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1656: results = PHYGetShortRAMAddr((0x48));
+"1656
+[e = _results ( _PHYGetShortRAMAddr (1 -> -> 72 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1658: if((results & 0x01)>0)
+"1658
+[e $ ! > & -> _results `i -> 1 `i -> 0 `i 971  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1659: {
+"1659
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1662: MRF24J40Status.bits.TX_FAIL = 1;
+"1662
+[e = . . _MRF24J40Status 1 2 -> -> 1 `i `uc ]
+"1663
+}
+[e :U 971 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1663: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1667: MRF24J40Status.bits.TX_PENDING_ACK = 0;
+"1667
+[e = . . _MRF24J40Status 1 1 -> -> 0 `i `uc ]
+"1669
+}
+[e :U 970 ]
+"1671
+}
+[e :U 969 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1669: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1671: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1673: if(flags.bits.RF_RXIF)
+"1673
+[e $ ! != -> . . _flags 1 2 `i -> -> -> 0 `i `uc `i 972  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1674: {
+"1674
+{
+"1675
+[v _RxBank `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1675: uint8_t RxBank = 0xFF;
+[e = _RxBank -> -> 255 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1677: for(i = 0; i < 2; i++)
+"1677
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 973  ]
+[e $U 974  ]
+"1678
+[e :U 973 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1678: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1679: if( RxBuffer[i].PayloadLen == 0 )
+"1679
+[e $ ! == -> . *U + &U _RxBuffer * -> _i `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 0 `i 976  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1680: {
+"1680
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1681: RxBank = i;
+"1681
+[e = _RxBank _i ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1682: break;
+"1682
+[e $U 974  ]
+"1683
+}
+[e :U 976 ]
+"1684
+}
+"1677
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 973  ]
+[e :U 974 ]
+"1684
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1683: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1684: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1687: if( RxBank < 2 )
+"1687
+[e $ ! < -> _RxBank `i -> 2 `i 977  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1688: {
+"1688
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1690: if( MRF24J40Status.bits.RX_SECURITY )
+"1690
+[e $ ! != -> . . _MRF24J40Status 1 3 `i -> -> -> 0 `i `Vuc `i 978  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1691: {
+"1691
+{
+"1692
+[v _DecryptionStatus `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1692: uint8_t DecryptionStatus = PHYGetShortRAMAddr((0x5E));
+[e = _DecryptionStatus ( _PHYGetShortRAMAddr (1 -> -> 94 `i `uc ]
+"1693
+[v _FrameControl `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1693: uint8_t FrameControl;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1695: MRF24J40Status.bits.RX_SECURITY = 0;
+"1695
+[e = . . _MRF24J40Status 1 3 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1696: if( (DecryptionStatus & 0x02) != 0 )
+"1696
+[e $ ! != & -> _DecryptionStatus `i -> 2 `i -> 0 `i 979  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1697: {
+"1697
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1698: PHYSetShortRAMAddr((0x1B),0x01);
+"1698
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1699: goto START_OF_SEC_INT;
+"1699
+[e $U 980  ]
+"1700
+}
+[e :U 979 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1700: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1702: i = 6;
+"1702
+[e = _i -> -> 6 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1703: FrameControl = PHYGetLongRAMAddr(0x301);
+"1703
+[e = _FrameControl ( _PHYGetLongRAMAddr (1 -> -> 769 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1704: if( (FrameControl & 0x40) == 0 )
+"1704
+[e $ ! == & -> _FrameControl `i -> 64 `i -> 0 `i 981  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1705: {
+"1705
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1706: i += 2;
+"1706
+[e =+ _i -> -> 2 `i `uc ]
+"1707
+}
+[e :U 981 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1707: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1709: FrameControl = PHYGetLongRAMAddr(0x302);
+"1709
+[e = _FrameControl ( _PHYGetLongRAMAddr (1 -> -> 770 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1710: if( (FrameControl & 0x0C) == 0x0C )
+"1710
+[e $ ! == & -> _FrameControl `i -> 12 `i -> 12 `i 982  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1711: {
+"1711
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1712: i += 8;
+"1712
+[e =+ _i -> -> 8 `i `uc ]
+"1713
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1713: }
+[e $U 983  ]
+"1714
+[e :U 982 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1714: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1715: {
+"1715
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1716: i += 2;
+"1716
+[e =+ _i -> -> 2 `i `uc ]
+"1717
+}
+[e :U 983 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1717: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1720: for(j = 0; j < 8; j++)
+"1720
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 8 `i 984  ]
+[e $U 985  ]
+"1721
+[e :U 984 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1721: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1722: tmpSourceLongAddress.bytes[j] = PHYGetLongRAMAddr(0x300 + i + j);
+"1722
+[e = *U + &U . _tmpSourceLongAddress 0 * -> _j `ux -> -> # *U &U . _tmpSourceLongAddress 0 `ui `ux ( _PHYGetLongRAMAddr (1 -> + + -> 768 `i -> _i `i -> _j `i `ui ]
+"1723
+}
+"1720
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 8 `i 984  ]
+[e :U 985 ]
+"1723
+}
+"1724
+[v _v `*uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1723: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1724: uint8_t* v=(uint8_t*)&tmpFrameCounter;
+[e = _v -> &U _tmpFrameCounter `*uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1725: for(j = 0; j < 4; j++)
+"1725
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 4 `i 987  ]
+[e $U 988  ]
+"1726
+[e :U 987 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1726: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1727: v[j] = PHYGetLongRAMAddr(0x308 + i + j);
+"1727
+[e = *U + _v * -> _j `ux -> -> # *U _v `ui `ux ( _PHYGetLongRAMAddr (1 -> + + -> 776 `i -> _i `i -> _j `i `ui ]
+"1728
+}
+"1725
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 4 `i 987  ]
+[e :U 988 ]
+"1728
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1728: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1731: for(i = 0; i < 5; i++)
+"1731
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 990  ]
+[e $U 991  ]
+"1732
+[e :U 990 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1732: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1733: if( (ConnectionTable[i].status.bits.isValid) &&
+[; ;drv_mrf_miwi_mesh_24j40.c: 1734: isSameAddress(ConnectionTable[i].Address, tmpSourceLongAddress) )
+"1734
+[e $ ! && != -> . . . *U + &U _ConnectionTable * -> _i `ux -> -> # *U &U _ConnectionTable `ui `ux 4 1 7 `i -> -> -> 0 `i `uc `i != -> ( _isSameAddress (2 , . *U + &U _ConnectionTable * -> _i `ux -> -> # *U &U _ConnectionTable `ui `ux 3 _tmpSourceLongAddress `i -> -> -> 0 `i `uc `i 993  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1735: {
+"1735
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1736: break;
+"1736
+[e $U 991  ]
+"1737
+}
+[e :U 993 ]
+"1738
+}
+"1731
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 990  ]
+[e :U 991 ]
+"1738
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1737: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1738: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1740: if( i < 5 )
+"1740
+[e $ ! < -> _i `i -> 5 `i 994  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1741: {
+"1741
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1742: if( ConnectionTable[i].IncomingFrameCounter > tmpFrameCounter )
+"1742
+[e $ ! > . *U + &U _ConnectionTable * -> _i `ux -> -> # *U &U _ConnectionTable `ui `ux 0 _tmpFrameCounter 995  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1743: {
+"1743
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1744: PHYSetShortRAMAddr((0x1B),0x01);
+"1744
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1745: goto START_OF_SEC_INT;
+"1745
+[e $U 980  ]
+"1746
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1746: }
+[e $U 996  ]
+"1747
+[e :U 995 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1747: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1748: {
+"1748
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1749: if( tmpFrameCounter == 0xFFFFFFFF )
+"1749
+[e $ ! == _tmpFrameCounter -> -1 `ul 997  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1750: {
+"1750
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1751: ConnectionTable[i].IncomingFrameCounter = 0;
+"1751
+[e = . *U + &U _ConnectionTable * -> _i `ux -> -> # *U &U _ConnectionTable `ui `ux 0 -> -> -> 0 `i `l `ul ]
+"1752
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1752: }
+[e $U 998  ]
+"1753
+[e :U 997 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1753: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1754: {
+"1754
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1755: ConnectionTable[i].IncomingFrameCounter = tmpFrameCounter;
+"1755
+[e = . *U + &U _ConnectionTable * -> _i `ux -> -> # *U &U _ConnectionTable `ui `ux 0 _tmpFrameCounter ]
+"1756
+}
+[e :U 998 ]
+"1757
+}
+[e :U 996 ]
+"1758
+}
+[e :U 994 ]
+"1760
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1756: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1757: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1758: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1760: }
+[e $U 999  ]
+"1761
+[e :U 978 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1761: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1764: if( MRF24J40Status.bits.RX_IGNORE_SECURITY )
+"1764
+[e $ ! != -> . . _MRF24J40Status 1 4 `i -> -> -> 0 `i `Vuc `i 1000  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1765: {
+"1765
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1766: MRF24J40Status.bits.RX_IGNORE_SECURITY = 0;
+"1766
+[e = . . _MRF24J40Status 1 4 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1767: PHYSetShortRAMAddr((0x1B),0x01);
+"1767
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1768: goto START_OF_SEC_INT;
+"1768
+[e $U 980  ]
+"1769
+}
+[e :U 1000 ]
+"1775
+[e :U 999 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1769: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1775: PHYSetShortRAMAddr((0x73), 0x04);
+[e ( _PHYSetShortRAMAddr (2 , -> -> 115 `i `uc -> -> 4 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1779: RxBuffer[RxBank].PayloadLen = PHYGetLongRAMAddr(0x300) + 2;
+"1779
+[e = . *U + &U _RxBuffer * -> _RxBank `ux -> -> # *U &U _RxBuffer `ui `ux 0 -> + -> ( _PHYGetLongRAMAddr (1 -> -> 768 `i `ui `i -> 2 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1780: if(RxBuffer[RxBank].PayloadLen<(90+0+8+8+4+17))
+"1780
+[e $ ! < -> . *U + &U _RxBuffer * -> _RxBank `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i + + + + + -> 90 `i -> 0 `i -> 8 `i -> 8 `i -> 4 `i -> 17 `i 1001  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1781: {
+"1781
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1783: MRF24J40Status.bits.RX_BUFFERED = 1;
+"1783
+[e = . . _MRF24J40Status 1 5 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1786: for(i=1;i<=RxBuffer[RxBank].PayloadLen+2;i++)
+"1786
+{
+[e = _i -> -> 1 `i `uc ]
+[e $U 1005  ]
+"1787
+[e :U 1002 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1787: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1788: RxBuffer[RxBank].Payload[i-1] = PHYGetLongRAMAddr(0x300+i);
+"1788
+[e = *U + &U . *U + &U _RxBuffer * -> _RxBank `ux -> -> # *U &U _RxBuffer `ui `ux 1 * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U . *U + &U _RxBuffer * -> _RxBank `ux -> -> # *U &U _RxBuffer `ui `ux 1 `ui `ux ( _PHYGetLongRAMAddr (1 -> + -> 768 `i -> _i `i `ui ]
+"1789
+}
+"1786
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1005 ]
+[e $ <= -> _i `i + -> . *U + &U _RxBuffer * -> _RxBank `ux -> -> # *U &U _RxBuffer `ui `ux 0 `i -> 2 `i 1002  ]
+[e :U 1003 ]
+"1789
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1789: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1790: PHYSetShortRAMAddr((0x1B), 0x01);
+"1790
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+"1791
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1791: }
+[e $U 1006  ]
+"1792
+[e :U 1001 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1792: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1793: {
+"1793
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1796: PHYSetShortRAMAddr((0x1B),0x01);
+"1796
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+"1797
+}
+[e :U 1006 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1797: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1800: PHYSetShortRAMAddr((0x73), 0x00);
+"1800
+[e ( _PHYSetShortRAMAddr (2 , -> -> 115 `i `uc -> -> 0 `i `uc ]
+"1801
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1801: }
+[e $U 1007  ]
+"1802
+[e :U 977 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1802: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1803: {
+"1803
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1806: PHYSetShortRAMAddr((0x1B),0x01);
+"1806
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1808: MRF24J40Status.bits.RX_SECURITY = 0;
+"1808
+[e = . . _MRF24J40Status 1 3 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1810: MRF24J40Status.bits.RX_IGNORE_SECURITY = 0;
+"1810
+[e = . . _MRF24J40Status 1 4 -> -> 0 `i `uc ]
+"1813
+}
+[e :U 1007 ]
+"1815
+}
+[e :U 972 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1813: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1815: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1817: START_OF_SEC_INT:
+"1817
+[e :U 980 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1818: if( flags.bits.SECIF )
+"1818
+[e $ ! != -> . . _flags 1 3 `i -> -> -> 0 `i `uc `i 1008  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1819: {
+"1819
+{
+"1821
+[v _FrameControl `uc ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1821: uint8_t FrameControl;
+[; ;drv_mrf_miwi_mesh_24j40.c: 1822: if( MRF24J40Status.bits.TX_BUSY )
+"1822
+[e $ ! != -> . . _MRF24J40Status 1 0 `i -> -> -> 0 `i `Vuc `i 1009  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1823: {
+"1823
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1824: MRF24J40Status.bits.RX_IGNORE_SECURITY = 1;
+"1824
+[e = . . _MRF24J40Status 1 4 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1825: PHYSetShortRAMAddr((0x59), 0x80);
+"1825
+[e ( _PHYSetShortRAMAddr (2 , -> -> 89 `i `uc -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1826: PHYSetShortRAMAddr((0x1B),0x01);
+"1826
+[e ( _PHYSetShortRAMAddr (2 , -> -> 27 `i `uc -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1827: goto END_OF_RF_INT;
+"1827
+[e $U 1010  ]
+"1828
+}
+[e :U 1009 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1828: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1835: i = 6;
+"1835
+[e = _i -> -> 6 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1836: FrameControl = PHYGetLongRAMAddr(0x301);
+"1836
+[e = _FrameControl ( _PHYGetLongRAMAddr (1 -> -> 769 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1837: if( (FrameControl & 0x40) == 0 )
+"1837
+[e $ ! == & -> _FrameControl `i -> 64 `i -> 0 `i 1011  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1838: {
+"1838
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1839: i += 2;
+"1839
+[e =+ _i -> -> 2 `i `uc ]
+"1840
+}
+[e :U 1011 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1840: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1842: FrameControl = PHYGetLongRAMAddr(0x302);
+"1842
+[e = _FrameControl ( _PHYGetLongRAMAddr (1 -> -> 770 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1843: if( (FrameControl & 0x0C) == 0x0C )
+"1843
+[e $ ! == & -> _FrameControl `i -> 12 `i -> 12 `i 1012  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1844: {
+"1844
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1845: i += 8;
+"1845
+[e =+ _i -> -> 8 `i `uc ]
+"1846
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1846: }
+[e $U 1013  ]
+"1847
+[e :U 1012 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1847: else
+[; ;drv_mrf_miwi_mesh_24j40.c: 1848: {
+"1848
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1849: i += 2;
+"1849
+[e =+ _i -> -> 2 `i `uc ]
+"1850
+}
+[e :U 1013 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1850: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1853: for(j = 0; j < i + 10; j++)
+"1853
+{
+[e = _j -> -> 0 `i `uc ]
+[e $U 1017  ]
+"1854
+[e :U 1014 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1854: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1855: PHYGetLongRAMAddr(0x301+j);
+"1855
+[e ( _PHYGetLongRAMAddr (1 -> + -> 769 `i -> _j `i `ui ]
+"1856
+}
+"1853
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 1017 ]
+[e $ < -> _j `i + -> _i `i -> 10 `i 1014  ]
+[e :U 1015 ]
+"1856
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1856: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1859: j = PHYGetLongRAMAddr(0x30C + i);
+"1859
+[e = _j ( _PHYGetLongRAMAddr (1 -> + -> 780 `i -> _i `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1861: if( j != myKeySequenceNumber )
+"1861
+[e $ ! != -> _j `i -> _myKeySequenceNumber `i 1018  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1862: {
+"1862
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1863: PHYSetShortRAMAddr((0x59), 0x80);
+"1863
+[e ( _PHYSetShortRAMAddr (2 , -> -> 89 `i `uc -> -> 128 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1864: MRF24J40Status.bits.RX_IGNORE_SECURITY = 1;
+"1864
+[e = . . _MRF24J40Status 1 4 -> -> 1 `i `uc ]
+"1865
+}
+[e :U 1018 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1865: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1867: if( MRF24J40Status.bits.RX_IGNORE_SECURITY == 0 )
+"1867
+[e $ ! == -> . . _MRF24J40Status 1 4 `i -> 0 `i 1019  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1869: {
+"1869
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1871: for(i = 0; i < 16; i++)
+"1871
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 1020  ]
+[e $U 1021  ]
+"1872
+[e :U 1020 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1872: {
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1873: PHYSetLongRAMAddr(0x2B0 + i, mySecurityKey[i]);
+"1873
+[e ( _PHYSetLongRAMAddr (2 , -> + -> 688 `i -> _i `i `ui *U + &U _mySecurityKey * -> _i `ux -> -> # *U &U _mySecurityKey `ui `ux ]
+"1874
+}
+"1871
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 1020  ]
+[e :U 1021 ]
+"1874
+}
+[; ;drv_mrf_miwi_mesh_24j40.c: 1874: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1875: MRF24J40Status.bits.RX_SECURITY = 1;
+"1875
+[e = . . _MRF24J40Status 1 3 -> -> 1 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1878: PHYSetShortRAMAddr((0x59), mySecurityLevel << 3 | 0x40);
+"1878
+[e ( _PHYSetShortRAMAddr (2 , -> -> 89 `i `uc -> | << -> _mySecurityLevel `i -> 3 `i -> 64 `i `uc ]
+"1879
+}
+[e :U 1019 ]
+"1884
+}
+[e :U 1008 ]
+"1885
+}
+"1886
+}
+[e :U 968 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1879: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1884: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1885: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1886: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1888: END_OF_RF_INT:
+"1888
+[e :U 1010 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1907: if ((INTCONbits.TMR0IF == 1) && (INTCONbits.TMR0IE == 1))
+"1907
+[e $ ! && == -> . . _INTCONbits 0 2 `i -> 1 `i == -> . . _INTCONbits 0 5 `i -> 1 `i 1023  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1908: {
+"1908
+{
+"1909
+[v _tmr `ui ~T0 @X0 1 a ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1909: uint16_t tmr = TMR0;
+[e = _tmr -> _TMR0 `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1910: t1extension++;
+"1910
+[e ++ _t1extension -> -> -> 1 `i `l `ul ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1911: tmr += (0xffff - 6000);
+"1911
+[e =+ _tmr - -> 65535 `ui -> -> 6000 `i `ui ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1912: TMR0L = tmr;
+"1912
+[e = _TMR0L -> _tmr `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1913: TMR0H = tmr >> 8;
+"1913
+[e = _TMR0H -> >> _tmr -> 8 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1914: TMR0L = tmr;
+"1914
+[e = _TMR0L -> _tmr `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1915: INTCONbits.TMR0IF = 0;
+"1915
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1916: t1fired=1;
+"1916
+[e = _t1fired -> -> 1 `i `uc ]
+"1917
+}
+[e :U 1023 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1917: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1919: if(INTCONbits.INT0IF && INTCONbits.INT0IE)
+"1919
+[e $ ! && != -> . . _INTCONbits 0 1 `i -> -> -> 0 `i `Vuc `i != -> . . _INTCONbits 0 4 `i -> -> -> 0 `i `Vuc `i 1024  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1920: {
+"1920
+{
+[; ;drv_mrf_miwi_mesh_24j40.c: 1921: INTCONbits.INT0IF = 0;
+"1921
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+"1922
+}
+[e :U 1024 ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1922: }
+[; ;drv_mrf_miwi_mesh_24j40.c: 1927: return;
+"1927
+[e $UE 967  ]
+[; ;drv_mrf_miwi_mesh_24j40.c: 1929: }
+"1929
+[e :UE 967 ]
 }

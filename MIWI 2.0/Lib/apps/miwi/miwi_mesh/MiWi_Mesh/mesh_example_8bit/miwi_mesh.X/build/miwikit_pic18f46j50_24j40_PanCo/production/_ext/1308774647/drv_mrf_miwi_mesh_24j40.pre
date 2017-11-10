@@ -1,5 +1,5 @@
 
-# 1 "../src/system_config/miwikit_pic18f46j50_24j40/symbol.c"
+# 1 "../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -8819,6 +8819,44 @@ typedef uint16_t uintptr_t;
 # 12 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\stdbool.h"
 typedef unsigned char bool;
 
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\__size_t.h"
+typedef unsigned size_t;
+
+# 6 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\stddef.h"
+typedef int ptrdiff_t;
+
+# 14 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\string.h"
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+
+# 36
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+
 # 20 "../src/system_config/miwikit_pic18f46j50_24j40\gtypedefs.h"
 typedef union
 {
@@ -9004,7 +9042,7 @@ uint8_t RX_BUFFERED : 1;
 } bits;
 } MRF24J40_STATUS;
 
-# 231 "../src/system_config/miwikit_pic18f46j50_24j40/system.h"
+# 231 "../src/system_config/miwikit_pic18f46j50_24j40\system.h"
 typedef enum LED_t_def
 {
 LEDGreen,
@@ -9029,7 +9067,7 @@ void ButtonTask(void);
 void LEDCommand(LED_t led, LEDCmd_t cmd);
 void LEDManagerTask(void);
 
-# 69 "../src/system_config/miwikit_pic18f46j50_24j40/symbol.h"
+# 69 "../src/system_config/miwikit_pic18f46j50_24j40\symbol.h"
 typedef union MIWI_TICK_t
 {
 uint32_t Val;
@@ -9047,69 +9085,1480 @@ uint32_t safeMiWi_TickGetMs(void);
 void TimerDisable(void);
 void TimerEnable(void);
 
-# 97 "../src/system_config/miwikit_pic18f46j50_24j40/symbol.c"
-uint32_t t1extension=0;
-volatile bool t1fired=0;
-MIWI_TICK currentTime;
-
-void InitSymbolTimer()
+# 19 "../src\NetworkManager.h"
+typedef enum DeviceType_t_def
 {
-T0CON = 0x00;
-INTCON2bits.TMR0IP = 1;
-INTCONbits.TMR0IF = 0;
-INTCONbits.TMR0IE = 1;
-T0CONbits.TMR0ON = 1;
+DeviceCoordinator,
+DeviceRFD,
+DeviceSleepingRFD,
+DeviceUnknown=0x07,
+}DeviceType_t;
 
-t1extension=0;
+typedef struct addr_t_def
+{
+uint8_t bytes[8];
+}addr_t;
+
+
+void NetworkAddressSizeSet(uint8_t value);
+uint8_t NetworkAddressSizeGet(void);
+
+
+DeviceType_t NetworkGetDeviceType(void);
+
+
+void NetworkInit(addr_t address, uint16_t PANID, DeviceType_t dev);
+
+void NetworkSetAddressPAN(addr_t address, uint16_t PANID);
+
+void NetworkSetDeviceType(DeviceType_t dev);
+
+
+void NetworkManagerTask(void);
+
+
+bool isSameAddress(addr_t a1, addr_t a2);
+
+
+addr_t NetworkGetParentAddress(void);
+
+
+bool NetworkHasRoute(void);
+
+
+void NetworkSendDiscoverResponse(void);
+
+# 66 "../../../../../../framework\miwi/miwi_mesh_api.h"
+typedef union __CONNECTION_STATUS
+{
+uint8_t Val;
+struct _CONNECTION_STAUTS_bits
+{
+uint8_t RXOnWhenIdle :1;
+uint8_t directConnection :1;
+uint8_t longAddressValid :1;
+uint8_t shortAddressValid :1;
+uint8_t FinishJoin :1;
+uint8_t isFamily :1;
+uint8_t filler :1;
+uint8_t isValid :1;
+} bits;
+} CONNECTION_STATUS;
+
+# 93
+typedef struct __CONNECTION_ENTRY
+{
+
+uint32_t IncomingFrameCounter;
+
+
+_uint16_VAL PANID;
+_uint16_VAL AltAddress;
+
+addr_t Address;
+
+CONNECTION_STATUS status;
+
+# 108
+} CONNECTION_ENTRY;
+
+extern CONNECTION_ENTRY ConnectionTable[5];
+
+extern uint8_t currentChannel;
+
+# 153
+bool MiApp_ProtocolInit(bool bNetworkFreezer);
+
+# 195
+bool MiApp_SetChannel(uint8_t Channel);
+
+# 253
+bool MiApp_StartConnection( uint8_t Mode, uint8_t ScanDuration, uint32_t ChannelMap);
+
+# 263
+typedef struct
+{
+uint8_t Channel;
+_uint16_VAL PANID;
+uint8_t RSSIValue;
+uint8_t Flags;
+} ACTIVE_SCAN_RESULT;
+
+
+extern ACTIVE_SCAN_RESULT ActiveScanResults[5];
+
+# 319
+uint8_t MiApp_SearchConnection(uint8_t ScanDuration, uint32_t ChannelMap);
+
+# 375
+uint8_t MiApp_EstablishConnection(uint8_t ActiveScanIndex, uint8_t Mode);
+
+# 412
+void MiApp_RemoveConnection(uint8_t ConnectionIndex);
+
+# 458
+void MiApp_ConnectionMode(uint8_t Mode);
+
+# 553
+bool MiApp_BroadcastPacket(bool SecEn );
+
+# 592
+bool MiApp_UnicastConnection(uint8_t ConnectionIndex, bool SecEn);
+
+# 631
+bool MiApp_UnicastAddress(uint8_t *DestinationAddress, uint8_t* Origin, bool SecEn);
+
+# 642
+typedef struct
+{
+union
+{
+uint8_t Val;
+struct
+{
+uint8_t broadcast: 2;
+uint8_t ackReq: 1;
+uint8_t secEn: 1;
+uint8_t repeat: 1;
+uint8_t command: 1;
+uint8_t srcPrsnt: 1;
+uint8_t altSrcAddr: 1;
+} bits;
+} flags;
+
+_uint16_VAL SourcePANID;
+uint8_t *SourceAddress;
+uint8_t *Payload;
+uint8_t PayloadSize;
+uint8_t PacketRSSI;
+uint8_t PacketLQI;
+} RECEIVED_MESSAGE;
+
+# 708
+bool MiApp_MessageAvailable(void);
+
+# 750
+void MiApp_DiscardMessage(void);
+
+# 798
+uint8_t MiApp_NoiseDetection(uint32_t ChannelMap, uint8_t ScanDuration, uint8_t DetectionMode,  uint8_t *NoiseLevel);
+
+# 856
+uint8_t MiApp_TransceiverPowerState(uint8_t Mode);
+
+# 897
+bool MiApp_InitChannelHopping( uint32_t ChannelMap);
+
+# 939
+bool MiApp_ResyncConnection(uint8_t ConnectionIndex, uint32_t ChannelMap);
+
+
+void MiApp_SetAddressPan(uint8_t *address, uint16_t panid);
+
+bool MiApp_IsMemberOfNetwork(void);
+
+addr_t MiApp_GetParentAddress(void);
+
+void MiApp_RequestData(void);
+
+
+bool MiApp_SendDataRequest(void);
+
+# 958
+uint16_t MiApp_InitSleepRFDBuffers(uint8_t *buffer, uint16_t bufferSize, uint16_t rfdMaxDataSize);
+
+# 971
+void MiApp_SetNetworkSecure(bool isSecure);
+
+
+extern RECEIVED_MESSAGE rxMessage;
+extern uint8_t TxData;
+extern uint8_t TxBuffer[];
+
+typedef enum MessageType_t_def
+{
+mReserved0,
+mReserved1,
+mReserved2,
+mWBootloader,
+mReserved4,
+mReserved5,
+mReserved6,
+mReserved7,
+mReserved8,
+mReserved9,
+mUserDataType,
+
+}MessageType_t;
+
+# 11 "../src/system_config/miwikit_pic18f46j50_24j40\spi.h"
+void SPIPut(uint8_t v);
+uint8_t SPIGet(void);
+void SPIPut2(uint8_t v);
+uint8_t SPIGet2(void);
+
+# 5 "../src/system_config/miwikit_pic18f46j50_24j40\delay.h"
+void DelayMs(uint32_t ms);
+void DelayUS(uint32_t delay);
+
+# 74 "../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_mesh_24j40.c"
+extern uint32_t krnd(void);
+extern void krndInit(uint16_t seed);
+extern uint32_t t1extension;
+extern volatile bool t1fired;
+
+
+
+MACINIT_PARAM MACInitParams;
+
+# 90
+const uint8_t mySecurityKey[16] = {0x00, 0x01, 0x02, 0x03, 0x04,
+0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b,
+0x0c, 0x0d, 0x0e, 0x0f};
+
+# 97
+const uint8_t mySecurityLevel = 4;
+
+
+const uint8_t myKeySequenceNumber = 0x00;
+
+
+uint32_t OutgoingFrameCounter;
+
+addr_t tmpSourceLongAddress;
+uint32_t tmpFrameCounter;
+
+# 115
+struct
+{
+uint8_t PayloadLen;
+uint8_t Payload[(90+0+8+8+4+17)];
+} RxBuffer[2];
+
+# 123
+uint8_t BankIndex = 0xFF;
+
+uint8_t IEEESeqNum;
+volatile uint16_t failureCounter = 0;
+uint8_t MACCurrentChannel;
+
+uint16_t MAC_PANID;
+uint16_t myNetworkAddress;
+
+volatile MRF24J40_STATUS MRF24J40Status;
+
+void SPIPut(uint8_t v);
+uint8_t SPIGet(void);
+
+# 156
+void PHYSetLongRAMAddr( uint16_t address,  uint8_t value)
+{
+volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+
+INTCONbits.INT0IE = 0;
+LATAbits.LATA5 = 0;
+SPIPut((((uint8_t)(address>>3))&0x7F)|0x80);
+SPIPut((((uint8_t)(address<<5))&0xE0)|0x10);
+SPIPut(value);
+LATAbits.LATA5 = 1;
+INTCONbits.INT0IE = tmpRFIE;
 }
 
-uint32_t safeMiWi_TickGetMs(void)
+# 190
+void PHYSetShortRAMAddr( uint8_t address,  uint8_t value)
 {
+volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
 
-return(0);
+INTCONbits.INT0IE = 0;
+LATAbits.LATA5 = 0;
+SPIPut(address);
+SPIPut(value);
+LATAbits.LATA5 = 1;
+INTCONbits.INT0IE = tmpRFIE;
 }
 
-MIWI_TICK MiWi_TickGetMs(void)
+# 220
+uint8_t PHYGetShortRAMAddr( uint8_t address)
 {
-uint32_t tnow=MiWi_TickGet();
+uint8_t toReturn;
+volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
 
+INTCONbits.INT0IE = 0;
+LATAbits.LATA5 = 0;
+SPIPut(address);
+toReturn = SPIGet();
+LATAbits.LATA5 = 1;
+INTCONbits.INT0IE = tmpRFIE;
 
-currentTime.Val=tnow;
-return(currentTime);
+return toReturn;
 }
 
-uint32_t MiWi_TickGet(void)
+# 251
+uint8_t PHYGetLongRAMAddr( uint16_t address)
 {
-uint32_t tmrval=0;
-uint32_t t1ext;
+uint8_t toReturn;
+volatile uint8_t tmpRFIE = INTCONbits.INT0IE;
+
+INTCONbits.INT0IE = 0;
+LATAbits.LATA5 = 0;
+SPIPut(((address>>3)&0x7F)|0x80);
+SPIPut(((address<<5)&0xE0));
+toReturn = SPIGet();
+LATAbits.LATA5 = 1;
+INTCONbits.INT0IE = tmpRFIE;
+
+return toReturn;
+}
+
+void InitMRF24J40(void)
+{
+uint8_t i;
+uint16_t j;
+
+
+LATDbits.LATD0 = 0;
+for(j=0;j<(uint16_t)300;j++){}
+
+LATDbits.LATD0 = 1;
+for(j=0;j<(uint16_t)300;j++){}
+
+
+PHYSetShortRAMAddr((0x55),0x07);
+do
+{
+i = PHYGetShortRAMAddr((0x54));
+}
+while((i&0x07) != (uint8_t)0x00);
+
+for(j=0;j<(uint16_t)1000;j++){}
+
+
+PHYSetShortRAMAddr((0x1B),0x01);
+
+
+PHYSetShortRAMAddr((0x07),0xFF);
+PHYSetShortRAMAddr((0x09),0xFF);
+PHYSetShortRAMAddr((0x03),0xFF);
+PHYSetShortRAMAddr((0x05),0xFF);
+
+
+for(i=0;i<(uint8_t)8;i++)
+{
+PHYSetShortRAMAddr((0x0B)+i*2,MACInitParams.PAddress[i]);
+}
+
+
+PHYSetLongRAMAddr((0x202),0x80);
+
+# 328
+PHYSetLongRAMAddr((0x203),0x00);
+
+
+
+PHYSetLongRAMAddr((0x206),0x90);
+
+PHYSetLongRAMAddr((0x207),0x80);
+
+PHYSetLongRAMAddr((0x208),0x10);
+
+PHYSetLongRAMAddr((0x220), 0x21);
+
+
+PHYSetShortRAMAddr((0x75),0x80);
+
+PHYSetShortRAMAddr((0x7D),0x40);
+
+PHYSetShortRAMAddr((0x7F),0x60);
+
+# 357
+PHYSetShortRAMAddr((0x31), 0x98);
+PHYSetShortRAMAddr((0x5D), 0x95);
+
 
 do
 {
-t1fired=0;
+i = PHYGetLongRAMAddr((0x20f));
+}
+while((i&0xA0) != 0xA0);
 
-t1ext=t1extension;
-} while(t1fired==1);
+PHYSetShortRAMAddr((0x65),0xE6);
 
-tmrval|=(((uint32_t)t1ext));
-return(tmrval);
+# 374
+PHYSetLongRAMAddr((0x200), 0x03);
+PHYSetLongRAMAddr((0x201), 0x02);
+
+MiMAC_SetChannel(MACCurrentChannel, 0);
+
+# 393
 }
 
-void TimerDisable(void)
+# 433
+bool MiMAC_ReceivedPacket(void)
 {
-INTCONbits.TMR0IE=0;
-}
-void TimerEnable(void)
+uint8_t i;
+
+
+if(PORTBbits.RB0 == 0)
 {
-INTCONbits.TMR0IE=1;
+INTCONbits.INT0IF = 1;
 }
 
-void TimerEnterCritical(void)
+
+
+
+if(MRF24J40Status.bits.TX_BUSY)
 {
-TimerDisable();
+if(failureCounter >= ((uint16_t)0x20 * 4))
+{
+failureCounter = 0;
+MRF24J40Status.bits.TX_BUSY = 0;
+}
+else
+{
+failureCounter++;
+}
 }
 
-void TimerExitCritical(void)
+BankIndex = 0xFF;
+for(i = 0; i < 2; i++)
 {
-TimerEnable();
+if( RxBuffer[i].PayloadLen > 0 )
+{
+BankIndex = i;
+break;
+}
+}
+
+
+if( BankIndex < 2 )
+{
+uint8_t addrMode;
+
+bool bIntraPAN = 1;
+
+if( (RxBuffer[BankIndex].Payload[0] & 0x40) == 0 )
+{
+bIntraPAN = 0;
+}
+
+MACRxPacket.flags.Val = 0;
+MACRxPacket.altSourceAddress = 0;
+
+
+addrMode = RxBuffer[BankIndex].Payload[1] & 0xCC;
+switch(addrMode)
+{
+case 0xC8:
+
+if( RxBuffer[BankIndex].Payload[5] == 0xFF && RxBuffer[BankIndex].Payload[6] == 0xFF )
+{
+MACRxPacket.flags.bits.broadcast = 1;
+}
+MACRxPacket.flags.bits.sourcePrsnt = 1;
+
+
+if( bIntraPAN )
+
+{
+
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[7]);
+
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 19;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[15]);
+}
+
+else
+{
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[7],2);
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[9]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 21;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[17]);
+}
+
+
+break;
+
+case 0xCC:
+MACRxPacket.flags.bits.sourcePrsnt = 1;
+
+if( bIntraPAN )
+
+{
+
+
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[13]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 25;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[21]);
+}
+
+else
+{
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[13],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[15]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 27;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[23]);
+}
+
+break;
+
+case 0x80:
+{
+MACRxPacket.flags.bits.broadcast = 1;
+MACRxPacket.flags.bits.sourcePrsnt = 1;
+MACRxPacket.altSourceAddress = 1;
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[5]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 11;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[7]);
+}
+break;
+
+case 0x88:
+{
+if( RxBuffer[BankIndex].Payload[5] == 0xFF && RxBuffer[BankIndex].Payload[6] == 0xFF )
+{
+MACRxPacket.flags.bits.broadcast = 1;
+}
+MACRxPacket.flags.bits.sourcePrsnt = 1;
+MACRxPacket.altSourceAddress = 1;
+
+if( bIntraPAN == 0 )
+{
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[7],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[9]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 15;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[11]);
+}
+else
+
+{
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[7]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 13;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[9]);
+}
+}
+break;
+
+case 0x8C:
+{
+MACRxPacket.flags.bits.sourcePrsnt = 1;
+MACRxPacket.altSourceAddress = 1;
+
+if( bIntraPAN )
+
+{
+
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[3],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[12]);
+
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 19;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[15]);
+}
+
+else
+{
+memcpy(&MACRxPacket.SourcePANID,&RxBuffer[BankIndex].Payload[12],2);
+
+
+
+MACRxPacket.SourceAddress = &(RxBuffer[BankIndex].Payload[14]);
+MACRxPacket.PayloadLen = RxBuffer[BankIndex].PayloadLen - 21;
+MACRxPacket.Payload = &(RxBuffer[BankIndex].Payload[17]);
+}
+
+}
+break;
+
+
+case 0x08:
+
+default:
+
+MiMAC_DiscardPacket();
+return 0;
+}
+
+
+if( RxBuffer[BankIndex].Payload[0] & 0x08 )
+{
+
+
+switch(mySecurityLevel)
+{
+case 0x02:
+case 0x05:
+MACRxPacket.PayloadLen -= 21;
+break;
+case 0x03:
+case 0x06:
+MACRxPacket.PayloadLen -= 13;
+break;
+case 0x04:
+case 0x07:
+MACRxPacket.PayloadLen -= 9;
+break;
+case 0x01:
+MACRxPacket.PayloadLen -= 5;
+break;
+default:
+break;
+}
+
+MACRxPacket.Payload = &(MACRxPacket.Payload[5]);
+MACRxPacket.flags.bits.secEn = 1;
+}
+
+# 683
+switch( RxBuffer[BankIndex].Payload[0] & 0x07 )
+{
+case 0x01:
+MACRxPacket.flags.bits.packetType = 0x00;
+break;
+case 0x03:
+MACRxPacket.flags.bits.packetType = 0x01;
+break;
+case 0x00:
+
+MACRxPacket.flags.bits.packetType = 0x03;
+break;
+default:
+MiMAC_DiscardPacket();
+return 0;
+}
+
+MACRxPacket.LQIValue = RxBuffer[BankIndex].Payload[RxBuffer[BankIndex].PayloadLen-2];
+MACRxPacket.RSSIValue = RxBuffer[BankIndex].Payload[RxBuffer[BankIndex].PayloadLen-1];
+
+
+return 1;
+}
+return 0;
+}
+
+# 745
+void MiMAC_DiscardPacket(void)
+{
+
+
+if( BankIndex < 2 )
+{
+RxBuffer[BankIndex].PayloadLen = 0;
+}
+}
+
+# 789
+bool MiMAC_SendPacket(  MAC_TRANS_PARAM transParam,
+ uint8_t *MACPayload,
+ uint8_t MACPayloadLen)
+{
+uint8_t headerLength;
+uint8_t loc = 0;
+uint8_t i = 0;
+
+bool IntraPAN;
+
+MIWI_TICK t1, t2;
+
+
+if( transParam.flags.bits.broadcast )
+{
+transParam.altDestAddr = 1;
+}
+
+if( transParam.flags.bits.secEn )
+{
+transParam.altSrcAddr = 0;
+}
+
+# 836
+if( transParam.flags.bits.packetType == 0x01 )
+{
+i = 0x03;
+}
+else if( transParam.flags.bits.packetType == 0x00)
+{
+i = 0x01;
+}
+
+
+
+
+if( (transParam.DestPANID.Val == MAC_PANID) && (MAC_PANID != 0xFFFF) )
+
+{
+headerLength = 5;
+i |= 0x40;
+
+IntraPAN = 1;
+
+}
+
+
+else
+{
+headerLength = 7;
+IntraPAN = 0;
+}
+
+
+if( transParam.altDestAddr )
+{
+headerLength += 2;
+}
+else
+{
+headerLength += 8;
+}
+
+if( transParam.altSrcAddr )
+{
+headerLength += 2;
+}
+else
+{
+headerLength += 8;
+}
+
+
+if( transParam.flags.bits.secEn )
+{
+i |= 0x08;
+}
+
+
+if( transParam.flags.bits.ackReq && transParam.flags.bits.broadcast == 0 )
+{
+i |= 0x20;
+}
+
+
+if( transParam.flags.bits.packetType == 0x03)
+{
+i = 0x00;
+headerLength = 7;
+
+IntraPAN = 0;
+
+transParam.altSrcAddr = 1;
+transParam.flags.bits.ackReq = 0;
+}
+
+
+PHYSetLongRAMAddr(loc++, headerLength);
+
+
+if( transParam.flags.bits.secEn )
+{
+PHYSetLongRAMAddr(loc++, headerLength + MACPayloadLen + 5);
+}
+else
+
+{
+PHYSetLongRAMAddr(loc++, headerLength + MACPayloadLen);
+}
+
+
+PHYSetLongRAMAddr(loc++, i);
+
+
+if( transParam.flags.bits.packetType == 0x03 )
+{
+PHYSetLongRAMAddr(loc++, 0x80);
+
+PHYSetLongRAMAddr(loc++, IEEESeqNum++);
+}
+else
+{
+if( transParam.altDestAddr && transParam.altSrcAddr )
+{
+PHYSetLongRAMAddr(loc++, 0x88);
+}
+else if( transParam.altDestAddr && transParam.altSrcAddr == 0 )
+{
+PHYSetLongRAMAddr(loc++, 0xC8);
+}
+else if( transParam.altDestAddr == 0 && transParam.altSrcAddr == 1 )
+{
+PHYSetLongRAMAddr(loc++, 0x8C);
+}
+else
+{
+PHYSetLongRAMAddr(loc++, 0xCC);
+}
+
+
+PHYSetLongRAMAddr(loc++, IEEESeqNum++);
+
+
+PHYSetLongRAMAddr(loc++, transParam.DestPANID.v[0]);
+PHYSetLongRAMAddr(loc++, transParam.DestPANID.v[1]);
+
+
+if( transParam.flags.bits.broadcast )
+{
+PHYSetLongRAMAddr(loc++, 0xFF);
+PHYSetLongRAMAddr(loc++, 0xFF);
+}
+else
+{
+if( transParam.altDestAddr )
+{
+PHYSetLongRAMAddr(loc++, transParam.DestAddress[0]);
+PHYSetLongRAMAddr(loc++, transParam.DestAddress[1]);
+}
+else
+{
+for(i = 0; i < 8; i++)
+{
+PHYSetLongRAMAddr(loc++, transParam.DestAddress[i]);
+}
+}
+}
+}
+
+
+
+if( IntraPAN == 0 )
+{
+PHYSetLongRAMAddr(loc++, ((MAC_PANID>>0)&0xff));
+PHYSetLongRAMAddr(loc++, ((MAC_PANID>>8)&0xff));
+}
+
+
+
+if( transParam.altSrcAddr )
+{
+PHYSetLongRAMAddr(loc++, ((myNetworkAddress>>0)&0xff));
+PHYSetLongRAMAddr(loc++, ((myNetworkAddress>>8)&0xff));
+}
+else
+{
+for(i = 0; i < 8; i++)
+{
+PHYSetLongRAMAddr(loc++, MACInitParams.PAddress[i]);
+}
+}
+
+
+if( transParam.flags.bits.secEn )
+{
+
+for(i = 0; i < 4; i++)
+{
+PHYSetLongRAMAddr(loc++, ((OutgoingFrameCounter>>(i<<3))&0xff) );
+}
+OutgoingFrameCounter++;
+
+# 1020
+PHYSetLongRAMAddr(loc++, myKeySequenceNumber);
+
+
+for(i = 0; i < 16; i++)
+{
+PHYSetLongRAMAddr(0x280 + i, mySecurityKey[i]);
+}
+
+
+PHYSetShortRAMAddr((0x59), mySecurityLevel);
+}
+
+
+
+
+for(i = 0; i < MACPayloadLen; i++)
+{
+PHYSetLongRAMAddr(loc++, MACPayload[i]);
+}
+
+MRF24J40Status.bits.TX_BUSY = 1;
+
+
+if( transParam.flags.bits.ackReq && transParam.flags.bits.broadcast == 0 )
+{
+i = 0x05;
+
+MRF24J40Status.bits.TX_PENDING_ACK = 1;
+
+}
+else
+{
+i = 0x01;
+
+MRF24J40Status.bits.TX_PENDING_ACK = 0;
+
+}
+
+if( transParam.flags.bits.secEn )
+{
+i |= 0x02;
+}
+
+
+
+PHYSetShortRAMAddr((0x37), i);
+
+
+t1 = MiWi_TickGetMs();
+while(1)
+{
+if( PORTBbits.RB0 == 0 )
+{
+INTCONbits.INT0IF = 1;
+}
+if( MRF24J40Status.bits.TX_BUSY == 0 )
+{
+if( MRF24J40Status.bits.TX_FAIL )
+{
+MRF24J40Status.bits.TX_FAIL = 0;
+return 0;
+}
+break;
+}
+t2 = MiWi_TickGetMs();
+if( (t2.Val - t1.Val) > 40 )
+{
+InitMRF24J40();
+MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+MRF24J40Status.bits.TX_BUSY = 0;
+return 0;
+}
+}
+
+
+return 1;
+
+}
+
+# 1134
+uint8_t MiMAC_ChannelAssessment( uint8_t AssessmentMode)
+{
+uint8_t RSSIcheck;
+
+# 1150
+PHYSetShortRAMAddr((0x7D), 0x80);
+
+
+RSSIcheck = PHYGetShortRAMAddr ((0x7C));
+while ((RSSIcheck & 0x01) != 0x01)
+{
+RSSIcheck = PHYGetShortRAMAddr ((0x7C));
+}
+
+
+RSSIcheck = PHYGetLongRAMAddr(0x210);
+
+
+
+PHYSetShortRAMAddr((0x7D), 0x40);
+
+# 1177
+return RSSIcheck;
+}
+
+# 1224
+bool MiMAC_PowerState( uint8_t PowerState)
+{
+switch(PowerState)
+{
+case 0x00:
+{
+
+LATDbits.LATD1 = 0;
+
+# 1240
+PHYSetShortRAMAddr((0x55), 0x04);
+
+
+PHYSetShortRAMAddr((0x45),0x80);
+PHYSetShortRAMAddr((0x1B),0x60);
+PHYSetShortRAMAddr((0x6B),0x80);
+}
+break;
+
+case 0xFF:
+{
+
+
+
+
+uint8_t results;
+MIWI_TICK t1, t2;
+
+
+LATDbits.LATD1 = 1;
+
+t1 = MiWi_TickGetMs();
+
+while(1)
+{
+t2 = MiWi_TickGetMs();
+t2.Val = (t2.Val - t1.Val);
+
+
+if( t2.Val > 100)
+{
+InitMRF24J40();
+
+MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+break;
+}
+
+results = PHYGetShortRAMAddr((0x62));
+if((results & 0x40) != 0x00)
+{
+break;
+}
+}
+
+while(1)
+{
+t2 = MiWi_TickGetMs();
+t2.Val = (t2.Val - t1.Val);
+
+
+if( t2.Val > 100 )
+{
+InitMRF24J40();
+
+MiMAC_SetAltAddress((uint8_t*)&myNetworkAddress, (uint8_t*)&MAC_PANID);
+break;
+}
+
+results = PHYGetLongRAMAddr((0x20f));
+if( (results & 0xE0) == 0xA0 )
+{
+break;
+}
+
+}
+
+PHYSetShortRAMAddr((0x6D), 0x04);
+PHYSetShortRAMAddr((0x6D), 0x00);
+
+# 1328
+}
+break;
+
+default:
+return 0;
+}
+return 1;
+}
+
+# 1378
+bool MiMAC_SetChannel( uint8_t channel,  uint8_t offsetFreq)
+{
+if( channel < 11 || channel > 26)
+{
+return 0;
+}
+
+# 1392
+MACCurrentChannel = channel;
+PHYSetLongRAMAddr((0x200),((channel-11)<<4)|0x03);
+PHYSetShortRAMAddr((0x6D),0x04);
+PHYSetShortRAMAddr((0x6D),0x00);
+return 1;
+}
+
+# 1432
+bool MiMAC_SetPower( uint8_t outputPower)
+{
+uint8_t reg;
+uint8_t tmp = outputPower % 10;
+
+reg = (outputPower / 10) << 6;
+if( tmp > 5 )
+{
+reg += 0x38;
+}
+else if( tmp > 4 )
+{
+reg += 0x30;
+}
+else if( tmp > 3 )
+{
+reg += 0x28;
+}
+else if( tmp > 2 )
+{
+reg += 0x20;
+}
+else if( tmp > 1 )
+{
+reg += 0x18;
+}
+else if( tmp > 0 )
+{
+reg += 0x10;
+}
+
+PHYSetLongRAMAddr((0x203),reg);
+return 1;
+}
+
+# 1504
+bool MiMAC_SetAltAddress( uint8_t *Address,  uint8_t *PANID)
+{
+memcpy(&myNetworkAddress,Address,2);
+memcpy(&MAC_PANID,PANID,2);
+
+PHYSetShortRAMAddr((0x07),((myNetworkAddress>>0)&0xff));
+PHYSetShortRAMAddr((0x09),((myNetworkAddress>>8)&0xff));
+PHYSetShortRAMAddr((0x03),((MAC_PANID>>0)&0xff));
+PHYSetShortRAMAddr((0x05),((MAC_PANID>>8)&0xff));
+return 1;
+}
+
+# 1547
+bool MiMAC_Init( MACINIT_PARAM initValue)
+{
+uint8_t i;
+
+MACInitParams = initValue;
+
+IEEESeqNum = TMR1;
+
+MACCurrentChannel = 11;
+
+InitMRF24J40();
+
+MRF24J40Status.Val = 0;
+
+for(i = 0; i < 2; i++)
+{
+RxBuffer[i].PayloadLen = 0;
+}
+
+# 1580
+OutgoingFrameCounter = 1;
+
+
+
+uint16_t seed=0;
+for(i=0;i<16;i++)
+{
+seed<<=1;
+seed|=((MiMAC_ChannelAssessment(0x00)) & 0x01);
+
+DelayMs(10);
+}
+
+krndInit(seed);
+IEEESeqNum = krnd();
+
+return 1;
+}
+
+# 1615
+void interrupt HighISR(void)
+
+# 1623
+{
+if(INTCONbits.INT0IE && INTCONbits.INT0IF)
+{
+uint8_t i;
+uint8_t j;
+
+
+
+INTCONbits.INT0IF = 0;
+
+
+
+{
+MRF24J40_IFREG flags;
+
+
+flags.Val=PHYGetShortRAMAddr((0x62));
+
+if(flags.bits.RF_TXIF)
+{
+
+
+MRF24J40Status.bits.TX_BUSY = 0;
+
+failureCounter = 0;
+
+
+
+if(MRF24J40Status.bits.TX_PENDING_ACK)
+{
+uint8_t results;
+
+
+results = PHYGetShortRAMAddr((0x48));
+
+if((results & 0x01)>0)
+{
+
+
+MRF24J40Status.bits.TX_FAIL = 1;
+}
+
+
+
+MRF24J40Status.bits.TX_PENDING_ACK = 0;
+
+}
+
+}
+
+if(flags.bits.RF_RXIF)
+{
+uint8_t RxBank = 0xFF;
+
+for(i = 0; i < 2; i++)
+{
+if( RxBuffer[i].PayloadLen == 0 )
+{
+RxBank = i;
+break;
+}
+}
+
+
+if( RxBank < 2 )
+{
+
+if( MRF24J40Status.bits.RX_SECURITY )
+{
+uint8_t DecryptionStatus = PHYGetShortRAMAddr((0x5E));
+uint8_t FrameControl;
+
+MRF24J40Status.bits.RX_SECURITY = 0;
+if( (DecryptionStatus & 0x02) != 0 )
+{
+PHYSetShortRAMAddr((0x1B),0x01);
+goto START_OF_SEC_INT;
+}
+
+i = 6;
+FrameControl = PHYGetLongRAMAddr(0x301);
+if( (FrameControl & 0x40) == 0 )
+{
+i += 2;
+}
+
+FrameControl = PHYGetLongRAMAddr(0x302);
+if( (FrameControl & 0x0C) == 0x0C )
+{
+i += 8;
+}
+else
+{
+i += 2;
+}
+
+
+for(j = 0; j < 8; j++)
+{
+tmpSourceLongAddress.bytes[j] = PHYGetLongRAMAddr(0x300 + i + j);
+}
+uint8_t* v=(uint8_t*)&tmpFrameCounter;
+for(j = 0; j < 4; j++)
+{
+v[j] = PHYGetLongRAMAddr(0x308 + i + j);
+}
+
+
+for(i = 0; i < 5; i++)
+{
+if( (ConnectionTable[i].status.bits.isValid) &&
+isSameAddress(ConnectionTable[i].Address, tmpSourceLongAddress) )
+{
+break;
+}
+}
+
+if( i < 5 )
+{
+if( ConnectionTable[i].IncomingFrameCounter > tmpFrameCounter )
+{
+PHYSetShortRAMAddr((0x1B),0x01);
+goto START_OF_SEC_INT;
+}
+else
+{
+if( tmpFrameCounter == 0xFFFFFFFF )
+{
+ConnectionTable[i].IncomingFrameCounter = 0;
+}
+else
+{
+ConnectionTable[i].IncomingFrameCounter = tmpFrameCounter;
+}
+}
+}
+
+}
+else
+
+
+if( MRF24J40Status.bits.RX_IGNORE_SECURITY )
+{
+MRF24J40Status.bits.RX_IGNORE_SECURITY = 0;
+PHYSetShortRAMAddr((0x1B),0x01);
+goto START_OF_SEC_INT;
+}
+
+# 1775
+PHYSetShortRAMAddr((0x73), 0x04);
+
+
+
+RxBuffer[RxBank].PayloadLen = PHYGetLongRAMAddr(0x300) + 2;
+if(RxBuffer[RxBank].PayloadLen<(90+0+8+8+4+17))
+{
+
+MRF24J40Status.bits.RX_BUFFERED = 1;
+
+
+for(i=1;i<=RxBuffer[RxBank].PayloadLen+2;i++)
+{
+RxBuffer[RxBank].Payload[i-1] = PHYGetLongRAMAddr(0x300+i);
+}
+PHYSetShortRAMAddr((0x1B), 0x01);
+}
+else
+{
+
+
+PHYSetShortRAMAddr((0x1B),0x01);
+}
+
+
+PHYSetShortRAMAddr((0x73), 0x00);
+}
+else
+{
+
+
+PHYSetShortRAMAddr((0x1B),0x01);
+
+MRF24J40Status.bits.RX_SECURITY = 0;
+
+MRF24J40Status.bits.RX_IGNORE_SECURITY = 0;
+
+
+}
+
+}
+
+START_OF_SEC_INT:
+if( flags.bits.SECIF )
+{
+
+uint8_t FrameControl;
+if( MRF24J40Status.bits.TX_BUSY )
+{
+MRF24J40Status.bits.RX_IGNORE_SECURITY = 1;
+PHYSetShortRAMAddr((0x59), 0x80);
+PHYSetShortRAMAddr((0x1B),0x01);
+goto END_OF_RF_INT;
+}
+
+# 1835
+i = 6;
+FrameControl = PHYGetLongRAMAddr(0x301);
+if( (FrameControl & 0x40) == 0 )
+{
+i += 2;
+}
+
+FrameControl = PHYGetLongRAMAddr(0x302);
+if( (FrameControl & 0x0C) == 0x0C )
+{
+i += 8;
+}
+else
+{
+i += 2;
+}
+
+
+for(j = 0; j < i + 10; j++)
+{
+PHYGetLongRAMAddr(0x301+j);
+}
+
+
+j = PHYGetLongRAMAddr(0x30C + i);
+
+if( j != myKeySequenceNumber )
+{
+PHYSetShortRAMAddr((0x59), 0x80);
+MRF24J40Status.bits.RX_IGNORE_SECURITY = 1;
+}
+
+if( MRF24J40Status.bits.RX_IGNORE_SECURITY == 0 )
+
+{
+
+for(i = 0; i < 16; i++)
+{
+PHYSetLongRAMAddr(0x2B0 + i, mySecurityKey[i]);
+}
+MRF24J40Status.bits.RX_SECURITY = 1;
+
+
+PHYSetShortRAMAddr((0x59), mySecurityLevel << 3 | 0x40);
+}
+
+# 1884
+}
+}
+}
+
+END_OF_RF_INT:
+
+# 1907
+if ((INTCONbits.TMR0IF == 1) && (INTCONbits.TMR0IE == 1))
+{
+uint16_t tmr = TMR0;
+t1extension++;
+tmr += (0xffff - 6000);
+TMR0L = tmr;
+TMR0H = tmr >> 8;
+TMR0L = tmr;
+INTCONbits.TMR0IF = 0;
+t1fired=1;
+}
+
+if(INTCONbits.INT0IF && INTCONbits.INT0IE)
+{
+INTCONbits.INT0IF = 0;
+}
+
+
+
+
+return;
+
 }
 
