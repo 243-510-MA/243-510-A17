@@ -1,3 +1,8 @@
-JOURS 1
-PRESENTATIOND DU PROJET
+Semaine 1
+  PRESENTATIOND DU PROJETS "Système anti-drone"
+ 
+    Le but du projet consiste à la conception d'un module nous permettant de détecter le signal RF émit vers un drone. Nous voulons aussi être capable d'indiquer avec précision la direction d'où le signal est émis. Par la suite, on fera usage d'un second module pour prendre le contrôle du drone en question.
 
+    Pour ce projet-ci, on fera usage d'une radio-logicielle (USRP N210 2.4GHz). On utilisera une suite logicielle dédiée à l’implémentation de radios logicielles au nom de GNU Radio, ainsi que de deux antennes de 2.4GHz chacune.
+
+    L'USRP N210 de 2.4GHz, équipé de deux antennes, nous permettra d'analyser les phases du signal. Il est important de savoir que le signal emis vers le drone sera recu par les deux antennes du URSP. A ce moment, on aura une difference de phase du signal, car elle   d'analyser les phases du signal, car dépendamment de la différence des phases des signaux reçus, par l'USRP N210, on pourra savoir dans quelle direction se situe le signal.
