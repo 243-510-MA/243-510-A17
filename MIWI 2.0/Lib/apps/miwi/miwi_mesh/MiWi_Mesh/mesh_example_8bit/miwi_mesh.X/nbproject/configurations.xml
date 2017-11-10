@@ -88,6 +88,8 @@
       <itemPath>../src/mainRFD-Sleeping.c</itemPath>
       <itemPath>../src/mainRFD.c</itemPath>
       <itemPath>../src/Bridge.c</itemPath>
+      <itemPath>../src/main.c</itemPath>
+      <itemPath>../src/Main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
