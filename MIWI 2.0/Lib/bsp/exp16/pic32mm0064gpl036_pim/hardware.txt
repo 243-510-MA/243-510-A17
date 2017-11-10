@@ -1,0 +1,83 @@
+================================================================
+PIC32MM0064GPL036 Processor module for the Explorer 16/32
+================================================================
+
+mikroBUS(tm) connections
+----------------------------------------------------------------
+The Explorer 16/32 demo board has two mikroBUS ports: A and B.
+The below charts show how the processor pins map to the mikroBUS
+ports and what other features are shared on those pins on the
+Explorer 16/32.
+
+Since most of the pins on the mikroBUS A port are not connected,
+most demos using this processor module will need to be run from
+the mikroBUS B port.
+
+ +- mikroBUS A pin
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+AN   |  N/C  |  P25_ANA_USBOC  |  Not connected
+RST  |  N/C  |  P95_RSTA       |  Not connected
+CS   |  N/C  |  P14_CSA        |  Not connected
+SCK  |  N/C  |  P10_SCKA       |  Not connected
+MISO |  N/C  |  P11_MISOA      |  Not connected
+MOSI |  N/C  |  P12_MOSIA      |  Not connected
+PWM  |  N/C  |  P72_PWMA       |  Not connected
+INT  |  N/C  |  P67_INTA       |  Not connected
+RX   |  N/C  |  P52_RXA        |  Not connected
+TX   |  N/C  |  P51_TXA        |  Not connected
+SCL  |  RB8  |  P57_SCL        |  MCP2221A SCL and mikroBUS B SCL
+SDA  |  RB9  |  P56_SDA        |  MCP2221A SDA and mikroBUS B SDA
+
+
+ +- mikroBUS B pin
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+AN   |  RB2  |  P24_ANB        |  
+RST  |  RC8  |  P19_RSTB       |  Switch S6
+CS   |  RC3  |  P23_CSB        |  
+SCK  |  RB8  |  P55_SCKB       |  
+MISO |  RB14 |  P54_MISOB      |  
+MOSI |  RB9  |  P53_MOSIB      |  
+PWM  |  RB15 |  P78_PWMB       |  
+INT  |  RC9  |  P18_INTB       |  Switch S3
+RX   |  RA0  |  P49_RXB        |  MCP2221A TX (J37)
+TX   |  RA1  |  P50_TXB        |  MCP2221A RX (J38)
+SCL  |  RA9  |  P57_SCL        |  MCP2221A SCL and mikroBUS A SCL
+SDA  |  RC2  |  P56_SDA        |  MCP2221A SDA and mikroBUS A SDA
+
+
+Switches
+----------------------------------------------------------------
+NOTE: because of the tie to several LEDs, removing JP2 might be
+required for using many of the switches.
+
+ +- Switch
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+S3   |  RC9  |  P83_S3         |  mikroBUS B INT
+S6   |  RC8  |  P84_S6         |  mikroBUS B RST
+S5   |  RB13 |  P92_S5_LED10   |  LED D10, weak pull-up, LCD D7
+S4   |  RB7  |  P80_S4         |  
+
+
+
+References/Links
+----------------------------------------------------------------
+[1] http://www.mikroe.com/mikrobus/
+[2] http://www.microchip.com/MA320020
+[3] http://www.microchip.com/explorer1632
+
+
+Legal
+----------------------------------------------------------------
+mikroBUS a trademark of MikroElectronika.

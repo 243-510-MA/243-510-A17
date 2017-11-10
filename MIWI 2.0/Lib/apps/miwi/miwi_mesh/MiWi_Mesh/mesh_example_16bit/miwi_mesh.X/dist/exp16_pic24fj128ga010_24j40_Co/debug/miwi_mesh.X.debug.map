@@ -1,0 +1,2216 @@
+Microchip Technology Inc, v1.26 (A)
+
+Tool Name:
+  c:\program files (x86)\microchip\xc16\v1.26\bin\bin\..\bin/elf-ld.exe
+
+Command:
+  -p24FJ128GA010 \
+  -o \
+  dist/exp16_pic24fj128ga010_24j40_Co/debug/miwi_mesh.X.debug.elf \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/.. \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33F/gld \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o \
+  build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o \
+  ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a \
+  -TC:\\Users\\c17143\\AppData\\Local\\Temp\\tmp00001c2c.00 \
+  -TC:\\Users\\c17143\\AppData\\Local\\Temp\\tmp00001c2c.01 \
+  -TC:\\Users\\c17143\\AppData\\Local\\Temp\\tmp00001c2c.02 \
+  -TC:\\Users\\c17143\\AppData\\Local\\Temp\\tmp00001c2c.03 \
+  -TC:\\Users\\c17143\\AppData\\Local\\Temp\\tmp00001c2c.04 \
+  --defsym=__MPLAB_BUILD=1 \
+  --defsym=__MPLAB_DEBUG=1 \
+  --defsym=__DEBUG=1 \
+  --defsym=__MPLAB_DEBUGGER_ICD3=1 \
+  -Tp24FJ128GA010.gld.05 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/exp16_pic24fj128ga010_24j40_Co/debug/miwi_mesh.X.debug.map \
+  --report-mem \
+  --memorysummary \
+  dist/exp16_pic24fj128ga010_24j40_Co/debug/memoryfile.xml \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+
+Archive member included because of file (symbol)
+
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o (_radioReceivedPacket)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_RouteManagerProcessReceive)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o) (_BeaconManagerTrigger)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o) (_le_findIdx)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_BroadcastManagerDelaySend)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_TunnelManagerSetTunnel)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_isKnownPacket)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_TMSendFormedPacketTowardsCoordinator)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o (_NetworkManagerTask)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_IsNetworkDevice)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o (_krndInit)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o (_TimeTickISR)
+..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o) (_crc32)
+
+Optional library libpPIC24Fxxx.a not found
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+                              (__resetPRI)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o) (__data_init_standard)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o (___udivsi3)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o) (___udivdi3)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                              ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o) (___muldi3)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(muldi3.eo) (___umuldi3)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcmp.XXeo)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o (_memcmp)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcpy.XXeo)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o (_memcpy)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memset.XXeo)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o (_memset)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                              build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o (__sprintf_cdnopsuxX)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo) (___Printf_cdnopsuxX)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo) (___Putfld_cdnopsuxX)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memchr.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo) (_memchr)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strchr.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo) (_strchr)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strlen.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo) (_strlen)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo) (__Litob)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo) (__Puttxt)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XXeo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo) (__Vacopy)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo) (___divsi3)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo) (___umodsi3)
+
+
+xc16-ld 1.26 (A)
+
+Program Memory  [Origin = 0x200, Length = 0x155fc]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200               0xbbe          0x119d  (4509)
+.const                       0xdbe               0x46a           0x69f  (1695)
+.text                       0x1228              0x58f6          0x8571  (34161)
+.dinit                      0x6b1e               0x13e           0x1dd  (477)
+.text                       0x6c5c               0x3ba           0x597  (1431)
+.shared.dinit               0x7016                 0x2             0x3  (3)
+
+                 Total program memory used (bytes):         0xa524  (42276) 32%
+
+
+Ivt Memory  [Origin = 0x4, Length = 0xfc]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.ivt._T2Interrupt             0x22                 0x2             0x3  (3)
+.ivt._INT1Interrupt           0x3c                 0x2             0x3  (3)
+
+
+Data Memory  [Origin = 0x800, Length = 0x2000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+reserve_data_0x800           0x800                0x20            0x20  (32)
+reserve_data_0x820           0x820                 0x2             0x2  (2)
+reserve_data_0x822           0x822                 0x2             0x2  (2)
+reserve_data_0x824           0x824                 0x2             0x2  (2)
+reserve_data_0x826           0x826                0x2a            0x2a  (42)
+.nbss                        0x850                   0            0x72  (114)
+.ndata                       0x8c2                   0            0x1e  (30)
+.nbss                        0x8e0                   0            0x28  (40)
+.ndata                       0x908                   0             0x8  (8)
+.nbss                        0x910                   0             0x8  (8)
+.ndata                       0x918                   0             0x4  (4)
+.nbss                        0x91c                   0             0x8  (8)
+.ndata                       0x924                   0             0x4  (4)
+.nbss                        0x928                   0             0x2  (2)
+.ndata                       0x92a                   0             0x4  (4)
+.nbss                        0x92e                   0             0x2  (2)
+.bss                         0x930                   0           0xb10  (2832)
+.data                       0x1440                   0            0x22  (34)
+.bss                        0x1462                   0            0x1e  (30)
+.data                       0x1480                   0            0x1a  (26)
+.bss                        0x149a                   0            0x10  (16)
+.data                       0x14aa                   0             0x8  (8)
+
+                 Total data memory used (bytes):          0xcb2  (3250) 39%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                       0x14b2                              0x134e  (4942)
+
+                 Maximum dynamic memory (bytes):         0x134e  (4942)
+
+
+External Symbols in Data Memory (by address):
+
+                    0x0850                  _CoordinatorAddr
+                    0x0858                  _NetSeq
+                    0x0859                  _userDataAvailable
+                    0x085c                  _nState
+                    0x085e                  _nst
+                    0x0878                  _BMState
+                    0x087a                  _currentInterval
+                    0x0882                  _intervalDelay
+                    0x088a                  _tInterval
+                    0x0892                  _netSequenceNumber
+                    0x0894                  _MACInitParams
+                    0x0898                  _OutgoingFrameCounter
+                    0x089c                  _tmpFrameCounter
+                    0x08a0                  _IEEESeqNum
+                    0x08a2                  _failureCounter
+                    0x08a4                  _MACCurrentChannel
+                    0x08a6                  _MAC_PANID
+                    0x08a8                  _myNetworkAddress
+                    0x08aa                  _MRF24J40Status
+                    0x08ac                  _routingTableActive
+                    0x08ae                  _justEvictedParent
+                    0x08b0                  _NewBestParent
+                    0x08b8                  _RouteMgrUpdateRequired
+                    0x08ba                  _tRouteMgr
+                    0x08d2                  _addressLen
+                    0x08d4                  _DeviceType
+                    0x08d6                  _DEVPanID
+                    0x08d8                  _MyAddress
+                    0x08e0                  _ActiveScanChannel
+                    0x08e1                  _TxIndex
+                    0x08e2                  _TxData
+                    0x08e3                  _UserMessageAvailable
+                    0x08e4                  _miapp_currentChannel
+                    0x08e6                  _pcnt1
+                    0x08ec                  _switches
+                    0x08f6                  _Tick_MS
+                    0x08fe                  _TimerSuspend
+                    0x0900                  _upperTick
+                    0x0904                  _glbTmrNowms
+                    0x0908                  _tmTimeout
+                    0x0918                  _myShortAddress
+                    0x091a                  _myPANID
+                    0x091c                  _prevSentIdx
+                    0x091e                  _linkEstSeq
+                    0x0924                  _BankIndex
+                    0x0926                  _currentChannel
+                    0x0928                  _myDeviceType
+                    0x092a                  _rmETXThreshold
+                    0x092b                  _ParentSwitchThreshold
+                    0x092c                  _EvictETXThreshold
+                    0x092d                  _rssiThreshold
+                    0x092e                  _TMState
+                    0x0930                  _RbcQ
+                    0x0aec                  _hc_table
+                    0x0f10                  _ConnectionTable
+                    0x0f6a                  _ActiveScanResults
+                    0x0f76                  _MACRxPacket
+                    0x0f84                  _rxMessage
+                    0x0f90                  _srcAddress
+                    0x0f98                  _TxBuff
+                    0x0fd8                  _TxBuffer
+                    0x1028                  _tmpSourceLongAddress
+                    0x1030                  _RxBuffer
+                    0x1130                  _tunnels
+                    0x12fc                  _TMQ
+                    0x1398                  _beaconMessageBuffer
+                    0x13ec                  _routeInfo
+                    0x13fa                  _userdata
+                    0x141e                  _LCDText
+                    0x1462                  _LEDState
+                    0x1468                  _LEDCmd
+                    0x149a                  _lastSource
+                    0x14a2                  _myAddr
+                    0x14aa                  _myLongAddress
+
+External Symbols in Data Memory (by name):
+
+                    0x08e0                  _ActiveScanChannel
+                    0x0f6a                  _ActiveScanResults
+                    0x0878                  _BMState
+                    0x0924                  _BankIndex
+                    0x0f10                  _ConnectionTable
+                    0x0850                  _CoordinatorAddr
+                    0x08d6                  _DEVPanID
+                    0x08d4                  _DeviceType
+                    0x092c                  _EvictETXThreshold
+                    0x08a0                  _IEEESeqNum
+                    0x141e                  _LCDText
+                    0x1468                  _LEDCmd
+                    0x1462                  _LEDState
+                    0x08a4                  _MACCurrentChannel
+                    0x0894                  _MACInitParams
+                    0x0f76                  _MACRxPacket
+                    0x08a6                  _MAC_PANID
+                    0x08aa                  _MRF24J40Status
+                    0x08d8                  _MyAddress
+                    0x0858                  _NetSeq
+                    0x08b0                  _NewBestParent
+                    0x0898                  _OutgoingFrameCounter
+                    0x092b                  _ParentSwitchThreshold
+                    0x0930                  _RbcQ
+                    0x08b8                  _RouteMgrUpdateRequired
+                    0x1030                  _RxBuffer
+                    0x12fc                  _TMQ
+                    0x092e                  _TMState
+                    0x08f6                  _Tick_MS
+                    0x08fe                  _TimerSuspend
+                    0x0f98                  _TxBuff
+                    0x0fd8                  _TxBuffer
+                    0x08e2                  _TxData
+                    0x08e1                  _TxIndex
+                    0x08e3                  _UserMessageAvailable
+                    0x08d2                  _addressLen
+                    0x1398                  _beaconMessageBuffer
+                    0x0926                  _currentChannel
+                    0x087a                  _currentInterval
+                    0x08a2                  _failureCounter
+                    0x0904                  _glbTmrNowms
+                    0x0aec                  _hc_table
+                    0x0882                  _intervalDelay
+                    0x08ae                  _justEvictedParent
+                    0x149a                  _lastSource
+                    0x091e                  _linkEstSeq
+                    0x08e4                  _miapp_currentChannel
+                    0x14a2                  _myAddr
+                    0x0928                  _myDeviceType
+                    0x14aa                  _myLongAddress
+                    0x08a8                  _myNetworkAddress
+                    0x091a                  _myPANID
+                    0x0918                  _myShortAddress
+                    0x085c                  _nState
+                    0x0892                  _netSequenceNumber
+                    0x085e                  _nst
+                    0x08e6                  _pcnt1
+                    0x091c                  _prevSentIdx
+                    0x092a                  _rmETXThreshold
+                    0x13ec                  _routeInfo
+                    0x08ac                  _routingTableActive
+                    0x092d                  _rssiThreshold
+                    0x0f84                  _rxMessage
+                    0x0f90                  _srcAddress
+                    0x08ec                  _switches
+                    0x088a                  _tInterval
+                    0x08ba                  _tRouteMgr
+                    0x0908                  _tmTimeout
+                    0x089c                  _tmpFrameCounter
+                    0x1028                  _tmpSourceLongAddress
+                    0x1130                  _tunnels
+                    0x0900                  _upperTick
+                    0x0859                  _userDataAvailable
+                    0x13fa                  _userdata
+
+External Symbols in Program Memory (by address):
+
+                  0x000200                  __resetPRI
+                  0x00022c                  __psv_init
+                  0x00023c                  __data_init
+                  0x00023c                  __data_init_standard
+                  0x0002ac                  __DefaultInterrupt
+                  0x0002b0                  ___udivsi3
+                  0x00031c                  ___udivmoddi3
+                  0x000402                  ___udivdi3
+                  0x000410                  ___umoddi3
+                  0x000418                  ___divdi3
+                  0x000478                  ___moddi3
+                  0x0004d4                  ___muldi3
+                  0x000526                  ___umuldi3
+                  0x00056a                  _memcmp
+                  0x000586                  _memcpy
+                  0x000594                  _memset
+                  0x0005a2                  sprintf_cdnopsuxX.XXeo:_prout
+                  0x0005b0                  __sprintf_cdnopsuxX
+                  0x0005ce                  ___Printf_cdnopsuxX
+                  0x000732                  ___Putfld_cdnopsuxX
+                  0x000988                  _memchr
+                  0x00099c                  _strchr
+                  0x0009b4                  _strlen
+                  0x0009c0                  __Litob
+                  0x000c1e                  __Puttxt
+                  0x000d96                  __Vacopy
+                  0x000d9a                  ___divsi3
+                  0x000db8                  ___umodsi3
+                  0x000dbe                  _crc32_table
+                  0x00120e                  _mySecurityKey
+                  0x00121e                  _mySecurityLevel
+                  0x00121f                  _myKeySequenceNumber
+                  0x001228                  _PHYSetLongRAMAddr
+                  0x001270                  _PHYSetShortRAMAddr
+                  0x0012a4                  _PHYGetShortRAMAddr
+                  0x0012d8                  _PHYGetLongRAMAddr
+                  0x00131e                  _InitMRF24J40
+                  0x001420                  _MiMAC_ReceivedPacket
+                  0x001904                  _MiMAC_DiscardPacket
+                  0x00191e                  _MiMAC_SendPacket
+                  0x001d2c                  _MiMAC_ChannelAssessment
+                  0x001d5e                  _MiMAC_PowerState
+                  0x001e3a                  _MiMAC_SetChannel
+                  0x001e78                  _MiMAC_SetPower
+                  0x001ef2                  _MiMAC_SetAltAddress
+                  0x001f3a                  _MiMAC_Init
+                  0x001fb4                  __INT1Interrupt
+                  0x0022e2                  _LinkEstimatorInit
+                  0x0022ec                  _le_findIdx
+                  0x002378                  _LELinkQualityGet
+                  0x0023e4                  _LEAppendNeighborInfo
+                  0x0024c0                  _LE_PinNeighbor
+                  0x002508                  _LE_UnpinNeighbor
+                  0x002554                  _LE_ClearDLQ
+                  0x00259a                  _le_initNeighborIdx
+                  0x00264c                  _le_findWorstNeighborIdx
+                  0x00274c                  _le_findEmptyNeighborIdx
+                  0x002782                  _LE_InsertNeighbor
+                  0x00287c                  _le_computeETX
+                  0x0028aa                  _le_updateETX
+                  0x0028ee                  _le_updateNeighborTableEst
+                  0x002a3c                  _le_updateNeighborEntryIdx
+                  0x002bf6                  _le_findRandomNeighborIdx
+                  0x002d7a                  _LE_processReceivedMessage
+                  0x002eec                  _LE_GetNeighborDeviceType
+                  0x002f16                  _LE_RemoveNeighborDevice
+                  0x002f8c                  _NetworkManagerTask
+                  0x003208                  _NetworkAddressSizeSet
+                  0x003216                  _NetworkAddressSizeGet
+                  0x00321e                  _NetworkInit
+                  0x0032ca                  _NetworkGetDeviceType
+                  0x0032d2                  _NetworkHasRoute
+                  0x003308                  _isBroadcastAddress
+                  0x003338                  _isInvalidAddress
+                  0x003348                  _NetworkManagerGetMyAddress
+                  0x003350                  _NetworkGetMyRouteInfo
+                  0x003358                  _isSameAddress
+                  0x003382                  _NetworkGetParentAddress
+                  0x003392                  _CoordinatorGenericAddress
+                  0x0033b6                  _CoordinatorAddress
+                  0x0033c6                  _NetworkSequence
+                  0x0033d6                  _NetworkManagerProcessIncomingData
+                  0x0036e8                  _NetworkReleaseUserData
+                  0x0036f0                  _NetworkPrepareSendPacket
+                  0x003834                  _IsMemberOfNetwork
+                  0x00383c                  _isNetworkSecurityEnabled
+                  0x003844                  _NetworkGetPANID
+                  0x00384c                  _NetworkSendDiscoverRequest
+                  0x003886                  _NetworkSendDiscoverResponse
+                  0x0038c4                  _NetworkIssueDataRequest
+                  0x003924                  _NetworkSetAddressPAN
+                  0x00395e                  _NetworkSetDeviceType
+                  0x00396a                  _MiApp_SetNetworkSecure
+                  0x0039b4                  _radioReceivedPacket
+                  0x0040de                  _NetworkUnicastData
+                  0x0041c4                  _NetworkBroadcastData
+                  0x00421a                  _RouteManagerInit
+                  0x004232                  _RouteManagerTask
+                  0x004276                  _RouteManagerPerformUpdate
+                  0x0043d6                  _RouteManagerRequestUpdate
+                  0x0043e0                  _passLinkEtxThreshold
+                  0x0043f4                  _routeInfoInit
+                  0x004420                  _routingTableFind
+                  0x00447e                  _RouterEvicted
+                  0x0044f8                  _routingTableUpdateEntry
+                  0x004604                  _RouterIsNeighborCongested
+                  0x004610                  _RouteManagerSetNeighborCongested
+                  0x00461c                  _RouteManagerProcessReceive
+                  0x00476a                  _RouteManagerShouldInsert
+                  0x004848                  _RMRoutingTableCount
+                  0x004850                  _RoutingTableFindDeviceOrParent
+                  0x0048e6                  _GetRouteAddressOfChild
+                  0x004958                  _SendPacket
+                  0x0049fc                  _radioBroadcast
+                  0x004a44                  _radioUnicast
+                  0x004a9c                  _radioDiscardPacket
+                  0x004aa4                  _MiApp_ProtocolInit
+                  0x004aee                  _MiApp_SetChannel
+                  0x004b0c                  _MiApp_StartConnection
+                  0x004b34                  _MiApp_EstablishConnection
+                  0x004ba8                  _MiApp_SetAddressPan
+                  0x004bda                  _MiApp_UnicastAddress
+                  0x004c02                  _MiApp_BroadcastPacket
+                  0x004c16                  _MiApp_MessageAvailable
+                  0x004cb2                  _MiApp_DiscardMessage
+                  0x004cbc                  _NetworkDataArrivedEvent
+                  0x004d16                  _MiApp_IsMemberOfNetwork
+                  0x004d1e                  _MiApp_GetParentAddress
+                  0x004d30                  _AddNodeToNetworkTable
+                  0x004e1e                  _MiApp_RemoveConnection
+                  0x004e26                  _MiApp_ConnectionMode
+                  0x004e30                  _MiApp_SearchConnection
+                  0x004f08                  _NetworkDiscoveredEvent
+                  0x004fe4                  _MiApp_TransceiverPowerState
+                  0x005002                  _MiApp_RequestData
+                  0x00500a                  _TransportManagerInit
+                  0x005018                  _TransportManagerTask
+                  0x0052d0                  _TMSendFormedPacketTowardsCoordinator
+                  0x0053ac                  _TMIsBusyBusy
+                  0x0053e2                  _TMSendDataToRFD
+                  0x00541c                  _TMSendFormedPacketToRFD
+                  0x0055c8                  _TransportManagerNoRoute
+                  0x0055ce                  _TransportManagerRouteFound
+                  0x0055d4                  _IsNetworkDevice
+                  0x0056a6                  _DeviceManagerInit
+                  0x0056b4                  _MiApp_InitSleepRFDBuffers
+                  0x0056f0                  _DeviceManagerGetDeviceType
+                  0x00573e                  _DeviceManagerBufferDeviceData
+                  0x005840                  _DeviceManagerGetDeviceData
+                  0x005976                  _HardwareInit
+                  0x0059cc                  _HardwareSaveSPIBaudSetValue
+                  0x0059d4                  _HardwareRestoreSPIBaud
+                  0x0059da                  _ButtonTask
+                  0x005a6e                  _isButtonPressed
+                  0x005a8c                  _LEDManagerTask
+                  0x005ccc                  _LEDCommand
+                  0x005cfe                  _BlinkRedLED
+                  0x005e5c                  _LCDInit
+                  0x005ef4                  _LCDUpdate
+                  0x005f9e                  _LCDWriteLine
+                  0x006000                  _BeaconManagerInit
+                  0x006024                  _BeaconManagerTask
+                  0x0060da                  _networkSendBeacon
+                  0x006232                  _netChooseAdvertiseTime
+                  0x00627c                  _netResetInterval
+                  0x006294                  _netDecayInterval
+                  0x0062d6                  _BeaconManagerTrigger
+                  0x0062de                  _MiApp_IsNetworkBusy
+                  0x0062e6                  _TunnelManagerSetTunnel
+                  0x0063fa                  _TunnelManagerGetTunnel
+                  0x0064cc                  _TunnelManagerInvalidateTunnel
+                  0x006520                  _TunnelManagerInit
+                  0x00652e                  _TunnelManagerSetTimeoutSec
+                  0x006566                  _TunnelManagerGetTimeoutSeconds
+                  0x00657c                  _main
+                  0x00671e                  _EEPROMRead
+                  0x00674c                  _Read_MAC_Address
+                  0x0067f6                  _BroadcastManagerInit
+                  0x006804                  _BroadcastManagerTask
+                  0x0068ce                  _BroadcastManagerDelaySend
+                  0x0069d8                  _isKnownPacket
+                  0x006b10                  _CacheInit
+                  0x006c5c                  _krndInit
+                  0x006cca                  _krnd
+                  0x006d84                  _InitSymbolTimer
+                  0x006d94                  _MiWi_TickGet
+                  0x006df2                  _MiWi_TickGetMs
+                  0x006e18                  _safeMiWi_TickGetMs
+                  0x006e58                  __T2Interrupt
+                  0x006e7c                  _TimerDisable
+                  0x006e84                  _TimerEnable
+                  0x006e8c                  _crc32
+                  0x006f1e                  _SPIPut
+                  0x006f40                  _SPIGet
+                  0x006f4e                  _SPIPut2
+                  0x006f6e                  _SPIGet2
+                  0x006f7c                  _TimeTickISR
+                  0x006fcc                  _DelayUS
+                  0x006ff2                  _DelayMs
+
+External Symbols in Program Memory (by name):
+
+                  0x004d30                  _AddNodeToNetworkTable
+                  0x006000                  _BeaconManagerInit
+                  0x006024                  _BeaconManagerTask
+                  0x0062d6                  _BeaconManagerTrigger
+                  0x005cfe                  _BlinkRedLED
+                  0x0068ce                  _BroadcastManagerDelaySend
+                  0x0067f6                  _BroadcastManagerInit
+                  0x006804                  _BroadcastManagerTask
+                  0x0059da                  _ButtonTask
+                  0x006b10                  _CacheInit
+                  0x0033b6                  _CoordinatorAddress
+                  0x003392                  _CoordinatorGenericAddress
+                  0x006ff2                  _DelayMs
+                  0x006fcc                  _DelayUS
+                  0x00573e                  _DeviceManagerBufferDeviceData
+                  0x005840                  _DeviceManagerGetDeviceData
+                  0x0056f0                  _DeviceManagerGetDeviceType
+                  0x0056a6                  _DeviceManagerInit
+                  0x00671e                  _EEPROMRead
+                  0x0048e6                  _GetRouteAddressOfChild
+                  0x005976                  _HardwareInit
+                  0x0059d4                  _HardwareRestoreSPIBaud
+                  0x0059cc                  _HardwareSaveSPIBaudSetValue
+                  0x00131e                  _InitMRF24J40
+                  0x006d84                  _InitSymbolTimer
+                  0x003834                  _IsMemberOfNetwork
+                  0x0055d4                  _IsNetworkDevice
+                  0x005e5c                  _LCDInit
+                  0x005ef4                  _LCDUpdate
+                  0x005f9e                  _LCDWriteLine
+                  0x0023e4                  _LEAppendNeighborInfo
+                  0x005ccc                  _LEDCommand
+                  0x005a8c                  _LEDManagerTask
+                  0x002378                  _LELinkQualityGet
+                  0x002554                  _LE_ClearDLQ
+                  0x002eec                  _LE_GetNeighborDeviceType
+                  0x002782                  _LE_InsertNeighbor
+                  0x0024c0                  _LE_PinNeighbor
+                  0x002f16                  _LE_RemoveNeighborDevice
+                  0x002508                  _LE_UnpinNeighbor
+                  0x002d7a                  _LE_processReceivedMessage
+                  0x0022e2                  _LinkEstimatorInit
+                  0x004c02                  _MiApp_BroadcastPacket
+                  0x004e26                  _MiApp_ConnectionMode
+                  0x004cb2                  _MiApp_DiscardMessage
+                  0x004b34                  _MiApp_EstablishConnection
+                  0x004d1e                  _MiApp_GetParentAddress
+                  0x0056b4                  _MiApp_InitSleepRFDBuffers
+                  0x004d16                  _MiApp_IsMemberOfNetwork
+                  0x0062de                  _MiApp_IsNetworkBusy
+                  0x004c16                  _MiApp_MessageAvailable
+                  0x004aa4                  _MiApp_ProtocolInit
+                  0x004e1e                  _MiApp_RemoveConnection
+                  0x005002                  _MiApp_RequestData
+                  0x004e30                  _MiApp_SearchConnection
+                  0x004ba8                  _MiApp_SetAddressPan
+                  0x004aee                  _MiApp_SetChannel
+                  0x00396a                  _MiApp_SetNetworkSecure
+                  0x004b0c                  _MiApp_StartConnection
+                  0x004fe4                  _MiApp_TransceiverPowerState
+                  0x004bda                  _MiApp_UnicastAddress
+                  0x001d2c                  _MiMAC_ChannelAssessment
+                  0x001904                  _MiMAC_DiscardPacket
+                  0x001f3a                  _MiMAC_Init
+                  0x001d5e                  _MiMAC_PowerState
+                  0x001420                  _MiMAC_ReceivedPacket
+                  0x00191e                  _MiMAC_SendPacket
+                  0x001ef2                  _MiMAC_SetAltAddress
+                  0x001e3a                  _MiMAC_SetChannel
+                  0x001e78                  _MiMAC_SetPower
+                  0x006d94                  _MiWi_TickGet
+                  0x006df2                  _MiWi_TickGetMs
+                  0x003216                  _NetworkAddressSizeGet
+                  0x003208                  _NetworkAddressSizeSet
+                  0x0041c4                  _NetworkBroadcastData
+                  0x004cbc                  _NetworkDataArrivedEvent
+                  0x004f08                  _NetworkDiscoveredEvent
+                  0x0032ca                  _NetworkGetDeviceType
+                  0x003350                  _NetworkGetMyRouteInfo
+                  0x003844                  _NetworkGetPANID
+                  0x003382                  _NetworkGetParentAddress
+                  0x0032d2                  _NetworkHasRoute
+                  0x00321e                  _NetworkInit
+                  0x0038c4                  _NetworkIssueDataRequest
+                  0x003348                  _NetworkManagerGetMyAddress
+                  0x0033d6                  _NetworkManagerProcessIncomingData
+                  0x002f8c                  _NetworkManagerTask
+                  0x0036f0                  _NetworkPrepareSendPacket
+                  0x0036e8                  _NetworkReleaseUserData
+                  0x00384c                  _NetworkSendDiscoverRequest
+                  0x003886                  _NetworkSendDiscoverResponse
+                  0x0033c6                  _NetworkSequence
+                  0x003924                  _NetworkSetAddressPAN
+                  0x00395e                  _NetworkSetDeviceType
+                  0x0040de                  _NetworkUnicastData
+                  0x0012d8                  _PHYGetLongRAMAddr
+                  0x0012a4                  _PHYGetShortRAMAddr
+                  0x001228                  _PHYSetLongRAMAddr
+                  0x001270                  _PHYSetShortRAMAddr
+                  0x004848                  _RMRoutingTableCount
+                  0x00674c                  _Read_MAC_Address
+                  0x00421a                  _RouteManagerInit
+                  0x004276                  _RouteManagerPerformUpdate
+                  0x00461c                  _RouteManagerProcessReceive
+                  0x0043d6                  _RouteManagerRequestUpdate
+                  0x004610                  _RouteManagerSetNeighborCongested
+                  0x00476a                  _RouteManagerShouldInsert
+                  0x004232                  _RouteManagerTask
+                  0x00447e                  _RouterEvicted
+                  0x004604                  _RouterIsNeighborCongested
+                  0x004850                  _RoutingTableFindDeviceOrParent
+                  0x006f40                  _SPIGet
+                  0x006f6e                  _SPIGet2
+                  0x006f1e                  _SPIPut
+                  0x006f4e                  _SPIPut2
+                  0x004958                  _SendPacket
+                  0x0053ac                  _TMIsBusyBusy
+                  0x0053e2                  _TMSendDataToRFD
+                  0x00541c                  _TMSendFormedPacketToRFD
+                  0x0052d0                  _TMSendFormedPacketTowardsCoordinator
+                  0x006f7c                  _TimeTickISR
+                  0x006e7c                  _TimerDisable
+                  0x006e84                  _TimerEnable
+                  0x00500a                  _TransportManagerInit
+                  0x0055c8                  _TransportManagerNoRoute
+                  0x0055ce                  _TransportManagerRouteFound
+                  0x005018                  _TransportManagerTask
+                  0x006566                  _TunnelManagerGetTimeoutSeconds
+                  0x0063fa                  _TunnelManagerGetTunnel
+                  0x006520                  _TunnelManagerInit
+                  0x0064cc                  _TunnelManagerInvalidateTunnel
+                  0x00652e                  _TunnelManagerSetTimeoutSec
+                  0x0062e6                  _TunnelManagerSetTunnel
+                  0x0002ac                  __DefaultInterrupt
+                  0x001fb4                  __INT1Interrupt
+                  0x0009c0                  __Litob
+                  0x000c1e                  __Puttxt
+                  0x006e58                  __T2Interrupt
+                  0x000d96                  __Vacopy
+                  0x0005ce                  ___Printf_cdnopsuxX
+                  0x000732                  ___Putfld_cdnopsuxX
+                  0x000418                  ___divdi3
+                  0x000d9a                  ___divsi3
+                  0x000478                  ___moddi3
+                  0x0004d4                  ___muldi3
+                  0x000402                  ___udivdi3
+                  0x00031c                  ___udivmoddi3
+                  0x0002b0                  ___udivsi3
+                  0x000410                  ___umoddi3
+                  0x000db8                  ___umodsi3
+                  0x000526                  ___umuldi3
+                  0x00023c                  __data_init
+                  0x00023c                  __data_init_standard
+                  0x00022c                  __psv_init
+                  0x000200                  __resetPRI
+                  0x0005b0                  __sprintf_cdnopsuxX
+                  0x006e8c                  _crc32
+                  0x000dbe                  _crc32_table
+                  0x003308                  _isBroadcastAddress
+                  0x005a6e                  _isButtonPressed
+                  0x003338                  _isInvalidAddress
+                  0x0069d8                  _isKnownPacket
+                  0x00383c                  _isNetworkSecurityEnabled
+                  0x003358                  _isSameAddress
+                  0x006cca                  _krnd
+                  0x006c5c                  _krndInit
+                  0x00287c                  _le_computeETX
+                  0x00274c                  _le_findEmptyNeighborIdx
+                  0x0022ec                  _le_findIdx
+                  0x002bf6                  _le_findRandomNeighborIdx
+                  0x00264c                  _le_findWorstNeighborIdx
+                  0x00259a                  _le_initNeighborIdx
+                  0x0028aa                  _le_updateETX
+                  0x002a3c                  _le_updateNeighborEntryIdx
+                  0x0028ee                  _le_updateNeighborTableEst
+                  0x00657c                  _main
+                  0x000988                  _memchr
+                  0x00056a                  _memcmp
+                  0x000586                  _memcpy
+                  0x000594                  _memset
+                  0x00121f                  _myKeySequenceNumber
+                  0x00120e                  _mySecurityKey
+                  0x00121e                  _mySecurityLevel
+                  0x006232                  _netChooseAdvertiseTime
+                  0x006294                  _netDecayInterval
+                  0x00627c                  _netResetInterval
+                  0x0060da                  _networkSendBeacon
+                  0x0043e0                  _passLinkEtxThreshold
+                  0x0049fc                  _radioBroadcast
+                  0x004a9c                  _radioDiscardPacket
+                  0x0039b4                  _radioReceivedPacket
+                  0x004a44                  _radioUnicast
+                  0x0043f4                  _routeInfoInit
+                  0x004420                  _routingTableFind
+                  0x0044f8                  _routingTableUpdateEntry
+                  0x006e18                  _safeMiWi_TickGetMs
+                  0x00099c                  _strchr
+                  0x0009b4                  _strlen
+                  0x0005a2                  sprintf_cdnopsuxX.XXeo:_prout
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+data             0x000800           0x002000           a !xr
+reset            0x000000           0x000004  
+ivt              0x000004           0x0000fc  
+_reserved        0x000100           0x000004  
+aivt             0x000104           0x0000fc  
+program          0x000200           0x0155fc           xr
+CONFIG2          0x0157fc           0x000002  
+CONFIG1          0x0157fe           0x000002  
+*default*        0x000000           0xffffffff  
+
+Linker script and memory map
+
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+LOAD build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+LOAD ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a
+
+reserve_data_0x800
+                    0x0800         0x20
+                    0x0820                  . = 0x20
+ *fill*             0x0800         0x2000
+
+reserve_data_0x820
+                    0x0820          0x2
+                    0x0822                  . = 0x2
+ *fill*             0x0820          0x200
+
+reserve_data_0x822
+                    0x0822          0x2
+                    0x0824                  . = 0x2
+ *fill*             0x0822          0x200
+
+reserve_data_0x824
+                    0x0824          0x2
+                    0x0826                  . = 0x2
+ *fill*             0x0824          0x200
+
+reserve_data_0x826
+                    0x0826         0x2a
+                    0x0850                  . = 0x2a
+ *fill*             0x0826         0x2a00
+                    0x0001                  __MPLAB_BUILD = 0x1
+                    0x0001                  __MPLAB_DEBUG = 0x1
+                    0x0001                  __DEBUG = 0x1
+                    0x0001                  __MPLAB_DEBUGGER_ICD3 = 0x1
+LOAD pPIC24Fxxx
+LOAD c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libfx-elf.a
+                    0x157fc                  __CONFIG2 = 0x157fc
+                    0x157fe                  __CONFIG1 = 0x157fe
+                    0x0200                  __CODE_BASE = 0x200
+                    0x155fc                  __CODE_LENGTH = 0x155fc
+                    0x0004                  __IVT_BASE = 0x4
+                    0x0104                  __AIVT_BASE = 0x104
+                    0x0800                  __DATA_BASE = 0x800
+                    0x2000                  __DATA_LENGTH = 0x2000
+
+.reset            0x000000          0x4
+                  0x000000          0x2 SHORT 0x200 ABSOLUTE (__reset)
+                  0x000001          0x2 SHORT 0x4
+                  0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
+                  0x000003          0x2 SHORT 0x0
+
+.text             0x000200        0xbbe
+ *(.init)
+ .init            0x000200         0x3c c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+                  0x000200                  __resetPRI
+                  0x000200                  __reset
+                  0x00022c                  __psv_init
+ .init            0x00023c         0x6c c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+                  0x00023c                  __data_init_standard
+                  0x00023c                  __data_init
+ *(.user_init)
+ *(.handle)
+ .handle          0x0002a8          0x4 jump_table
+ *(.isr*)
+ .isr             0x0002ac          0x4 default_isr
+                  0x0002ac                  __DefaultInterrupt
+ *(.libc)
+ *(.libm)
+ *(.libdsp)
+ *(.lib*)
+ .libm.udivsi3    0x0002b0         0x20 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x0002b0                  ___udivsi3
+ .libm.__PplusBdi
+                  0x0002d0         0x26 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__PminusBdi
+                  0x0002f6         0x26 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__udivmoddi3
+                  0x00031c         0xe6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x00031c                  ___udivmoddi3
+ .libm.__udivdi3
+                  0x000402          0xe c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000402                  ___udivdi3
+ .libm.__umoddi3
+                  0x000410          0x8 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000410                  ___umoddi3
+ .libm.__divdi3
+                  0x000418         0x60 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000418                  ___divdi3
+ .libm.__moddi3
+                  0x000478         0x5c c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000478                  ___moddi3
+ .libm.__muldi3
+                  0x0004d4         0x52 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                  0x0004d4                  ___muldi3
+ .libm.umuldi3    0x000526         0x44 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                  0x000526                  ___umuldi3
+ .libc.memcmp     0x00056a         0x1c c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcmp.XXeo)
+                  0x00056a                  _memcmp
+ .libc.memcpy     0x000586          0xe c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcpy.XXeo)
+                  0x000586                  _memcpy
+ .libc.memset     0x000594          0xe c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memset.XXeo)
+                  0x000594                  _memset
+ .libc.prout      0x0005a2          0xe c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                  0x0005a2                  sprintf_cdnopsuxX.XXeo:_prout
+ .libc._sprintf_cdnopsuxX
+                  0x0005b0         0x1e c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                  0x0005b0                  __sprintf_cdnopsuxX
+ .libc.__Printf_cdnopsuxX
+                  0x0005ce        0x164 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                  0x0005ce                  ___Printf_cdnopsuxX
+ .libc.__Putfld_cdnopsuxX
+                  0x000732        0x256 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+                  0x000732                  ___Putfld_cdnopsuxX
+ .libc.memchr     0x000988         0x14 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memchr.XXeo)
+                  0x000988                  _memchr
+ .libc.strchr     0x00099c         0x18 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strchr.XXeo)
+                  0x00099c                  _strchr
+ .libc.strlen     0x0009b4          0xc c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strlen.XXeo)
+                  0x0009b4                  _strlen
+ .libc._Litob     0x0009c0        0x25e c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo)
+                  0x0009c0                  __Litob
+ .libc._Puttxt    0x000c1e        0x178 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XXeo)
+                  0x000c1e                  __Puttxt
+ .libc._Vacopy    0x000d96          0x4 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XXeo)
+                  0x000d96                  __Vacopy
+ .libm.divsi3     0x000d9a         0x1e c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                  0x000d9a                  ___divsi3
+ .libm.umodsi3    0x000db8          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                  0x000db8                  ___umodsi3
+
+usercode
+ *(usercode)
+
+__CONFIG2
+ *(__CONFIG2.sec*)
+
+__CONFIG1
+ *(__CONFIG1.sec*)
+
+.comment
+ *(.comment)
+
+.debug_info       0x000000       0xcefd
+ *(.debug_info)
+ .debug_info      0x000000       0x1b37 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_info      0x001b37        0x1d0 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_info      0x001d07        0xb53 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_info      0x00285a        0x476 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_info      0x002cd0        0x635 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_info      0x003305       0x1c5b build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_info      0x004f60       0x1576 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_info      0x0064d6        0xb5d build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_info      0x007033        0x96b ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_info      0x00799e        0xd2e ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_info      0x0086cc        0x8e1 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_info      0x008fad        0xec7 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_info      0x009e74        0x34d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_info      0x00a1c1        0x51b ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_info      0x00a6dc        0x313 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_info      0x00a9ef        0x8bf ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_info      0x00b2ae        0xe7e ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_info      0x00c12c        0x6f9 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_info      0x00c825        0x227 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_info      0x00ca4c        0x296 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_info      0x00cce2        0x21b ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev     0x000000       0x1e1e
+ *(.debug_abbrev)
+ .debug_abbrev    0x000000        0x288 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_abbrev    0x000288         0x76 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_abbrev    0x0002fe        0x10b build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_abbrev    0x000409        0x13c build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_abbrev    0x000545        0x15e build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_abbrev    0x0006a3        0x1b3 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_abbrev    0x000856        0x2fb build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_abbrev    0x000b51        0x1f8 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_abbrev    0x000d49        0x1e4 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_abbrev    0x000f2d        0x1fd ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_abbrev    0x00112a        0x198 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_abbrev    0x0012c2        0x1f0 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_abbrev    0x0014b2         0xea ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_abbrev    0x00159c        0x14e ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_abbrev    0x0016ea         0xca ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_abbrev    0x0017b4        0x18f ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_abbrev    0x001943        0x1f7 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_abbrev    0x001b3a        0x112 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_abbrev    0x001c4c         0x7a ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_abbrev    0x001cc6         0xb1 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_abbrev    0x001d77         0xa7 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+.debug_line       0x000000       0x4447
+ *(.debug_line)
+ .debug_line      0x000000        0x4b4 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_line      0x0004b4         0xc2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_line      0x000576        0x1a6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_line      0x00071c        0x13b build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_line      0x000857        0x14f build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_line      0x0009a6        0x1cf build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_line      0x000b75        0x258 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_line      0x000dcd        0x1ee build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_line      0x000fbb        0x50f ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_line      0x0014ca        0x6f6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_line      0x001bc0        0x37f ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_line      0x001f3f        0x95b ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_line      0x00289a        0x1bc ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_line      0x002a56        0x2c1 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_line      0x002d17        0x1c5 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_line      0x002edc        0x4f6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_line      0x0033d2        0x967 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_line      0x003d39        0x3d3 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_line      0x00410c        0x10c ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_line      0x004218        0x154 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_line      0x00436c         0xdb ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+.debug_frame      0x000000       0x1094
+ *(.debug_frame)
+ .debug_frame     0x000000        0x1d8 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_frame     0x0001d8         0x4c build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_frame     0x000224         0x84 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_frame     0x0002a8         0x84 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_frame     0x00032c         0xde build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_frame     0x00040a         0xfa build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_frame     0x000504        0x2ac build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_frame     0x0007b0         0xb4 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_frame     0x000864         0xb4 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_frame     0x000918        0x130 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_frame     0x000a48         0x94 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_frame     0x000adc        0x144 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_frame     0x000c20         0x44 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_frame     0x000c64         0x74 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_frame     0x000cd8         0x34 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_frame     0x000d0c         0x94 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_frame     0x000da0        0x1c4 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_frame     0x000f64         0x74 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_frame     0x000fd8         0x34 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_frame     0x00100c         0x64 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_frame     0x001070         0x24 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+.debug_str        0x000000        0x6fe
+ *(.debug_str)
+ .debug_str       0x000000        0x1a1 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_str       0x0001a1         0x39 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_str       0x0001da         0x12 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_str       0x0001ec         0x35 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_str       0x000221         0xdd build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_str       0x0002fe        0x150 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_str       0x00044e         0x41 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_str       0x00048f         0x4a ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_str       0x0004d9         0x9d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_str       0x000576         0x62 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_str       0x0005d8         0x48 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_str       0x000620         0x11 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_str       0x000631          0x9 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_str       0x00063a         0x12 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_str       0x00064c         0x78 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_str       0x0006c4         0x2e ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_str       0x0006f2          0xc ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubnames
+                  0x000000       0x168e
+ *(.debug_pubnames)
+ .debug_pubnames
+                  0x000000        0x275 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_pubnames
+                  0x000275         0x2a build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_pubnames
+                  0x00029f         0x49 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_pubnames
+                  0x0002e8         0x40 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_pubnames
+                  0x000328         0xb1 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_pubnames
+                  0x0003d9         0xd8 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_pubnames
+                  0x0004b1        0x355 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_pubnames
+                  0x000806         0x7d build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_pubnames
+                  0x000883         0xee ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_pubnames
+                  0x000971        0x250 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_pubnames
+                  0x000bc1        0x138 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_pubnames
+                  0x000cf9        0x21c ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_pubnames
+                  0x000f15         0x6b ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_pubnames
+                  0x000f80         0xdc ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_pubnames
+                  0x00105c         0x3f ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_pubnames
+                  0x00109b         0xfd ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_pubnames
+                  0x001198        0x35f ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_pubnames
+                  0x0014f7         0xba ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_pubnames
+                  0x0015b1         0x28 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_pubnames
+                  0x0015d9         0x89 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_pubnames
+                  0x001662         0x2c ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_aranges    0x000000        0x1f8
+ *(.debug_aranges)
+ .debug_aranges
+                  0x000000         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_aranges
+                  0x000018         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_aranges
+                  0x000030         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_aranges
+                  0x000048         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_aranges
+                  0x000060         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_aranges
+                  0x000078         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_aranges
+                  0x000090         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_aranges
+                  0x0000a8         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_aranges
+                  0x0000c0         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_aranges
+                  0x0000d8         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_aranges
+                  0x0000f0         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_aranges
+                  0x000108         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_aranges
+                  0x000120         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_aranges
+                  0x000138         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_aranges
+                  0x000150         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_aranges
+                  0x000168         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_aranges
+                  0x000180         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_aranges
+                  0x000198         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_aranges
+                  0x0001b0         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_aranges
+                  0x0001c8         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_aranges
+                  0x0001e0         0x18 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+                    0x0000                  WREG0 = 0x0
+                    0x0000                  _WREG0 = 0x0
+                    0x0002                  WREG1 = 0x2
+                    0x0002                  _WREG1 = 0x2
+                    0x0004                  WREG2 = 0x4
+                    0x0004                  _WREG2 = 0x4
+                    0x0006                  WREG3 = 0x6
+                    0x0006                  _WREG3 = 0x6
+                    0x0008                  WREG4 = 0x8
+                    0x0008                  _WREG4 = 0x8
+                    0x000a                  WREG5 = 0xa
+                    0x000a                  _WREG5 = 0xa
+                    0x000c                  WREG6 = 0xc
+                    0x000c                  _WREG6 = 0xc
+                    0x000e                  WREG7 = 0xe
+                    0x000e                  _WREG7 = 0xe
+                    0x0010                  WREG8 = 0x10
+                    0x0010                  _WREG8 = 0x10
+                    0x0012                  WREG9 = 0x12
+                    0x0012                  _WREG9 = 0x12
+                    0x0014                  WREG10 = 0x14
+                    0x0014                  _WREG10 = 0x14
+                    0x0016                  WREG11 = 0x16
+                    0x0016                  _WREG11 = 0x16
+                    0x0018                  WREG12 = 0x18
+                    0x0018                  _WREG12 = 0x18
+                    0x001a                  WREG13 = 0x1a
+                    0x001a                  _WREG13 = 0x1a
+                    0x001c                  WREG14 = 0x1c
+                    0x001c                  _WREG14 = 0x1c
+                    0x001e                  WREG15 = 0x1e
+                    0x001e                  _WREG15 = 0x1e
+                    0x0020                  SPLIM = 0x20
+                    0x0020                  _SPLIM = 0x20
+                    0x002e                  PCL = 0x2e
+                    0x002e                  _PCL = 0x2e
+                    0x0030                  PCH = 0x30
+                    0x0030                  _PCH = 0x30
+                    0x0032                  TBLPAG = 0x32
+                    0x0032                  _TBLPAG = 0x32
+                    0x0034                  PSVPAG = 0x34
+                    0x0034                  _PSVPAG = 0x34
+                    0x0036                  RCOUNT = 0x36
+                    0x0036                  _RCOUNT = 0x36
+                    0x0042                  SR = 0x42
+                    0x0042                  _SR = 0x42
+                    0x0042                  _SRbits = 0x42
+                    0x0044                  CORCON = 0x44
+                    0x0044                  _CORCON = 0x44
+                    0x0044                  _CORCONbits = 0x44
+                    0x0052                  DISICNT = 0x52
+                    0x0052                  _DISICNT = 0x52
+                    0x0060                  CNEN1 = 0x60
+                    0x0060                  _CNEN1 = 0x60
+                    0x0060                  _CNEN1bits = 0x60
+                    0x0062                  CNEN2 = 0x62
+                    0x0062                  _CNEN2 = 0x62
+                    0x0062                  _CNEN2bits = 0x62
+                    0x0068                  CNPU1 = 0x68
+                    0x0068                  _CNPU1 = 0x68
+                    0x0068                  _CNPU1bits = 0x68
+                    0x006a                  CNPU2 = 0x6a
+                    0x006a                  _CNPU2 = 0x6a
+                    0x006a                  _CNPU2bits = 0x6a
+                    0x0080                  INTCON1 = 0x80
+                    0x0080                  _INTCON1 = 0x80
+                    0x0080                  _INTCON1bits = 0x80
+                    0x0082                  INTCON2 = 0x82
+                    0x0082                  _INTCON2 = 0x82
+                    0x0082                  _INTCON2bits = 0x82
+                    0x0084                  IFS0 = 0x84
+                    0x0084                  _IFS0 = 0x84
+                    0x0084                  _IFS0bits = 0x84
+                    0x0086                  IFS1 = 0x86
+                    0x0086                  _IFS1 = 0x86
+                    0x0086                  _IFS1bits = 0x86
+                    0x0088                  IFS2 = 0x88
+                    0x0088                  _IFS2 = 0x88
+                    0x0088                  _IFS2bits = 0x88
+                    0x008a                  IFS3 = 0x8a
+                    0x008a                  _IFS3 = 0x8a
+                    0x008a                  _IFS3bits = 0x8a
+                    0x008c                  IFS4 = 0x8c
+                    0x008c                  _IFS4 = 0x8c
+                    0x008c                  _IFS4bits = 0x8c
+                    0x0094                  IEC0 = 0x94
+                    0x0094                  _IEC0 = 0x94
+                    0x0094                  _IEC0bits = 0x94
+                    0x0096                  IEC1 = 0x96
+                    0x0096                  _IEC1 = 0x96
+                    0x0096                  _IEC1bits = 0x96
+                    0x0098                  IEC2 = 0x98
+                    0x0098                  _IEC2 = 0x98
+                    0x0098                  _IEC2bits = 0x98
+                    0x009a                  IEC3 = 0x9a
+                    0x009a                  _IEC3 = 0x9a
+                    0x009a                  _IEC3bits = 0x9a
+                    0x009c                  IEC4 = 0x9c
+                    0x009c                  _IEC4 = 0x9c
+                    0x009c                  _IEC4bits = 0x9c
+                    0x00a4                  IPC0 = 0xa4
+                    0x00a4                  _IPC0 = 0xa4
+                    0x00a4                  _IPC0bits = 0xa4
+                    0x00a6                  IPC1 = 0xa6
+                    0x00a6                  _IPC1 = 0xa6
+                    0x00a6                  _IPC1bits = 0xa6
+                    0x00a8                  IPC2 = 0xa8
+                    0x00a8                  _IPC2 = 0xa8
+                    0x00a8                  _IPC2bits = 0xa8
+                    0x00aa                  IPC3 = 0xaa
+                    0x00aa                  _IPC3 = 0xaa
+                    0x00aa                  _IPC3bits = 0xaa
+                    0x00ac                  IPC4 = 0xac
+                    0x00ac                  _IPC4 = 0xac
+                    0x00ac                  _IPC4bits = 0xac
+                    0x00ae                  IPC5 = 0xae
+                    0x00ae                  _IPC5 = 0xae
+                    0x00ae                  _IPC5bits = 0xae
+                    0x00b0                  IPC6 = 0xb0
+                    0x00b0                  _IPC6 = 0xb0
+                    0x00b0                  _IPC6bits = 0xb0
+                    0x00b2                  IPC7 = 0xb2
+                    0x00b2                  _IPC7 = 0xb2
+                    0x00b2                  _IPC7bits = 0xb2
+                    0x00b4                  IPC8 = 0xb4
+                    0x00b4                  _IPC8 = 0xb4
+                    0x00b4                  _IPC8bits = 0xb4
+                    0x00b6                  IPC9 = 0xb6
+                    0x00b6                  _IPC9 = 0xb6
+                    0x00b6                  _IPC9bits = 0xb6
+                    0x00b8                  IPC10 = 0xb8
+                    0x00b8                  _IPC10 = 0xb8
+                    0x00b8                  _IPC10bits = 0xb8
+                    0x00ba                  IPC11 = 0xba
+                    0x00ba                  _IPC11 = 0xba
+                    0x00ba                  _IPC11bits = 0xba
+                    0x00bc                  IPC12 = 0xbc
+                    0x00bc                  _IPC12 = 0xbc
+                    0x00bc                  _IPC12bits = 0xbc
+                    0x00be                  IPC13 = 0xbe
+                    0x00be                  _IPC13 = 0xbe
+                    0x00be                  _IPC13bits = 0xbe
+                    0x00c2                  IPC15 = 0xc2
+                    0x00c2                  _IPC15 = 0xc2
+                    0x00c2                  _IPC15bits = 0xc2
+                    0x00c4                  IPC16 = 0xc4
+                    0x00c4                  _IPC16 = 0xc4
+                    0x00c4                  _IPC16bits = 0xc4
+                    0x00e0                  INTTREG = 0xe0
+                    0x00e0                  _INTTREG = 0xe0
+                    0x00e0                  _INTTREGbits = 0xe0
+                    0x0100                  TMR1 = 0x100
+                    0x0100                  _TMR1 = 0x100
+                    0x0102                  PR1 = 0x102
+                    0x0102                  _PR1 = 0x102
+                    0x0104                  T1CON = 0x104
+                    0x0104                  _T1CON = 0x104
+                    0x0104                  _T1CONbits = 0x104
+                    0x0106                  TMR2 = 0x106
+                    0x0106                  _TMR2 = 0x106
+                    0x0108                  TMR3HLD = 0x108
+                    0x0108                  _TMR3HLD = 0x108
+                    0x010a                  TMR3 = 0x10a
+                    0x010a                  _TMR3 = 0x10a
+                    0x010c                  PR2 = 0x10c
+                    0x010c                  _PR2 = 0x10c
+                    0x010e                  PR3 = 0x10e
+                    0x010e                  _PR3 = 0x10e
+                    0x0110                  T2CON = 0x110
+                    0x0110                  _T2CON = 0x110
+                    0x0110                  _T2CONbits = 0x110
+                    0x0112                  T3CON = 0x112
+                    0x0112                  _T3CON = 0x112
+                    0x0112                  _T3CONbits = 0x112
+                    0x0114                  TMR4 = 0x114
+                    0x0114                  _TMR4 = 0x114
+                    0x0116                  TMR5HLD = 0x116
+                    0x0116                  _TMR5HLD = 0x116
+                    0x0118                  TMR5 = 0x118
+                    0x0118                  _TMR5 = 0x118
+                    0x011a                  PR4 = 0x11a
+                    0x011a                  _PR4 = 0x11a
+                    0x011c                  PR5 = 0x11c
+                    0x011c                  _PR5 = 0x11c
+                    0x011e                  T4CON = 0x11e
+                    0x011e                  _T4CON = 0x11e
+                    0x011e                  _T4CONbits = 0x11e
+                    0x0120                  T5CON = 0x120
+                    0x0120                  _T5CON = 0x120
+                    0x0120                  _T5CONbits = 0x120
+                    0x0140                  IC1BUF = 0x140
+                    0x0140                  _IC1BUF = 0x140
+                    0x0142                  IC1CON = 0x142
+                    0x0142                  _IC1CON = 0x142
+                    0x0142                  _IC1CONbits = 0x142
+                    0x0144                  IC2BUF = 0x144
+                    0x0144                  _IC2BUF = 0x144
+                    0x0146                  IC2CON = 0x146
+                    0x0146                  _IC2CON = 0x146
+                    0x0146                  _IC2CONbits = 0x146
+                    0x0148                  IC3BUF = 0x148
+                    0x0148                  _IC3BUF = 0x148
+                    0x014a                  IC3CON = 0x14a
+                    0x014a                  _IC3CON = 0x14a
+                    0x014a                  _IC3CONbits = 0x14a
+                    0x014c                  IC4BUF = 0x14c
+                    0x014c                  _IC4BUF = 0x14c
+                    0x014e                  IC4CON = 0x14e
+                    0x014e                  _IC4CON = 0x14e
+                    0x014e                  _IC4CONbits = 0x14e
+                    0x0150                  IC5BUF = 0x150
+                    0x0150                  _IC5BUF = 0x150
+                    0x0152                  IC5CON = 0x152
+                    0x0152                  _IC5CON = 0x152
+                    0x0152                  _IC5CONbits = 0x152
+                    0x0180                  OC1RS = 0x180
+                    0x0180                  _OC1RS = 0x180
+                    0x0182                  OC1R = 0x182
+                    0x0182                  _OC1R = 0x182
+                    0x0184                  OC1CON = 0x184
+                    0x0184                  _OC1CON = 0x184
+                    0x0184                  _OC1CONbits = 0x184
+                    0x0186                  OC2RS = 0x186
+                    0x0186                  _OC2RS = 0x186
+                    0x0188                  OC2R = 0x188
+                    0x0188                  _OC2R = 0x188
+                    0x018a                  OC2CON = 0x18a
+                    0x018a                  _OC2CON = 0x18a
+                    0x018a                  _OC2CONbits = 0x18a
+                    0x018c                  OC3RS = 0x18c
+                    0x018c                  _OC3RS = 0x18c
+                    0x018e                  OC3R = 0x18e
+                    0x018e                  _OC3R = 0x18e
+                    0x0190                  OC3CON = 0x190
+                    0x0190                  _OC3CON = 0x190
+                    0x0190                  _OC3CONbits = 0x190
+                    0x0192                  OC4RS = 0x192
+                    0x0192                  _OC4RS = 0x192
+                    0x0194                  OC4R = 0x194
+                    0x0194                  _OC4R = 0x194
+                    0x0196                  OC4CON = 0x196
+                    0x0196                  _OC4CON = 0x196
+                    0x0196                  _OC4CONbits = 0x196
+                    0x0198                  OC5RS = 0x198
+                    0x0198                  _OC5RS = 0x198
+                    0x019a                  OC5R = 0x19a
+                    0x019a                  _OC5R = 0x19a
+                    0x019c                  OC5CON = 0x19c
+                    0x019c                  _OC5CON = 0x19c
+                    0x019c                  _OC5CONbits = 0x19c
+                    0x0200                  I2C1RCV = 0x200
+                    0x0200                  _I2C1RCV = 0x200
+                    0x0202                  I2C1TRN = 0x202
+                    0x0202                  _I2C1TRN = 0x202
+                    0x0204                  I2C1BRG = 0x204
+                    0x0204                  _I2C1BRG = 0x204
+                    0x0206                  I2C1CON = 0x206
+                    0x0206                  _I2C1CON = 0x206
+                    0x0206                  _I2C1CONbits = 0x206
+                    0x0208                  I2C1STAT = 0x208
+                    0x0208                  _I2C1STAT = 0x208
+                    0x0208                  _I2C1STATbits = 0x208
+                    0x020a                  I2C1ADD = 0x20a
+                    0x020a                  _I2C1ADD = 0x20a
+                    0x020c                  I2C1MSK = 0x20c
+                    0x020c                  _I2C1MSK = 0x20c
+                    0x0210                  I2C2RCV = 0x210
+                    0x0210                  _I2C2RCV = 0x210
+                    0x0212                  I2C2TRN = 0x212
+                    0x0212                  _I2C2TRN = 0x212
+                    0x0214                  I2C2BRG = 0x214
+                    0x0214                  _I2C2BRG = 0x214
+                    0x0216                  I2C2CON = 0x216
+                    0x0216                  _I2C2CON = 0x216
+                    0x0216                  _I2C2CONbits = 0x216
+                    0x0218                  I2C2STAT = 0x218
+                    0x0218                  _I2C2STAT = 0x218
+                    0x0218                  _I2C2STATbits = 0x218
+                    0x021a                  I2C2ADD = 0x21a
+                    0x021a                  _I2C2ADD = 0x21a
+                    0x021c                  I2C2MSK = 0x21c
+                    0x021c                  _I2C2MSK = 0x21c
+                    0x0220                  U1MODE = 0x220
+                    0x0220                  _U1MODE = 0x220
+                    0x0220                  _U1MODEbits = 0x220
+                    0x0222                  U1STA = 0x222
+                    0x0222                  _U1STA = 0x222
+                    0x0222                  _U1STAbits = 0x222
+                    0x0224                  U1TXREG = 0x224
+                    0x0224                  _U1TXREG = 0x224
+                    0x0226                  U1RXREG = 0x226
+                    0x0226                  _U1RXREG = 0x226
+                    0x0228                  U1BRG = 0x228
+                    0x0228                  _U1BRG = 0x228
+                    0x0230                  U2MODE = 0x230
+                    0x0230                  _U2MODE = 0x230
+                    0x0230                  _U2MODEbits = 0x230
+                    0x0232                  U2STA = 0x232
+                    0x0232                  _U2STA = 0x232
+                    0x0232                  _U2STAbits = 0x232
+                    0x0234                  U2TXREG = 0x234
+                    0x0234                  _U2TXREG = 0x234
+                    0x0236                  U2RXREG = 0x236
+                    0x0236                  _U2RXREG = 0x236
+                    0x0238                  U2BRG = 0x238
+                    0x0238                  _U2BRG = 0x238
+                    0x0240                  SPI1STAT = 0x240
+                    0x0240                  _SPI1STAT = 0x240
+                    0x0240                  _SPI1STATbits = 0x240
+                    0x0242                  SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1bits = 0x242
+                    0x0244                  SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2bits = 0x244
+                    0x0248                  SPI1BUF = 0x248
+                    0x0248                  _SPI1BUF = 0x248
+                    0x0260                  SPI2STAT = 0x260
+                    0x0260                  _SPI2STAT = 0x260
+                    0x0260                  _SPI2STATbits = 0x260
+                    0x0262                  SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1bits = 0x262
+                    0x0264                  SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2bits = 0x264
+                    0x0268                  SPI2BUF = 0x268
+                    0x0268                  _SPI2BUF = 0x268
+                    0x02c0                  TRISA = 0x2c0
+                    0x02c0                  _TRISA = 0x2c0
+                    0x02c0                  _TRISAbits = 0x2c0
+                    0x02c2                  PORTA = 0x2c2
+                    0x02c2                  _PORTA = 0x2c2
+                    0x02c2                  _PORTAbits = 0x2c2
+                    0x02c4                  LATA = 0x2c4
+                    0x02c4                  _LATA = 0x2c4
+                    0x02c4                  _LATAbits = 0x2c4
+                    0x02c6                  TRISB = 0x2c6
+                    0x02c6                  _TRISB = 0x2c6
+                    0x02c6                  _TRISBbits = 0x2c6
+                    0x02c8                  PORTB = 0x2c8
+                    0x02c8                  _PORTB = 0x2c8
+                    0x02c8                  _PORTBbits = 0x2c8
+                    0x02ca                  LATB = 0x2ca
+                    0x02ca                  _LATB = 0x2ca
+                    0x02ca                  _LATBbits = 0x2ca
+                    0x02cc                  TRISC = 0x2cc
+                    0x02cc                  _TRISC = 0x2cc
+                    0x02cc                  _TRISCbits = 0x2cc
+                    0x02ce                  PORTC = 0x2ce
+                    0x02ce                  _PORTC = 0x2ce
+                    0x02ce                  _PORTCbits = 0x2ce
+                    0x02d0                  LATC = 0x2d0
+                    0x02d0                  _LATC = 0x2d0
+                    0x02d0                  _LATCbits = 0x2d0
+                    0x02d2                  TRISD = 0x2d2
+                    0x02d2                  _TRISD = 0x2d2
+                    0x02d2                  _TRISDbits = 0x2d2
+                    0x02d4                  PORTD = 0x2d4
+                    0x02d4                  _PORTD = 0x2d4
+                    0x02d4                  _PORTDbits = 0x2d4
+                    0x02d6                  LATD = 0x2d6
+                    0x02d6                  _LATD = 0x2d6
+                    0x02d6                  _LATDbits = 0x2d6
+                    0x02d8                  TRISE = 0x2d8
+                    0x02d8                  _TRISE = 0x2d8
+                    0x02d8                  _TRISEbits = 0x2d8
+                    0x02da                  PORTE = 0x2da
+                    0x02da                  _PORTE = 0x2da
+                    0x02da                  _PORTEbits = 0x2da
+                    0x02dc                  LATE = 0x2dc
+                    0x02dc                  _LATE = 0x2dc
+                    0x02dc                  _LATEbits = 0x2dc
+                    0x02de                  TRISF = 0x2de
+                    0x02de                  _TRISF = 0x2de
+                    0x02de                  _TRISFbits = 0x2de
+                    0x02e0                  PORTF = 0x2e0
+                    0x02e0                  _PORTF = 0x2e0
+                    0x02e0                  _PORTFbits = 0x2e0
+                    0x02e2                  LATF = 0x2e2
+                    0x02e2                  _LATF = 0x2e2
+                    0x02e2                  _LATFbits = 0x2e2
+                    0x02e4                  TRISG = 0x2e4
+                    0x02e4                  _TRISG = 0x2e4
+                    0x02e4                  _TRISGbits = 0x2e4
+                    0x02e6                  PORTG = 0x2e6
+                    0x02e6                  _PORTG = 0x2e6
+                    0x02e6                  _PORTGbits = 0x2e6
+                    0x02e8                  LATG = 0x2e8
+                    0x02e8                  _LATG = 0x2e8
+                    0x02e8                  _LATGbits = 0x2e8
+                    0x02fc                  PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1 = 0x2fc
+                    0x02fc                  _PADCFG1bits = 0x2fc
+                    0x0300                  ADC1BUF0 = 0x300
+                    0x0300                  _ADC1BUF0 = 0x300
+                    0x0302                  ADC1BUF1 = 0x302
+                    0x0302                  _ADC1BUF1 = 0x302
+                    0x0304                  ADC1BUF2 = 0x304
+                    0x0304                  _ADC1BUF2 = 0x304
+                    0x0306                  ADC1BUF3 = 0x306
+                    0x0306                  _ADC1BUF3 = 0x306
+                    0x0308                  ADC1BUF4 = 0x308
+                    0x0308                  _ADC1BUF4 = 0x308
+                    0x030a                  ADC1BUF5 = 0x30a
+                    0x030a                  _ADC1BUF5 = 0x30a
+                    0x030c                  ADC1BUF6 = 0x30c
+                    0x030c                  _ADC1BUF6 = 0x30c
+                    0x030e                  ADC1BUF7 = 0x30e
+                    0x030e                  _ADC1BUF7 = 0x30e
+                    0x0310                  ADC1BUF8 = 0x310
+                    0x0310                  _ADC1BUF8 = 0x310
+                    0x0312                  ADC1BUF9 = 0x312
+                    0x0312                  _ADC1BUF9 = 0x312
+                    0x0314                  ADC1BUFA = 0x314
+                    0x0314                  _ADC1BUFA = 0x314
+                    0x0316                  ADC1BUFB = 0x316
+                    0x0316                  _ADC1BUFB = 0x316
+                    0x0318                  ADC1BUFC = 0x318
+                    0x0318                  _ADC1BUFC = 0x318
+                    0x031a                  ADC1BUFD = 0x31a
+                    0x031a                  _ADC1BUFD = 0x31a
+                    0x031c                  ADC1BUFE = 0x31c
+                    0x031c                  _ADC1BUFE = 0x31c
+                    0x031e                  ADC1BUFF = 0x31e
+                    0x031e                  _ADC1BUFF = 0x31e
+                    0x0320                  AD1CON1 = 0x320
+                    0x0320                  _AD1CON1 = 0x320
+                    0x0320                  _AD1CON1bits = 0x320
+                    0x0322                  AD1CON2 = 0x322
+                    0x0322                  _AD1CON2 = 0x322
+                    0x0322                  _AD1CON2bits = 0x322
+                    0x0324                  AD1CON3 = 0x324
+                    0x0324                  _AD1CON3 = 0x324
+                    0x0324                  _AD1CON3bits = 0x324
+                    0x0328                  AD1CHS = 0x328
+                    0x0328                  _AD1CHS = 0x328
+                    0x0328                  _AD1CHSbits = 0x328
+                    0x032c                  AD1PCFG = 0x32c
+                    0x032c                  _AD1PCFG = 0x32c
+                    0x032c                  _AD1PCFGbits = 0x32c
+                    0x0330                  AD1CSSL = 0x330
+                    0x0330                  _AD1CSSL = 0x330
+                    0x0330                  _AD1CSSLbits = 0x330
+                    0x0600                  PMCON = 0x600
+                    0x0600                  _PMCON = 0x600
+                    0x0600                  _PMCONbits = 0x600
+                    0x0602                  PMMODE = 0x602
+                    0x0602                  _PMMODE = 0x602
+                    0x0602                  _PMMODEbits = 0x602
+                    0x0604                  PMADDR = 0x604
+                    0x0604                  _PMADDR = 0x604
+                    0x0604                  _PMADDRbits = 0x604
+                    0x0604                  PMDOUT1 = 0x604
+                    0x0604                  _PMDOUT1 = 0x604
+                    0x0606                  PMDOUT2 = 0x606
+                    0x0606                  _PMDOUT2 = 0x606
+                    0x0608                  PMDIN1 = 0x608
+                    0x0608                  _PMDIN1 = 0x608
+                    0x060a                  PMDIN2 = 0x60a
+                    0x060a                  _PMDIN2 = 0x60a
+                    0x060c                  PMAEN = 0x60c
+                    0x060c                  _PMAEN = 0x60c
+                    0x060c                  _PMAENbits = 0x60c
+                    0x060e                  PMSTAT = 0x60e
+                    0x060e                  _PMSTAT = 0x60e
+                    0x060e                  _PMSTATbits = 0x60e
+                    0x0620                  ALRMVAL = 0x620
+                    0x0620                  _ALRMVAL = 0x620
+                    0x0622                  ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPT = 0x622
+                    0x0622                  _ALCFGRPTbits = 0x622
+                    0x0624                  RTCVAL = 0x624
+                    0x0624                  _RTCVAL = 0x624
+                    0x0626                  RCFGCAL = 0x626
+                    0x0626                  _RCFGCAL = 0x626
+                    0x0626                  _RCFGCALbits = 0x626
+                    0x0630                  CMCON = 0x630
+                    0x0630                  _CMCON = 0x630
+                    0x0630                  _CMCONbits = 0x630
+                    0x0632                  CVRCON = 0x632
+                    0x0632                  _CVRCON = 0x632
+                    0x0632                  _CVRCONbits = 0x632
+                    0x0640                  CRCCON = 0x640
+                    0x0640                  _CRCCON = 0x640
+                    0x0640                  _CRCCONbits = 0x640
+                    0x0642                  CRCXOR = 0x642
+                    0x0642                  _CRCXOR = 0x642
+                    0x0642                  _CRCXORbits = 0x642
+                    0x0644                  CRCDAT = 0x644
+                    0x0644                  _CRCDAT = 0x644
+                    0x0646                  CRCWDAT = 0x646
+                    0x0646                  _CRCWDAT = 0x646
+                    0x06c0                  ODCA = 0x6c0
+                    0x06c0                  _ODCA = 0x6c0
+                    0x06c0                  _ODCAbits = 0x6c0
+                    0x06c6                  ODCB = 0x6c6
+                    0x06c6                  _ODCB = 0x6c6
+                    0x06c6                  _ODCBbits = 0x6c6
+                    0x06cc                  ODCC = 0x6cc
+                    0x06cc                  _ODCC = 0x6cc
+                    0x06cc                  _ODCCbits = 0x6cc
+                    0x06d2                  ODCD = 0x6d2
+                    0x06d2                  _ODCD = 0x6d2
+                    0x06d2                  _ODCDbits = 0x6d2
+                    0x06d8                  ODCE = 0x6d8
+                    0x06d8                  _ODCE = 0x6d8
+                    0x06d8                  _ODCEbits = 0x6d8
+                    0x06de                  ODCF = 0x6de
+                    0x06de                  _ODCF = 0x6de
+                    0x06de                  _ODCFbits = 0x6de
+                    0x06e4                  ODCG = 0x6e4
+                    0x06e4                  _ODCG = 0x6e4
+                    0x06e4                  _ODCGbits = 0x6e4
+                    0x0740                  RCON = 0x740
+                    0x0740                  _RCON = 0x740
+                    0x0740                  _RCONbits = 0x740
+                    0x0742                  OSCCON = 0x742
+                    0x0742                  _OSCCON = 0x742
+                    0x0742                  _OSCCONbits = 0x742
+                    0x0742                  OSCCONL = 0x742
+                    0x0742                  _OSCCONL = 0x742
+                    0x0743                  OSCCONH = 0x743
+                    0x0743                  _OSCCONH = 0x743
+                    0x0744                  CLKDIV = 0x744
+                    0x0744                  _CLKDIV = 0x744
+                    0x0744                  _CLKDIVbits = 0x744
+                    0x0748                  OSCTUN = 0x748
+                    0x0748                  _OSCTUN = 0x748
+                    0x0748                  _OSCTUNbits = 0x748
+                    0x0760                  NVMCON = 0x760
+                    0x0760                  _NVMCON = 0x760
+                    0x0760                  _NVMCONbits = 0x760
+                    0x0766                  NVMKEY = 0x766
+                    0x0766                  _NVMKEY = 0x766
+                    0x0770                  PMD1 = 0x770
+                    0x0770                  _PMD1 = 0x770
+                    0x0770                  _PMD1bits = 0x770
+                    0x0772                  PMD2 = 0x772
+                    0x0772                  _PMD2 = 0x772
+                    0x0772                  _PMD2bits = 0x772
+                    0x0774                  PMD3 = 0x774
+                    0x0774                  _PMD3 = 0x774
+                    0x0774                  _PMD3bits = 0x774
+                    0x0140                  IC1 = 0x140
+                    0x0140                  _IC1 = 0x140
+                    0x0144                  IC2 = 0x144
+                    0x0144                  _IC2 = 0x144
+                    0x0148                  IC3 = 0x148
+                    0x0148                  _IC3 = 0x148
+                    0x014c                  IC4 = 0x14c
+                    0x014c                  _IC4 = 0x14c
+                    0x0150                  IC5 = 0x150
+                    0x0150                  _IC5 = 0x150
+                    0x0180                  OC1 = 0x180
+                    0x0180                  _OC1 = 0x180
+                    0x0186                  OC2 = 0x186
+                    0x0186                  _OC2 = 0x186
+                    0x018c                  OC3 = 0x18c
+                    0x018c                  _OC3 = 0x18c
+                    0x0192                  OC4 = 0x192
+                    0x0192                  _OC4 = 0x192
+                    0x0198                  OC5 = 0x198
+                    0x0198                  _OC5 = 0x198
+                    0x0240                  SPI1 = 0x240
+                    0x0240                  _SPI1 = 0x240
+                    0x0260                  SPI2 = 0x260
+                    0x0260                  _SPI2 = 0x260
+                    0x0220                  UART1 = 0x220
+                    0x0220                  _UART1 = 0x220
+                    0x0230                  UART2 = 0x230
+                    0x0230                  _UART2 = 0x230
+START GROUP
+LOAD c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a
+LOAD c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a
+END GROUP
+OUTPUT(dist/exp16_pic24fj128ga010_24j40_Co/debug/miwi_mesh.X.debug.elf elf32-pic30)
+LOAD jump_table
+LOAD default_isr
+LOAD data_init
+LOAD shared_data_init
+
+.debug_pubtypes
+                  0x0001f8       0x1436
+ .debug_pubtypes
+                  0x0001f8        0x20b build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ .debug_pubtypes
+                  0x000403         0x1f build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ .debug_pubtypes
+                  0x000422         0xdf build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ .debug_pubtypes
+                  0x000501         0x58 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ .debug_pubtypes
+                  0x000559         0x86 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ .debug_pubtypes
+                  0x0005df        0x2b7 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ .debug_pubtypes
+                  0x000896        0x186 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ .debug_pubtypes
+                  0x000a1c         0xff build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .debug_pubtypes
+                  0x000b1b        0x136 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ .debug_pubtypes
+                  0x000c51        0x194 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .debug_pubtypes
+                  0x000de5        0x189 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ .debug_pubtypes
+                  0x000f6e        0x15a ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .debug_pubtypes
+                  0x0010c8         0x5d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ .debug_pubtypes
+                  0x001125         0x9d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ .debug_pubtypes
+                  0x0011c2         0x7d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ .debug_pubtypes
+                  0x00123f        0x14d ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ .debug_pubtypes
+                  0x00138c        0x132 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ .debug_pubtypes
+                  0x0014be         0xc9 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .debug_pubtypes
+                  0x001587         0x38 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .debug_pubtypes
+                  0x0015bf         0x37 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ .debug_pubtypes
+                  0x0015f6         0x38 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+
+__c30_signature
+                  0x00162e         0xf6
+ __c30_signature
+                  0x00162e          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+ __c30_signature
+                  0x001634          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+ __c30_signature
+                  0x00163a          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+ __c30_signature
+                  0x001640          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+ __c30_signature
+                  0x001646          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+ __c30_signature
+                  0x00164c          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+ __c30_signature
+                  0x001652          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+ __c30_signature
+                  0x001658          0x6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ __c30_signature
+                  0x00165e          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+ __c30_signature
+                  0x001664          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ __c30_signature
+                  0x00166a          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+ __c30_signature
+                  0x001670          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ __c30_signature
+                  0x001676          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+ __c30_signature
+                  0x00167c          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+ __c30_signature
+                  0x001682          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+ __c30_signature
+                  0x001688          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+ __c30_signature
+                  0x00168e          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+ __c30_signature
+                  0x001694          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ __c30_signature
+                  0x00169a          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ __c30_signature
+                  0x0016a0          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+ __c30_signature
+                  0x0016a6          0x6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+ __c30_signature
+                  0x0016ac          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+ __c30_signature
+                  0x0016b2          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+ __c30_signature
+                  0x0016b8          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+ __c30_signature
+                  0x0016be          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ __c30_signature
+                  0x0016c4          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+ __c30_signature
+                  0x0016ca          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+ __c30_signature
+                  0x0016d0          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcmp.XXeo)
+ __c30_signature
+                  0x0016d6          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memcpy.XXeo)
+ __c30_signature
+                  0x0016dc          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memset.XXeo)
+ __c30_signature
+                  0x0016e2          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x0016e8          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x0016ee          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x0016f4          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(memchr.XXeo)
+ __c30_signature
+                  0x0016fa          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strchr.XXeo)
+ __c30_signature
+                  0x001700          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(strlen.XXeo)
+ __c30_signature
+                  0x001706          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo)
+ __c30_signature
+                  0x00170c          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XXeo)
+ __c30_signature
+                  0x001712          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XXeo)
+ __c30_signature
+                  0x001718          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+ __c30_signature
+                  0x00171e          0x6 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+
+.nbss               0x0850         0x72
+ .nbss              0x0850         0x28 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+                    0x0850                  _CoordinatorAddr
+                    0x0858                  _NetSeq
+                    0x0859                  _userDataAvailable
+                    0x085c                  _nState
+                    0x085e                  _nst
+ .nbss              0x0878         0x1c ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+                    0x0878                  _BMState
+                    0x087a                  _currentInterval
+                    0x0882                  _intervalDelay
+                    0x088a                  _tInterval
+                    0x0892                  _netSequenceNumber
+ .nbss              0x0894         0x18 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+                    0x0894                  _MACInitParams
+                    0x0898                  _OutgoingFrameCounter
+                    0x089c                  _tmpFrameCounter
+                    0x08a0                  _IEEESeqNum
+                    0x08a2                  _failureCounter
+                    0x08a4                  _MACCurrentChannel
+                    0x08a6                  _MAC_PANID
+                    0x08a8                  _myNetworkAddress
+                    0x08aa                  _MRF24J40Status
+ .nbss              0x08ac         0x16 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+                    0x08ac                  _routingTableActive
+                    0x08ae                  _justEvictedParent
+                    0x08b0                  _NewBestParent
+                    0x08b8                  _RouteMgrUpdateRequired
+                    0x08ba                  _tRouteMgr
+
+.ndata              0x08c2         0x1e
+ .ndata             0x08c2         0x10 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+ .ndata             0x08d2          0xe ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+                    0x08d2                  _addressLen
+                    0x08d4                  _DeviceType
+                    0x08d6                  _DEVPanID
+                    0x08d8                  _MyAddress
+
+.nbss               0x08e0         0x28
+ .nbss              0x08e0          0xc build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+                    0x08e0                  _ActiveScanChannel
+                    0x08e1                  _TxIndex
+                    0x08e2                  _TxData
+                    0x08e3                  _UserMessageAvailable
+                    0x08e4                  _miapp_currentChannel
+                    0x08e6                  _pcnt1
+ .nbss              0x08ec          0xa build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+                    0x08ec                  _switches
+ .nbss              0x08f6          0xa ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+                    0x08f6                  _Tick_MS
+                    0x08fe                  _TimerSuspend
+ .nbss              0x0900          0x8 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+                    0x0900                  _upperTick
+                    0x0904                  _glbTmrNowms
+
+.ndata              0x0908          0x8
+ .ndata             0x0908          0x8 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+                    0x0908                  _tmTimeout
+
+.nbss               0x0910          0x8
+ .nbss              0x0910          0x8 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+
+.ndata              0x0918          0x4
+ .ndata             0x0918          0x4 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+                    0x0918                  _myShortAddress
+                    0x091a                  _myPANID
+
+.nbss               0x091c          0x8
+ .nbss              0x091c          0x4 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+                    0x091c                  _prevSentIdx
+                    0x091e                  _linkEstSeq
+ .nbss              0x0920          0x4 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+
+.ndata              0x0924          0x4
+ .ndata             0x0924          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+                    0x0924                  _BankIndex
+ .ndata             0x0926          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+                    0x0926                  _currentChannel
+
+.nbss               0x0928          0x2
+ .nbss              0x0928          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+                    0x0928                  _myDeviceType
+
+.ndata              0x092a          0x4
+ .ndata             0x092a          0x2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+                    0x092a                  _rmETXThreshold
+                    0x092b                  _ParentSwitchThreshold
+ .ndata             0x092c          0x2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+                    0x092c                  _EvictETXThreshold
+                    0x092d                  _rssiThreshold
+
+.nbss               0x092e          0x2
+ .nbss              0x092e          0x2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+                    0x092e                  _TMState
+
+.bss                0x0930        0xb10
+ .bss               0x0930        0x1bc ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+                    0x0930                  _RbcQ
+ .bss               0x0aec        0x168 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+                    0x0aec                  _hc_table
+ .bss               0x0c54        0x168 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+ .bss               0x0dbc        0x154 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+ .bss               0x0f10        0x118 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+                    0x0f10                  _ConnectionTable
+                    0x0f6a                  _ActiveScanResults
+                    0x0f76                  _MACRxPacket
+                    0x0f84                  _rxMessage
+                    0x0f90                  _srcAddress
+                    0x0f98                  _TxBuff
+                    0x0fd8                  _TxBuffer
+ .bss               0x1028        0x108 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+                    0x1028                  _tmpSourceLongAddress
+                    0x1030                  _RxBuffer
+ .bss               0x1130         0xf0 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+                    0x1130                  _tunnels
+ .bss               0x1220         0xdc ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+ .bss               0x12fc         0x9c ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+                    0x12fc                  _TMQ
+ .bss               0x1398         0x54 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+                    0x1398                  _beaconMessageBuffer
+ .bss               0x13ec         0x32 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+                    0x13ec                  _routeInfo
+                    0x13fa                  _userdata
+ .bss               0x141e         0x22 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+                    0x141e                  _LCDText
+
+.data               0x1440         0x22
+ .data              0x1440         0x22 c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xlitob.XXeo)
+
+.bss                0x1462         0x1e
+ .bss               0x1462         0x1e build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+                    0x1462                  _LEDState
+                    0x1468                  _LEDCmd
+
+.data               0x1480         0x1a
+ .data              0x1480         0x1a c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+
+.bss                0x149a         0x10
+ .bss               0x149a         0x10 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+                    0x149a                  _lastSource
+                    0x14a2                  _myAddr
+
+.data               0x14aa          0x8
+ .data              0x14aa          0x8 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+                    0x14aa                  _myLongAddress
+
+.ivt._INT1Interrupt
+                  0x00003c          0x2
+ .ivt._INT1Interrupt
+                  0x00003c          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+
+.ivt._T2Interrupt
+                  0x000022          0x2
+ .ivt._T2Interrupt
+                  0x000022          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+
+.config_JTAGEN    0x0157fe          0x2
+ .config_JTAGEN
+                  0x0157fe          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+
+.config_IESO      0x0157fc          0x2
+ .config_IESO     0x0157fc          0x2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+
+.const              0x8dbe        0x46a load address 0x000dbe  
+ .const             0x8dbe        0x400 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+                    0x8dbe                  _crc32_table
+ .const             0x91be         0x50 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+ .const             0x920e         0x12 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+                    0x920e                  _mySecurityKey
+                    0x921e                  _mySecurityLevel
+                    0x921f                  _myKeySequenceNumber
+ .const             0x9220          0x8 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+
+.text             0x001228       0x58f6
+ .text            0x001228       0x10ba build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1308774647/drv_mrf_miwi_mesh_24j40.o
+                  0x001228                  _PHYSetLongRAMAddr
+                  0x001270                  _PHYSetShortRAMAddr
+                  0x0012a4                  _PHYGetShortRAMAddr
+                  0x0012d8                  _PHYGetLongRAMAddr
+                  0x00131e                  _InitMRF24J40
+                  0x001420                  _MiMAC_ReceivedPacket
+                  0x001904                  _MiMAC_DiscardPacket
+                  0x00191e                  _MiMAC_SendPacket
+                  0x001d2c                  _MiMAC_ChannelAssessment
+                  0x001d5e                  _MiMAC_PowerState
+                  0x001e3a                  _MiMAC_SetChannel
+                  0x001e78                  _MiMAC_SetPower
+                  0x001ef2                  _MiMAC_SetAltAddress
+                  0x001f3a                  _MiMAC_Init
+                  0x001fb4                  __INT1Interrupt
+ .text            0x0022e2        0xcaa ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(LinkEstimator.o)
+                  0x0022e2                  _LinkEstimatorInit
+                  0x0022ec                  _le_findIdx
+                  0x002378                  _LELinkQualityGet
+                  0x0023e4                  _LEAppendNeighborInfo
+                  0x0024c0                  _LE_PinNeighbor
+                  0x002508                  _LE_UnpinNeighbor
+                  0x002554                  _LE_ClearDLQ
+                  0x00259a                  _le_initNeighborIdx
+                  0x00264c                  _le_findWorstNeighborIdx
+                  0x00274c                  _le_findEmptyNeighborIdx
+                  0x002782                  _LE_InsertNeighbor
+                  0x00287c                  _le_computeETX
+                  0x0028aa                  _le_updateETX
+                  0x0028ee                  _le_updateNeighborTableEst
+                  0x002a3c                  _le_updateNeighborEntryIdx
+                  0x002bf6                  _le_findRandomNeighborIdx
+                  0x002d7a                  _LE_processReceivedMessage
+                  0x002eec                  _LE_GetNeighborDeviceType
+                  0x002f16                  _LE_RemoveNeighborDevice
+ .text            0x002f8c        0x9ec ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkManager.o)
+                  0x002f8c                  _NetworkManagerTask
+                  0x003208                  _NetworkAddressSizeSet
+                  0x003216                  _NetworkAddressSizeGet
+                  0x00321e                  _NetworkInit
+                  0x0032ca                  _NetworkGetDeviceType
+                  0x0032d2                  _NetworkHasRoute
+                  0x003308                  _isBroadcastAddress
+                  0x003338                  _isInvalidAddress
+                  0x003348                  _NetworkManagerGetMyAddress
+                  0x003350                  _NetworkGetMyRouteInfo
+                  0x003358                  _isSameAddress
+                  0x003382                  _NetworkGetParentAddress
+                  0x003392                  _CoordinatorGenericAddress
+                  0x0033b6                  _CoordinatorAddress
+                  0x0033c6                  _NetworkSequence
+                  0x0033d6                  _NetworkManagerProcessIncomingData
+                  0x0036e8                  _NetworkReleaseUserData
+                  0x0036f0                  _NetworkPrepareSendPacket
+                  0x003834                  _IsMemberOfNetwork
+                  0x00383c                  _isNetworkSecurityEnabled
+                  0x003844                  _NetworkGetPANID
+                  0x00384c                  _NetworkSendDiscoverRequest
+                  0x003886                  _NetworkSendDiscoverResponse
+                  0x0038c4                  _NetworkIssueDataRequest
+                  0x003924                  _NetworkSetAddressPAN
+                  0x00395e                  _NetworkSetDeviceType
+                  0x00396a                  _MiApp_SetNetworkSecure
+ .text            0x003978        0x8a2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(NetworkBridge.o)
+                  0x003978                  _IsRadioTxBusy
+                  0x0039b4                  _radioReceivedPacket
+                  0x0040de                  _NetworkUnicastData
+                  0x0041c4                  _NetworkBroadcastData
+ .text            0x00421a        0x73e ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(RouteManager.o)
+                  0x00421a                  _RouteManagerInit
+                  0x004232                  _RouteManagerTask
+                  0x004276                  _RouteManagerPerformUpdate
+                  0x0043d6                  _RouteManagerRequestUpdate
+                  0x0043e0                  _passLinkEtxThreshold
+                  0x0043f4                  _routeInfoInit
+                  0x004420                  _routingTableFind
+                  0x00447e                  _RouterEvicted
+                  0x0044f8                  _routingTableUpdateEntry
+                  0x004604                  _RouterIsNeighborCongested
+                  0x004610                  _RouteManagerSetNeighborCongested
+                  0x00461c                  _RouteManagerProcessReceive
+                  0x00476a                  _RouteManagerShouldInsert
+                  0x004848                  _RMRoutingTableCount
+                  0x004850                  _RoutingTableFindDeviceOrParent
+                  0x0048e6                  _GetRouteAddressOfChild
+ .text            0x004958        0x6b2 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/Bridge.o
+                  0x004958                  _SendPacket
+                  0x0049fc                  _radioBroadcast
+                  0x004a44                  _radioUnicast
+                  0x004a9c                  _radioDiscardPacket
+                  0x004aa4                  _MiApp_ProtocolInit
+                  0x004aee                  _MiApp_SetChannel
+                  0x004b0c                  _MiApp_StartConnection
+                  0x004b34                  _MiApp_EstablishConnection
+                  0x004ba8                  _MiApp_SetAddressPan
+                  0x004bda                  _MiApp_UnicastAddress
+                  0x004c02                  _MiApp_BroadcastPacket
+                  0x004c16                  _MiApp_MessageAvailable
+                  0x004cb2                  _MiApp_DiscardMessage
+                  0x004cbc                  _NetworkDataArrivedEvent
+                  0x004d16                  _MiApp_IsMemberOfNetwork
+                  0x004d1e                  _MiApp_GetParentAddress
+                  0x004d30                  _AddNodeToNetworkTable
+                  0x004e1e                  _MiApp_RemoveConnection
+                  0x004e26                  _MiApp_ConnectionMode
+                  0x004e30                  _MiApp_SearchConnection
+                  0x004f08                  _NetworkDiscoveredEvent
+                  0x004fe4                  _MiApp_TransceiverPowerState
+                  0x005002                  _MiApp_RequestData
+ .text            0x00500a        0x5ca ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TransportManager.o)
+                  0x00500a                  _TransportManagerInit
+                  0x005018                  _TransportManagerTask
+                  0x0052d0                  _TMSendFormedPacketTowardsCoordinator
+                  0x0053ac                  _TMIsBusyBusy
+                  0x0053e2                  _TMSendDataToRFD
+                  0x00541c                  _TMSendFormedPacketToRFD
+                  0x0055c8                  _TransportManagerNoRoute
+                  0x0055ce                  _TransportManagerRouteFound
+ .text            0x0055d4        0x3a2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(DeviceManager.o)
+                  0x0055d4                  _IsNetworkDevice
+                  0x0056a6                  _DeviceManagerInit
+                  0x0056b4                  _MiApp_InitSleepRFDBuffers
+                  0x0056f0                  _DeviceManagerGetDeviceType
+                  0x00573e                  _DeviceManagerBufferDeviceData
+                  0x005840                  _DeviceManagerGetDeviceData
+ .text            0x005976        0x394 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/system.o
+                  0x005976                  _HardwareInit
+                  0x0059cc                  _HardwareSaveSPIBaudSetValue
+                  0x0059d4                  _HardwareRestoreSPIBaud
+                  0x0059da                  _ButtonTask
+                  0x005a6e                  _isButtonPressed
+                  0x005a8c                  _LEDManagerTask
+                  0x005ccc                  _LEDCommand
+                  0x005cfe                  _BlinkRedLED
+ .text            0x005d0a        0x2f6 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/lcd.o
+                  0x005e5c                  _LCDInit
+                  0x005ef4                  _LCDUpdate
+                  0x005f9e                  _LCDWriteLine
+ .text            0x006000        0x2e6 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BeaconManager.o)
+                  0x006000                  _BeaconManagerInit
+                  0x006024                  _BeaconManagerTask
+                  0x0060da                  _networkSendBeacon
+                  0x006232                  _netChooseAdvertiseTime
+                  0x00627c                  _netResetInterval
+                  0x006294                  _netDecayInterval
+                  0x0062d6                  _BeaconManagerTrigger
+                  0x0062de                  _MiApp_IsNetworkBusy
+ .text            0x0062e6        0x296 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TunnelManager.o)
+                  0x0062e6                  _TunnelManagerSetTunnel
+                  0x0063fa                  _TunnelManagerGetTunnel
+                  0x0064cc                  _TunnelManagerInvalidateTunnel
+                  0x006520                  _TunnelManagerInit
+                  0x00652e                  _TunnelManagerSetTimeoutSec
+                  0x006566                  _TunnelManagerGetTimeoutSeconds
+ .text            0x00657c        0x27a build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/1360937237/mainRFD.o
+                  0x00657c                  _main
+                  0x00671e                  _EEPROMRead
+                  0x00674c                  _Read_MAC_Address
+ .text            0x0067f6        0x1e2 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(BroadcastManager.o)
+                  0x0067f6                  _BroadcastManagerInit
+                  0x006804                  _BroadcastManagerTask
+                  0x0068ce                  _BroadcastManagerDelaySend
+ .text            0x0069d8        0x146 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(Cache.o)
+                  0x0069d8                  _isKnownPacket
+                  0x006b10                  _CacheInit
+
+.dinit            0x006b1e        0x13e
+ .dinit           0x006b1e        0x13e data_init
+
+.text             0x006c5c        0x3ba
+ .text            0x006c5c        0x128 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(krnd.o)
+                  0x006c5c                  _krndInit
+                  0x006cca                  _krnd
+ .text            0x006d84        0x108 build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/symbol.o
+                  0x006d84                  _InitSymbolTimer
+                  0x006d94                  _MiWi_TickGet
+                  0x006df2                  _MiWi_TickGetMs
+                  0x006e18                  _safeMiWi_TickGetMs
+                  0x006e58                  __T2Interrupt
+                  0x006e7c                  _TimerDisable
+                  0x006e84                  _TimerEnable
+ .text            0x006e8c         0x92 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(CRC32.o)
+                  0x006e8c                  _crc32
+ .text            0x006f1e         0x5e build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/spi.o
+                  0x006f1e                  _SPIPut
+                  0x006f40                  _SPIGet
+                  0x006f4e                  _SPIPut2
+                  0x006f6e                  _SPIGet2
+ .text            0x006f7c         0x50 ..\MiWi_Mesh_Library\Libraries\dist\PIC24_ADDR_8\production\16Bit_MiWiMesh24GhzLib.a(TimeTick.o)
+                  0x006f7c                  _TimeTickISR
+                  0x006f9c                  _MSTickGet
+                  0x006fb2                  _MSTickInit
+                  0x006fc0                  _TimerEnterCritical
+                  0x006fc6                  _TimerExitCritical
+ .text            0x006fcc         0x4a build/exp16_pic24fj128ga010_24j40_Co/debug/_ext/360740241/delay.o
+                  0x006fcc                  _DelayUS
+                  0x006ff2                  _DelayMs
+
+.shared.dinit     0x007016          0x2
+ .shared.dinit    0x007016          0x2 shared_data_init

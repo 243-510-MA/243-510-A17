@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/pic18exp_pic16f1947_24j40/production\simple_example_star.x.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>16384</length>
+      <used>10527</used>
+      <free>5857</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>582</used>
+      <free>442</free>
+    </memory>
+  </executable>
+</project>

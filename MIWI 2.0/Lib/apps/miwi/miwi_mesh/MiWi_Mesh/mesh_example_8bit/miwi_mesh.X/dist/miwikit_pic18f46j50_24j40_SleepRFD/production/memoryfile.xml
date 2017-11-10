@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/miwikit_pic18f46j50_24j40_SleepRFD/production\miwi_mesh.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65528</length>
+      <used>33077</used>
+      <free>32451</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3776</length>
+      <used>3475</used>
+      <free>301</free>
+    </memory>
+  </executable>
+</project>

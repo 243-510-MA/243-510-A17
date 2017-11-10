@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/miwikit_pic18f46j50_24j40_PanCo/production\miwi_mesh.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65528</length>
+      <used>32214</used>
+      <free>33314</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3776</length>
+      <used>3525</used>
+      <free>251</free>
+    </memory>
+  </executable>
+</project>
