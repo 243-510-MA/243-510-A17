@@ -351,6 +351,40 @@ case 'x':
 # 723
 break;
 
+
+
+
+case 's':
+
+# 734
+cp = (*(const char * *)__va_arg((*(const char * **)ap), (const char *)0));
+
+# 740
+if(!cp)
+cp = "(null)";
+
+
+
+len = 0;
+while(cp[len])
+len++;
+
+# 757
+if(width > len)
+width -= len;
+else
+width = 0;
+
+# 764
+while(width--)
+((*sp++ = (' ')));
+
+while(len--)
+((*sp++ = (*cp++)));
+
+# 774
+continue;
+
 # 802
 default:
 

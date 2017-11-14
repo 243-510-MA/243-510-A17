@@ -88,8 +88,6 @@
       <itemPath>../src/mainRFD-Sleeping.c</itemPath>
       <itemPath>../src/mainRFD.c</itemPath>
       <itemPath>../src/Bridge.c</itemPath>
-      <itemPath>../src/main.c</itemPath>
-      <itemPath>../src/Main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -112,7 +110,7 @@
         <targetDevice>PIC18F46J50</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD3PlatformTool</platformTool>
+        <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>1.44</languageToolchainVersion>
         <platform>3</platform>
@@ -182,6 +180,8 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
+      <item path="../src/mainCoordinator.c" ex="true" overriding="false">
+      </item>
       <item path="../src/mainRFD-Sleeping.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
@@ -190,7 +190,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="../src/mainRFD.c" ex="true" overriding="false">
+      <item path="../src/mainRFD.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -435,6 +435,9 @@
         <property key="programoptions.uselvpprogramming" value="false"/>
         <property key="voltagevalue" value="3.25"/>
       </ICD3PlatformTool>
+      <PICkit3PlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </PICkit3PlatformTool>
       <RealICEPlatformTool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="Freeze Peripherals" value="true"/>
