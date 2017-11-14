@@ -181,6 +181,12 @@
         </XC8-config-global>
       </item>
       <item path="../src/mainCoordinator.c" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
       </item>
       <item path="../src/mainRFD-Sleeping.c" ex="true" overriding="false">
         <HI-TECH-COMP>
