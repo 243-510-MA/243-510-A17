@@ -1,0 +1,24 @@
+Procédure de localisation de fichiers pour le MIWI
+
+WINDOW DOCUMENT EXPLORER:
+1. Ouvrir windows document explorer dans le dossier 243-510-A17
+2. Coller: 243-510-A17\MIWI 2.0\Lib\apps\miwi\miwi_mesh\MiWi_Mesh\mesh_example_8bit
+3. ???
+4. Enjoy!
+
+GITHUB WEBSITE:
+1. Cliquer sur "Find File"
+2. Coller: /MIWI 2.0/Lib/apps/miwi/miwi_mesh/MiWi_Mesh/mesh_example_8bit
+3. ???
+4. Enjoy!
+
+MPLAB X:
+-OUVRIR LE PROJET DEMO
+1. Ouvrir MPLAB X
+2. Ouvrir un project
+3. Coller: 243-510-A17\MIWI 2.0\Lib\apps\miwi\miwi_mesh\MiWi_Mesh\mesh_example_8bit\miwi_mesh.X
+4. ???
+5. Enjoy!
+
+-OUVRIR LE PROJET
+1. Ouvrir MPLAB X

@@ -1,0 +1,1689 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PIC14E SPEEDOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1947 ]
+[d frameptr 6 ]
+"90 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _PHYSetLongRAMAddr PHYSetLongRAMAddr `(v  1 e 1 0 ]
+"124
+[v _PHYSetShortRAMAddr PHYSetShortRAMAddr `(v  1 e 1 0 ]
+[v i1_PHYSetShortRAMAddr PHYSetShortRAMAddr `(v  1 e 1 0 ]
+"154
+[v _PHYGetShortRAMAddr PHYGetShortRAMAddr `(uc  1 e 1 0 ]
+[v i1_PHYGetShortRAMAddr PHYGetShortRAMAddr `(uc  1 e 1 0 ]
+"185
+[v _PHYGetLongRAMAddr PHYGetLongRAMAddr `(uc  1 e 1 0 ]
+[v i1_PHYGetLongRAMAddr PHYGetLongRAMAddr `(uc  1 e 1 0 ]
+"201
+[v _InitMRF24J40 InitMRF24J40 `(v  1 e 1 0 ]
+"366
+[v _MiMAC_ReceivedPacket MiMAC_ReceivedPacket `(uc  1 e 1 0 ]
+"693
+[v _MiMAC_DiscardPacket MiMAC_DiscardPacket `(v  1 e 1 0 ]
+"736
+[v _MiMAC_SendPacket MiMAC_SendPacket `(uc  1 e 1 0 ]
+"1302
+[v _MiMAC_SetChannel MiMAC_SetChannel `(uc  1 e 1 0 ]
+"1421
+[v _MiMAC_SetAltAddress MiMAC_SetAltAddress `(uc  1 e 1 0 ]
+"1465
+[v _MiMAC_Init MiMAC_Init `(uc  1 e 1 0 ]
+"1852
+[v _high_isr high_isr `II(v  1 e 1 0 ]
+"640 C:\gooooooooodd/framework/miwi/src/miwi_nvm.c
+[v _NVMRead NVMRead `(v  1 e 1 0 ]
+"656
+[v _NVMWrite NVMWrite `(v  1 e 1 0 ]
+"692
+[v _NVMalloc NVMalloc `(uc  1 e 1 0 ]
+"707
+[v _NVMInit NVMInit `(uc  1 e 1 0 ]
+"66 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _Total_Connections Total_Connections `(uc  1 e 1 0 ]
+"323
+[v _MacroNop MacroNop `(v  1 e 1 0 ]
+"350
+[v _P2PTasks P2PTasks `(v  1 e 1 0 ]
+"1122
+[v _MiApp_ProtocolInit MiApp_ProtocolInit `(uc  1 e 1 0 ]
+"1621
+[v _SendPacket SendPacket `(uc  1 e 1 0 ]
+"1709
+[v _MiApp_BroadcastPacket MiApp_BroadcastPacket `(uc  1 e 1 0 ]
+"1780
+[v _MiApp_UnicastConnection MiApp_UnicastConnection `(uc  1 e 1 0 ]
+"1859
+[v _MiApp_UnicastAddress MiApp_UnicastAddress `(uc  1 e 1 0 ]
+"2144
+[v _isSameAddress isSameAddress `(uc  1 e 1 0 ]
+"2160
+[v _MiApp_StartConnection MiApp_StartConnection `(uc  1 e 1 0 ]
+"2276
+[v _MiApp_EstablishConnection MiApp_EstablishConnection `(uc  1 e 1 0 ]
+"2384
+[v _MiApp_DiscardMessage MiApp_DiscardMessage `(v  1 e 1 0 ]
+"2392
+[v _MiApp_SetChannel MiApp_SetChannel `(uc  1 e 1 0 ]
+"2406
+[v _MiApp_MessageAvailable MiApp_MessageAvailable `(uc  1 e 1 0 ]
+"2431
+[v _DumpConnection DumpConnection `(v  1 e 1 0 ]
+"2535
+[v _AddConnection AddConnection `(uc  1 e 1 0 ]
+"3189
+[v _MiApp_ConnectionMode MiApp_ConnectionMode `(v  1 e 1 0 ]
+"63 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_Greeting DemoOutput_Greeting `(v  1 e 1 0 ]
+"200
+[v _DemoOutput_Channel DemoOutput_Channel `(v  1 e 1 0 ]
+"224
+[v _DemoOutput_Instruction DemoOutput_Instruction `(v  1 e 1 0 ]
+"238
+[v _DemoOutput_HandleMessage DemoOutput_HandleMessage `(v  1 e 1 0 ]
+"280
+[v _DemoOutput_UpdateTxRx DemoOutput_UpdateTxRx `(v  1 e 1 0 ]
+"285
+[v _DemoOutput_ChannelError DemoOutput_ChannelError `(v  1 e 1 0 ]
+"294
+[v _DemoOutput_UnicastFail DemoOutput_UnicastFail `(v  1 e 1 0 ]
+"359
+[v _ButtonPressed ButtonPressed `(uc  1 e 1 0 ]
+"56 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"39 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/p2p_demo.c
+[v _Process_RxMessage Process_RxMessage `(uc  1 e 1 0 ]
+"72
+[v _run_p2p_demo run_p2p_demo `(v  1 e 1 0 ]
+"67 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/console.c
+[v _CONSOLE_Initialize CONSOLE_Initialize `(v  1 e 1 0 ]
+"99
+[v _CONSOLE_PutString CONSOLE_PutString `(v  1 e 1 0 ]
+"124
+[v _CONSOLE_Put CONSOLE_Put `(v  1 e 1 0 ]
+"184
+[v _CONSOLE_PrintHex CONSOLE_PrintHex `(v  1 e 1 0 ]
+"214
+[v _CONSOLE_PrintDec CONSOLE_PrintDec `(v  1 e 1 0 ]
+"110 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/delay.c
+[v _DELAY_ms DELAY_ms `(v  1 e 1 0 ]
+"27 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/eeprom.c
+[v _EEPROM_Read EEPROM_Read `(v  1 e 1 0 ]
+"41 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCDInitSPI LCDInitSPI `(v  1 e 1 0 ]
+"48
+[v _LCDInitPortA LCDInitPortA `(v  1 e 1 0 ]
+"60
+[v _LCDInitPortB LCDInitPortB `(v  1 e 1 0 ]
+"72
+[v _LCDWritePortA LCDWritePortA `(v  1 e 1 0 ]
+"84
+[v _LCDWritePortB LCDWritePortB `(v  1 e 1 0 ]
+"96
+[v _LCDInitWrite LCDInitWrite `(v  1 e 1 0 ]
+"118
+[v _LCD_i_write LCD_i_write `(v  1 e 1 0 ]
+"140
+[v _LCD_d_write LCD_d_write `(v  1 e 1 0 ]
+"179
+[v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
+"236
+[v _LCD_Update LCD_Update `(v  1 e 1 0 ]
+"283
+[v _LCD_Erase LCD_Erase `(v  1 e 1 0 ]
+"312
+[v _LCDTRXCount LCDTRXCount `(v  1 e 1 0 ]
+"347
+[v _LCDDisplay LCDDisplay `(v  1 e 1 0 ]
+"45 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/spi.c
+[v _SPIPut SPIPut `(v  1 e 1 0 ]
+[v i1_SPIPut SPIPut `(v  1 e 1 0 ]
+"94
+[v _SPIGet SPIGet `(uc  1 e 1 0 ]
+[v i1_SPIGet SPIGet `(uc  1 e 1 0 ]
+"60 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+[v _InitSymbolTimer InitSymbolTimer `(v  1 e 1 0 ]
+"78 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40\symbol.h
+"81
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"106 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+"89 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40\symbol.h
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+"106 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v _MiWi_TickGet MiWi_TickGet `(S264  1 e 4 0 ]
+"67 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"235
+[v _UserInterruptHandler UserInterruptHandler `(v  1 e 1 0 ]
+"69 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/task.c
+[v _freezer_feature freezer_feature `(uc  1 e 1 0 ]
+"96
+[v _Initialize_Demo Initialize_Demo `(uc  1 e 1 0 ]
+"245
+[v _Run_Demo Run_Demo `(v  1 e 1 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\memset.c
+[v _memset memset `(*.6v  1 e 1 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+[s S19 . 1 `uc 1 RepeaterMode 1 0 :1:0 
+`uc 1 CCAEnable 1 0 :1:1 
+`uc 1 NetworkFreezer 1 0 :1:2 
+`uc 1 PAddrLength 1 0 :4:3 
+]
+"32 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[u S24 . 1 `uc 1 Val 1 0 `S19 1 bits 1 0 ]
+[s S27 . 2 `S24 1 actionFlags 1 0 `*.5uc 1 PAddress 1 1 ]
+[v _MACInitParams MACInitParams `S27  1 e 2 0 ]
+[s S30 . 69 `uc 1 PayloadLen 1 0 `[68]uc 1 Payload 68 1 ]
+"53
+[v _RxBuffer RxBuffer `[2]S30  1 e 138 @9062 ]
+"57
+[v _BankIndex BankIndex `uc  1 e 1 0 ]
+"59
+[v _IEEESeqNum IEEESeqNum `uc  1 e 1 0 ]
+"60
+[v _failureCounter failureCounter `VEui  1 e 2 0 ]
+"61
+[v _MACCurrentChannel MACCurrentChannel `uc  1 e 1 0 ]
+[u S33 . 2 `[2]uc 1 v 2 0 `ui 1 Val 2 0 ]
+"63
+[v _MAC_PANID MAC_PANID `S33  1 e 2 0 ]
+"64
+[v _myNetworkAddress myNetworkAddress `S33  1 e 2 0 ]
+[s S36 . 1 `uc 1 TX_BUSY 1 0 :1:0 
+`uc 1 TX_PENDING_ACK 1 0 :1:1 
+`uc 1 TX_FAIL 1 0 :1:2 
+`uc 1 RX_SECURITY 1 0 :1:3 
+`uc 1 RX_IGNORE_SECURITY 1 0 :1:4 
+`uc 1 RX_BUFFERED 1 0 :1:5 
+`uc 1 SEC_IF 1 0 :1:6 
+]
+"66
+[u S44 . 1 `uc 1 Val 1 0 `S36 1 bits 1 0 ]
+[v _MRF24J40Status MRF24J40Status `VES44  1 e 1 0 ]
+"35 C:\gooooooooodd/framework/miwi/src/miwi_nvm.c
+[v _nvmMyPANID nvmMyPANID `ui  1 e 2 0 ]
+"36
+[v _nvmCurrentChannel nvmCurrentChannel `ui  1 e 2 0 ]
+"37
+[v _nvmConnMode nvmConnMode `ui  1 e 2 0 ]
+"38
+[v _nvmConnectionTable nvmConnectionTable `ui  1 e 2 0 ]
+"39
+[v _nvmOutFrameCounter nvmOutFrameCounter `ui  1 e 2 0 ]
+"40
+[v _nvmEdc nvmEdc `ui  1 e 2 0 ]
+"691
+[v _nextEEPosition nextEEPosition `ui  1 e 2 0 ]
+"39 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _conn_size conn_size `uc  1 e 1 0 ]
+"41
+[v _MyindexinPC MyindexinPC `uc  1 e 1 0 ]
+"45
+[v _temp_bit temp_bit `uc  1 e 1 0 ]
+"50
+[v _myLongAddress myLongAddress `[8]uc  1 e 8 0 ]
+"236
+[v _TxBuffer TxBuffer `[40]uc  1 e 40 0 ]
+[s S656 _CONNECTION_STAUTS_bits 1 `uc 1 RXOnWhenIdle 1 0 :1:0 
+`uc 1 directConnection 1 0 :1:1 
+`uc 1 longAddressValid 1 0 :1:2 
+`uc 1 shortAddressValid 1 0 :1:3 
+`uc 1 FinishJoin 1 0 :1:4 
+`uc 1 isFamily 1 0 :1:5 
+`uc 1 filler 1 0 :1:6 
+`uc 1 isValid 1 0 :1:7 
+]
+"246
+[u S665 __CONNECTION_STATUS 1 `uc 1 Val 1 0 `S656 1 bits 1 0 ]
+[s S668 __CONNECTION_ENTRY 10 `[8]uc 1 Address 8 0 `S665 1 status 1 8 `[1]uc 1 PeerInfo 1 9 ]
+[v _ConnectionTable ConnectionTable `[5]S668  1 e 50 0 ]
+"250
+[v _myPANID myPANID `S33  1 e 2 0 ]
+"252
+[v _currentChannel currentChannel `uc  1 e 1 0 ]
+"253
+[v _TxData TxData `uc  1 e 1 0 ]
+"254
+[v _ConnMode ConnMode `uc  1 e 1 0 ]
+"255
+[v _P2PCapacityInfo P2PCapacityInfo `uc  1 e 1 0 ]
+[s S735 . 1 `uc 1 broadcast 1 0 :2:0 
+`uc 1 ackReq 1 0 :1:2 
+`uc 1 secEn 1 0 :1:3 
+`uc 1 repeat 1 0 :1:4 
+`uc 1 command 1 0 :1:5 
+`uc 1 srcPrsnt 1 0 :1:6 
+`uc 1 altSrcAddr 1 0 :1:7 
+]
+"256
+[u S743 . 1 `uc 1 Val 1 0 `S735 1 bits 1 0 ]
+[s S746 . 10 `S743 1 flags 1 0 `S33 1 SourcePANID 2 1 `*.39uc 1 SourceAddress 2 3 `*.39uc 1 Payload 2 5 `uc 1 PayloadSize 1 7 `uc 1 PacketRSSI 1 8 `uc 1 PacketLQI 1 9 ]
+[v _rxMessage rxMessage `S746  1 e 10 0 ]
+"257
+[v _LatestConnection LatestConnection `uc  1 e 1 0 ]
+[s S754 . 1 `uc 1 Sleeping 1 0 :1:0 
+`uc 1 SaveConnection 1 0 :1:1 
+`uc 1 DataRequesting 1 0 :1:2 
+`uc 1 RxHasUserData 1 0 :1:3 
+`uc 1 SearchConnection 1 0 :1:4 
+`uc 1 Resync 1 0 :1:5 
+`uc 1 Enhanced_DR_SecEn 1 0 :1:6 
+]
+"258
+[u S762 . 1 `uc 1 Val 1 0 `S754 1 bits 1 0 ]
+[v _P2PStatus P2PStatus `VES762  1 e 1 0 ]
+[s S195 . 1 `uc 1 packetType 1 0 :2:0 
+`uc 1 broadcast 1 0 :1:2 
+`uc 1 secEn 1 0 :1:3 
+`uc 1 repeat 1 0 :1:4 
+`uc 1 ackReq 1 0 :1:5 
+`uc 1 destPrsnt 1 0 :1:6 
+`uc 1 sourcePrsnt 1 0 :1:7 
+]
+"274
+[u S203 . 1 `uc 1 Val 1 0 `S195 1 bits 1 0 ]
+[s S206 . 11 `S203 1 flags 1 0 `*.39uc 1 SourceAddress 2 1 `*.39uc 1 Payload 2 3 `uc 1 PayloadLen 1 5 `uc 1 RSSIValue 1 6 `uc 1 LQIValue 1 7 `uc 1 altSourceAddress 1 8 `S33 1 SourcePANID 2 9 ]
+[v _MACRxPacket MACRxPacket `S206  1 e 11 0 ]
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"281
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v _nvmDelayTick nvmDelayTick `S264  1 e 4 0 ]
+"35 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _MiWi MiWi `DCC[6][21]uc  1 e 126 0 ]
+"46
+[v _DE DE `DCC[6][11]uc  1 e 66 0 ]
+"59
+[v _PUSH_BUTTON_pressed PUSH_BUTTON_pressed `uc  1 e 1 0 ]
+"60
+[v _PUSH_BUTTON_press_time PUSH_BUTTON_press_time `S264  1 e 4 0 ]
+"31 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/p2p_demo.c
+[v _i i `uc  1 e 1 0 ]
+"32
+[v _TxSynCount TxSynCount `uc  1 e 1 0 ]
+"33
+[v _TxSynCount2 TxSynCount2 `uc  1 e 1 0 ]
+"34
+[v _TxNum TxNum `uc  1 e 1 0 ]
+"35
+[v _RxNum RxNum `uc  1 e 1 0 ]
+"36
+[v _chk_sel_status chk_sel_status `uc  1 e 1 0 ]
+"32 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/console.c
+[v _CharacterArray CharacterArray `[16]uc  1 e 16 0 ]
+"39 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCDText LCDText `[33]uc  1 e 33 0 ]
+"33 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+[v _timerExtension1 timerExtension1 `VEuc  1 e 1 0 ]
+[v _timerExtension2 timerExtension2 `VEuc  1 e 1 0 ]
+"47 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/task.c
+[v _AdditionalNodeID AdditionalNodeID `[1]uc  1 e 1 0 ]
+[s S47 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f1947.h
+[s S56 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S61 . 1 `S47 1 . 1 0 `S56 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES61  1 e 1 @11 ]
+[s S2031 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"471
+[s S2040 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S2047 . 1 `uc 1 CPS0 1 0 :1:0 
+`uc 1 CPS1 1 0 :1:1 
+`uc 1 CPS2 1 0 :1:2 
+`uc 1 CPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CPS4 1 0 :1:5 
+]
+[s S2054 . 1 `uc 1 SEG33 1 0 :1:0 
+`uc 1 SEG18 1 0 :1:1 
+`uc 1 SEG34 1 0 :1:2 
+`uc 1 SEG35 1 0 :1:3 
+`uc 1 SEG14 1 0 :1:4 
+`uc 1 SEG15 1 0 :1:5 
+`uc 1 SEG36 1 0 :1:6 
+`uc 1 SEG37 1 0 :1:7 
+]
+[s S2063 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+`uc 1 OSC1 1 0 :1:7 
+]
+[s S2071 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CLKOUT 1 0 :1:6 
+`uc 1 CLKIN 1 0 :1:7 
+]
+[u S2075 . 1 `S2031 1 . 1 0 `S2040 1 . 1 0 `S2047 1 . 1 0 `S2054 1 . 1 0 `S2063 1 . 1 0 `S2071 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES2075  1 e 1 @12 ]
+[s S115 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"675
+[s S124 . 1 `uc 1 SEG30 1 0 :1:0 
+`uc 1 SEG8 1 0 :1:1 
+`uc 1 SEG9 1 0 :1:2 
+`uc 1 SEG10 1 0 :1:3 
+`uc 1 SEG11 1 0 :1:4 
+`uc 1 SEG29 1 0 :1:5 
+`uc 1 SEG38 1 0 :1:6 
+`uc 1 SEG39 1 0 :1:7 
+]
+[s S133 . 1 `uc 1 SRI 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 T1G 1 0 :1:5 
+]
+[s S137 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[u S139 . 1 `S115 1 . 1 0 `S124 1 . 1 0 `S133 1 . 1 0 `S137 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES139  1 e 1 @13 ]
+[s S301 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"1380
+[s S310 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S315 . 1 `S301 1 . 1 0 `S310 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES315  1 e 1 @17 ]
+"1608
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"1627
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"1646
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S1681 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"1668
+[s S1690 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S1694 . 1 `S1681 1 . 1 0 `S1690 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1694  1 e 1 @24 ]
+"2011
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S1437 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"2028
+[u S1446 . 1 `S1437 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1446  1 e 1 @140 ]
+"2072
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S1765 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"2089
+[u S1774 . 1 `S1765 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1774  1 e 1 @141 ]
+"2133
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S1213 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"2150
+[u S1222 . 1 `S1213 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES1222  1 e 1 @142 ]
+"2194
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+[s S1798 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"2211
+[u S1807 . 1 `S1798 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1807  1 e 1 @143 ]
+[s S333 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"2339
+[s S342 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S347 . 1 `S333 1 . 1 0 `S342 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES347  1 e 1 @145 ]
+"2789
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"3124
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S1413 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"3141
+[u S1422 . 1 `S1413 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1422  1 e 1 @268 ]
+"3185
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S79 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3202
+[u S88 . 1 `S79 1 . 1 0 ]
+[v _LATBbits LATBbits `VES88  1 e 1 @269 ]
+"3246
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S1330 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"3263
+[u S1339 . 1 `S1330 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1339  1 e 1 @270 ]
+"3307
+[v _LATD LATD `VEuc  1 e 1 @271 ]
+[s S2240 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3327
+[s S2249 . 1 `uc 1 LATD 1 0 :8:0 
+]
+[u S2251 . 1 `S2240 1 . 1 0 `S2249 1 . 1 0 ]
+[v _LATDbits LATDbits `VES2251  1 e 1 @271 ]
+"4235
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"4326
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"4351
+[v _EEADRH EEADRH `VEuc  1 e 1 @402 ]
+"4381
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+[s S611 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"4449
+[u S620 . 1 `S611 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES620  1 e 1 @405 ]
+"4493
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"4554
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"4597
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"4687
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"4808
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S1242 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"4880
+[u S1251 . 1 `S1242 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1251  1 e 1 @414 ]
+"5094
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"5205
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"5326
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S1611 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5352
+[u S1620 . 1 `S1611 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES1620  1 e 1 @533 ]
+[s S1458 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"7441
+[u S1467 . 1 `S1458 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES1467  1 e 1 @780 ]
+[s S1479 . 1 `uc 1 LATF0 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"8067
+[u S1488 . 1 `S1479 1 . 1 0 ]
+[v _LATFbits LATFbits `VES1488  1 e 1 @908 ]
+"8160
+[v _IOCBP IOCBP `VEuc  1 e 1 @916 ]
+"8229
+[v _IOCBN IOCBN `VEuc  1 e 1 @917 ]
+[s S1847 . 1 `uc 1 IOCBN0 1 0 :1:0 
+`uc 1 IOCBN1 1 0 :1:1 
+`uc 1 IOCBN2 1 0 :1:2 
+`uc 1 IOCBN3 1 0 :1:3 
+`uc 1 IOCBN4 1 0 :1:4 
+`uc 1 IOCBN5 1 0 :1:5 
+`uc 1 IOCBN6 1 0 :1:6 
+`uc 1 IOCBN7 1 0 :1:7 
+]
+"8249
+[s S1856 . 1 `uc 1 IOCBN 1 0 :8:0 
+]
+[u S1858 . 1 `S1847 1 . 1 0 `S1856 1 . 1 0 ]
+[v _IOCBNbits IOCBNbits `VES1858  1 e 1 @917 ]
+[s S169 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"8318
+[s S178 . 1 `uc 1 IOCBF 1 0 :8:0 
+]
+[u S180 . 1 `S169 1 . 1 0 `S178 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES180  1 e 1 @918 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
+"362
+[v _hexpowers hexpowers `DCC[4]ui  1 s 8 hexpowers ]
+"369
+[v _octpowers octpowers `DCC[6]ui  1 s 12 octpowers ]
+"56 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"58
+[v main@freezer_enable freezer_enable `uc  1 a 1 38 ]
+"83
+} 0
+"69 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/task.c
+[v _freezer_feature freezer_feature `(uc  1 e 1 0 ]
+{
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"71
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v freezer_feature@tick2 tick2 `S264  1 a 4 8 ]
+[v freezer_feature@tick1 tick1 `S264  1 a 4 4 ]
+"72
+[v freezer_feature@switch_val switch_val `uc  1 a 1 12 ]
+"92
+} 0
+"67 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"230
+} 0
+"179 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
+{
+"215
+} 0
+"41
+[v _LCDInitSPI LCDInitSPI `(v  1 e 1 0 ]
+{
+"46
+} 0
+"60
+[v _LCDInitPortB LCDInitPortB `(v  1 e 1 0 ]
+{
+"62
+[v LCDInitPortB@preRFIE preRFIE `uc  1 a 1 10 ]
+"70
+} 0
+"48
+[v _LCDInitPortA LCDInitPortA `(v  1 e 1 0 ]
+{
+"50
+[v LCDInitPortA@preRFIE preRFIE `uc  1 a 1 10 ]
+"58
+} 0
+"245 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/task.c
+[v _Run_Demo Run_Demo `(v  1 e 1 0 ]
+{
+"255
+} 0
+"72 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/p2p_demo.c
+[v _run_p2p_demo run_p2p_demo `(v  1 e 1 0 ]
+{
+"146
+[v run_p2p_demo@switch_val switch_val `uc  1 a 1 8 ]
+"128
+[v run_p2p_demo@select_ed select_ed `uc  1 a 1 9 ]
+"129
+[v run_p2p_demo@update_ed update_ed `uc  1 a 1 7 ]
+"87
+[v run_p2p_demo@PressedButton PressedButton `uc  1 a 1 6 ]
+"205
+} 0
+"39
+[v _Process_RxMessage Process_RxMessage `(uc  1 e 1 0 ]
+{
+"70
+} 0
+"280 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_UpdateTxRx DemoOutput_UpdateTxRx `(v  1 e 1 0 ]
+{
+[v DemoOutput_UpdateTxRx@TxNum TxNum `uc  1 a 1 wreg ]
+[v DemoOutput_UpdateTxRx@TxNum TxNum `uc  1 a 1 wreg ]
+[v DemoOutput_UpdateTxRx@RxNum RxNum `uc  1 p 1 57 ]
+"282
+[v DemoOutput_UpdateTxRx@TxNum TxNum `uc  1 a 1 58 ]
+"283
+} 0
+"312 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCDTRXCount LCDTRXCount `(v  1 e 1 0 ]
+{
+[v LCDTRXCount@txCount txCount `uc  1 a 1 wreg ]
+[v LCDTRXCount@txCount txCount `uc  1 a 1 wreg ]
+[v LCDTRXCount@rxCount rxCount `uc  1 p 1 55 ]
+"315
+[v LCDTRXCount@txCount txCount `uc  1 a 1 56 ]
+"322
+} 0
+"238 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_HandleMessage DemoOutput_HandleMessage `(v  1 e 1 0 ]
+{
+"240
+[v DemoOutput_HandleMessage@i i `uc  1 a 1 17 ]
+"278
+} 0
+"1780 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MiApp_UnicastConnection MiApp_UnicastConnection `(uc  1 e 1 0 ]
+{
+[v MiApp_UnicastConnection@ConnectionIndex ConnectionIndex `uc  1 a 1 wreg ]
+[v MiApp_UnicastConnection@ConnectionIndex ConnectionIndex `uc  1 a 1 wreg ]
+"1781
+[v MiApp_UnicastConnection@SecEn SecEn `uc  1 p 1 24 ]
+"1783
+[v MiApp_UnicastConnection@ConnectionIndex ConnectionIndex `uc  1 a 1 59 ]
+"1820
+} 0
+"1859
+[v _MiApp_UnicastAddress MiApp_UnicastAddress `(uc  1 e 1 0 ]
+{
+[v MiApp_UnicastAddress@DestinationAddress DestinationAddress `*.5uc  1 a 1 wreg ]
+[v MiApp_UnicastAddress@DestinationAddress DestinationAddress `*.5uc  1 a 1 wreg ]
+"1860
+[v MiApp_UnicastAddress@PermanentAddr PermanentAddr `uc  1 p 1 22 ]
+"1861
+[v MiApp_UnicastAddress@SecEn SecEn `uc  1 p 1 23 ]
+"1890
+[v MiApp_UnicastAddress@DestinationAddress DestinationAddress `*.5uc  1 a 1 58 ]
+"1894
+} 0
+"1709
+[v _MiApp_BroadcastPacket MiApp_BroadcastPacket `(uc  1 e 1 0 ]
+{
+[v MiApp_BroadcastPacket@SecEn SecEn `uc  1 a 1 wreg ]
+[v MiApp_BroadcastPacket@SecEn SecEn `uc  1 a 1 wreg ]
+"1737
+[v MiApp_BroadcastPacket@SecEn SecEn `uc  1 a 1 58 ]
+"1741
+} 0
+"294 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_UnicastFail DemoOutput_UnicastFail `(v  1 e 1 0 ]
+{
+"300
+} 0
+"359
+[v _ButtonPressed ButtonPressed `(uc  1 e 1 0 ]
+{
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"386
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v ButtonPressed@t t `S264  1 a 4 19 ]
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"361
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v ButtonPressed@tickDifference tickDifference `S264  1 a 4 23 ]
+"399
+} 0
+"96 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/task.c
+[v _Initialize_Demo Initialize_Demo `(uc  1 e 1 0 ]
+{
+[v Initialize_Demo@freezer_enable freezer_enable `uc  1 a 1 wreg ]
+"98
+[v Initialize_Demo@i i `uc  1 a 1 37 ]
+"96
+[v Initialize_Demo@freezer_enable freezer_enable `uc  1 a 1 wreg ]
+"100
+[v Initialize_Demo@freezer_enable freezer_enable `uc  1 a 1 36 ]
+"242
+} 0
+"2160 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MiApp_StartConnection MiApp_StartConnection `(uc  1 e 1 0 ]
+{
+[v MiApp_StartConnection@Mode Mode `uc  1 a 1 wreg ]
+"2173
+[v MiApp_StartConnection@tmp tmp `ui  1 a 2 25 ]
+"2160
+[v MiApp_StartConnection@Mode Mode `uc  1 a 1 wreg ]
+[v MiApp_StartConnection@ScanDuration ScanDuration `uc  1 p 1 19 ]
+[v MiApp_StartConnection@ChannelMap ChannelMap `ul  1 p 4 20 ]
+[v MiApp_StartConnection@Mode Mode `uc  1 a 1 24 ]
+"2224
+} 0
+"1122
+[v _MiApp_ProtocolInit MiApp_ProtocolInit `(uc  1 e 1 0 ]
+{
+[v MiApp_ProtocolInit@bNetworkFreezer bNetworkFreezer `uc  1 a 1 wreg ]
+"1254
+[v MiApp_ProtocolInit@tmp tmp `ui  1 a 2 44 ]
+[s S19 . 1 `uc 1 RepeaterMode 1 0 :1:0 
+`uc 1 CCAEnable 1 0 :1:1 
+`uc 1 NetworkFreezer 1 0 :1:2 
+`uc 1 PAddrLength 1 0 :4:3 
+]
+"1126
+[u S24 . 1 `uc 1 Val 1 0 `S19 1 bits 1 0 ]
+[s S27 . 2 `S24 1 actionFlags 1 0 `*.5uc 1 PAddress 1 1 ]
+[v MiApp_ProtocolInit@initValue initValue `S27  1 a 2 47 ]
+"1124
+[v MiApp_ProtocolInit@i i `uc  1 a 1 49 ]
+"1122
+[v MiApp_ProtocolInit@bNetworkFreezer bNetworkFreezer `uc  1 a 1 wreg ]
+"1132
+[v MiApp_ProtocolInit@bNetworkFreezer bNetworkFreezer `uc  1 a 1 46 ]
+"1281
+} 0
+"640 C:\gooooooooodd/framework/miwi/src/miwi_nvm.c
+[v _NVMRead NVMRead `(v  1 e 1 0 ]
+{
+[v NVMRead@dest dest `*.39uc  1 p 2 9 ]
+[v NVMRead@addr addr `ui  1 p 2 11 ]
+[v NVMRead@count count `ui  1 p 2 13 ]
+"654
+} 0
+"323 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MacroNop MacroNop `(v  1 e 1 0 ]
+{
+"331
+} 0
+"707 C:\gooooooooodd/framework/miwi/src/miwi_nvm.c
+[v _NVMInit NVMInit `(uc  1 e 1 0 ]
+{
+"709
+[v NVMInit@result result `uc  1 a 1 15 ]
+"751
+} 0
+"692
+[v _NVMalloc NVMalloc `(uc  1 e 1 0 ]
+{
+[v NVMalloc@size size `ui  1 p 2 9 ]
+[v NVMalloc@location location `*.39ui  1 p 2 11 ]
+"704
+} 0
+"1465 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _MiMAC_Init MiMAC_Init `(uc  1 e 1 0 ]
+{
+"1467
+[v MiMAC_Init@i i `uc  1 a 1 42 ]
+[s S19 . 1 `uc 1 RepeaterMode 1 0 :1:0 
+`uc 1 CCAEnable 1 0 :1:1 
+`uc 1 NetworkFreezer 1 0 :1:2 
+`uc 1 PAddrLength 1 0 :4:3 
+]
+"1465
+[u S24 . 1 `uc 1 Val 1 0 `S19 1 bits 1 0 ]
+[s S27 . 2 `S24 1 actionFlags 1 0 `*.5uc 1 PAddress 1 1 ]
+[v MiMAC_Init@initValue initValue `S27  1 p 2 38 ]
+"1502
+} 0
+"2392 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MiApp_SetChannel MiApp_SetChannel `(uc  1 e 1 0 ]
+{
+[v MiApp_SetChannel@channel channel `uc  1 a 1 wreg ]
+[v MiApp_SetChannel@channel channel `uc  1 a 1 wreg ]
+"2394
+[v MiApp_SetChannel@channel channel `uc  1 a 1 27 ]
+"2403
+} 0
+"60 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+[v _InitSymbolTimer InitSymbolTimer `(v  1 e 1 0 ]
+{
+"79
+} 0
+"27 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/eeprom.c
+[v _EEPROM_Read EEPROM_Read `(v  1 e 1 0 ]
+{
+[v EEPROM_Read@dest dest `*.5uc  1 a 1 wreg ]
+[v EEPROM_Read@dest dest `*.5uc  1 a 1 wreg ]
+[v EEPROM_Read@addr addr `uc  1 p 1 10 ]
+[v EEPROM_Read@count count `uc  1 p 1 11 ]
+"35
+[v EEPROM_Read@dest dest `*.5uc  1 a 1 12 ]
+"48
+} 0
+"2276 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MiApp_EstablishConnection MiApp_EstablishConnection `(uc  1 e 1 0 ]
+{
+"2322
+[v MiApp_EstablishConnection@i i `uc  1 a 1 11 ]
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"2281
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v MiApp_EstablishConnection@t2 t2 `S264  1 a 4 7 ]
+[v MiApp_EstablishConnection@t1 t1 `S264  1 a 4 2 ]
+"2280
+[v MiApp_EstablishConnection@connectionInterval connectionInterval `uc  1 a 1 6 ]
+"2279
+[v MiApp_EstablishConnection@retry retry `uc  1 a 1 1 ]
+"2278
+[v MiApp_EstablishConnection@tmpConnectionMode tmpConnectionMode `uc  1 a 1 0 ]
+"2276
+[v MiApp_EstablishConnection@Mode Mode `uc  1 p 1 31 ]
+"2376
+} 0
+"2406
+[v _MiApp_MessageAvailable MiApp_MessageAvailable `(uc  1 e 1 0 ]
+{
+"2411
+} 0
+"350
+[v _P2PTasks P2PTasks `(v  1 e 1 0 ]
+{
+"738
+[v P2PTasks@tmp tmp `ui  1 a 2 26 ]
+"509
+[v P2PTasks@status status `uc  1 a 1 28 ]
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"353
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v P2PTasks@tmpTick tmpTick `S264  1 a 4 22 ]
+"352
+[v P2PTasks@i i `uc  1 a 1 29 ]
+"1119
+} 0
+"1621
+[v _SendPacket SendPacket `(uc  1 e 1 0 ]
+{
+[v SendPacket@Broadcast Broadcast `uc  1 a 1 wreg ]
+[s S195 . 1 `uc 1 packetType 1 0 :2:0 
+`uc 1 broadcast 1 0 :1:2 
+`uc 1 secEn 1 0 :1:3 
+`uc 1 repeat 1 0 :1:4 
+`uc 1 ackReq 1 0 :1:5 
+`uc 1 destPrsnt 1 0 :1:6 
+`uc 1 sourcePrsnt 1 0 :1:7 
+]
+"1633
+[u S203 . 1 `uc 1 Val 1 0 `S195 1 bits 1 0 ]
+[u S33 . 2 `[2]uc 1 v 2 0 `ui 1 Val 2 0 ]
+[s S250 . 7 `S203 1 flags 1 0 `*.39uc 1 DestAddress 2 1 `uc 1 altDestAddr 1 3 `uc 1 altSrcAddr 1 4 `S33 1 DestPANID 2 5 ]
+[v SendPacket@tParam tParam `S250  1 a 7 15 ]
+"1634
+[v SendPacket@status status `uc  1 a 1 13 ]
+"1621
+[v SendPacket@Broadcast Broadcast `uc  1 a 1 wreg ]
+"1622
+[v SendPacket@DestinationPANID DestinationPANID `S33  1 p 2 51 ]
+"1623
+[v SendPacket@DestinationAddress DestinationAddress `*.39uc  1 p 2 53 ]
+"1624
+[v SendPacket@isCommand isCommand `uc  1 p 1 55 ]
+"1625
+[v SendPacket@SecurityEnabled SecurityEnabled `uc  1 p 1 56 ]
+"1636
+[v SendPacket@Broadcast Broadcast `uc  1 a 1 14 ]
+"1675
+} 0
+"736 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _MiMAC_SendPacket MiMAC_SendPacket `(uc  1 e 1 0 ]
+{
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"746
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v MiMAC_SendPacket@t2 t2 `S264  1 a 4 4 ]
+[v MiMAC_SendPacket@t1 t1 `S264  1 a 4 0 ]
+"741
+[v MiMAC_SendPacket@loc loc `uc  1 a 1 12 ]
+"742
+[v MiMAC_SendPacket@i i `uc  1 a 1 11 ]
+"740
+[v MiMAC_SendPacket@headerLength headerLength `uc  1 a 1 10 ]
+"747
+[v MiMAC_SendPacket@frameControl frameControl `uc  1 a 1 9 ]
+"744
+[v MiMAC_SendPacket@IntraPAN IntraPAN `uc  1 a 1 8 ]
+[s S195 . 1 `uc 1 packetType 1 0 :2:0 
+`uc 1 broadcast 1 0 :1:2 
+`uc 1 secEn 1 0 :1:3 
+`uc 1 repeat 1 0 :1:4 
+`uc 1 ackReq 1 0 :1:5 
+`uc 1 destPrsnt 1 0 :1:6 
+`uc 1 sourcePrsnt 1 0 :1:7 
+]
+"736
+[u S203 . 1 `uc 1 Val 1 0 `S195 1 bits 1 0 ]
+[u S33 . 2 `[2]uc 1 v 2 0 `ui 1 Val 2 0 ]
+[s S250 . 7 `S203 1 flags 1 0 `*.39uc 1 DestAddress 2 1 `uc 1 altDestAddr 1 3 `uc 1 altSrcAddr 1 4 `S33 1 DestPANID 2 5 ]
+[v MiMAC_SendPacket@transParam transParam `S250  1 p 7 38 ]
+"737
+[v MiMAC_SendPacket@MACPayload MACPayload `*.6uc  1 p 1 45 ]
+"738
+[v MiMAC_SendPacket@MACPayloadLen MACPayloadLen `uc  1 p 1 46 ]
+"1019
+} 0
+"78 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40\symbol.h
+"81
+[s S256 _MIWI_TICK_bytes 4 `uc 1 b0 1 0 `uc 1 b1 1 1 `uc 1 b2 1 2 `uc 1 b3 1 3 ]
+"106 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+"89 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40\symbol.h
+[s S261 _MIWI_TICK_words 4 `ui 1 w0 2 0 `ui 1 w1 2 2 ]
+"106 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/symbol.c
+[u S264 _MIWI_TICK 4 `ul 1 Val 4 0 `S256 1 byte 4 0 `[4]uc 1 v 4 0 `S261 1 word 4 0 ]
+[v _MiWi_TickGet MiWi_TickGet `(S264  1 e 4 0 ]
+{
+"108
+[v MiWi_TickGet@currentTime currentTime `S264  1 a 4 15 ]
+"109
+[v MiWi_TickGet@IntFlag1 IntFlag1 `uc  1 a 1 14 ]
+"110
+[v MiWi_TickGet@IntFlag2 IntFlag2 `uc  1 a 1 13 ]
+"144
+} 0
+"1421 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _MiMAC_SetAltAddress MiMAC_SetAltAddress `(uc  1 e 1 0 ]
+{
+[v MiMAC_SetAltAddress@Address Address `*.4uc  1 a 1 wreg ]
+[v MiMAC_SetAltAddress@Address Address `*.4uc  1 a 1 wreg ]
+[v MiMAC_SetAltAddress@PANID PANID `*.4uc  1 p 1 13 ]
+"1423
+[v MiMAC_SetAltAddress@Address Address `*.4uc  1 a 1 14 ]
+"1433
+} 0
+"201
+[v _InitMRF24J40 InitMRF24J40 `(v  1 e 1 0 ]
+{
+"211
+[v InitMRF24J40@_ms_439 _ms `ul  1 a 4 31 ]
+[v InitMRF24J40@_dcnt_438 _dcnt `ul  1 a 4 23 ]
+"208
+[v InitMRF24J40@_ms _ms `ul  1 a 4 27 ]
+[v InitMRF24J40@_dcnt _dcnt `ul  1 a 4 19 ]
+"204
+[v InitMRF24J40@j j `ui  1 a 2 35 ]
+"203
+[v InitMRF24J40@i i `uc  1 a 1 37 ]
+"327
+} 0
+"154
+[v _PHYGetShortRAMAddr PHYGetShortRAMAddr `(uc  1 e 1 0 ]
+{
+[v PHYGetShortRAMAddr@address address `uc  1 a 1 wreg ]
+"157
+[v PHYGetShortRAMAddr@tmpRFIE tmpRFIE `VEuc  1 a 1 12 ]
+"156
+[v PHYGetShortRAMAddr@toReturn toReturn `uc  1 a 1 11 ]
+"154
+[v PHYGetShortRAMAddr@address address `uc  1 a 1 wreg ]
+"157
+[v PHYGetShortRAMAddr@address address `uc  1 a 1 10 ]
+"167
+} 0
+"185
+[v _PHYGetLongRAMAddr PHYGetLongRAMAddr `(uc  1 e 1 0 ]
+{
+"188
+[v PHYGetLongRAMAddr@tmpRFIE tmpRFIE `VEuc  1 a 1 15 ]
+"187
+[v PHYGetLongRAMAddr@toReturn toReturn `uc  1 a 1 14 ]
+"185
+[v PHYGetLongRAMAddr@address address `ui  1 p 2 10 ]
+"199
+} 0
+"94 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/spi.c
+[v _SPIGet SPIGet `(uc  1 e 1 0 ]
+{
+"118
+} 0
+"1302 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _MiMAC_SetChannel MiMAC_SetChannel `(uc  1 e 1 0 ]
+{
+[v MiMAC_SetChannel@channel channel `uc  1 a 1 wreg ]
+[v MiMAC_SetChannel@channel channel `uc  1 a 1 wreg ]
+[v MiMAC_SetChannel@offsetFreq offsetFreq `uc  1 p 1 16 ]
+"1304
+[v MiMAC_SetChannel@channel channel `uc  1 a 1 17 ]
+"1321
+} 0
+"124
+[v _PHYSetShortRAMAddr PHYSetShortRAMAddr `(v  1 e 1 0 ]
+{
+[v PHYSetShortRAMAddr@address address `uc  1 a 1 wreg ]
+"126
+[v PHYSetShortRAMAddr@tmpRFIE tmpRFIE `VEuc  1 a 1 12 ]
+"124
+[v PHYSetShortRAMAddr@address address `uc  1 a 1 wreg ]
+[v PHYSetShortRAMAddr@value value `uc  1 p 1 10 ]
+"126
+[v PHYSetShortRAMAddr@address address `uc  1 a 1 11 ]
+"134
+} 0
+"90
+[v _PHYSetLongRAMAddr PHYSetLongRAMAddr `(v  1 e 1 0 ]
+{
+"92
+[v PHYSetLongRAMAddr@tmpRFIE tmpRFIE `VEuc  1 a 1 15 ]
+"90
+[v PHYSetLongRAMAddr@address address `ui  1 p 2 10 ]
+[v PHYSetLongRAMAddr@value value `uc  1 p 1 12 ]
+"101
+} 0
+"366
+[v _MiMAC_ReceivedPacket MiMAC_ReceivedPacket `(uc  1 e 1 0 ]
+{
+"406
+[v MiMAC_ReceivedPacket@bIntraPAN bIntraPAN `uc  1 a 1 32 ]
+"404
+[v MiMAC_ReceivedPacket@addrMode addrMode `uc  1 a 1 30 ]
+"368
+[v MiMAC_ReceivedPacket@i i `uc  1 a 1 31 ]
+"656
+} 0
+"2535 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _AddConnection AddConnection `(uc  1 e 1 0 ]
+{
+"2537
+[v AddConnection@i i `uc  1 a 1 34 ]
+"2539
+[v AddConnection@connectionSlot connectionSlot `uc  1 a 1 33 ]
+"2538
+[v AddConnection@status status `uc  1 a 1 32 ]
+"2613
+} 0
+"2144
+[v _isSameAddress isSameAddress `(uc  1 e 1 0 ]
+{
+"2146
+[v isSameAddress@i i `uc  1 a 1 18 ]
+"2144
+[v isSameAddress@Address1 Address1 `*.39uc  1 p 2 12 ]
+[v isSameAddress@Address2 Address2 `*.5uc  1 p 1 14 ]
+"2156
+} 0
+"66
+[v _Total_Connections Total_Connections `(uc  1 e 1 0 ]
+{
+"68
+[v Total_Connections@i i `uc  1 a 1 13 ]
+[v Total_Connections@count count `uc  1 a 1 12 ]
+"84
+} 0
+"2384
+[v _MiApp_DiscardMessage MiApp_DiscardMessage `(v  1 e 1 0 ]
+{
+"2388
+} 0
+"693 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _MiMAC_DiscardPacket MiMAC_DiscardPacket `(v  1 e 1 0 ]
+{
+"701
+} 0
+"3189 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _MiApp_ConnectionMode MiApp_ConnectionMode `(v  1 e 1 0 ]
+{
+[v MiApp_ConnectionMode@Mode Mode `uc  1 a 1 wreg ]
+[v MiApp_ConnectionMode@Mode Mode `uc  1 a 1 wreg ]
+"3191
+[v MiApp_ConnectionMode@Mode Mode `uc  1 a 1 28 ]
+"3201
+} 0
+"656 C:\gooooooooodd/framework/miwi/src/miwi_nvm.c
+[v _NVMWrite NVMWrite `(v  1 e 1 0 ]
+{
+"658
+[v NVMWrite@oldGIEH oldGIEH `uc  1 a 1 26 ]
+"656
+[v NVMWrite@source source `*.39uc  1 p 2 20 ]
+[v NVMWrite@addr addr `ui  1 p 2 22 ]
+[v NVMWrite@count count `ui  1 p 2 24 ]
+"685
+} 0
+"2431 C:\gooooooooodd/framework/miwi/src/miwi_p2p.c
+[v _DumpConnection DumpConnection `(v  1 e 1 0 ]
+{
+[v DumpConnection@index index `uc  1 a 1 wreg ]
+"2433
+[v DumpConnection@i i `uc  1 a 1 22 ]
+[v DumpConnection@j j `uc  1 a 1 21 ]
+"2431
+[v DumpConnection@index index `uc  1 a 1 wreg ]
+"2435
+[v DumpConnection@index index `uc  1 a 1 20 ]
+"2511
+} 0
+"184 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/console.c
+[v _CONSOLE_PrintHex CONSOLE_PrintHex `(v  1 e 1 0 ]
+{
+[v CONSOLE_PrintHex@toPrint toPrint `uc  1 a 1 wreg ]
+"186
+[v CONSOLE_PrintHex@PRINT_VAR PRINT_VAR `uc  1 a 1 10 ]
+"184
+[v CONSOLE_PrintHex@toPrint toPrint `uc  1 a 1 wreg ]
+"187
+[v CONSOLE_PrintHex@toPrint toPrint `uc  1 a 1 11 ]
+"193
+} 0
+"224 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_Instruction DemoOutput_Instruction `(v  1 e 1 0 ]
+{
+"235
+} 0
+"285
+[v _DemoOutput_ChannelError DemoOutput_ChannelError `(v  1 e 1 0 ]
+{
+[v DemoOutput_ChannelError@channel channel `uc  1 a 1 wreg ]
+[v DemoOutput_ChannelError@channel channel `uc  1 a 1 wreg ]
+"288
+[v DemoOutput_ChannelError@channel channel `uc  1 a 1 19 ]
+"292
+} 0
+"200
+[v _DemoOutput_Channel DemoOutput_Channel `(v  1 e 1 0 ]
+{
+[v DemoOutput_Channel@channel channel `uc  1 a 1 wreg ]
+[v DemoOutput_Channel@channel channel `uc  1 a 1 wreg ]
+[v DemoOutput_Channel@Step Step `uc  1 p 1 60 ]
+"202
+[v DemoOutput_Channel@channel channel `uc  1 a 1 61 ]
+"222
+} 0
+"214 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/console.c
+[v _CONSOLE_PrintDec CONSOLE_PrintDec `(v  1 e 1 0 ]
+{
+[v CONSOLE_PrintDec@toPrint toPrint `uc  1 a 1 wreg ]
+[v CONSOLE_PrintDec@toPrint toPrint `uc  1 a 1 wreg ]
+"216
+[v CONSOLE_PrintDec@toPrint toPrint `uc  1 a 1 18 ]
+"221
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v ___lbmod@dividend dividend `uc  1 a 1 wreg ]
+"6
+[v ___lbmod@rem rem `uc  1 a 1 13 ]
+"7
+[v ___lbmod@counter counter `uc  1 a 1 12 ]
+"4
+[v ___lbmod@dividend dividend `uc  1 a 1 wreg ]
+[v ___lbmod@divisor divisor `uc  1 p 1 9 ]
+"9
+[v ___lbmod@dividend dividend `uc  1 a 1 11 ]
+"18
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 17 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 16 ]
+"4
+[v ___lbdiv@dividend dividend `uc  1 a 1 wreg ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 14 ]
+"9
+[v ___lbdiv@dividend dividend `uc  1 a 1 15 ]
+"26
+} 0
+"63 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/demo_ouput.c
+[v _DemoOutput_Greeting DemoOutput_Greeting `(v  1 e 1 0 ]
+{
+"186
+} 0
+"347 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCDDisplay LCDDisplay `(v  1 e 1 0 ]
+{
+"358
+[v LCDDisplay@i i `uc  1 a 1 59 ]
+"347
+[v LCDDisplay@text text `*.25uc  1 p 2 55 ]
+[v LCDDisplay@value value `uc  1 p 1 57 ]
+[v LCDDisplay@delay delay `uc  1 p 1 58 ]
+"365
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.6uc  1 a 1 wreg ]
+"1500
+[v sprintf@idx idx `uc  1 a 1 42 ]
+"508
+[v sprintf@flag flag `us  1 a 2 53 ]
+"501
+[v sprintf@width width `i  1 a 2 49 ]
+"528
+[v sprintf@val val `ui  1 a 2 46 ]
+"529
+[v sprintf@len len `ui  1 a 2 43 ]
+"499
+[v sprintf@c c `c  1 a 1 51 ]
+"506
+[v sprintf@prec prec `c  1 a 1 48 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 45 ]
+"530
+[v sprintf@cp cp `*.4DCCuc  1 a 1 41 ]
+"492
+[v sprintf@sp sp `*.6uc  1 a 1 wreg ]
+[v sprintf@f f `*.25DCCuc  1 p 2 21 ]
+"533
+[v sprintf@sp sp `*.6uc  1 a 1 52 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 10 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 20 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 16 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 18 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 14 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 9 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 11 ]
+"31
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 10 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 9 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 11 ]
+"51
+} 0
+"236 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCD_Update LCD_Update `(v  1 e 1 0 ]
+{
+"238
+[v LCD_Update@i i `uc  1 a 1 28 ]
+"265
+} 0
+"118
+[v _LCD_i_write LCD_i_write `(v  1 e 1 0 ]
+{
+[v LCD_i_write@v v `uc  1 a 1 wreg ]
+[v LCD_i_write@v v `uc  1 a 1 wreg ]
+"120
+[v LCD_i_write@v v `uc  1 a 1 27 ]
+"138
+} 0
+"140
+[v _LCD_d_write LCD_d_write `(v  1 e 1 0 ]
+{
+[v LCD_d_write@v v `uc  1 a 1 wreg ]
+[v LCD_d_write@v v `uc  1 a 1 wreg ]
+"142
+[v LCD_d_write@v v `uc  1 a 1 27 ]
+"159
+} 0
+"283
+[v _LCD_Erase LCD_Erase `(v  1 e 1 0 ]
+{
+"291
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\memset.c
+[v _memset memset `(*.6v  1 e 1 0 ]
+{
+[v memset@p1 p1 `*.6v  1 a 1 wreg ]
+"15
+[v memset@p p `*.6uc  1 a 1 14 ]
+"8
+[v memset@p1 p1 `*.6v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 9 ]
+[v memset@n n `ui  1 p 2 11 ]
+"18
+[v memset@p1 p1 `*.6v  1 a 1 13 ]
+"22
+} 0
+"96 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/lcd.c
+[v _LCDInitWrite LCDInitWrite `(v  1 e 1 0 ]
+{
+[v LCDInitWrite@v v `uc  1 a 1 wreg ]
+[v LCDInitWrite@v v `uc  1 a 1 wreg ]
+"98
+[v LCDInitWrite@v v `uc  1 a 1 12 ]
+"116
+} 0
+"84
+[v _LCDWritePortB LCDWritePortB `(v  1 e 1 0 ]
+{
+[v LCDWritePortB@v v `uc  1 a 1 wreg ]
+"86
+[v LCDWritePortB@preRFIE preRFIE `uc  1 a 1 11 ]
+"84
+[v LCDWritePortB@v v `uc  1 a 1 wreg ]
+"86
+[v LCDWritePortB@v v `uc  1 a 1 10 ]
+"94
+} 0
+"72
+[v _LCDWritePortA LCDWritePortA `(v  1 e 1 0 ]
+{
+[v LCDWritePortA@v v `uc  1 a 1 wreg ]
+"74
+[v LCDWritePortA@preRFIE preRFIE `uc  1 a 1 11 ]
+"72
+[v LCDWritePortA@v v `uc  1 a 1 wreg ]
+"74
+[v LCDWritePortA@v v `uc  1 a 1 10 ]
+"82
+} 0
+"45 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/spi.c
+[v _SPIPut SPIPut `(v  1 e 1 0 ]
+{
+[v SPIPut@v v `uc  1 a 1 wreg ]
+[v SPIPut@v v `uc  1 a 1 wreg ]
+"63
+[v SPIPut@v v `uc  1 a 1 9 ]
+"76
+} 0
+"110 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/delay.c
+[v _DELAY_ms DELAY_ms `(v  1 e 1 0 ]
+{
+"114
+[v DELAY_ms@cyclesRequiredForEntireDelay cyclesRequiredForEntireDelay `l  1 a 4 23 ]
+"110
+[v DELAY_ms@ms ms `ui  1 p 2 21 ]
+"137
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 17 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 9 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 13 ]
+"129
+} 0
+"99 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/console.c
+[v _CONSOLE_PutString CONSOLE_PutString `(v  1 e 1 0 ]
+{
+"101
+[v CONSOLE_PutString@c c `uc  1 a 1 14 ]
+"99
+[v CONSOLE_PutString@str str `*.25uc  1 p 2 10 ]
+"105
+} 0
+"124
+[v _CONSOLE_Put CONSOLE_Put `(v  1 e 1 0 ]
+{
+[v CONSOLE_Put@c c `uc  1 a 1 wreg ]
+[v CONSOLE_Put@c c `uc  1 a 1 wreg ]
+[v CONSOLE_Put@c c `uc  1 a 1 9 ]
+"130
+} 0
+"67
+[v _CONSOLE_Initialize CONSOLE_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"1852 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v _high_isr high_isr `II(v  1 e 1 0 ]
+{
+[s S289 . 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+"1900
+[u S298 _DRIVER_UINT8_UNION_ 1 `uc 1 Val 1 0 `S289 1 bits 1 0 ]
+[v high_isr@results results `S298  1 a 1 7 ]
+"1922
+[v high_isr@RxBank RxBank `uc  1 a 1 10 ]
+[s S280 . 2 `uc 1 RF_TXIF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 RF_RXIF 1 0 :1:3 
+`uc 1 SECIF 1 0 :1:4 
+`uc 1 . 1 1 :4:0 
+]
+"1878
+[u S286 . 2 `uc 1 Val 1 0 `S280 1 bits 2 0 ]
+[v high_isr@flags flags `S286  1 a 2 8 ]
+"1869
+[v high_isr@i i `uc  1 a 1 11 ]
+"2011
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"124 C:\gooooooooodd/framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c
+[v i1_PHYSetShortRAMAddr PHYSetShortRAMAddr `(v  1 e 1 0 ]
+{
+[v i1PHYSetShortRAMAddr@address address `uc  1 a 1 wreg ]
+[v i1PHYSetShortRAMAddr@tmpRFIE PHYSetShortRAMAddr `VEuc  1 a 1 3 ]
+[v i1PHYSetShortRAMAddr@address address `uc  1 a 1 wreg ]
+[v i1PHYSetShortRAMAddr@value value `uc  1 p 1 1 ]
+"126
+[v i1PHYSetShortRAMAddr@address address `uc  1 a 1 2 ]
+"134
+} 0
+"154
+[v i1_PHYGetShortRAMAddr PHYGetShortRAMAddr `(uc  1 e 1 0 ]
+{
+[v i1PHYGetShortRAMAddr@address address `uc  1 a 1 wreg ]
+[v i1PHYGetShortRAMAddr@tmpRFIE PHYGetShortRAMAddr `VEuc  1 a 1 3 ]
+[v i1PHYGetShortRAMAddr@toReturn PHYGetShortRAMAddr `uc  1 a 1 2 ]
+[v i1PHYGetShortRAMAddr@address address `uc  1 a 1 wreg ]
+"157
+[v i1PHYGetShortRAMAddr@address address `uc  1 a 1 1 ]
+"167
+} 0
+"185
+[v i1_PHYGetLongRAMAddr PHYGetLongRAMAddr `(uc  1 e 1 0 ]
+{
+[v i1PHYGetLongRAMAddr@tmpRFIE PHYGetLongRAMAddr `VEuc  1 a 1 6 ]
+[v i1PHYGetLongRAMAddr@toReturn PHYGetLongRAMAddr `uc  1 a 1 5 ]
+[v i1PHYGetLongRAMAddr@address address `ui  1 p 2 1 ]
+"199
+} 0
+"94 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/spi.c
+[v i1_SPIGet SPIGet `(uc  1 e 1 0 ]
+{
+"118
+} 0
+"45
+[v i1_SPIPut SPIPut `(v  1 e 1 0 ]
+{
+[v i1SPIPut@v v `uc  1 a 1 wreg ]
+[v i1SPIPut@v v `uc  1 a 1 wreg ]
+"63
+[v i1SPIPut@v v `uc  1 a 1 0 ]
+"76
+} 0
+"235 C:\gooooooooodd\apps\miwi\miwi_p2p\simple_example_p2p\firmware/src/system_config/pic18exp_pic16f1947_24j40/system.c
+[v _UserInterruptHandler UserInterruptHandler `(v  1 e 1 0 ]
+{
+"238
+} 0

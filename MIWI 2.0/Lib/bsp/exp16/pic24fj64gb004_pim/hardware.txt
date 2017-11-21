@@ -1,0 +1,85 @@
+================================================================
+PIC24FJ64GB004 Processor module for the Explorer 16/32
+================================================================
+
+mikroBUS(tm) connections
+----------------------------------------------------------------
+The Explorer 16/32 demo board has two mikroBUS ports: A and B.
+The below charts show how the processor pins map to the mikroBUS
+ports and what other features are shared on those pins on the
+Explorer 16/32.
+
+Due to the overlap of LCD D4 with the SCL line, this processor
+module can't be used with an I2C click board on either mikroBUS
+port while also using the LCD.
+
+When using mikroBUS A AN, J28 may need to be opened.
+
+ +- mikroBUS A pin
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+AN   |  RA0  |  P25_ANA_USBOC  |  USB over current resistor divider (J33), LCD D7, USB Type-C CC1
+RST  |  RB5  |  P95_RSTA       |  
+CS   |  RC2  |  P14_CSA        |  mikroBUS B INT, USB Type-C CC2
+SCK  |  RC8  |  P10_SCKA       |  EEPROM SCK     
+MISO |  RC4  |  P11_MISOA      |  EEPROM MISO
+MOSI |  RC5  |  P12_MOSIA      |  EEPROM MOSI, LED D9
+PWM  |  RC9  |  P72_PWMA       |  mikroBUS B TX
+INT  |  RC3  |  P67_INTA       |  mikroBUS B RX, mikroBUS B PWM
+RX   |  RB7  |  P52_RXA        |  LCD D5
+TX   |  RB13 |  P51_TXA        |  LCD R/W
+SCL  |  RB8  |  P57_SCL        |  MCP2221A SCL and mikroBUS B SCL, LCD D4
+SDA  |  RB9  |  P56_SDA        |  MCP2221A SDA and mikroBUS B SDA, LCD D3
+
+
+ +- mikroBUS B pin
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+AN   |  RA1  |  P24_ANB        |  LCD D6
+RST  |  RB2  |  P19_RSTB       |  LED D6, LCD D2
+CS   |  RC6  |  P23_CSB        |  LED D10, Switch S5
+SCK  |  RB15 |  P55_SCKB       |  
+MISO |  RC1  |  P54_MISOB      |  
+MOSI |  RC0  |  P53_MOSIB      |  
+PWM  |  RC3  |  P78_PWMB       |  mikroBUS B RX, mikroBUS A INT
+INT  |  RC2  |  P18_INTB       |  mikroBUS A CS, USB Type-C CC2
+RX   |  RC3  |  P49_RXB        |  MCP2221A TX (J37), mikroBUS B PWM, mikroBUS A INT
+TX   |  RC9  |  P50_TXB        |  MCP2221A RX (J38), mikroBUS A PWM
+SCL  |  RB8  |  P57_SCL        |  MCP2221A SCL and mikroBUS A SCL, LCD D4
+SDA  |  RB9  |  P56_SDA        |  MCP2221A SDA and mikroBUS A SDA, LCD D3
+
+
+Switches
+----------------------------------------------------------------
+NOTE: because of the tie to several LEDs, removing JP2 might be
+required for using many of the switches.
+
+ +- Switch
+ |       +- Processor pin
+ |       |       +- Explorer 16/32 net name(s)
+ |       |       |                 +- Other pin usage on board
+ |       |       |                 |
+/===\ /=====\ /===============\ /========================================\
+S3   |  RA10 |  P83_S3         |  LED D3
+S6   |  RA9  |  P84_S6         |  LED D7, USB Type-C VBUS output enable
+S5   |  RC6  |  P92_S5_LED10   |  LED D10, weak pull-up, mikroBUS B CS
+S4   |  RA7  |  P80_S4         |  LED D4
+
+
+
+References/Links
+----------------------------------------------------------------
+[1] http://www.mikroe.com/mikrobus/
+[2] http://www.microchip.com/MA240019
+[3] http://www.microchip.com/explorer1632
+
+
+Legal
+----------------------------------------------------------------
+mikroBUS a trademark of MikroElectronika.
