@@ -7,4 +7,5 @@ Semaine 1
 
     L'USRP N210 de 2.4GHz, équipé de deux antennes, nous permettra d'analyser les phases du signal. Il est important de savoir que le signal emis vers le drone sera recu par les deux antennes du URSP. A ce moment, on aura une difference de phase du signal, car elle   d'analyser les phases du signal, car dépendamment de la différence des phases des signaux reçus, par l'USRP N210, on pourra savoir dans quelle direction se situe le signal.
     
-    demander explication pou le module gnu gpsk
+    demander explication pou le module gnu gpsk.
+    Penser a montrer l'avancement du document ecrit a fred
