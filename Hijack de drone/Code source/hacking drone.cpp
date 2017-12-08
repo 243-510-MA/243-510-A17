@@ -11,9 +11,10 @@ int vitesse;
 
 int main()
 {
-    char Vitesse[1];
+    char Vitesse[1]= {255};
     char TxDataCnt;
     char temp;
+
  
  
     my_nrf24l01p.powerUp();
@@ -26,7 +27,6 @@ int main()
     pc.printf( "nRF24L01+ Data Rate    : %d kbps\r\n", my_nrf24l01p.getAirDataRate() );
     pc.printf( "nRF24L01+ TX Address   : 0x%010llX\r\n", my_nrf24l01p.getTxAddress() );
     pc.printf( "nRF24L01+ RX Address   : 0x%010llX\r\n", my_nrf24l01p.getRxAddress() );
-    
  
     TxDataCnt = 1;
     my_nrf24l01p.setTransferSize(TxDataCnt);
@@ -35,16 +35,18 @@ int main()
  
     while (1) {
  
-        // Read ADC
-        vitesse = VitIn.read_u16();
-        Vitesse[0] = vitesse / 256;
+        
+    //vitesse = VitIn.read_u16();
+   // Vitesse[0] = vitesse / 256;
+        
         
         // Send the Transmit buffer via the nRF24L01
-        temp = my_nrf24l01p.write( NRF24L01P_PIPE_P0,Vitesse, TxDataCnt );
+        
+        temp = my_nrf24l01p.write( NRF24L01P_PIPE_P0,Vitesse,TxDataCnt  );
  
-        pc.printf( "Sending %d data - %d\r\n",temp,Vitesse[0]);
+     // pc.printf( "Sending %d data = %d\r\n",temp,Vitesse[0]);
             
-        wait_ms(250);
+      
     }
 }
  
