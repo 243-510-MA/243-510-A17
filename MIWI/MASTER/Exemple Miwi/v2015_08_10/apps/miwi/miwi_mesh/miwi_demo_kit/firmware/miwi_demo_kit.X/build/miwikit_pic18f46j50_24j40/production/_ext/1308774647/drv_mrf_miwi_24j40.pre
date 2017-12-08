@@ -9804,6 +9804,9 @@ void temps_avance(Temps * hms);
 # 133
 void SYSTEM_Initialize(void);
 
+# 25 "../../../../../../framework/driver/mrf_miwi/src/drv_mrf_miwi_24j40.c"
+extern bool presence;
+
 # 44 "../../../../../../framework\miwi/miwi_mesh.h"
 void MiWiTasks(void);
 uint8_t findNextNetworkEntry(void);
@@ -10886,13 +10889,21 @@ void interrupt high_isr(void)
 # 1919
 {
 
-
-
+# 1925
 if (PIR1bits.TMR1IF)
 {
 PIR1bits.TMR1IF = 0;
 TMR1H = 0x3C;
 TMR1L = 0xB0;
+
+if(Chrono.Minutes == 1)
+{
+Chrono.Minutes = 0;
+Chrono.Secondes = 0;
+Chrono.Dixieme_Secondes = 0;
+
+presence = 1;
+}
 
 if(LATAbits.LATA7 == 1) LATAbits.LATA7 = 0;
 else if(LATAbits.LATA7 == 0) LATAbits.LATA7 = 1;
@@ -10907,11 +10918,35 @@ BuzzerStatus = !BuzzerStatus;
 PIR3bits.TMR4IF = 0;
 }
 
+
 if (PIR2bits.TMR3IF)
 {
 static uint8_t compte;
+static uint8_t compte_porte;
 static bool u;
 
+if(door_timer == 1)
+{
+LATDbits.LATD7 = 0;
+LATAbits.LATA6 = 1;
+TMR3 = 0;
+compte_porte++;
+
+
+if(compte_porte == 250)
+{
+PIR2bits.TMR3IF = 0;
+PIE2bits.TMR3IE = 0;
+compte_porte = 0;
+LATDbits.LATD7 = 1;
+LATAbits.LATA6 = 0;
+door_timer = 0;
+}
+PIR2bits.TMR3IF = 0;
+
+}
+else
+{
 if (u)
 {
 
@@ -10939,7 +10974,7 @@ PIE2bits.TMR3IE = 0;
 pwm_value_high_time = 400;
 compte = 0;
 }
-
+}
 }
 
 
@@ -11013,7 +11048,7 @@ break;
 if (RxBank < 2)
 {
 
-# 2052
+# 2087
 PHYSetShortRAMAddr((0x73), 0x04);
 
 
@@ -11047,7 +11082,7 @@ else
 
 PHYSetShortRAMAddr((0x1B), 0x01);
 
-# 2090
+# 2125
 }
 
 }

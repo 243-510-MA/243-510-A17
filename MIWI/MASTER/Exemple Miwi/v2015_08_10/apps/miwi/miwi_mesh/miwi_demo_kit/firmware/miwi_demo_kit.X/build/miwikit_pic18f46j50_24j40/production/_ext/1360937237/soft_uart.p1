@@ -7793,128 +7793,131 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;soft_uart.c: 149: _delay((unsigned long)((100)*(16000000/4000000.0)));
 "149
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-[; ;soft_uart.c: 150: data = (data >> 1) + (PORTAbits.RA1 << 7);
+[; ;soft_uart.c: 150: LATAbits.LATA2 = !LATAbits.LATA2;
 "150
-[e = _data -> + >> -> _data `i -> 1 `i << -> . . _PORTAbits 0 1 `i -> 7 `i `uc ]
+[e = . . _LATAbits 0 2 -> -> ! != -> . . _LATAbits 0 2 `i -> -> -> 0 `i `Vuc `i `i `uc ]
+[; ;soft_uart.c: 151: data = (data >> 1) + (PORTAbits.RA1 << 7);
 "151
+[e = _data -> + >> -> _data `i -> 1 `i << -> . . _PORTAbits 0 1 `i -> 7 `i `uc ]
+"152
 }
 "147
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 8 `i 1100  ]
 [e :U 1101 ]
-"151
-}
-[; ;soft_uart.c: 151: }
-[; ;soft_uart.c: 152: PORTAbits.RA1 = 1;
 "152
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+}
+[; ;soft_uart.c: 152: }
+[; ;soft_uart.c: 153: PORTAbits.RA1 = 1;
 "153
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"154
 }
 [e :U 1099 ]
-[; ;soft_uart.c: 153: }
-[; ;soft_uart.c: 154: return data;
-"154
+[; ;soft_uart.c: 154: }
+[; ;soft_uart.c: 155: return data;
+"155
 [e ) _data ]
 [e $UE 1098  ]
-[; ;soft_uart.c: 155: }
-"155
+[; ;soft_uart.c: 156: }
+"156
 [e :UE 1098 ]
 }
-"161
-[v _UART_kbhit_A2_A1 `(s ~T0 @X0 1 ef ]
 "162
+[v _UART_kbhit_A2_A1 `(s ~T0 @X0 1 ef ]
+"163
 {
-[; ;soft_uart.c: 161: short UART_kbhit_A2_A1(void)
-[; ;soft_uart.c: 162: {
+[; ;soft_uart.c: 162: short UART_kbhit_A2_A1(void)
+[; ;soft_uart.c: 163: {
 [e :U _UART_kbhit_A2_A1 ]
 [f ]
-[; ;soft_uart.c: 163: return (PORTAbits.RA1 == 0);
-"163
+[; ;soft_uart.c: 164: return (PORTAbits.RA1 == 0);
+"164
 [e ) -> -> == -> . . _PORTAbits 0 1 `i -> 0 `i `i `s ]
 [e $UE 1103  ]
-[; ;soft_uart.c: 164: }
-"164
+[; ;soft_uart.c: 165: }
+"165
 [e :UE 1103 ]
 }
-"171
+"172
 [v _UART_Write_Text_A2_A1 `(v ~T0 @X0 1 ef1`*uc ]
-"172
-{
-[; ;soft_uart.c: 171: void UART_Write_Text_A2_A1(char *text)
-[; ;soft_uart.c: 172: {
-[e :U _UART_Write_Text_A2_A1 ]
-"171
-[v _text `*uc ~T0 @X0 1 r1 ]
-"172
-[f ]
 "173
-[v _i `i ~T0 @X0 1 a ]
-[; ;soft_uart.c: 173: int i;
-[; ;soft_uart.c: 174: for(i=0;text[i]!='\0';i++)
+{
+[; ;soft_uart.c: 172: void UART_Write_Text_A2_A1(char *text)
+[; ;soft_uart.c: 173: {
+[e :U _UART_Write_Text_A2_A1 ]
+"172
+[v _text `*uc ~T0 @X0 1 r1 ]
+"173
+[f ]
 "174
+[v _i `i ~T0 @X0 1 a ]
+[; ;soft_uart.c: 174: int i;
+[; ;soft_uart.c: 175: for(i=0;text[i]!='\0';i++)
+"175
 {
 [e = _i -> 0 `i ]
 [e $U 1108  ]
-"175
+"176
 [e :U 1105 ]
-[; ;soft_uart.c: 175: UART_Write_A2_A1(text[i]);
+[; ;soft_uart.c: 176: UART_Write_A2_A1(text[i]);
 [e ( _UART_Write_A2_A1 (1 *U + _text * -> _i `x -> -> # *U _text `i `x ]
-"174
+"175
 [e ++ _i -> 1 `i ]
 [e :U 1108 ]
 [e $ != -> *U + _text * -> _i `x -> -> # *U _text `i `x `ui -> 0 `ui 1105  ]
 [e :U 1106 ]
-"175
-}
-[; ;soft_uart.c: 176: }
 "176
+}
+[; ;soft_uart.c: 177: }
+"177
 [e :UE 1104 ]
 }
-"182
-[v _LCD_Init `(v ~T0 @X0 1 ef ]
 "183
+[v _LCD_Init `(v ~T0 @X0 1 ef ]
+"184
 {
-[; ;soft_uart.c: 182: void LCD_Init(void)
-[; ;soft_uart.c: 183: {
+[; ;soft_uart.c: 183: void LCD_Init(void)
+[; ;soft_uart.c: 184: {
 [e :U _LCD_Init ]
 [f ]
-[; ;soft_uart.c: 184: UART_Write_A2_A1(0xFE);
-"184
-[e ( _UART_Write_A2_A1 (1 -> -> 254 `i `uc ]
-[; ;soft_uart.c: 185: UART_Write_A2_A1(0x51);
+[; ;soft_uart.c: 185: UART_Write_A2_A1(0xFE);
 "185
-[e ( _UART_Write_A2_A1 (1 -> -> 81 `i `uc ]
-[; ;soft_uart.c: 186: UART_Write_A2_A1(0xFE);
-"186
 [e ( _UART_Write_A2_A1 (1 -> -> 254 `i `uc ]
-[; ;soft_uart.c: 187: UART_Write_A2_A1(0x41);
+[; ;soft_uart.c: 186: UART_Write_A2_A1(0x51);
+"186
+[e ( _UART_Write_A2_A1 (1 -> -> 81 `i `uc ]
+[; ;soft_uart.c: 187: UART_Write_A2_A1(0xFE);
 "187
+[e ( _UART_Write_A2_A1 (1 -> -> 254 `i `uc ]
+[; ;soft_uart.c: 188: UART_Write_A2_A1(0x41);
+"188
 [e ( _UART_Write_A2_A1 (1 -> -> 65 `i `uc ]
-[; ;soft_uart.c: 189: }
-"189
+[; ;soft_uart.c: 190: }
+"190
 [e :UE 1109 ]
 }
-"195
+"196
 [v _LCD_Set_Cursor `(v ~T0 @X0 1 ef1`i ]
-"196
-{
-[; ;soft_uart.c: 195: void LCD_Set_Cursor(int pos)
-[; ;soft_uart.c: 196: {
-[e :U _LCD_Set_Cursor ]
-"195
-[v _pos `i ~T0 @X0 1 r1 ]
-"196
-[f ]
-[; ;soft_uart.c: 197: UART_Write_A2_A1(0xFE);
 "197
-[e ( _UART_Write_A2_A1 (1 -> -> 254 `i `uc ]
-[; ;soft_uart.c: 198: UART_Write_A2_A1(0x45);
+{
+[; ;soft_uart.c: 196: void LCD_Set_Cursor(int pos)
+[; ;soft_uart.c: 197: {
+[e :U _LCD_Set_Cursor ]
+"196
+[v _pos `i ~T0 @X0 1 r1 ]
+"197
+[f ]
+[; ;soft_uart.c: 198: UART_Write_A2_A1(0xFE);
 "198
-[e ( _UART_Write_A2_A1 (1 -> -> 69 `i `uc ]
-[; ;soft_uart.c: 199: UART_Write_A2_A1(pos);
+[e ( _UART_Write_A2_A1 (1 -> -> 254 `i `uc ]
+[; ;soft_uart.c: 199: UART_Write_A2_A1(0x45);
 "199
+[e ( _UART_Write_A2_A1 (1 -> -> 69 `i `uc ]
+[; ;soft_uart.c: 200: UART_Write_A2_A1(pos);
+"200
 [e ( _UART_Write_A2_A1 (1 -> _pos `uc ]
-[; ;soft_uart.c: 201: }
-"201
+[; ;soft_uart.c: 202: }
+"202
 [e :UE 1110 ]
 }

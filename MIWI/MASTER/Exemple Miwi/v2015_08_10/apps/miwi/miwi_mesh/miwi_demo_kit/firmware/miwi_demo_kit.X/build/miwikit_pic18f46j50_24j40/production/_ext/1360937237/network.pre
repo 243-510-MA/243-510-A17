@@ -10226,14 +10226,13 @@ extern uint8_t myLongAddress[];
 uint8_t AdditionalNodeID[1] = {0x00};
 
 
-
 void Network(int DEVICEMODE)
 {
 uint8_t i, j;
 bool result = 1;
 uint8_t switch_val;
 
-# 55
+# 54
 SYSTEM_Initialize();
 
 LATCbits.LATC2 = LATAbits.LATA6 = LATAbits.LATA7 = 1;
@@ -10242,14 +10241,14 @@ Read_MAC_Address();
 
 MiApp_ProtocolInit(0);
 
-# 67
+# 66
 CreateorJoin:
 
-# 73
+# 72
 if( MiApp_SetChannel(myChannel) == 0 )
 return;
 
-# 85
+# 84
 MiApp_ConnectionMode(0x00);
 
 
@@ -10258,7 +10257,7 @@ if((DEVICEMODE == 0) || (DEVICEMODE == 7))
 while(result == 1)
 {
 
-# 97
+# 96
 MiApp_ProtocolInit(0);
 MiApp_StartConnection(0x00, 0, 0);
 
@@ -10295,10 +10294,10 @@ volatile uint8_t scanresult;
 
 MiApp_ProtocolInit(0);
 
-# 137
+# 136
 scanresult = MiApp_SearchConnection(10, (0x00010000 << (myChannel-16)));
 
-# 143
+# 142
 if(scanresult > 0)
 {
 uint8_t k;
@@ -10330,7 +10329,7 @@ continue;
 while(1)
 {
 
-# 178
+# 177
 uint8_t Status;
 uint8_t CoordCount = 0;
 {TxData = 11;};
@@ -10363,7 +10362,7 @@ nodeIndex = k;
 }
 }
 
-# 214
+# 213
 Status = MiApp_EstablishConnection(j, 0x00);
 if(Status == 0xFF)
 {
@@ -10384,7 +10383,7 @@ break;
 
 }
 
-# 238
+# 237
 if(result == 0)
 break;
 }

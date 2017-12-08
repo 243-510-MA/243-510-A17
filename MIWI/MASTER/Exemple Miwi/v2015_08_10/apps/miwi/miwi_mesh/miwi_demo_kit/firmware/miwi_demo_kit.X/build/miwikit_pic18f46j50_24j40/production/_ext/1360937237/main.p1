@@ -7921,138 +7921,138 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;demo_pan.h: 6: void demo_gyro(int status);
 [; ;demo_mouvement.h: 35: void MovementDetector(void);
 [; ;demo_911.h: 6: void Demo_911(void);
-"36 ../src/main.c
+"39 ../src/main.c
 [v _main `(v ~T0 @X0 1 ef ]
-"37
+"40
 {
-[; ;main.c: 36: void main(void)
-[; ;main.c: 37: {
+[; ;main.c: 39: void main(void)
+[; ;main.c: 40: {
 [e :U _main ]
 [f ]
-[; ;main.c: 38: Network(6);
-"38
-[e ( _Network (1 -> 6 `i ]
-[; ;main.c: 40: LATCbits.LATC2 = LATAbits.LATA6 = LATAbits.LATA7 = 0;
-"40
-[e = . . _LATCbits 0 2 = . . _LATAbits 0 6 = . . _LATAbits 0 7 -> -> 0 `i `uc ]
-[; ;main.c: 44: if(6 == 0)
+[; ;main.c: 42: Network(4);
+"42
+[e ( _Network (1 -> 4 `i ]
+[; ;main.c: 44: LATCbits.LATC2 = LATAbits.LATA6 = LATAbits.LATA7 = 0;
 "44
-[e $ ! == -> 6 `i -> 0 `i 1117  ]
-[; ;main.c: 45: {
-"45
+[e = . . _LATCbits 0 2 = . . _LATAbits 0 6 = . . _LATAbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 48: if(4 == 0)
+"48
+[e $ ! == -> 4 `i -> 0 `i 1117  ]
+[; ;main.c: 49: {
+"49
 {
-[; ;main.c: 46: Pan();
-"46
+[; ;main.c: 50: Pan();
+"50
 [e ( _Pan ..  ]
-"47
+"51
 }
 [e :U 1117 ]
-[; ;main.c: 47: }
-[; ;main.c: 50: if(6 == 1)
-"50
-[e $ ! == -> 6 `i -> 1 `i 1118  ]
-[; ;main.c: 51: {
-"51
+[; ;main.c: 51: }
+[; ;main.c: 54: if(4 == 1)
+"54
+[e $ ! == -> 4 `i -> 1 `i 1118  ]
+[; ;main.c: 55: {
+"55
 {
-[; ;main.c: 52: DoorUnlock();
-"52
+[; ;main.c: 56: DoorUnlock();
+"56
 [e ( _DoorUnlock ..  ]
-"53
+"57
 }
 [e :U 1118 ]
-[; ;main.c: 53: }
-[; ;main.c: 56: if(6 == 2)
-"56
-[e $ ! == -> 6 `i -> 2 `i 1119  ]
-[; ;main.c: 57: {
-"57
+[; ;main.c: 57: }
+[; ;main.c: 60: if(4 == 2)
+"60
+[e $ ! == -> 4 `i -> 2 `i 1119  ]
+[; ;main.c: 61: {
+"61
 {
-[; ;main.c: 58: ProjectorScreen();
-"58
+[; ;main.c: 62: ProjectorScreen();
+"62
 [e ( _ProjectorScreen ..  ]
-"59
+"63
 }
 [e :U 1119 ]
-[; ;main.c: 59: }
-[; ;main.c: 62: if(6 == 3)
-"62
-[e $ ! == -> 6 `i -> 3 `i 1120  ]
-[; ;main.c: 63: {
-"63
+[; ;main.c: 63: }
+[; ;main.c: 66: if(4 == 3)
+"66
+[e $ ! == -> 4 `i -> 3 `i 1120  ]
+[; ;main.c: 67: {
+"67
 {
-[; ;main.c: 64: Teacher();
-"64
+[; ;main.c: 68: Teacher();
+"68
 [e ( _Teacher ..  ]
-"65
+"69
 }
 [e :U 1120 ]
-[; ;main.c: 65: }
-[; ;main.c: 68: if(6 == 4)
-"68
-[e $ ! == -> 6 `i -> 4 `i 1121  ]
-[; ;main.c: 69: {
-"69
+[; ;main.c: 69: }
+[; ;main.c: 72: if(4 == 4)
+"72
+[e $ ! == -> 4 `i -> 4 `i 1121  ]
+[; ;main.c: 73: {
+"73
 {
-[; ;main.c: 70: Student();
-"70
+[; ;main.c: 74: Student();
+"74
 [e ( _Student ..  ]
-"71
+"75
 }
 [e :U 1121 ]
-[; ;main.c: 71: }
-[; ;main.c: 73: if(6 == 5)
-"73
-[e $ ! == -> 6 `i -> 5 `i 1122  ]
-[; ;main.c: 74: {
-"74
+[; ;main.c: 75: }
+[; ;main.c: 77: if(4 == 5)
+"77
+[e $ ! == -> 4 `i -> 5 `i 1122  ]
+[; ;main.c: 78: {
+"78
 {
-[; ;main.c: 75: ComputerControl();
-"75
+[; ;main.c: 79: ComputerControl();
+"79
 [e ( _ComputerControl ..  ]
-"76
+"80
 }
 [e :U 1122 ]
-[; ;main.c: 76: }
-[; ;main.c: 78: if(6 == 6)
-"78
-[e $ ! == -> 6 `i -> 6 `i 1123  ]
-[; ;main.c: 79: {
-"79
+[; ;main.c: 80: }
+[; ;main.c: 82: if(4 == 6)
+"82
+[e $ ! == -> 4 `i -> 6 `i 1123  ]
+[; ;main.c: 83: {
+"83
 {
-[; ;main.c: 80: MovementDetector();
-"80
+[; ;main.c: 84: MovementDetector();
+"84
 [e ( _MovementDetector ..  ]
-"81
+"85
 }
 [e :U 1123 ]
-[; ;main.c: 81: }
-[; ;main.c: 83: if(6 == 7)
-"83
-[e $ ! == -> 6 `i -> 7 `i 1124  ]
-[; ;main.c: 84: {
-"84
+[; ;main.c: 85: }
+[; ;main.c: 87: if(4 == 7)
+"87
+[e $ ! == -> 4 `i -> 7 `i 1124  ]
+[; ;main.c: 88: {
+"88
 {
-[; ;main.c: 85: Demo_Pan();
-"85
+[; ;main.c: 89: Demo_Pan();
+"89
 [e ( _Demo_Pan ..  ]
-"86
+"90
 }
 [e :U 1124 ]
-[; ;main.c: 86: }
-[; ;main.c: 88: if(6 == 8)
-"88
-[e $ ! == -> 6 `i -> 8 `i 1125  ]
-[; ;main.c: 89: {
-"89
-{
-[; ;main.c: 90: Demo_911();
-"90
-[e ( _Demo_911 ..  ]
+[; ;main.c: 90: }
+[; ;main.c: 92: if(4 == 8)
 "92
+[e $ ! == -> 4 `i -> 8 `i 1125  ]
+[; ;main.c: 93: {
+"93
+{
+[; ;main.c: 94: Demo_911();
+"94
+[e ( _Demo_911 ..  ]
+"96
 }
 [e :U 1125 ]
-[; ;main.c: 92: }
-[; ;main.c: 93: }
-"93
+[; ;main.c: 96: }
+[; ;main.c: 97: }
+"97
 [e :UE 1116 ]
 }

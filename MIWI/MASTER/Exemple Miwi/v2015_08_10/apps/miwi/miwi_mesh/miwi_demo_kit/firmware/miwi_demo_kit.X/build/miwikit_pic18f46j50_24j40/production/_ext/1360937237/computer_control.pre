@@ -10266,6 +10266,7 @@ extern char * strrichr(const char *, int);
 void ComputerControl(void)
 {
 
+# 26
 ANCON0bits.PCFG1 = 1;
 ANCON0bits.PCFG2 = 1;
 LATEbits.LATE1 = 1;
@@ -10275,9 +10276,8 @@ char buffer;
 uint8_t k = 0;
 uint8_t heures, minutes, secondes = 0;
 unsigned char uart_tableau[100] = {0};
-unsigned char projector_off[14] = "PROJECTOR OFF";
 
-
+uint16_t i = 0;
 uint8_t Dizaine_Heures = 0;
 uint8_t Unite_Heures = 0;
 uint8_t Dizaine_Minutes = 0;
@@ -10285,21 +10285,38 @@ uint8_t Unite_Minutes = 0;
 uint8_t Dizaine_Secondes = 0;
 uint8_t Unite_Secondes = 0;
 char tableau_temps[9] = {0, 0, 'h', 0, 0, 'm', 0, 0, 's'};
-
+uint8_t MacTemp[9];
 UART_Init_A2_A1();
 MiApp_DiscardMessage();
 
 while (1)
 {
 
-# 53
+# 54
+if(MiApp_MessageAvailable())
+{
+if(rxMessage.Payload[0] == POLL_PRESENCE)
+{
+for(uint8_t i = 0; i < 8 ; i++)
+MacTemp[i] = rxMessage.Payload[i+1];
+
+MacTemp[8] = 0;
+UART_Write_Text_A2_A1(&MacTemp);
+
+}
+
+
+
+}
+
 if (UART_kbhit_A2_A1())
 {
 
 buffer = UART_Read_A2_A1();
 uart_tableau[k] = buffer;
 k++;
-{ unsigned long _dcnt; unsigned long _ms; _ms = 5; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
+
+{ unsigned long _dcnt; unsigned long _ms; _ms = 35; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
 if (uart_tableau[k - 1] == '\r')
 {
 uart_tableau[k - 1] = 0x00;
@@ -10398,14 +10415,42 @@ LATAbits.LATA6 = 0;
 
 else if (!strcmp("GET STATUS DOOR", &uart_tableau))
 {
+
+
 {TxData = 11;};
 TxBuffer[TxData++] = 0x02;
 TxBuffer[TxData++] = myShortAddress.v[0];
 TxBuffer[TxData++] = myShortAddress.v[1];
 MiApp_BroadcastPacket(0);
 LATAbits.LATA6 = 1;
-{ unsigned long _dcnt; unsigned long _ms; _ms = 50; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
 LATAbits.LATA6 = 0;
+
+i = 0;
+while(!MiApp_MessageAvailable()){
+{ unsigned long _dcnt; unsigned long _ms; _ms = 1; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
+i++;
+if(i == 2000){
+UART_Write_Text_A2_A1("Erreur de communications");
+break;
+}
+
+};
+if(i == 2000) break;
+
+
+if (rxMessage.Payload[0] == 0x03)
+{
+UART_Write_Text_A2_A1("Door is unlocked");
+
+}
+
+else if (rxMessage.Payload[0] == 0x04)
+{
+UART_Write_Text_A2_A1("Door is locked");
+
+}
+
+MiApp_DiscardMessage();
 
 }
 
@@ -10417,9 +10462,7 @@ TxBuffer[TxData++] = myShortAddress.v[0];
 TxBuffer[TxData++] = myShortAddress.v[1];
 MiApp_BroadcastPacket(0);
 LATAbits.LATA6 = 1;
-{ unsigned long _dcnt; unsigned long _ms; _ms = 500; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
 LATAbits.LATA6 = 0;
-
 
 
 
@@ -10448,8 +10491,9 @@ TxBuffer[TxData++] = myShortAddress.v[0];
 TxBuffer[TxData++] = myShortAddress.v[1];
 MiApp_BroadcastPacket(0);
 LATAbits.LATA6 = 1;
-{ unsigned long _dcnt; unsigned long _ms; _ms = 50; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
 LATAbits.LATA6 = 0;
+
+while(!MiApp_MessageAvailable());
 
 if (rxMessage.Payload[0] == 0x09)
 {
@@ -10475,11 +10519,11 @@ TxBuffer[TxData++] = myShortAddress.v[0];
 TxBuffer[TxData++] = myShortAddress.v[1];
 MiApp_BroadcastPacket(0);
 LATAbits.LATA6 = 1;
-{ unsigned long _dcnt; unsigned long _ms; _ms = 50; while(_ms) { _dcnt=((unsigned long)(0.001/(1.0/((16000000)/4))/6)); while(_dcnt--); _ms--; } };
 LATAbits.LATA6 = 0;
 
-if (MiApp_MessageAvailable())
-{
+
+while(!MiApp_MessageAvailable());
+
 if (rxMessage.Payload[0] == 0x95)
 {
 heures = rxMessage.Payload[1];
@@ -10508,14 +10552,15 @@ UART_Write_Text_A2_A1(&tableau_temps);
 MiApp_DiscardMessage();
 }
 
+memset(uart_tableau,'0',100);
+
+}
+
 
 
 }
 
 }
 
-}
-
-}
 }
 

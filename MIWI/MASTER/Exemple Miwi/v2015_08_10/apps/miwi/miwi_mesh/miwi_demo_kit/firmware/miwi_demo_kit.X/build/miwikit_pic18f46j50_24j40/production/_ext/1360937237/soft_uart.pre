@@ -9649,6 +9649,7 @@ _delay((unsigned long)((50)*(16000000/4000000.0)));
 for(i=0; i<8; i++)
 {
 _delay((unsigned long)((100)*(16000000/4000000.0)));
+LATAbits.LATA2 = !LATAbits.LATA2;
 data = (data >> 1) + (PORTAbits.RA1 << 7);
 }
 PORTAbits.RA1 = 1;
@@ -9656,13 +9657,13 @@ PORTAbits.RA1 = 1;
 return data;
 }
 
-# 161
+# 162
 short UART_kbhit_A2_A1(void)
 {
 return (PORTAbits.RA1 == 0);
 }
 
-# 171
+# 172
 void UART_Write_Text_A2_A1(char *text)
 {
 int i;
@@ -9670,7 +9671,7 @@ for(i=0;text[i]!='\0';i++)
 UART_Write_A2_A1(text[i]);
 }
 
-# 182
+# 183
 void LCD_Init(void)
 {
 UART_Write_A2_A1(0xFE);
@@ -9680,7 +9681,7 @@ UART_Write_A2_A1(0x41);
 
 }
 
-# 195
+# 196
 void LCD_Set_Cursor(int pos)
 {
 UART_Write_A2_A1(0xFE);

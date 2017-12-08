@@ -296,6 +296,8 @@ signed char prec;
 
 unsigned short flag;
 
+int ccnt = 0;
+
 # 523
 union {
 unsigned long vd;
@@ -315,7 +317,7 @@ while(c = *f++) {
 if(c != '%')
 
 {
-((*sp++ = (c)));
+((*sp++ = (c)),(++ccnt));
 continue;
 }
 
@@ -471,14 +473,14 @@ width = 0;
 if(!(flag & 0x08))
 
 while(width--)
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 
 while(len--)
-((*sp++ = (*cp++)));
+((*sp++ = (*cp++)),(++ccnt));
 
 if(flag & 0x08)
 while(width--)
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 
 continue;
 
@@ -630,20 +632,20 @@ if(flag & 0x04) {
 
 
 if(flag & 0x03)
-((*sp++ = ('-')));
+((*sp++ = ('-')),(++ccnt));
 
 
 else
 
 
 if(flag & 0x01)
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 
 
 else if((flag & ((0xC0)|0x800)) == (0x80|0x800)) {
-((*sp++ = ('0')));
+((*sp++ = ('0')),(++ccnt));
 
-((*sp++ = (flag & 0x20 ? 'X' : 'x')));
+((*sp++ = (flag & 0x20 ? 'X' : 'x')),(++ccnt));
 
 # 1412
 }
@@ -651,7 +653,7 @@ else if((flag & ((0xC0)|0x800)) == (0x80|0x800)) {
 
 if(width)
 do
-((*sp++ = ('0')));
+((*sp++ = ('0')),(++ccnt));
 while(--width);
 
 } else
@@ -664,22 +666,22 @@ if(width
 
 )
 do
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 while(--width);
 
 # 1438
 if(flag & 0x03)
-((*sp++ = ('-')));
+((*sp++ = ('-')),(++ccnt));
 
 
 
 else if(flag & 0x01)
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 
 
 
 if((flag & ((0xC0)|0x800)) == (0x40|0x800))
-((*sp++ = ('0')));
+((*sp++ = ('0')),(++ccnt));
 else
 
 
@@ -687,9 +689,9 @@ else
 if((flag & ((0xC0)|0x800)) == (0x80|0x800)) {
 
 # 1458
-((*sp++ = ('0')));
+((*sp++ = ('0')),(++ccnt));
 
-((*sp++ = (flag & 0x20 ? 'X' : 'x')));
+((*sp++ = (flag & 0x20 ? 'X' : 'x')),(++ccnt));
 
 # 1466
 }
@@ -739,13 +741,13 @@ break;
 
 
 }
-((*sp++ = (c)));
+((*sp++ = (c)),(++ccnt));
 }
 
 
 if((flag & 0x08) && width > 0)
 do
-((*sp++ = (' ')));
+((*sp++ = (' ')),(++ccnt));
 while(--width);
 
 }
@@ -755,6 +757,6 @@ alldone:
 
 *sp = 0;
 
-return 0;
+return ccnt;
 }
 

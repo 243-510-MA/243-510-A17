@@ -10214,12 +10214,45 @@ bool MiApp_ResyncConnection(uint8_t ConnectionIndex, uint32_t ChannelMap);
 # 950
 extern RECEIVED_MESSAGE rxMessage;
 
-# 9 "../src/teacher.c"
+# 14 "C:\Program Files (x86)\Microchip\xc8\v1.37\include\string.h"
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+
+# 34
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+
+# 10 "../src/teacher.c"
 void Teacher(void)
 {
 uint8_t i = 0;
 uint8_t switch_val = 0;
 extern uint8_t ConnectionEntry;
+extern uint8_t myLongAddress[];
 bool Tx_Packet = 1;
 uint8_t rssi = 0;
 uint8_t memoire = 0;
@@ -10230,13 +10263,20 @@ uint8_t reponseb = 0;
 uint8_t reponsec = 0;
 uint8_t reponsed = 0;
 uint8_t choix_envoi = 0;
-uint8_t my_adresse;
+uint16_t my_adresse;
 uint8_t IdAdresse[2] = {0x02, 0x01};
 uint16_t digit_adresse;
+uint8_t my_mac_adresse[32], *pos = my_mac_adresse;
 
 my_adresse = (myShortAddress.v[1] << 8) + (myShortAddress.v[0]);
+
+
+
 LCD_Erase();
-sprintf((char *) &LCDText, (char*) " TEACHER DEVICE  MY ID: %X", my_adresse);
+pos += sprintf((char *)pos,(char*) " Teacher Device ");
+for(int i = 0 ; i < 8 ; i++)
+pos += sprintf((char *)pos, (char*) "%02X",myLongAddress[i]);
+memcpy(&LCDText,&my_mac_adresse,32);
 LCD_Update();
 
 for (i = 0; i < 10; i++)
@@ -10245,7 +10285,7 @@ DELAY_ms(250);
 }
 
 uint8_t IdAdresse[2] = {0x02, 0x01};
-uint16_t digit_adresse;
+
 
 
 void reception_unicast(void);
@@ -10253,7 +10293,7 @@ void reception_unicast(void);
 while (1)
 {
 
-# 121
+# 130
 reception_unicast();
 switch_val = 0;
 sprintf((char *) &LCDText, (char*) "SW1: Projector  SW2: Suivant  ");
@@ -10393,7 +10433,7 @@ sprintf((char *) &LCDText, (char*) "adresse choisi                      ");
 LCD_Update();
 digit_adresse = ((digit[0] << 8) + (digit[1] << 4) + (digit[2]));
 
-# 268
+# 277
 IdAdresse[1] = digit_adresse >> 8;
 IdAdresse[0] = digit_adresse;
 
