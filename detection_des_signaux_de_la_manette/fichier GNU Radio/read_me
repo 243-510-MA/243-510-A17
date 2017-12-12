@@ -1,0 +1,20 @@
+Les deux fichiers contenus dans ce dossier sont le résultat de la partie de détection de direction de la manette du cours 243-510. 
+
+==Synchronisation==
+Les deux fichiers sont configurés pour utiliser 4 USRP. Les 4 USRP sont divisés en 2 piles. Chaque paires de USRP sont sychronisés via le cable MIMO, les 2 paires de USRP sont sychronisés à l'aide du GPSDO. Le GPSDO génère un signal de clock et de pps qui sont utilisés pour faire la sychronisation.
+	
+===Synchronisation avec le GPSDO===
+Le signal de clock et de pps du GPSDO sont divisés en 2, afin de que les deux paires puissent se synchroniser. Ces deux signaux sont envoyés vers un USRP de chaque paires.
+
+Sur le USRP avec le GPSDO, les signaux de PPS et de clock sont envoyés vers les connecteurs internes auquelles était connecté le GPSDO avant qu'il ne soit séparé. Avec nos test, nous avons découvert que le programme ne fonctionnait pas si ces signaux n'était reliés aux conecteurs internes.
+
+Sur l'autre USRP, les signaux de PPS et de clock sont envoyés vers les connecteur externes PPS IN et REF IN respectivement.
+
+Pour fonctionner, on doit indiquer dans GNU Radio quel USRP sont connectés à quoi.
+	*Pour le USRP avec le GPSDO:				Clock source= O/B GPSDO		Time source =O/B GPSDO	
+	*Pour le USRP connecté avec les connecteur externes: 	Clock source= External		Time source =External
+	*Pour les autres USRP:					Clock source= MIMO Cable	Time source =MIMO Cable
+
+
+==Connection avec le PC==
+Un des USRP de chaque paires est connectés directement au pc via ethernet. Le pc doit donc avoir un minimum de 2 ports ethernet.
