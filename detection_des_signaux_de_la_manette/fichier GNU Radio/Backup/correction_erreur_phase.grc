@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.11'?>
+<?grc format='1' created='3.7.9'?>
 <flow_graph>
-  <timestamp>Thu Aug 11 16:28:58 2016</timestamp>
+  <timestamp>Wed Aug  3 08:58:45 2016</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -10,7 +10,7 @@
     </param>
     <param>
       <key>window_size</key>
-      <value>2500,2500</value>
+      <value></value>
     </param>
     <param>
       <key>category</key>
@@ -30,7 +30,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(56, 24)</value>
+      <value>(576, 40)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -38,7 +38,7 @@
     </param>
     <param>
       <key>generate_options</key>
-      <value>qt_gui</value>
+      <value>no_gui</value>
     </param>
     <param>
       <key>hier_block_src_path</key>
@@ -46,7 +46,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>run_MUSIC_lin_array_X310_TwinRX</value>
+      <value>estimate_X310_TwinRX_constant_phase_offsets_and_save</value>
     </param>
     <param>
       <key>max_nouts</key>
@@ -66,7 +66,7 @@
     </param>
     <param>
       <key>run_options</key>
-      <value>prompt</value>
+      <value>run</value>
     </param>
     <param>
       <key>run</key>
@@ -83,6 +83,18 @@
   </block>
   <block>
     <key>variable_struct</key>
+    <param>
+      <key>value10</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>value11</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>value12</key>
+      <value>0</value>
+    </param>
     <param>
       <key>value13</key>
       <value>0</value>
@@ -121,7 +133,7 @@
 Contains all the user-defined variables.</value>
     </param>
     <param>
-      <key>value11</key>
+      <key>value6</key>
       <value>"/tmp"</value>
     </param>
     <param>
@@ -130,23 +142,23 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>field0</key>
-      <value>ToneFreq</value>
-    </param>
-    <param>
-      <key>field1</key>
       <value>SampleRate</value>
     </param>
     <param>
+      <key>field1</key>
+      <value>ToneFreq</value>
+    </param>
+    <param>
       <key>field10</key>
-      <value>PSpectrumLength</value>
+      <value></value>
     </param>
     <param>
       <key>field11</key>
-      <value>DirectoryConfigFiles</value>
+      <value></value>
     </param>
     <param>
       <key>field12</key>
-      <value>RelativePhaseOffsets</value>
+      <value></value>
     </param>
     <param>
       <key>field13</key>
@@ -182,42 +194,42 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>field3</key>
-      <value>RxAddr</value>
-    </param>
-    <param>
-      <key>field4</key>
       <value>Gain</value>
     </param>
     <param>
-      <key>field5</key>
+      <key>field4</key>
       <value>NumArrayElements</value>
     </param>
     <param>
+      <key>field5</key>
+      <value>RxAddr</value>
+    </param>
+    <param>
       <key>field6</key>
-      <value>NormSpacing</value>
+      <value>DirectoryConfigFiles</value>
     </param>
     <param>
       <key>field7</key>
-      <value>SnapshotSize</value>
+      <value>RelativePhaseOffsets</value>
     </param>
     <param>
       <key>field8</key>
-      <value>OverlapSize</value>
+      <value>SkipAhead</value>
     </param>
     <param>
       <key>field9</key>
-      <value>NumTargets</value>
+      <value>Samples2FindMax</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(64, 120)</value>
+      <value>(1064, 44)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
     <param>
-      <key>value4</key>
+      <key>value3</key>
       <value>60</value>
     </param>
     <param>
@@ -225,43 +237,31 @@ Contains all the user-defined variables.</value>
       <value>input_variables</value>
     </param>
     <param>
-      <key>value6</key>
-      <value>0.5</value>
-    </param>
-    <param>
-      <key>value5</key>
+      <key>value4</key>
       <value>4</value>
     </param>
     <param>
-      <key>value9</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>value8</key>
-      <value>2**9</value>
-    </param>
-    <param>
-      <key>value10</key>
-      <value>2**10</value>
-    </param>
-    <param>
-      <key>value12</key>
+      <key>value7</key>
       <value>"measure_X310_TwinRX_relative_phase_offsets_245.cfg"</value>
     </param>
     <param>
-      <key>value3</key>
-      <value>"addr=192.168.40.2"</value>
-    </param>
-    <param>
-      <key>value1</key>
-      <value>1e6</value>
-    </param>
-    <param>
-      <key>value7</key>
-      <value>2**11</value>
+      <key>value5</key>
+      <value>"addr=192.168.10.2"</value>
     </param>
     <param>
       <key>value0</key>
+      <value>10e6</value>
+    </param>
+    <param>
+      <key>value9</key>
+      <value>2**11</value>
+    </param>
+    <param>
+      <key>value8</key>
+      <value>2**13</value>
+    </param>
+    <param>
+      <key>value1</key>
       <value>10000</value>
     </param>
   </block>
@@ -277,7 +277,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(544, 24)</value>
+      <value>(824, 112)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -304,7 +304,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(312, 364)</value>
+      <value>(240, 84)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -320,576 +320,7 @@ Contains all the user-defined variables.</value>
     </param>
   </block>
   <block>
-    <key>analog_sig_source_x</key>
-    <param>
-      <key>amp</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>freq</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(360, 208)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>analog_sig_source_x_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>offset</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>waveform</key>
-      <value>analog.GR_COS_WAVE</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(560, 376)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_xx_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(560, 448)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_xx_0_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(560, 520)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_xx_0_1</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_xx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(560, 592)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_xx_0_2</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_null_sink</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>bus_conns</key>
-      <value>[[0,],]</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1168, 776)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_null_sink_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>input_variables.NumTargets</value>
-    </param>
-  </block>
-  <block>
-    <key>doa_MUSIC_lin_array</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1432, 608)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>doa_MUSIC_lin_array_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>norm_spacing</key>
-      <value>input_variables.NormSpacing</value>
-    </param>
-    <param>
-      <key>inputs</key>
-      <value>input_variables.NumArrayElements</value>
-    </param>
-    <param>
-      <key>num_targets</key>
-      <value>input_variables.NumTargets</value>
-    </param>
-    <param>
-      <key>pspectrum_len</key>
-      <value>input_variables.PSpectrumLength</value>
-    </param>
-  </block>
-  <block>
-    <key>doa_autocorrelate</key>
-    <param>
-      <key>avg_method</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1152, 592)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>doa_autocorrelate_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>inputs</key>
-      <value>input_variables.NumArrayElements</value>
-    </param>
-    <param>
-      <key>overlap_size</key>
-      <value>input_variables.OverlapSize</value>
-    </param>
-    <param>
-      <key>snapshot_size</key>
-      <value>input_variables.SnapshotSize</value>
-    </param>
-  </block>
-  <block>
-    <key>doa_qt_compass</key>
-    <param>
-      <key>arc_bias</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(992, 792)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value>tab@1</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>doa_compass</value>
-    </param>
-    <param>
-      <key>max_val</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>min_val</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>name</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>step</key>
-      <value>10</value>
-    </param>
-    <param>
-      <key>update_time</key>
-      <value>0.05</value>
-    </param>
-  </block>
-  <block>
-    <key>doa_find_local_max</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1440, 740)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>doa_find_local_max_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_max_vals</key>
-      <value>input_variables.NumTargets</value>
-    </param>
-    <param>
-      <key>vector_len</key>
-      <value>input_variables.PSpectrumLength</value>
-    </param>
-    <param>
-      <key>x_max</key>
-      <value>180.0</value>
-    </param>
-    <param>
-      <key>x_min</key>
-      <value>0.0</value>
-    </param>
-  </block>
-  <block>
-    <key>import</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(440, 24)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>import</value>
-    </param>
-    <param>
-      <key>import</key>
-      <value>import os</value>
-    </param>
-  </block>
-  <block>
-    <key>phase_correct_hier</key>
+    <key>doa_findmax_and_save</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -908,11 +339,11 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(936, 592)</value>
+      <value>(832, 328)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -920,7 +351,46 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>id</key>
-      <value>phase_correct_hier_1</value>
+      <value>doa_findmax_and_save_0</value>
+    </param>
+    <param>
+      <key>num_inputs</key>
+      <value>input_variables.NumArrayElements-1</value>
+    </param>
+    <param>
+      <key>samples_to_findmax</key>
+      <value>input_variables.Samples2FindMax</value>
+    </param>
+  </block>
+  <block>
+    <key>doa_twinrx_phase_offset_est</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(624, 312)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>doa_twinrx_phase_offset_est_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -931,646 +401,16 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>num_ports</key>
+      <key>num_inputs</key>
       <value>input_variables.NumArrayElements</value>
     </param>
-  </block>
-  <block>
-    <key>qtgui_time_sink_x</key>
     <param>
-      <key>autoscale</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>axislabels</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>ctrlpanel</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>entags</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1216, 416)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>grid</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>qtgui_time_sink_x_0</value>
-    </param>
-    <param>
-      <key>legend</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>alpha1</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color1</key>
-      <value>"blue"</value>
-    </param>
-    <param>
-      <key>label1</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker1</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style1</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width1</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha10</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color10</key>
-      <value>"blue"</value>
-    </param>
-    <param>
-      <key>label10</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker10</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style10</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width10</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha2</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color2</key>
-      <value>"red"</value>
-    </param>
-    <param>
-      <key>label2</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker2</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style2</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width2</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha3</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color3</key>
-      <value>"green"</value>
-    </param>
-    <param>
-      <key>label3</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker3</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style3</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width3</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha4</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color4</key>
-      <value>"black"</value>
-    </param>
-    <param>
-      <key>label4</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker4</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style4</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width4</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha5</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color5</key>
-      <value>"cyan"</value>
-    </param>
-    <param>
-      <key>label5</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker5</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style5</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width5</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha6</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color6</key>
-      <value>"magenta"</value>
-    </param>
-    <param>
-      <key>label6</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker6</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style6</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width6</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha7</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color7</key>
-      <value>"yellow"</value>
-    </param>
-    <param>
-      <key>label7</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker7</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style7</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width7</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha8</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color8</key>
-      <value>"dark red"</value>
-    </param>
-    <param>
-      <key>label8</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker8</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style8</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width8</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha9</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color9</key>
-      <value>"dark green"</value>
-    </param>
-    <param>
-      <key>label9</key>
-      <value></value>
-    </param>
-    <param>
-      <key>marker9</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>style9</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>width9</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>name</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>nconnections</key>
-      <value>4</value>
-    </param>
-    <param>
-      <key>size</key>
-      <value>1024</value>
-    </param>
-    <param>
-      <key>srate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>tr_chan</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>tr_delay</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>tr_level</key>
-      <value>0.0</value>
-    </param>
-    <param>
-      <key>tr_mode</key>
-      <value>qtgui.TRIG_MODE_FREE</value>
-    </param>
-    <param>
-      <key>tr_slope</key>
-      <value>qtgui.TRIG_SLOPE_POS</value>
-    </param>
-    <param>
-      <key>tr_tag</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>update_time</key>
-      <value>0.10</value>
-    </param>
-    <param>
-      <key>ylabel</key>
-      <value>Amplitude</value>
-    </param>
-    <param>
-      <key>yunit</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>ymax</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ymin</key>
-      <value>-1</value>
+      <key>n_skip_ahead</key>
+      <value>input_variables.SkipAhead</value>
     </param>
   </block>
   <block>
-    <key>qtgui_vector_sink_f</key>
-    <param>
-      <key>autoscale</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>average</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1320, 828)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value>tab@0</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>grid</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>qtgui_vector_sink_f_0</value>
-    </param>
-    <param>
-      <key>alpha1</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color1</key>
-      <value>"blue"</value>
-    </param>
-    <param>
-      <key>label1</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width1</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>alpha10</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color10</key>
-      <value>"dark blue"</value>
-    </param>
-    <param>
-      <key>label10</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width10</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha2</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color2</key>
-      <value>"red"</value>
-    </param>
-    <param>
-      <key>label2</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width2</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha3</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color3</key>
-      <value>"green"</value>
-    </param>
-    <param>
-      <key>label3</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width3</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha4</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color4</key>
-      <value>"black"</value>
-    </param>
-    <param>
-      <key>label4</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width4</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha5</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color5</key>
-      <value>"cyan"</value>
-    </param>
-    <param>
-      <key>label5</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width5</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha6</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color6</key>
-      <value>"magenta"</value>
-    </param>
-    <param>
-      <key>label6</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width6</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha7</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color7</key>
-      <value>"yellow"</value>
-    </param>
-    <param>
-      <key>label7</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width7</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha8</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color8</key>
-      <value>"dark red"</value>
-    </param>
-    <param>
-      <key>label8</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width8</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alpha9</key>
-      <value>1.0</value>
-    </param>
-    <param>
-      <key>color9</key>
-      <value>"dark green"</value>
-    </param>
-    <param>
-      <key>label9</key>
-      <value></value>
-    </param>
-    <param>
-      <key>width9</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>name</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>nconnections</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ref_level</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>showports</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>update_time</key>
-      <value>0.05</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>input_variables.PSpectrumLength</value>
-    </param>
-    <param>
-      <key>x_axis_label</key>
-      <value>"angle (in degrees)"</value>
-    </param>
-    <param>
-      <key>x_start</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>x_step</key>
-      <value>180.0/input_variables.PSpectrumLength</value>
-    </param>
-    <param>
-      <key>x_units</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>ymax</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>ymin</key>
-      <value>-20</value>
-    </param>
-    <param>
-      <key>y_axis_label</key>
-      <value>"Pseudo-Spectrum (dB)"</value>
-    </param>
-    <param>
-      <key>y_units</key>
-      <value>""</value>
-    </param>
-  </block>
-  <block>
-    <key>qtgui_tab_widget</key>
+    <key>import</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1581,15 +421,11 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(256, 24)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value></value>
+      <value>(824, 40)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1597,91 +433,11 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>id</key>
-      <value>tab</value>
+      <value>import</value>
     </param>
     <param>
-      <key>label0</key>
-      <value>Pseudo-Spectrum</value>
-    </param>
-    <param>
-      <key>label1</key>
-      <value>Angle of Arrival (MUSIC)</value>
-    </param>
-    <param>
-      <key>label10</key>
-      <value>Tab 10</value>
-    </param>
-    <param>
-      <key>label11</key>
-      <value>Tab 11</value>
-    </param>
-    <param>
-      <key>label12</key>
-      <value>Tab 12</value>
-    </param>
-    <param>
-      <key>label13</key>
-      <value>Tab 13</value>
-    </param>
-    <param>
-      <key>label14</key>
-      <value>Tab 14</value>
-    </param>
-    <param>
-      <key>label15</key>
-      <value>Tab 15</value>
-    </param>
-    <param>
-      <key>label16</key>
-      <value>Tab 16</value>
-    </param>
-    <param>
-      <key>label17</key>
-      <value>Tab 17</value>
-    </param>
-    <param>
-      <key>label18</key>
-      <value>Tab 18</value>
-    </param>
-    <param>
-      <key>label19</key>
-      <value>Tab 19</value>
-    </param>
-    <param>
-      <key>label2</key>
-      <value>Tab 2</value>
-    </param>
-    <param>
-      <key>label3</key>
-      <value>Tab 3</value>
-    </param>
-    <param>
-      <key>label4</key>
-      <value>Tab 4</value>
-    </param>
-    <param>
-      <key>label5</key>
-      <value>Tab 5</value>
-    </param>
-    <param>
-      <key>label6</key>
-      <value>Tab 6</value>
-    </param>
-    <param>
-      <key>label7</key>
-      <value>Tab 7</value>
-    </param>
-    <param>
-      <key>label8</key>
-      <value>Tab 8</value>
-    </param>
-    <param>
-      <key>label9</key>
-      <value>Tab 9</value>
-    </param>
-    <param>
-      <key>num_tabs</key>
-      <value>2</value>
+      <key>import</key>
+      <value>import os</value>
     </param>
   </block>
   <block>
@@ -1716,15 +472,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>gain0</key>
-      <value>20</value>
-    </param>
-    <param>
-      <key>lo_export0</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source0</key>
-      <value>internal</value>
+      <value>0</value>
     </param>
     <param>
       <key>ant10</key>
@@ -1755,14 +503,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export10</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source10</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant11</key>
       <value></value>
     </param>
@@ -1789,14 +529,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain11</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export11</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source11</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant12</key>
@@ -1827,14 +559,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export12</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source12</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant13</key>
       <value></value>
     </param>
@@ -1861,14 +585,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain13</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export13</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source13</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant14</key>
@@ -1899,14 +615,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export14</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source14</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant15</key>
       <value></value>
     </param>
@@ -1933,14 +641,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain15</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export15</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source15</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant16</key>
@@ -1971,14 +671,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export16</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source16</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant17</key>
       <value></value>
     </param>
@@ -2005,14 +697,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain17</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export17</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source17</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant18</key>
@@ -2043,14 +727,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export18</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source18</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant19</key>
       <value></value>
     </param>
@@ -2079,14 +755,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export19</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source19</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant1</key>
       <value>RX2</value>
     </param>
@@ -2112,15 +780,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>gain1</key>
-      <value>20</value>
-    </param>
-    <param>
-      <key>lo_export1</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source1</key>
-      <value>internal</value>
+      <value>0</value>
     </param>
     <param>
       <key>ant20</key>
@@ -2151,14 +811,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export20</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source20</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant21</key>
       <value></value>
     </param>
@@ -2185,14 +837,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain21</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export21</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source21</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant22</key>
@@ -2223,14 +867,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export22</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source22</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant23</key>
       <value></value>
     </param>
@@ -2257,14 +893,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain23</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export23</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source23</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant24</key>
@@ -2295,14 +923,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export24</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source24</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant25</key>
       <value></value>
     </param>
@@ -2329,14 +949,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain25</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export25</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source25</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant26</key>
@@ -2367,14 +979,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export26</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source26</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant27</key>
       <value></value>
     </param>
@@ -2401,14 +1005,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain27</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export27</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source27</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant28</key>
@@ -2439,14 +1035,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export28</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source28</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant29</key>
       <value></value>
     </param>
@@ -2473,14 +1061,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain29</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export29</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source29</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant2</key>
@@ -2511,14 +1091,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export2</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source2</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant30</key>
       <value></value>
     </param>
@@ -2545,14 +1117,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain30</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export30</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source30</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant31</key>
@@ -2583,14 +1147,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export31</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source31</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant3</key>
       <value></value>
     </param>
@@ -2617,14 +1173,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain3</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export3</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source3</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant4</key>
@@ -2655,14 +1203,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export4</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source4</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant5</key>
       <value></value>
     </param>
@@ -2689,14 +1229,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain5</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export5</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source5</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant6</key>
@@ -2727,14 +1259,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export6</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source6</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant7</key>
       <value></value>
     </param>
@@ -2761,14 +1285,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain7</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export7</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source7</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant8</key>
@@ -2799,14 +1315,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export8</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source8</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant9</key>
       <value></value>
     </param>
@@ -2835,20 +1343,12 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export9</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source9</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>clock_rate</key>
       <value>0.0</value>
     </param>
     <param>
       <key>comment</key>
-      <value>USRP 2 &amp; 4</value>
+      <value></value>
     </param>
     <param>
       <key>affinity</key>
@@ -2868,7 +1368,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(56, 408)</value>
+      <value>(0, 160)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3003,10 +1503,6 @@ Contains all the user-defined variables.</value>
       <value>False</value>
     </param>
     <param>
-      <key>hide_lo_controls</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>stream_args</key>
       <value></value>
     </param>
@@ -3055,15 +1551,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>gain0</key>
-      <value>20</value>
-    </param>
-    <param>
-      <key>lo_export0</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source0</key>
-      <value>internal</value>
+      <value>0</value>
     </param>
     <param>
       <key>ant10</key>
@@ -3094,14 +1582,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export10</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source10</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant11</key>
       <value></value>
     </param>
@@ -3128,14 +1608,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain11</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export11</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source11</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant12</key>
@@ -3166,14 +1638,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export12</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source12</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant13</key>
       <value></value>
     </param>
@@ -3200,14 +1664,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain13</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export13</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source13</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant14</key>
@@ -3238,14 +1694,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export14</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source14</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant15</key>
       <value></value>
     </param>
@@ -3272,14 +1720,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain15</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export15</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source15</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant16</key>
@@ -3310,14 +1750,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export16</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source16</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant17</key>
       <value></value>
     </param>
@@ -3344,14 +1776,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain17</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export17</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source17</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant18</key>
@@ -3382,14 +1806,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export18</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source18</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant19</key>
       <value></value>
     </param>
@@ -3418,14 +1834,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export19</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source19</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant1</key>
       <value>RX2</value>
     </param>
@@ -3451,15 +1859,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>gain1</key>
-      <value>20</value>
-    </param>
-    <param>
-      <key>lo_export1</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source1</key>
-      <value>internal</value>
+      <value>0</value>
     </param>
     <param>
       <key>ant20</key>
@@ -3490,14 +1890,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export20</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source20</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant21</key>
       <value></value>
     </param>
@@ -3524,14 +1916,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain21</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export21</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source21</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant22</key>
@@ -3562,14 +1946,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export22</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source22</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant23</key>
       <value></value>
     </param>
@@ -3596,14 +1972,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain23</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export23</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source23</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant24</key>
@@ -3634,14 +2002,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export24</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source24</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant25</key>
       <value></value>
     </param>
@@ -3668,14 +2028,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain25</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export25</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source25</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant26</key>
@@ -3706,14 +2058,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export26</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source26</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant27</key>
       <value></value>
     </param>
@@ -3740,14 +2084,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain27</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export27</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source27</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant28</key>
@@ -3778,14 +2114,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export28</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source28</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant29</key>
       <value></value>
     </param>
@@ -3812,14 +2140,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain29</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export29</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source29</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant2</key>
@@ -3850,14 +2170,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export2</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source2</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant30</key>
       <value></value>
     </param>
@@ -3884,14 +2196,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain30</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export30</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source30</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant31</key>
@@ -3922,14 +2226,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export31</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source31</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant3</key>
       <value></value>
     </param>
@@ -3956,14 +2252,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain3</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export3</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source3</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant4</key>
@@ -3994,14 +2282,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export4</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source4</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant5</key>
       <value></value>
     </param>
@@ -4028,14 +2308,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain5</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export5</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source5</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant6</key>
@@ -4066,14 +2338,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export6</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source6</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant7</key>
       <value></value>
     </param>
@@ -4100,14 +2364,6 @@ Contains all the user-defined variables.</value>
     <param>
       <key>gain7</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>lo_export7</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source7</key>
-      <value>internal</value>
     </param>
     <param>
       <key>ant8</key>
@@ -4138,14 +2394,6 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export8</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source8</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>ant9</key>
       <value></value>
     </param>
@@ -4174,20 +2422,12 @@ Contains all the user-defined variables.</value>
       <value>0</value>
     </param>
     <param>
-      <key>lo_export9</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>lo_source9</key>
-      <value>internal</value>
-    </param>
-    <param>
       <key>clock_rate</key>
       <value>0.0</value>
     </param>
     <param>
       <key>comment</key>
-      <value>USRP 1 &amp; 3</value>
+      <value></value>
     </param>
     <param>
       <key>affinity</key>
@@ -4207,7 +2447,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(32, 696)</value>
+      <value>(0, 367)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4342,10 +2582,6 @@ Contains all the user-defined variables.</value>
       <value>False</value>
     </param>
     <param>
-      <key>hide_lo_controls</key>
-      <value>True</value>
-    </param>
-    <param>
       <key>stream_args</key>
       <value></value>
     </param>
@@ -4363,153 +2599,45 @@ Contains all the user-defined variables.</value>
     </param>
   </block>
   <connection>
-    <source_block_id>analog_sig_source_x_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0</sink_block_id>
+    <source_block_id>doa_twinrx_phase_offset_est_0</source_block_id>
+    <sink_block_id>doa_findmax_and_save_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>analog_sig_source_x_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>analog_sig_source_x_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>analog_sig_source_x_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_2</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_xx_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_xx_0_0</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_xx_0_1</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>2</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_multiply_xx_0_2</source_block_id>
-    <sink_block_id>phase_correct_hier_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>3</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>doa_MUSIC_lin_array_0</source_block_id>
-    <sink_block_id>doa_find_local_max_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>doa_MUSIC_lin_array_0</source_block_id>
-    <sink_block_id>qtgui_vector_sink_f_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>doa_autocorrelate_0</source_block_id>
-    <sink_block_id>doa_MUSIC_lin_array_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>doa_find_local_max_0</source_block_id>
-    <sink_block_id>doa_compass</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>doa_find_local_max_0</source_block_id>
-    <sink_block_id>blocks_null_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>doa_twinrx_phase_offset_est_0</source_block_id>
+    <sink_block_id>doa_findmax_and_save_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
+    <source_block_id>doa_twinrx_phase_offset_est_0</source_block_id>
+    <sink_block_id>doa_findmax_and_save_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>2</sink_key>
   </connection>
   <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
-    <source_key>2</source_key>
-    <sink_key>2</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>doa_autocorrelate_0</sink_block_id>
-    <source_key>3</source_key>
-    <sink_key>3</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>phase_correct_hier_1</source_block_id>
-    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
-    <source_key>3</source_key>
-    <sink_key>3</sink_key>
+    <source_block_id>uhd_usrp_source_0_0</source_block_id>
+    <sink_block_id>doa_twinrx_phase_offset_est_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>uhd_usrp_source_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0</sink_block_id>
-    <source_key>0</source_key>
+    <sink_block_id>doa_twinrx_phase_offset_est_0</sink_block_id>
+    <source_key>1</source_key>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>uhd_usrp_source_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>uhd_usrp_source_0_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_1</sink_block_id>
+    <sink_block_id>doa_twinrx_phase_offset_est_0</sink_block_id>
     <source_key>0</source_key>
-    <sink_key>0</sink_key>
+    <sink_key>2</sink_key>
   </connection>
   <connection>
     <source_block_id>uhd_usrp_source_0_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_xx_0_2</sink_block_id>
+    <sink_block_id>doa_twinrx_phase_offset_est_0</sink_block_id>
     <source_key>1</source_key>
-    <sink_key>0</sink_key>
+    <sink_key>3</sink_key>
   </connection>
 </flow_graph>

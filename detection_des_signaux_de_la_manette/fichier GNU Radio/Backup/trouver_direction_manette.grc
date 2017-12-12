@@ -2848,7 +2848,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>comment</key>
-      <value>USRP 2 &amp; 4</value>
+      <value></value>
     </param>
     <param>
       <key>affinity</key>
@@ -4187,7 +4187,7 @@ Contains all the user-defined variables.</value>
     </param>
     <param>
       <key>comment</key>
-      <value>USRP 1 &amp; 3</value>
+      <value></value>
     </param>
     <param>
       <key>affinity</key>
